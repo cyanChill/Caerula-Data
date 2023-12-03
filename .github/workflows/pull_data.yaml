@@ -53,6 +53,7 @@ jobs:
         run: git push
       - name: Create pull request if push was successful
         if: steps.push.outcome == 'success'
-        run: gh pr create -B main -H staging --label "game data" --title "Updated Game Data" --body "Created by GitHub Actions."
+        run: |
+          gh pr create -B main -H staging --label "game data" --title "chore(data): Bumped Game Data" --body "Created by GitHub Actions."
         env:
           GH_TOKEN: ${{ github.token }}
