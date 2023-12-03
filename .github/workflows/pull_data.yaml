@@ -24,7 +24,7 @@ jobs:
         # - "Sparse Checkout" to download the folders w/ data we're interested in.
         # - `rm -r .git` to make sure we don't create a submodule.
         run: |
-          mkdir json
+          mkdir -p json
           cd json
           git init
           git remote add -f origin https://github.com/Kengxxiao/ArknightsGameData_YoStar.git
