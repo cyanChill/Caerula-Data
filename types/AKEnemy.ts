@@ -1,4 +1,3 @@
-import type { EnemyAttackTable, StatusEffect } from "@/lib/constants";
 import type { EnemyIds, EnemyRaceTable } from "./typesFrom";
 
 export type EnemyId = (typeof EnemyIds)[number];
@@ -9,10 +8,30 @@ export const EnemyTiers = ["NORMAL", "ELITE", "BOSS"] as const;
 export type EnemyType = (typeof EnemyTiers)[number];
 
 /** @description The classifications on how enemies attacks. */
+export const EnemyAttackTable = {
+  Melee: "Melee",
+  Ranged: "Ranged",
+  "Ranged  Arts": "Ranged Arts",
+  None: "None",
+  "Melee  Arts": "Melee Arts",
+  "Melee  Ranged": "Melee/Ranged",
+  "Melee  Ranged  Arts": "Melee/Ranged Arts",
+  "Ranged Melee": "Ranged/Melee",
+  Healing: "Healing",
+  "Healing Ranged": "Healing/Ranged",
+  "Ranged Physical": "Ranged Physical",
+} as const;
 export type EnemyAttackPattern =
   (typeof EnemyAttackTable)[keyof typeof EnemyAttackTable];
 
 /** @description The effects enemies can be immune to. */
+export const StatusEffect = [
+  "Stun",
+  "Silence",
+  "Sleep",
+  "Freeze",
+  "Levitate",
+] as const;
 export type StatusEffectType = (typeof StatusEffect)[number];
 
 /** @description The data we want from each "level" of an enemy. */

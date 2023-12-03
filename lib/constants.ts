@@ -1,3 +1,7 @@
+import type { Profession, SubClass } from "@/types/AKClass";
+import type { OperatorId } from "@/types/AKOperator";
+import type { TokenId } from "@/types/AKToken";
+
 /** @description Operators considered to be limited. */
 export const LimitedOperators = new Set([
   "char_2014_nian",
@@ -52,26 +56,16 @@ export const SleepImmune = new Set([
 /** @description Enemies immune to all effects which aren't noted. */
 export const ImmuneToAll = new Set(["enemy_1523_mandra"]);
 
-/** @description Table converting an attack type to its display name. */
-export const EnemyAttackTable = {
-  Melee: "Melee",
-  Ranged: "Ranged",
-  "Ranged  Arts": "Ranged Arts",
-  None: "None",
-  "Melee  Arts": "Melee Arts",
-  "Melee  Ranged": "Melee/Ranged",
-  "Melee  Ranged  Arts": "Melee/Ranged Arts",
-  "Ranged Melee": "Ranged/Melee",
-  Healing: "Healing",
-  "Healing Ranged": "Healing/Ranged",
-  "Ranged Physical": "Ranged Physical",
-} as const;
+/**
+ * @description Object containing relations between tokens & operators that can
+ *  be read when we're processing our token data.
+ */
+export const TokenMappings = {
+  token_10020_ling_soul3a: { id: "char_2023_ling", branch: "summoner" },
+} as Record<TokenId, { id: OperatorId; branch: SubClass<Profession> } | null>;
 
-/** @description Status effects which enemies can be immune to. */
-export const StatusEffect = [
-  "Stun",
-  "Silence",
-  "Sleep",
-  "Freeze",
-  "Levitate",
-] as const;
+/** @description Special cases where operator has traps. */
+export const TrapperSpec = new Set<OperatorId>([
+  "char_113_cqbw",
+  "char_4046_ebnhlz",
+]);

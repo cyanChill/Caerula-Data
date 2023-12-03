@@ -2,10 +2,10 @@
 export interface OpPersonalFile {
   title: string;
   text: string;
-  unlockCond: {
-    type: "trust" | "promotion" | "special";
-    val: number | string;
-  } | null;
+  unlockCond:
+    | { type: "trust" | "promotion"; val: number }
+    | { type: "special"; val: string }
+    | null;
 }
 
 /** @description An entry of Operator Records. */

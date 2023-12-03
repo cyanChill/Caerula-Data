@@ -6,7 +6,7 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "lint": "eslint .",
-    "start": "ts-node index.ts"
+    "process:json": "tsx ./index.ts"
   },
   "devDependencies": {
     "@types/eslint": "^8.44.8",
@@ -19,7 +19,7 @@
     "lodash.deburr": "^4.1.0",
     "neatjson": "^0.10.6",
     "prettier": "^3.1.0",
-    "ts-node": "^10.9.1",
+    "tsx": "^4.6.2",
     "typescript": "^5.3.2"
   },
   "keywords": [
