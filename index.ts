@@ -4,8 +4,8 @@ import { createItemsJSON } from "@/scripts/mutateItems";
 import { createRangeTableJSON } from "@/scripts/mutateRange";
 import { createSkillsJSON } from "@/scripts/mutateSkills";
 import { generateOperatorDetails } from "@/scripts/operator/mutateFiles";
-import { generateOperatorStatsAndSlugs } from "./scripts/operator/mutateOperators";
-import { generateVoiceData } from "./scripts/operator/mutateVoice";
+import { generateOperatorStatsAndSlugs } from "@/scripts/operator/mutateOperators";
+import { generateVoiceData } from "@/scripts/operator/mutateVoice";
 
 /* Data Preprocessing */
 preprocessData();
