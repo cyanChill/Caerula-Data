@@ -1,0 +1,58 @@
+name: Pull & Mutate Game Data
+on:
+  schedule:
+    - cron: "0 16 * * 2" # Runs "11AM EST on Tuesday"
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    name: Fetch & mutate game data from `Kengxxiao/ArknightsGameData_YoStar`
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
+          ref: staging # Working in the `staging` branch
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
+      - name: Download used folders in Kengxxiao/ArknightsGameData_YoStar
+        # - "Sparse Checkout" to download the folders w/ data we're interested in.
+        # - `rm -r .git` to make sure we don't create a submodule.
+        run: |
+          mkdir json
+          cd json
+          git init
+          git remote add -f origin https://github.com/Kengxxiao/ArknightsGameData_YoStar.git
+          git sparse-checkout init
+          git sparse-checkout set "en_US/gamedata/excel" "en_US/gamedata/levels/enemydata"
+          git sparse-checkout list
+          git pull --depth=1 origin main
+          rm -r .git
+          rm -r README.md
+          rm -r en_US/gamedata/buff_table.json
+      - name: Mutate data
+        run: |
+          pnpm i --frozen-lockfile
+          pnpm process:json
+      - name: Commit changes to `staging` branch
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ./json ./data ./errors ./types
+          git commit -m "ci(data): `date`"
+        continue-on-error: true
+      - name: Push changes if commit was succesful (new changes exist)
+        id: push
+        if: steps.commit.outcome == 'success'
+        run: git push
+      - name: Create pull request if push was successful
+        if: steps.push.outcome == 'success'
+        run: gh pr create -B main -H staging --label "game data" --title "Updated Game Data" --body "Created by GitHub Actions."
+        env:
+          GH_TOKEN: ${{ github.token }}
