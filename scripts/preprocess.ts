@@ -1,6 +1,7 @@
 // @ts-nocheck
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 
 import { generateSlug } from "@/lib/conversion";
 import { niceJSON, replaceUnicode } from "@/lib/utils";
@@ -316,7 +317,7 @@ function createSkinTable() {
   );
 }
 
-export function preprocessData() {
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
   organizeCharacterTable();
   generateJSONForTypes();
   generateGamedataConst();

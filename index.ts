@@ -1,4 +1,3 @@
-import { preprocessData } from "./scripts/preprocess";
 import { createEnemiesJSON } from "@/scripts/mutateEnemies";
 import { createItemsJSON } from "@/scripts/mutateItems";
 import { createRangeTableJSON } from "@/scripts/mutateRange";
@@ -7,8 +6,6 @@ import { generateOperatorDetails } from "@/scripts/operator/mutateFiles";
 import { generateOperatorStatsAndSlugs } from "@/scripts/operator/mutateOperators";
 import { generateVoiceData } from "@/scripts/operator/mutateVoice";
 
-/* Data Preprocessing */
-preprocessData();
 /* General Data Mutations */
 createItemsJSON();
 createRangeTableJSON();

@@ -1,7 +1,7 @@
 name: Pull & Mutate Game Data
 on:
   schedule:
-    - cron: "0 16 * * 2" # Runs "11AM EST on Tuesday"
+    - cron: "5 17 * * 2" # Runs "12:05PM EST on Tuesday"
   workflow_dispatch:
 
 jobs:
@@ -34,10 +34,11 @@ jobs:
           rm -r .git
           rm -r README.md
           rm -r en_US/gamedata/buff_table.json
-      - name: Mutate data
+      - name: Preprocess & Mutate data
         run: |
           pnpm i --frozen-lockfile
-          pnpm process:json
+          pnpm data:preprocess
+          pnpm data:mutate
       - name: Commit changes to `staging` branch
         id: commit
         run: |
@@ -56,3 +57,4 @@ jobs:
           gh pr create -B main -H staging --label "game data" --title "chore(data): Bumped Game Data" --body "Created by GitHub Actions."
         env:
           GH_TOKEN: ${{ github.token }}
+        continue-on-error: true # Suppresses error if pull request already exists
