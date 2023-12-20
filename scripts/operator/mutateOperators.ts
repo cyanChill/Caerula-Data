@@ -7,9 +7,9 @@ import type {
   OperatorId,
   RawStatAtLevel,
   StatAtLevel,
-} from "@/types/AKOperator";
-import type { SkillId } from "@/types/AKSkill";
-import type { Token, TokenId } from "@/types/AKToken";
+} from "@/data/types/AKOperator";
+import type { SkillId } from "@/data/types/AKSkill";
+import type { Token, TokenId } from "@/data/types/AKToken";
 import enOperatorList from "@/json/preprocessed/operator_list.json";
 import enTokenList from "@/json/preprocessed/tokens_list.json";
 import AmiyaGuardData from "@/json/preprocessed/amiya_guard_polyfill.json";
@@ -289,13 +289,13 @@ function generateSlugTable() {
 
   fs.writeFileSync(
     path.resolve("./data/operator/slugTable.ts"),
-    `import type { OperatorId } from "@/types/AKOperator"\n\nexport const OpSlugTable = ${niceJSON(
+    `import type { OperatorId } from "@/data/types/AKOperator";\n\nexport const OpSlugTable = ${niceJSON(
       opSlugs
     )} as Record<string, OperatorId>;\n`
   );
   fs.writeFileSync(
     path.resolve("./data/token/slugTable.ts"),
-    `import type { TokenId } from "@/types/AKToken"\n\nexport const TokSlugTable = ${niceJSON(
+    `import type { TokenId } from "@/data/types/AKToken";\n\nexport const TokSlugTable = ${niceJSON(
       tokSlugs
     )} as Record<string, TokenId>;\n`
   );

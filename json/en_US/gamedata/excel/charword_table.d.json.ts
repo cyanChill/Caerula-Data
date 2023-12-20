@@ -1,5 +1,5 @@
-import type { OperatorId } from "@/types/AKOperator";
-import type { VoiceLangId } from "@/types/AKVoice";
+import type { OperatorId } from "@/data/types/AKOperator";
+import type { VoiceLangId } from "@/data/types/AKVoice";
 
 declare const charword_table: {
   charWords: Record<string, VoiceLine>;

@@ -1,8 +1,8 @@
 import fs from "fs";
 import path from "path";
 
-import type { AKItem, ItemId } from "@/types/AKItem";
-import type { Rarity } from "@/types/AKOperator";
+import type { AKItem, ItemId } from "@/data/types/AKItem";
+import type { Rarity } from "@/data/types/AKOperator";
 import itemsJSON from "@/json/en_US/gamedata/excel/item_table.json";
 const itemsTable = itemsJSON.items;
 

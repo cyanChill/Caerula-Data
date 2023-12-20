@@ -1,9 +1,9 @@
 import deburr from "lodash.deburr";
 
-import type { OperatorId } from "@/types/AKOperator";
-import type { EnemyId, StatusEffectType } from "@/types/AKEnemy";
-import { EnemyAttackTable } from "@/types/AKEnemy";
-import type { ItemCount } from "@/types/AKItem";
+import type { OperatorId } from "@/data/types/AKOperator";
+import type { EnemyId, StatusEffectType } from "@/data/types/AKEnemy";
+import { EnemyAttackTable } from "@/data/types/AKEnemy";
+import type { ItemCount } from "@/data/types/AKItem";
 import type { DefineValObj, Immunities } from "@/scripts/types";
 
 import { ISOperators, LimitedOperators, SleepImmune } from "@/lib/constants";

@@ -183,7 +183,7 @@ function generateJSONForTypes() {
     )
     .join("\n");
 
-  fs.writeFileSync(path.resolve("./types/typesFrom.ts"), exportedFile);
+  fs.writeFileSync(path.resolve("./data/types/typesFrom.ts"), exportedFile);
 }
 
 /**

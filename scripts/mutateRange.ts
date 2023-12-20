@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-import type { RangeArea, RangeId } from "@/types/AKRange";
+import type { RangeArea, RangeId } from "@/data/types/AKRange";
 import rangeTable from "@/json/en_US/gamedata/excel/range_table.json";
 
 import { niceJSON } from "@/lib/utils";

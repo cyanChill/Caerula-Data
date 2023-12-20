@@ -2,8 +2,12 @@ import fs from "fs";
 import path from "path";
 import DOMPurify from "isomorphic-dompurify";
 
-import type { OperatorId } from "@/types/AKOperator";
-import type { OpParadox, OpPersonalFile, OpRecord } from "@/types/AKOPFiles";
+import type { OperatorId } from "@/data/types/AKOperator";
+import type {
+  OpParadox,
+  OpPersonalFile,
+  OpRecord,
+} from "@/data/types/AKOPFiles";
 import enOpFiles from "@/json/en_US/gamedata/excel/handbook_info_table.json";
 const opFiles = enOpFiles.handbookDict;
 const opParadox = enOpFiles.handbookStageData;
