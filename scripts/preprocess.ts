@@ -17,6 +17,16 @@ import ItemTable from "@/json/en_US/gamedata/excel/item_table.json";
 
 const CharTable = { ..._CharTable, ...amiyaForm.patchChars };
 
+import latestStore from "@/data/latestStore.json";
+import { OperatorIds as ExistingOperatorIds } from "@/data/types/typesFrom.ts";
+import ExistingSkins from "@/data/operator/skins.json";
+
+/** @description Tracks any new values to be added to `latestStore.json` */
+const newValues = {
+  "latest-operator-ids": [],
+  "latest-skin-ids": [],
+};
+
 /**
  * @description This function will go over the "character_table.json" file
  *  and create 3 files for: operators, summons/traps, game devices.
@@ -183,7 +193,18 @@ function generateJSONForTypes() {
     )
     .join("\n");
 
-  fs.writeFileSync(path.resolve("./types/typesFrom.ts"), exportedFile);
+  /* Check for any new operators. */
+  const existingOpIds = new Set(ExistingOperatorIds);
+  const newOpIds = new Set(OperatorIds);
+  const difference = new Set(
+    [...newOpIds].filter((id) => !existingOpIds.has(id))
+  );
+  /* Indicate we have new operators. */
+  if (difference.size > 0) {
+    newValues["latest-operator-ids"] = [...difference];
+  }
+
+  fs.writeFileSync(path.resolve("./data/types/typesFrom.ts"), exportedFile);
 }
 
 /**
@@ -311,10 +332,47 @@ function createSkinTable() {
       });
   });
 
+  /* Check for any new skins. */
+  const existingSkinIds = new Set([]);
+  const newSkinIds = new Set([]);
+
+  Object.values(ExistingSkins.skinTable).forEach((skinArr) =>
+    skinArr.forEach((skin) => {
+      if (skin.brandId !== null) existingSkinIds.add(skin.id);
+    })
+  );
+  Object.values(operatorSkinMap).forEach((skinArr) =>
+    skinArr.forEach((skin) => {
+      if (skin.brandId !== null) newSkinIds.add(skin.id);
+    })
+  );
+
+  const difference = new Set(
+    [...newSkinIds].filter((id) => !existingSkinIds.has(id))
+  );
+  /* Indicate we have new skins. */
+  if (difference.size > 0) {
+    newValues["latest-skin-ids"] = [...difference];
+  }
+
   fs.writeFileSync(
     path.resolve("./data/operator/skins.json"),
     niceJSON({ brandTable: brandMap, skinTable: operatorSkinMap })
   );
+}
+
+/**
+ * @description Automatically updates `latestStore.json` containing info
+ *  such as the latest operator & skins obtained after successfully
+ *  mutating game data from a new version.
+ */
+function updateLatestStore() {
+  const newJSON = { ...latestStore };
+  Object.keys(newValues).forEach((key) => {
+    if (newValues[key].length > 0) newJSON[key] = newValues[key];
+  });
+
+  fs.writeFileSync(path.resolve("./data/latestStore.json"), niceJSON(newJSON));
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
@@ -322,4 +380,5 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   generateJSONForTypes();
   generateGamedataConst();
   createSkinTable();
+  updateLatestStore();
 }

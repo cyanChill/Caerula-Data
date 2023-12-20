@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-import { Skill, SkillId } from "@/types/AKSkill";
+import { Skill, SkillId } from "@/data/types/AKSkill";
 import enOperatorSkills from "@/json/en_US/gamedata/excel/skill_table.json";
 
 import { getSkillActiveType, getSkillSpRecovery } from "@/lib/conversion";

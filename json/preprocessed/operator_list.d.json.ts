@@ -1,10 +1,14 @@
-import type { NationId, FactionId, TeamId } from "@/types/AKAffiliation";
-import type { Profession, SubClass } from "@/types/AKClass";
-import type { ItemCount } from "@/types/AKItem";
-import type { OperatorId, Position, RawStatAtLevel } from "@/types/AKOperator";
-import type { RangeId } from "@/types/AKRange";
-import type { SkillId } from "@/types/AKSkill";
-import type { TokenId } from "@/types/AKToken";
+import type { NationId, FactionId, TeamId } from "@/data/types/AKAffiliation";
+import type { Profession, SubClass } from "@/data/types/AKClass";
+import type { ItemCount } from "@/data/types/AKItem";
+import type {
+  OperatorId,
+  Position,
+  RawStatAtLevel,
+} from "@/data/types/AKOperator";
+import type { RangeId } from "@/data/types/AKRange";
+import type { SkillId } from "@/data/types/AKSkill";
+import type { TokenId } from "@/data/types/AKToken";
 
 // https://github.com/microsoft/TypeScript/issues/49703#issuecomment-1470794639
 // https://www.typescriptlang.org/tsconfig#allowArbitraryExtensions

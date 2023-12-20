@@ -1,5 +1,5 @@
-import type { RangeId } from "@/types/AKRange";
-import type { SkillId, SkillIconId } from "@/types/AKSkill";
+import type { RangeId } from "@/data/types/AKRange";
+import type { SkillId, SkillIconId } from "@/data/types/AKSkill";
 
 declare const skill_table: Record<SkillId, RawSkill>;
 

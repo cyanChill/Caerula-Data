@@ -2,8 +2,8 @@ import fs from "fs";
 import path from "path";
 import DOMPurify from "isomorphic-dompurify";
 
-import type { OperatorId } from "@/types/AKOperator";
-import type { VoiceActor, VoiceLine } from "@/types/AKVoice";
+import type { OperatorId } from "@/data/types/AKOperator";
+import type { VoiceActor, VoiceLine } from "@/data/types/AKVoice";
 import enCharWords from "@/json/en_US/gamedata/excel/charword_table.json";
 const enVoiceLines = enCharWords.charWords;
 const voiceActors = enCharWords.voiceLangDict;

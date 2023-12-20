@@ -1,6 +1,6 @@
-import type { Profession, SubClass } from "@/types/AKClass";
-import type { OperatorId } from "@/types/AKOperator";
-import type { TokenId } from "@/types/AKToken";
+import type { Profession, SubClass } from "@/data/types/AKClass";
+import type { OperatorId } from "@/data/types/AKOperator";
+import type { TokenId } from "@/data/types/AKToken";
 
 /** @description Operators considered to be limited. */
 export const LimitedOperators = new Set([

@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-import type { Enemy, EnemyId, EnemyStat } from "@/types/AKEnemy";
+import type { Enemy, EnemyId, EnemyStat } from "@/data/types/AKEnemy";
 import type { DefineValObj } from "./types";
 import EnemyList from "@/json/en_US/gamedata/excel/enemy_handbook_table.json";
 import EnemyStats from "@/json/en_US/gamedata/levels/enemydata/enemy_database.json";

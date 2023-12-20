@@ -1,4 +1,4 @@
-import type { Operator } from "@/types/AKOperator";
+import type { Operator } from "@/data/types/AKOperator";
 
 declare const amiya_guard_polyfill: Operator;
 
