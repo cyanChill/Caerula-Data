@@ -10,8 +10,8 @@ import type {
 } from "@/data/types/AKOperator";
 import type { SkillId } from "@/data/types/AKSkill";
 import type { Token, TokenId } from "@/data/types/AKToken";
-import enOperatorList from "@/json/preprocessed/operator_list.json";
-import enTokenList from "@/json/preprocessed/tokens_list.json";
+import enOperatorList from "@/json/preprocessed/operator_table.json";
+import enTokenList from "@/json/preprocessed/tokens_table.json";
 import AmiyaGuardData from "@/json/preprocessed/amiya_guard_polyfill.json";
 
 import { TokenMappings, TrapperSpec } from "@/lib/constants";
