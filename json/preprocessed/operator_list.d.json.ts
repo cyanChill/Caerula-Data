@@ -18,14 +18,14 @@ declare const operator_list: Record<OperatorId, RawOperator>;
 type RawOperator = {
   name: string;
   appellation: string;
-  nationId: NationId;
-  groupId: FactionId;
-  teamId: TeamId;
+  nationId: NationId | null;
+  groupId: FactionId | null;
+  teamId: TeamId | null;
   tokenKey: TokenId | null;
   position: Position;
   tagList: string[];
   maxPotentialLevel: 0 | 1 | 2 | 3 | 4 | 5;
-  rarity: "TIER_1" | "TIER_2" | "TIER_3" | "TIER_4" | "TIER_5" | "TIER_6";
+  rarity: `TIER_${1 | 2 | 3 | 4 | 5 | 6}`;
   profession: Profession;
   subProfessionId: SubClass<Profession>;
   phases: Promotion[];
@@ -49,7 +49,7 @@ type Skill = {
   overrideTokenKey: TokenId | null;
   levelUpCostCond: MasteryCost[];
   unlockCond: {
-    phase: "PHASE_0" | "PHASE_1" | "PHASE_2";
+    phase: `PHASE_${0 | 1 | 2}`;
     level: 1;
   };
 };
@@ -61,7 +61,7 @@ type MasteryCost = {
 
 type TalentVariant = {
   unlockCondition: {
-    phase: "PHASE_0" | "PHASE_1" | "PHASE_2";
+    phase: `PHASE_${0 | 1 | 2}`;
     level: number;
   };
   requiredPotentialRank: 0 | 1 | 2 | 3 | 4 | 5;
@@ -78,7 +78,7 @@ type Potential = {
 
 type AllSkillLvlup = {
   unlockCond: {
-    phase: "PHASE_0" | "PHASE_1";
+    phase: `PHASE_${0 | 1 | 2}`;
     level: 1;
   };
   lvlUpCost: ItemCount[];

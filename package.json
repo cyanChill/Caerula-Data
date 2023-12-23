@@ -6,7 +6,7 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "lint": "eslint .",
-    "data:preprocess": "tsx ./scripts/preprocess.ts",
+    "data:preprocess": "tsx ./scripts/preprocess/index.ts",
     "data:mutate": "tsx ./index.ts"
   },
   "devDependencies": {
