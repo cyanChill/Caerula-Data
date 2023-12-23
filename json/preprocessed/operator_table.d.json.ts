@@ -13,7 +13,7 @@ import type { TokenId } from "@/data/types/AKToken";
 // https://github.com/microsoft/TypeScript/issues/49703#issuecomment-1470794639
 // https://www.typescriptlang.org/tsconfig#allowArbitraryExtensions
 
-declare const operator_list: Record<OperatorId, RawOperator>;
+declare const operator_table: Record<OperatorId, RawOperator>;
 
 type RawOperator = {
   name: string;
@@ -84,4 +84,4 @@ type AllSkillLvlup = {
   lvlUpCost: ItemCount[];
 };
 
-export default operator_list;
+export default operator_table;
