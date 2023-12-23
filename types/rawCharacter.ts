@@ -1,3 +1,5 @@
+import type { AttackPosition, BlackboardArr } from "./JSONField";
+
 type ObtainMethod =
   | "Recruitment & Headhunting"
   | "Event Reward"
@@ -25,7 +27,7 @@ type CandidateBase = {
   requiredPotentialRank: number;
   prefabKey: string | null;
   rangeId: string | null;
-  blackboard: { key: string; value: number; valueStr: string | null }[];
+  blackboard: BlackboardArr;
 };
 
 type UnlockCondition = { phase: `PHASE_${0 | 1 | 2}`; level: number };
@@ -72,9 +74,8 @@ export interface RawCharacter {
   groupId: string | null;
   teamId: string | null;
   displayNumber: string | null;
-  tokenKey: string | null;
   appellation: string;
-  position: "MELEE" | "RANGED" | "ALL" | "NONE";
+  position: AttackPosition;
   tagList: string[] | null;
   itemUsage: string | null;
   itemDesc: string | null;
@@ -88,6 +89,9 @@ export interface RawCharacter {
   trait: Trait | null;
   phases: Phase[];
   skills: Skill[];
+  /** A record of the tokens we can deploy manually. */
+  // - ie: Won't show "W" mine as we don't manually deploy it.
+  displayTokenDict: Record<string, boolean> | null;
   talents: Talent[] | null;
   potentialRanks: Potential[];
   favorKeyFrames: Stat[] | null;
@@ -125,6 +129,7 @@ interface Talent {
   candidates: (CandidateBase & {
     name: string | null;
     description: string | null;
+    tokenKey: string | null;
   })[];
 }
 
@@ -139,8 +144,8 @@ interface Potential {
       abnormalCombos: null;
       abnormalComboImmunes: null;
       attributeModifiers: {
-        attributeType: string | number;
-        formulaItem: string | number;
+        attributeType: string;
+        formulaItem: string;
         value: number;
         loadFromBlackboard: boolean;
         fetchBaseValueFromSourceEntity: boolean;
