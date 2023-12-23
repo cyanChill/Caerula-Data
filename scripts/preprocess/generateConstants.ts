@@ -1,8 +1,9 @@
 import fs from "fs";
 import path from "path";
 
-import type OperatorTableSchema from "@/json/preprocessed/operator_list.d.json.ts";
-import type CharacterTableSchema from "@/json/en_US/gamedata/excel/character_table.d.json.ts";
+import type OperatorTableSchema from "@/json/preprocessed/operator_table.json";
+import type CharacterTableSchema from "@/json/en_US/gamedata/excel/character_table.json";
+
 import EnemyTable from "@/json/en_US/gamedata/excel/enemy_handbook_table.json";
 import ItemTable from "@/json/en_US/gamedata/excel/item_table.json";
 import RangeTable from "@/json/en_US/gamedata/excel/range_table.json";
@@ -13,11 +14,11 @@ import gameData_const from "@/json/en_US/gamedata/excel/gamedata_const.json";
 import { generateSlug } from "@/lib/conversion";
 import { niceJSON } from "@/lib/utils";
 
-/** @description Generate constants from `operator_list.json`. */
+/** @description Generate constants from `operator_table.json`. */
 export function generateOperatorConstants() {
   const OperatorTable = JSON.parse(
     fs.readFileSync(
-      path.resolve("./json/preprocessed/operator_list.json"),
+      path.resolve("./json/preprocessed/operator_table.json"),
       "utf8"
     )
   ) as typeof OperatorTableSchema;
@@ -105,7 +106,7 @@ function generateEnemyConstants() {
 function generateMiscConstants() {
   const TokenTable = JSON.parse(
     fs.readFileSync(
-      path.resolve("./json/preprocessed/tokens_list.json"),
+      path.resolve("./json/preprocessed/tokens_table.json"),
       "utf8"
     )
   ) as typeof CharacterTableSchema;

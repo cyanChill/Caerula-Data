@@ -71,15 +71,15 @@ export function organizeCharacterTable() {
   });
 
   fs.writeFileSync(
-    path.resolve("./json/preprocessed/operator_list.json"),
+    path.resolve("./json/preprocessed/operator_table.json"),
     niceJSON(operators)
   );
   fs.writeFileSync(
-    path.resolve("./json/preprocessed/tokens_list.json"),
+    path.resolve("./json/preprocessed/tokens_table.json"),
     niceJSON(tokens)
   );
   fs.writeFileSync(
-    path.resolve("./json/preprocessed/game_devices_list.json"),
+    path.resolve("./json/preprocessed/game_devices_table.json"),
     niceJSON(devices)
   );
 }

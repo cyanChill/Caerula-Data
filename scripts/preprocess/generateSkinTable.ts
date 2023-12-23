@@ -1,7 +1,8 @@
 import fs from "fs";
 import path from "path";
 
-import type OperatorTableSchema from "@/json/preprocessed/operator_list.d.json.ts";
+import type OperatorTableSchema from "@/json/preprocessed/operator_table.json";
+
 import SkinTable from "@/json/en_US/gamedata/excel/skin_table.json";
 
 import { niceJSON, replaceUnicode } from "@/lib/utils";
@@ -52,7 +53,7 @@ type SkinEntry = {
 export function generateSkinTableConstants() {
   const rawOpList = JSON.parse(
     fs.readFileSync(
-      path.resolve("./json/preprocessed/operator_list.json"),
+      path.resolve("./json/preprocessed/operator_table.json"),
       "utf8"
     )
   ) as typeof OperatorTableSchema;
