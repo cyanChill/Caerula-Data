@@ -803,5 +803,50 @@
     "name": "Seconds from Disaster",
     "text": "Jackie's the 'act now, think later' type of operator. When in the thick of crises and pitfalls, she's not going to worry about any <i>consequences</i> or consider a safe retreat beforehand or anything. She's gonna go all out, right to the bitter end!",
     "unlockCond": { "elite": 2, "lvl": 1 }
+  },
+  "char_279_excu": {
+    "name": "Pensum Exsecutoris",
+    "text": "Laterano Notarial Hall Executor Federico has a seasoned mission history, with one-on-many battles practically commonplace for him. Never forget, however, that executors do much more than fight alone. They're equally proficient at linking up, coordinating, and coming to one another's aid.",
+    "unlockCond": { "elite": 2, "lvl": 1 }
+  },
+  "char_4036_forcer": {
+    "name": "Consilium Praeparatorius",
+    "text": "Time and again, Enforcer's thought about how he could best protect Cecelia if the time came to fight, and he was all that stood between them and her. His final conclusion: Elect for the most suitable terrain, exploit what advantages he has, and keep her safe to the bitter end.",
+    "unlockCond": { "elite": 2, "lvl": 1 }
+  },
+  "char_306_leizi": {
+    "name": "Repute Presides, All Else Follows",
+    "text": "For a criminal case, the law of Yan is merely the final gate. To every soul that opposes the arbiters of right and wrong, however, Yanese law is the land's first roll of thunder. Repute presides, all else follows—judgment passes itself at the very outset.",
+    "unlockCond": { "elite": 2, "lvl": 1 }
+  },
+  "char_4046_ebnhlz": {
+    "name": "Ruhelosigkeit",
+    "text": "When looking back on that night of pandemonium, Ebenholz often thinks that he should've perhaps been more cautious, or more firm—he even wonders if in that fateful moment, he should have picked up the authority and responsibility he'd cast away like a pair of worn-out shoes... In any case, no matter what, he should have done more.",
+    "unlockCond": { "elite": 2, "lvl": 1 }
+  },
+  "char_1024_hbisc2": {
+    "name": "Twinflowers",
+    "text": "It's been a long journey for the Londinium-born sisters that left home. They've witnessed the endemic malice of the lands, and met many a dependable friend. From ignorant children to fully-fledged independents—one a fighter, one a healer—parting and reuniting more times than they can count has left only each other stood by their sides.",
+    "unlockCond": { "elite": 2, "lvl": 1 }
+  },
+  "char_493_firwhl": {
+    "name": "'A Warm Welcome'",
+    "text": "A sheltered front, cramped terrain, a mess of enemies, and a distinct lack of fire safety... As far as Firewhistle's concerned, everything's primed to go, just waiting for her to personally light the flame.",
+    "unlockCond": { "elite": 2, "lvl": 1 }
+  },
+  "char_214_kafka": {
+    "name": "Something Wicked This Way Comes",
+    "text": "Kafka's been in all mighty manner of predicaments, but making it out unscathed is her game every time. The secret to her sauce lies in her gutsy gall and eye for detail—no opportunity that works to her benefit escapes her grasp, and when she's out for success, success knows something wicked this way comes.",
+    "unlockCond": { "elite": 2, "lvl": 1 }
+  },
+  "char_4004_pudd": {
+    "name": "All Charged Up",
+    "text": "During her shut-in days, Pudding absorbed herself in her electrical engineering studies, accumulating professional expertise bit by bit. Now she finally has the courage to step outside, oversupplying the battlefield with electricity in one fell swoop. If that accidentally zaps an enemy or two in the process, that's not on her, is it?",
+    "unlockCond": { "elite": 2, "lvl": 1 }
+  },
+  "char_337_utage": {
+    "name": "Guardian Trendsetter",
+    "text": "The ever laid-back Utage's always drifting through stores large and small. If it's trendy and she's into it, she'll get it, even in the far-flung reaches of Acahualla. Still, it isn't all chill for vogue-hunters—when business competition starts sending waves her way, it threatens to wreck the all-new drip she's been eyeing forever. Utage's gotten serious, and she's gonna teach these tribe guys to respect fashion.",
+    "unlockCond": { "elite": 2, "lvl": 1 }
   }
 }

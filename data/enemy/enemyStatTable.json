@@ -2238,7 +2238,7 @@
       "def": 400,
       "res": 50,
       "mvSpd": 0.75,
-      "atkInterval": 0.1,
+      "atkInterval": 5,
       "atkRange": 0
     }
   ],
@@ -2249,7 +2249,7 @@
       "def": 400,
       "res": 50,
       "mvSpd": 0.75,
-      "atkInterval": 0.1,
+      "atkInterval": 5,
       "atkRange": 0
     }
   ],
@@ -2260,7 +2260,7 @@
       "def": 400,
       "res": 50,
       "mvSpd": 0.75,
-      "atkInterval": 0.1,
+      "atkInterval": 5,
       "atkRange": 0
     }
   ],
@@ -3185,7 +3185,7 @@
       "atk": 450,
       "def": 450,
       "res": 30,
-      "mvSpd": 1,
+      "mvSpd": 0.1,
       "atkInterval": 4,
       "atkRange": 3
     },
@@ -3194,7 +3194,7 @@
       "atk": 550,
       "def": 550,
       "res": 40,
-      "mvSpd": 1,
+      "mvSpd": 0.1,
       "atkInterval": 4,
       "atkRange": 3
     }
@@ -3837,7 +3837,7 @@
       "atk": 700,
       "def": 500,
       "res": 50,
-      "mvSpd": 1,
+      "mvSpd": 0.1,
       "atkInterval": 5,
       "atkRange": 0
     },
@@ -3846,7 +3846,7 @@
       "atk": 900,
       "def": 500,
       "res": 50,
-      "mvSpd": 1,
+      "mvSpd": 0.1,
       "atkInterval": 5,
       "atkRange": 0
     }
@@ -4216,7 +4216,7 @@
       "atk": 380,
       "def": 500,
       "res": 50,
-      "mvSpd": 1,
+      "mvSpd": 0.1,
       "atkInterval": 3.5,
       "atkRange": 99
     },
@@ -4225,7 +4225,7 @@
       "atk": 450,
       "def": 600,
       "res": 60,
-      "mvSpd": 1,
+      "mvSpd": 0.1,
       "atkInterval": 3.5,
       "atkRange": 99
     }
@@ -5338,7 +5338,7 @@
       "atk": 800,
       "def": 700,
       "res": 60,
-      "mvSpd": 1,
+      "mvSpd": 0.1,
       "atkInterval": 4,
       "atkRange": 99
     }
@@ -5734,7 +5734,7 @@
       "atk": 1400,
       "def": 550,
       "res": 30,
-      "mvSpd": 1,
+      "mvSpd": 0.1,
       "atkInterval": 2.5,
       "atkRange": 0
     },
@@ -5743,7 +5743,7 @@
       "atk": 1600,
       "def": 700,
       "res": 40,
-      "mvSpd": 1,
+      "mvSpd": 0.1,
       "atkInterval": 2.5,
       "atkRange": 0
     }
@@ -6895,7 +6895,7 @@
       "atk": 1200,
       "def": 650,
       "res": 50,
-      "mvSpd": 0.5,
+      "mvSpd": 0.1,
       "atkInterval": 5,
       "atkRange": 0
     },
@@ -6904,7 +6904,7 @@
       "atk": 1350,
       "def": 750,
       "res": 50,
-      "mvSpd": 0.5,
+      "mvSpd": 0.1,
       "atkInterval": 5,
       "atkRange": 0
     }
@@ -7835,7 +7835,7 @@
       "def": 200,
       "res": 0,
       "mvSpd": 1,
-      "atkInterval": 0,
+      "atkInterval": 3,
       "atkRange": 1.5
     },
     {
@@ -7844,7 +7844,7 @@
       "def": 200,
       "res": 0,
       "mvSpd": 1,
-      "atkInterval": 0,
+      "atkInterval": 3,
       "atkRange": 1.5
     }
   ],
@@ -8849,7 +8849,7 @@
       "res": 35,
       "mvSpd": 0.8,
       "atkInterval": 3.5,
-      "atkRange": 0
+      "atkRange": 2
     }
   ],
   "enemy_1317_wdexg_2": [
@@ -8860,7 +8860,7 @@
       "res": 35,
       "mvSpd": 0.8,
       "atkInterval": 3.5,
-      "atkRange": 0
+      "atkRange": 2
     }
   ],
   "enemy_1318_wdsmgc": [
@@ -9273,6 +9273,202 @@
       "mvSpd": 0.4,
       "atkInterval": 5,
       "atkRange": 2.5
+    }
+  ],
+  "enemy_3005_lpeopl": [
+    {
+      "hp": 5000,
+      "atk": 0,
+      "def": 50,
+      "res": 0,
+      "mvSpd": 0.65,
+      "atkInterval": 0,
+      "atkRange": 0
+    }
+  ],
+  "enemy_1335_bldrat": [
+    {
+      "hp": 2200,
+      "atk": 300,
+      "def": 100,
+      "res": 0,
+      "mvSpd": 1.7,
+      "atkInterval": 1.4,
+      "atkRange": 0
+    }
+  ],
+  "enemy_1335_bldrat_2": [
+    {
+      "hp": 3500,
+      "atk": 350,
+      "def": 120,
+      "res": 0,
+      "mvSpd": 1.7,
+      "atkInterval": 1.4,
+      "atkRange": 0
+    }
+  ],
+  "enemy_1336_bldbat": [
+    {
+      "hp": 3500,
+      "atk": 150,
+      "def": 120,
+      "res": 20,
+      "mvSpd": 0.7,
+      "atkInterval": 3,
+      "atkRange": 1.5
+    }
+  ],
+  "enemy_1336_bldbat_2": [
+    {
+      "hp": 4500,
+      "atk": 200,
+      "def": 150,
+      "res": 20,
+      "mvSpd": 0.7,
+      "atkInterval": 3,
+      "atkRange": 1.5
+    }
+  ],
+  "enemy_1337_bhrknf": [
+    {
+      "hp": 5500,
+      "atk": 350,
+      "def": 400,
+      "res": 0,
+      "mvSpd": 0.8,
+      "atkInterval": 2,
+      "atkRange": 2
+    }
+  ],
+  "enemy_1337_bhrknf_2": [
+    {
+      "hp": 7000,
+      "atk": 450,
+      "def": 450,
+      "res": 0,
+      "mvSpd": 0.8,
+      "atkInterval": 2,
+      "atkRange": 2
+    }
+  ],
+  "enemy_1338_bhrjst": [
+    {
+      "hp": 5300,
+      "atk": 500,
+      "def": 330,
+      "res": 0,
+      "mvSpd": 0.9,
+      "atkInterval": 2,
+      "atkRange": 0
+    }
+  ],
+  "enemy_1338_bhrjst_2": [
+    {
+      "hp": 7300,
+      "atk": 600,
+      "def": 350,
+      "res": 0,
+      "mvSpd": 0.9,
+      "atkInterval": 2,
+      "atkRange": 0
+    }
+  ],
+  "enemy_1339_bhrgrd": [
+    {
+      "hp": 20000,
+      "atk": 500,
+      "def": 800,
+      "res": 0,
+      "mvSpd": 0.6,
+      "atkInterval": 4,
+      "atkRange": 0
+    }
+  ],
+  "enemy_1339_bhrgrd_2": [
+    {
+      "hp": 25000,
+      "atk": 500,
+      "def": 1000,
+      "res": 0,
+      "mvSpd": 0.6,
+      "atkInterval": 4,
+      "atkRange": 0
+    }
+  ],
+  "enemy_1340_bthtbw": [
+    {
+      "hp": 15000,
+      "atk": 500,
+      "def": 500,
+      "res": 30,
+      "mvSpd": 0.7,
+      "atkInterval": 3,
+      "atkRange": 2.8
+    }
+  ],
+  "enemy_1340_bthtbw_2": [
+    {
+      "hp": 20000,
+      "atk": 600,
+      "def": 600,
+      "res": 30,
+      "mvSpd": 0.7,
+      "atkInterval": 3,
+      "atkRange": 2.8
+    }
+  ],
+  "enemy_1341_bthtms": [
+    {
+      "hp": 15000,
+      "atk": 650,
+      "def": 500,
+      "res": 50,
+      "mvSpd": 0.8,
+      "atkInterval": 2.5,
+      "atkRange": 0
+    }
+  ],
+  "enemy_1341_bthtms_2": [
+    {
+      "hp": 20000,
+      "atk": 750,
+      "def": 600,
+      "res": 50,
+      "mvSpd": 0.8,
+      "atkInterval": 2.5,
+      "atkRange": 0
+    }
+  ],
+  "enemy_1342_frtuna": [
+    {
+      "hp": 35000,
+      "atk": 700,
+      "def": 400,
+      "res": 50,
+      "mvSpd": 0.7,
+      "atkInterval": 3,
+      "atkRange": 1.8
+    }
+  ],
+  "enemy_1544_cledub": [
+    {
+      "hp": 800,
+      "atk": 100,
+      "def": 0,
+      "res": 0,
+      "mvSpd": 0.5,
+      "atkInterval": 0,
+      "atkRange": 0
+    },
+    {
+      "hp": 800,
+      "atk": 100,
+      "def": 0,
+      "res": 0,
+      "mvSpd": 0.5,
+      "atkInterval": 0,
+      "atkRange": 0
     }
   ]
 }

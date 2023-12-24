@@ -8002,25 +8002,25 @@
     {
       "sortId": 1,
       "title": "Appointed as Assistant",
-      "text": "This here Croissant guarantees yer safety no matter where ya headin', Baws! Oh, 'n payment's upfront! 'Member that!",
+      "text": "This here Croissant guarantees yer safety, no matter where yer headin', Baws! Oh, 'n payment's upfront! 'Member that!",
       "unlockCond": null
     },
     {
       "sortId": 2,
       "title": "Talk 1",
-      "text": "Make a buncha money by workin' yer butt off! We can't be livin' in no poverty, after all!",
+      "text": "Make a buncha money workin' yer butt off! We can't be livin' in no poverty, after all!",
       "unlockCond": null
     },
     {
       "sortId": 3,
       "title": "Talk 2",
-      "text": "Yer kiddin'! All yer folks done got such shiny gear on 'em! Lemme have a touch too!",
+      "text": "Yer kiddin'! All yer people got such shiny gear on 'em! Lemme have a touch too!",
       "unlockCond": null
     },
     {
       "sortId": 4,
       "title": "Talk 3",
-      "text": "Boy, I really love orderin' new gear! Feels like I bought 'nuff stuff to fill the whole depot! This what they call a 'shoppin' addiction'?",
+      "text": "Boy, I sure love orderin' new gear! Feels like I bought enough stuff to fill the whole depot! This what they call a 'shoppin' addiction'?",
       "unlockCond": null
     },
     {
@@ -8032,7 +8032,7 @@
     {
       "sortId": 6,
       "title": "Talk after Promotion 2",
-      "text": "If we've gotta transport stuff, might as well pick the easy-to-use and yummy-yummy stuff!",
+      "text": "Move this, lift that. If we gotta be haulin' things, might as well pick some easy-to-use and yummy-yummy stuff!",
       "unlockCond": { "type": "promotion", "val": 2 }
     },
     {
@@ -8044,25 +8044,25 @@
     {
       "sortId": 8,
       "title": "Talk after Trust Increase 2",
-      "text": "Baws, c'mere for a sec, will ya? Take a look at my wares! From fancy clothes 'n everyday items to office supplies and gear, ya name it, I've got it! Buy in bulk 'n ya get a discount!",
+      "text": "Baws, c'mere a sec, wouldja? Take a gander at my wares! From fancy clothes 'n everyday items to office supplies and gear, ya name it, I got it! Buy in bulk 'n I'll give ya a discount!",
       "unlockCond": { "type": "trust", "val": 100 }
     },
     {
       "sortId": 9,
       "title": "Talk after Trust Increase 3",
-      "text": "Baws, ya deserve a huge thanks! Thanks to yer work referrals, I can buy all the stuff I ever wanted! Yer the best, Baws! I love ya!",
+      "text": "Baws, I gotta thank ya! With all them referrals, I can buy everything I ever wanted! Yer the best, Baws! Love ya lots!",
       "unlockCond": { "type": "trust", "val": 200 }
     },
     {
       "sortId": 10,
       "title": "Idle",
-      "text": "Aw shucks, this gon' be 'nother frugal month...",
+      "text": "Aw shucks, gotta tighten my belt again this month...",
       "unlockCond": null
     },
     {
       "sortId": 11,
       "title": "Onboard",
-      "text": "My name's Croissant, and by golly yer in luck, Baws! Ya won't find many as good at their trade as I am! I'm strong, last forever, 'n if ya hire me right now, ya get a 20% discount!",
+      "text": "The name's Croissant, and by golly yer in luck, Baws! Won't find nobody as good at their trade as I am! I'm strong, don't break easy, 'n if ya hire me right now, I'll give ya a 20% discount!",
       "unlockCond": null
     },
     {
@@ -8074,13 +8074,13 @@
     {
       "sortId": 13,
       "title": "Promotion 1",
-      "text": "Thanks much for helpin' me get my hands on better work, Baws!",
+      "text": "Thank ya kindly, Baws, fer helpin' me find such a nice job.",
       "unlockCond": { "type": "promotion", "val": 1 }
     },
     {
       "sortId": 14,
       "title": "Promotion 2",
-      "text": "Baws, Baws, I made good use of that there bonus ya gave me! Check it out, I done gotten new gear to protect ya better from now on!",
+      "text": "Baws, Baws, I made good use of that there bonus ya gave me! Check it out, I don't got myself some new gear. All the better to keep ya safe!",
       "unlockCond": { "type": "promotion", "val": 2 }
     },
     {
@@ -8092,19 +8092,19 @@
     {
       "sortId": 18,
       "title": "Appointed as Squad Leader",
-      "text": "Listen, y'all! Let's do this here mission flawlessly!",
+      "text": "Listen up, y'all! Let's do this here mission nice and cleanlike!",
       "unlockCond": null
     },
     {
       "sortId": 19,
       "title": "Depart",
-      "text": "We'll be back with the best results ya ever seen!",
+      "text": "We'll be back with the best results ya ever did see!",
       "unlockCond": null
     },
     {
       "sortId": 20,
       "title": "Begin Operation",
-      "text": "Look at that, the enemy's comin' to donate their gear to us!",
+      "text": "Well lookee here. The bad guys're comin' to donate their gear!",
       "unlockCond": null
     },
     {
@@ -8134,7 +8134,7 @@
     {
       "sortId": 25,
       "title": "In Battle 1",
-      "text": "Stop!",
+      "text": "End of the road!",
       "unlockCond": null
     },
     {
@@ -8170,13 +8170,13 @@
     {
       "sortId": 31,
       "title": "Sub 3-star Result",
-      "text": "Dagnabbit... the enemy got away! My reputation's gon' suffer...",
+      "text": "Dagnabbit... the enemy got away! That ain't good for my rep…",
       "unlockCond": null
     },
     {
       "sortId": 32,
       "title": "Operation Failure",
-      "text": "Aw, shucks... My wallet's gon' take a hit from this loss...",
+      "text": "Aw, shucks… First I lost the fight, and now my wallet…",
       "unlockCond": null
     },
     {
@@ -8189,7 +8189,7 @@
     {
       "sortId": 36,
       "title": "Trust Tap",
-      "text": "Baws, Baws, got any cool stuff on hand? C'mon, I wanna see!",
+      "text": "Baws, Baws, got any nifty stuff on hand? C'mon, I wanna see!",
       "unlockCond": null
     },
     {
@@ -11127,19 +11127,19 @@
     {
       "sortId": 1,
       "title": "Appointed as Assistant",
-      "text": "Doctor, I've picked out the Originium from the pile of other ores according to your orders. Any other requests?",
+      "text": "Doctor, I've finished sorting the Originium from the other ores, as you requested. Is there anything else?",
       "unlockCond": null
     },
     {
       "sortId": 2,
       "title": "Talk 1",
-      "text": "Oripathy is really troublesome. I can't even go on operations without the okay from Dr. Kal'tsit. And patients will lose some years of their lives, you say? Yeah, that's true, but I'm okay with that.",
+      "text": "Oripathy is indeed troublesome. I can't even go on operations without approval from Dr. Kal'tsit. Oripathy shortens one's lifespan, you say? Yes, that's true, but I don't really mind.",
       "unlockCond": null
     },
     {
       "sortId": 3,
       "title": "Talk 2",
-      "text": "This tuning fork? It's actually a wand. It's not only a weapon but also useful for geological surveying. I find it really handy.",
+      "text": "This tuning fork? It's actually a staff — not only a weapon but also useful for geological surveys. I find it always comes in handy.",
       "unlockCond": null
     },
     {
@@ -11151,7 +11151,7 @@
     {
       "sortId": 5,
       "title": "Talk after Promotion 1",
-      "text": "Oh? I have dark circles under my eyes? Aw, I knew it...",
+      "text": "What? I have dark circles under my eyes? Aw, I knew it…",
       "unlockCond": { "type": "promotion", "val": 1 }
     },
     {
@@ -11163,7 +11163,7 @@
     {
       "sortId": 7,
       "title": "Talk after Trust Increase 1",
-      "text": "Some rocks talk to me, you know... and they talk a lot! Some of them even squabble... so much that I lose sleep over it. You think I'm kidding? Do I look like I'm kidding?",
+      "text": "Some rocks talk to me, you know. They chatter and even squabble away. Sometimes, I lose sleep because of it… You think I'm kidding? Do I look like I'm kidding?",
       "unlockCond": { "type": "trust", "val": 40 }
     },
     {
@@ -11175,13 +11175,13 @@
     {
       "sortId": 9,
       "title": "Talk after Trust Increase 3",
-      "text": "Look at this! Look at this! This surface... it couldn't have been formed without pressure in the earth's crust since 350 thousand years ago. Isn't it wonderful? You know, Doctor, those people who refuse to believe geological studies are truly fools.",
+      "text": "Astonishing...! Look at this, Doctor! This surface... it couldn't have been formed without high pressure in the crust three hundred and fifty thousand years ago. Isn't it incredible…? Guess what, Doctor? The theory is correct! Those who refuted it are the true fools!",
       "unlockCond": { "type": "trust", "val": 200 }
     },
     {
       "sortId": 10,
       "title": "Idle",
-      "text": "Doctor—oh, you're sleeping? You must be tired from all the hard work.",
+      "text": "Doctor—oh, you're sleeping? You must be tired from all your hard work.",
       "unlockCond": null
     },
     {
@@ -11193,31 +11193,31 @@
     {
       "sortId": 12,
       "title": "Watching Battle Record",
-      "text": "Hm, is this academic data or something else?",
+      "text": "Hm, is this academic data, or something else?",
       "unlockCond": null
     },
     {
       "sortId": 13,
       "title": "Promotion 1",
-      "text": "Methods of scientific research must continue to be improved on.",
+      "text": "We must continue to refine our scientific method.",
       "unlockCond": { "type": "promotion", "val": 1 }
     },
     {
       "sortId": 14,
       "title": "Promotion 2",
-      "text": "Forgive me for my bluntness, but do remember that I only receive the salary for one person, so you can't make me do the work of more than one person even if you promote me.",
+      "text": "Forgive my bluntness, but do bear in mind you are paying me only a single salary. No matter how far you promote me, I won't do more than a single person's work.",
       "unlockCond": { "type": "promotion", "val": 2 }
     },
     {
       "sortId": 17,
       "title": "Added to Squad",
-      "text": "Got it.",
+      "text": "Understood.",
       "unlockCond": null
     },
     {
       "sortId": 18,
       "title": "Appointed as Squad Leader",
-      "text": "I hope this squad could work well in all kinds of extreme environments.",
+      "text": "I hope this squad performs well in all types of extreme environment.",
       "unlockCond": null
     },
     {
@@ -11229,7 +11229,7 @@
     {
       "sortId": 20,
       "title": "Begin Operation",
-      "text": "We can't let them misuse the Originium like this.",
+      "text": "We can't let them misuse Originium like this.",
       "unlockCond": null
     },
     {
@@ -11259,7 +11259,7 @@
     {
       "sortId": 25,
       "title": "In Battle 1",
-      "text": "Be swallowed by the earth!",
+      "text": "Sink into the earth!",
       "unlockCond": null
     },
     {
@@ -11271,19 +11271,19 @@
     {
       "sortId": 27,
       "title": "In Battle 3",
-      "text": "Your life ends here!",
+      "text": "This ends here!",
       "unlockCond": null
     },
     {
       "sortId": 28,
       "title": "In Battle 4",
-      "text": "You shouldn't have set foot on this land.",
+      "text": "You shouldn't have set foot here.",
       "unlockCond": null
     },
     {
       "sortId": 29,
       "title": "4-star Result",
-      "text": "What the enemies are doing... will only bring disaster.",
+      "text": "What the enemy was doing… would only bring disaster.",
       "unlockCond": null
     },
     {
@@ -11301,7 +11301,7 @@
     {
       "sortId": 32,
       "title": "Operation Failure",
-      "text": "How is this possible...",
+      "text": "How is this possible…?",
       "unlockCond": null
     },
     {
@@ -11314,7 +11314,7 @@
     {
       "sortId": 36,
       "title": "Trust Tap",
-      "text": "This piece of ore... for me? Really? But... it's expensive, right?",
+      "text": "This piece of ore is… for me? Really? But… it must be very expensive, no?",
       "unlockCond": null
     },
     {
@@ -17533,7 +17533,7 @@
     {
       "sortId": 11,
       "title": "Onboard",
-      "text": "I'm Nightmare... Aah, that's a code name. My real name is Gloria. But, if you don't mind, I'd rather you call me that... I think my code name... is kind of scary...",
+      "text": "I'm Nightmare... Ah, that's a code name. My real name is Gloria. But, if you don't mind, I'd rather you call me that... I think my code name... is kind of scary...",
       "unlockCond": null
     },
     {
@@ -17569,7 +17569,7 @@
     {
       "sortId": 19,
       "title": "Depart",
-      "text": "What sorts of incredible powers will you show me? I can't wait to see~",
+      "text": "What sorts of incredible powers will you show me? I can't wait to see.",
       "unlockCond": null
     },
     {
@@ -17623,7 +17623,7 @@
     {
       "sortId": 28,
       "title": "In Battle 4",
-      "text": "Y-You'll run if you know what's good for you.",
+      "text": "You'll run if—if you know what's good for you.",
       "unlockCond": null
     },
     {
@@ -17672,7 +17672,7 @@
     {
       "sortId": 42,
       "title": "Greeting",
-      "text": "Good morning, Doctor~",
+      "text": "Good morning, Doctor.",
       "unlockCond": null
     }
   ],
@@ -21594,67 +21594,67 @@
     {
       "sortId": 1,
       "title": "Appointed as Assistant",
-      "text": "You can focus on your work, Doctor. The fragmentation mines are in place, such that none may interfere with your work or rest.",
+      "text": "Fragmentation mines deployed. None may interfere with your work or rest, Doctor. You can focus on your duty.",
       "unlockCond": null
     },
     {
       "sortId": 2,
       "title": "Talk 1",
-      "text": "I know not whose work this is, but I am well aware that there are those here at Rhodes Island who specialize in infiltration and assassination. They are hidden here on this vessel. My mind is just playing tricks on me? Nonsense, Doctor. My mind never plays tricks on me.",
+      "text": "I am well aware that Rhodes Island has its own specialists in countering infiltration, sabotage and assassination. I know not who is behind these, but they are operating covertly in every corner of this landship. My mind is just playing tricks on me? Negative, Doctor. My mind does not play tricks.",
       "unlockCond": null
     },
     {
       "sortId": 3,
       "title": "Talk 2",
-      "text": "I serve the Laterano Notarial Hall, so I rarely live in Laterano. Even if you live in other city-states, all rights and privileges of Laterano citizens still depend on the support of the Hall. For example, in my case, my work has more to do with the condemned than with the living.",
+      "text": "I serve the Laterano Notarial Hall, so I rarely live in Laterano. But even if a Laterano citizen lives in other city-states, most of their rights and privileges still depend on the support of the Hall. In my case, for example, my work has less to do with the living, but more with those at death's door.",
       "unlockCond": null
     },
     {
       "sortId": 4,
       "title": "Talk 3",
-      "text": "The control system is denying you access? Please allow me to check it. Mm, it appears to be a front-end crash caused by inputting an erroneous command. It has nothing to do with the framework and is easily solved. Please feel free to ask me if you have any similar issues in the future. I understand machines far better than I do people.",
+      "text": "The control system is denying you access? Please allow me to check it. Mm, it appears to be a front-end crash caused by inputting an erroneous command. It has nothing to do with the framework and can be easily solved. Doctor, please feel free to ask me if you have any similar issues in the future. I understand machines better than I do people.",
       "unlockCond": null
     },
     {
       "sortId": 5,
       "title": "Talk after Promotion 1",
-      "text": "There are many Sankta here at Rhodes Island who use a gun. I am not like them. They will not fire at others because of the restrictions in place, whereas I will not hesitate to fire upon citizens of other countries if need be. Of course, there is hardly a need for that, because my fists are more than sufficient to deal with most problems.",
+      "text": "There are many Sankta at Rhodes Island who also use a gun. They will not fire at one other in the face of the law, but I am different. If necessary, I will not hesitate to fire upon my fraters. Of course, there is hardly a need for that, because my fists are sufficient to deal with most of them.",
       "unlockCond": { "type": "promotion", "val": 1 }
     },
     {
       "sortId": 6,
       "title": "Talk after Promotion 2",
-      "text": "Do not worry about the Notarial Hall. They are all reasonable people. Because the agreement I signed with Rhodes Island is in line with their protocols, they will never do anything to make your life more difficult. As a matter of fact, I think you are well suited for notarial work yourself. They always welcome foreign employees.",
+      "text": "Do not worry about the Notarial Hall. They are all reasonable people, and the agreement I signed with Rhodes Island is also in line with their protocols, so they won't make things difficult for you. As a matter of fact, Doctor, I think you are well suited for notarial work yourself. They always welcome foreign employees.",
       "unlockCond": { "type": "promotion", "val": 2 }
     },
     {
       "sortId": 7,
       "title": "Talk after Trust Increase 1",
-      "text": "I have a distant relative who had great musical talent ever since she was a child. Contrary to what others expected, she was able to embark on this tumultous path. Fortunately, she seems to hate me very much because I cannot see the illusion she creates, nor understand what it means to people.",
+      "text": "I have a distant relative who had great musical talent ever since she was a child. Contrary to what others expected, her gift led her onto a tumultuous path. Fortunately, she seems to hate me very much, because I cannot see the illusion she creates, nor understand what emotion means to people.",
       "unlockCond": { "type": "trust", "val": 40 }
     },
     {
       "sortId": 8,
       "title": "Talk after Trust Increase 2",
-      "text": "Private disputes are more frequent than public conflicts, as chaos is the norm over order. Those who would open fire upon me at first glance outnumber those who would open their doors to me. But it matters not, for I can complete any commission, whether it is killing a living person on behalf of the dead, or creating a dead person on behalf of the living.",
+      "text": "Private disputes are more frequent than public conflicts, as chaos is the norm over order. I have seen much more people who fired upon me at first glance than those who opened their doors to welcome me. But it matters not, for I can complete any commission, whether it is to kill a living person on behalf of the dead, or to create a dead person on  behalf of the living.",
       "unlockCond": { "type": "trust", "val": 100 }
     },
     {
       "sortId": 9,
       "title": "Talk after Trust Increase 3",
-      "text": "Being treated as an aberration is normal to me, because I cannot understand other people, nor do I have any desire to deal with them. On the contrary, talking to you is quite interesting to me. Neither you nor the Notarial Hall has denied me because of the way I live, which puts me at ease. Thank you.",
+      "text": "Being treated as an aberration is normal to me, because I cannot understand other people, nor do I have any desire to deal with them. On the contrary, talking to you is quite interesting to me, Doctor. Neither you nor the Notarial Hall has denied me because of the way I live. You make me feel at ease. Thank you.",
       "unlockCond": { "type": "trust", "val": 200 }
     },
     {
       "sortId": 10,
       "title": "Idle",
-      "text": "Rest is required, Doctor. Please take it easy.",
+      "text": "Rest is necessary, Doctor. Take your time and rest well.",
       "unlockCond": null
     },
     {
       "sortId": 11,
       "title": "Onboard",
-      "text": "Well met, Doctor of Rhodes Island. I am a Laterano citizen who signed a clean-up agreement with your company. Here is my certificate. Am I required to give my name? If you insist, you may call me Executor.",
+      "text": "Well met, Doctor of Rhodes Island. I am a Laterano citizen who signed a clean-up agreement with your company. Here is my certificate. You require to know my name? You may call me Executor, if you insist.",
       "unlockCond": null
     },
     {
@@ -21672,13 +21672,13 @@
     {
       "sortId": 14,
       "title": "Promotion 2",
-      "text": "Another promotion? I understand, there must be another infiltration operation then. Perhaps you even need me to penetrate the heart of the enemy. I have no objections to that. Hmm? This is just about a promotion? Why's that?",
+      "text": "Another promotion? I understand, there must be an infiltration operation that requires me at the heart of the enemy. If that's your wish, then I have no objections. You have no such a need? You are just promoting me? Why's that?",
       "unlockCond": { "type": "promotion", "val": 2 }
     },
     {
       "sortId": 17,
       "title": "Added to Squad",
-      "text": "The law states that the executor must achieve his maximum potential.",
+      "text": "The law won't enforce itself. It needs executors.",
       "unlockCond": null
     },
     {
@@ -21696,7 +21696,7 @@
     {
       "sortId": 20,
       "title": "Begin Operation",
-      "text": "Mission objective - eliminate all enemies.",
+      "text": "Objective: eliminate all enemies.",
       "unlockCond": null
     },
     {
@@ -21708,7 +21708,7 @@
     {
       "sortId": 22,
       "title": "Selecting Operator 2",
-      "text": "I have confirmed your request.",
+      "text": "Your request has been confirmed.",
       "unlockCond": null
     },
     {
@@ -21720,31 +21720,31 @@
     {
       "sortId": 24,
       "title": "Deployment 2",
-      "text": "The law is the only truth.",
+      "text": "Only the law is the truth.",
       "unlockCond": null
     },
     {
       "sortId": 25,
       "title": "In Battle 1",
-      "text": "I never waste bullets.",
+      "text": "My bullets always find their targets.",
       "unlockCond": null
     },
     {
       "sortId": 26,
       "title": "In Battle 2",
-      "text": "I have taken care of the living and the dead.",
+      "text": "I carry out the wills of the dead and the living.",
       "unlockCond": null
     },
     {
       "sortId": 27,
       "title": "In Battle 3",
-      "text": "Maximum firepower.",
+      "text": "Maximizing firepower.",
       "unlockCond": null
     },
     {
       "sortId": 28,
       "title": "In Battle 4",
-      "text": "If necessary, I will break the taboo.",
+      "text": "All is permitted when called by necessity.",
       "unlockCond": null
     },
     {
@@ -21762,7 +21762,7 @@
     {
       "sortId": 31,
       "title": "Sub 3-star Result",
-      "text": "Mission completed. Some flaws in the completion.",
+      "text": "Mission completed. Defects in the result.",
       "unlockCond": null
     },
     {
@@ -21774,7 +21774,7 @@
     {
       "sortId": 33,
       "title": "Assigned to Facility",
-      "text": "Do not worry about me. I have no need for a stable home.",
+      "text": "Do not worry about me. I have no need for stable residence.",
       "unlockCond": null
     },
     {
@@ -21786,7 +21786,7 @@
     {
       "sortId": 36,
       "title": "Trust Tap",
-      "text": "Doctor, what do I need to do?",
+      "text": "How can I help you, Doctor?",
       "unlockCond": null
     },
     {
@@ -21806,67 +21806,67 @@
     {
       "sortId": 1,
       "title": "Appointed as Assistant",
-      "text": "Did you call me here for a new hunt? Oh, not quite...?",
+      "text": "Did you call me here for a new hunt? No? Gah…",
       "unlockCond": null
     },
     {
       "sortId": 2,
       "title": "Talk 1",
-      "text": "This claw pendant? It's a symbol of my vengeance. Those Ursus mercenaries who harmed my companions treat these things as dogtags, so there's no mistaking them.",
+      "text": "This claw pendant? It's a symbol of revenge. The Ursus mercenaries who hurt my people treat these things as dogtags, so there's no mistaking them.",
       "unlockCond": null
     },
     {
       "sortId": 3,
       "title": "Talk 2",
-      "text": "I lost my left hand to a beast that I was hunting. Luckily, a mechanic helped make me a prosthetic limb so that I can draw my bowstring again.",
+      "text": "A beast took my left hand when I was hunting. Luckily, a mechanic gave me a prosthetic limb, so I can draw my bowstring again.",
       "unlockCond": null
     },
     {
       "sortId": 4,
       "title": "Talk 3",
-      "text": "The old me would've turned anyone who dared to mock my scars into a pincushion, one arrow at a time! But now? Well, people like those aren't worth the effort.",
+      "text": "There was a time when I would've turned anyone who mocked my scars into a pincushion! But if you ask me now... Well, people like that aren't even worth the trouble.",
       "unlockCond": null
     },
     {
       "sortId": 5,
       "title": "Talk after Promotion 1",
-      "text": "If you're ever facing a difficult decision, let your instincts decide for you, and your body will not lie. This is the experience I've had as an expert hunter.",
+      "text": "If you're ever facing a difficult decision, let your instincts decide for you. Your body won't lie—This is what I've learned after a lifetime of hunts.",
       "unlockCond": { "type": "promotion", "val": 1 }
     },
     {
       "sortId": 6,
       "title": "Talk after Promotion 2",
-      "text": "I've been living alone ever since my companions passed away, so I'm still getting used to being surrounded by people... But since you've given me your trust and depend on me, I swear I'll return the favor.",
+      "text": "I've been living alone ever since my village was wiped out.  So, I… I'm still getting used to being around people... But since you trust me and give me important work, I swear I'll return the favor.",
       "unlockCond": { "type": "promotion", "val": 2 }
     },
     {
       "sortId": 7,
       "title": "Talk after Trust Increase 1",
-      "text": "Ehh, it seems like a pebble got stuck in my prosthetic finger...? What a pain, looks like I'm going to have to find a mechanic to fix it up... N-no, I don't need your help, I can handle this by myself!",
+      "text": "Ehh, a pebble got stuck in my prosthetic finger...? Darn it, I'm going to need a mechanic to fix it... N-No, I don't need you, I can handle this myself!",
       "unlockCond": { "type": "trust", "val": 40 }
     },
     {
       "sortId": 8,
       "title": "Talk after Trust Increase 2",
-      "text": "You'll make sure I won't ever lose any more companions? Hmph. Big words, but let's see you back it up!",
+      "text": "You'll make sure I don't ever lose anyone else? Hmph. Big words. But I'll see for myself if you can back those up.",
       "unlockCond": { "type": "trust", "val": 100 }
     },
     {
       "sortId": 9,
       "title": "Talk after Trust Increase 3",
-      "text": "The doctors here offered to get rid of my more recent scars, but I refused. I want to keep them, because they're a proof of my service here... You, you understand what I'm getting at?",
+      "text": "The doctors here offered to get rid of my more recent scars, but I said no. I want to keep them. They're proof of my work here... You, you understand what I'm getting at?",
       "unlockCond": { "type": "trust", "val": 200 }
     },
     {
       "sortId": 10,
       "title": "Idle",
-      "text": "You're asleep? Can you fall asleep just about anywhere? Well, that's a trait that many of us hunters share...",
+      "text": "You're sleeping? Looks like this one can fall asleep almost anywhere. Well, that's a trait we hunters share…",
       "unlockCond": null
     },
     {
       "sortId": 11,
       "title": "Onboard",
-      "text": "Vermeil, hunter. You won't regret giving work to me.",
+      "text": "Vermeil, hunter. You won't regret giving me work.",
       "unlockCond": null
     },
     {
@@ -21878,13 +21878,13 @@
     {
       "sortId": 13,
       "title": "Promotion 1",
-      "text": "Thank you, but... are you sure you're fine with promoting someone like me?",
+      "text": "Thank you, but... are you sure it's okay to promote someone like me?",
       "unlockCond": { "type": "promotion", "val": 1 }
     },
     {
       "sortId": 14,
       "title": "Promotion 2",
-      "text": "I don't really care about stuff like Oripathy or 'the rest of my life.' Right now, what could make me happier than being able to fight by your side on the battlefield?",
+      "text": "I don't really care about stuff like Oripathy or 'the rest of my life.' Right now, the happiest thing I can imagine is fighting by your side.",
       "unlockCond": { "type": "promotion", "val": 2 }
     },
     {
@@ -21902,49 +21902,49 @@
     {
       "sortId": 19,
       "title": "Depart",
-      "text": "The big game hunting is about to start!",
+      "text": "The big game hunt is about to start!",
       "unlockCond": null
     },
     {
       "sortId": 20,
       "title": "Begin Operation",
-      "text": "Those who have fallen in my trap, do you understand your current predicament?",
+      "text": "You don't seem to understand your situation here. You've fallen into my trap.",
       "unlockCond": null
     },
     {
       "sortId": 21,
       "title": "Selecting Operator 1",
-      "text": "Let me go forth.",
+      "text": "I'll go ahead.",
       "unlockCond": null
     },
     {
       "sortId": 22,
       "title": "Selecting Operator 2",
-      "text": "Give the order.",
+      "text": "Give me the order.",
       "unlockCond": null
     },
     {
       "sortId": 23,
       "title": "Deployment 1",
-      "text": "I can smell the prey in the wind.",
+      "text": "I can smell the game on the wind.",
       "unlockCond": null
     },
     {
       "sortId": 24,
       "title": "Deployment 2",
-      "text": "I will be waiting here.",
+      "text": "I'll be waiting here.",
       "unlockCond": null
     },
     {
       "sortId": 25,
       "title": "In Battle 1",
-      "text": "If you don't escape, you will only have one ending.",
+      "text": "You'd better start running, or there's only one way this ends.",
       "unlockCond": null
     },
     {
       "sortId": 26,
       "title": "In Battle 2",
-      "text": "Don't underestimate the people of the wilderness!",
+      "text": "Don't underestimate the people of the wilderness.",
       "unlockCond": null
     },
     {
@@ -21962,38 +21962,38 @@
     {
       "sortId": 29,
       "title": "4-star Result",
-      "text": "A strong prey is still just prey.",
+      "text": "Strong game is still just game.",
       "unlockCond": null
     },
     {
       "sortId": 30,
       "title": "3-star Result",
-      "text": "Impressive. If you were born in Siracusa, you would have definitely been an excellent hunter.",
+      "text": "Nice. If you were born in Siracusa, you would've been a great hunter.",
       "unlockCond": null
     },
     {
       "sortId": 31,
       "title": "Sub 3-star Result",
-      "text": "The prey got away. I'll pursue it.",
+      "text": "The target got away. I'm going after it.",
       "unlockCond": null
     },
     {
       "sortId": 32,
       "title": "Operation Failure",
-      "text": "We can't let things end like this...",
+      "text": "We can't let it end like this…",
       "unlockCond": null
     },
     {
       "sortId": 33,
       "title": "Assigned to Facility",
-      "text": "As long as there's four walls and a ceiling, it's more than enough for me.",
+      "text": "This place has walls and a roof… that's enough for me.",
       "unlockCond": null
     },
-    { "sortId": 34, "title": "Tap", "text": "Oh...", "unlockCond": null },
+    { "sortId": 34, "title": "Tap", "text": "Wha?", "unlockCond": null },
     {
       "sortId": 36,
       "title": "Trust Tap",
-      "text": "...Today's plans? Helping out with missions, shooting arrows at enemies until I have no more arrows, then heading back to eat and sleep. Pretty simple.",
+      "text": "...My plans for the day? Help you with missions. Shoot at enemies. Use up all my arrows. Finish the mission. Eat dinner, go to sleep. Simple enough.",
       "unlockCond": null
     },
     {
@@ -23264,139 +23264,139 @@
     {
       "sortId": 1,
       "title": "Appointed as Assistant",
-      "text": "I'm telling you, I'm no good with paperwork. Are you sure you want me here in the office? I'd be better in the field; wouldn't you be happy too if I brought back some good results?",
+      "text": "C'mon, I'm no good with paperwork. You sure you want me here in the office? I'd be better out in the field. Wouldn't you rather I brought home some wins?",
       "unlockCond": null
     },
     {
       "sortId": 2,
       "title": "Talk 1",
-      "text": "I fight for the Infected. Anyone with eyes can clearly see our struggle, but too many people simply don't give a damn about our lives. But I do, a whole lot of 'em too. Got a lot of Operators here counting on me, and I don't plan to fall short of their expectations.",
+      "text": "I fight for the Infected. Life for our people is rough, anyone with eyes can see that. It's just that most people don't give a damn about our lives. But I do, I care a lot. We've got so many operators here counting on me, and I'm NOT about to let them down.",
       "unlockCond": null
     },
     {
       "sortId": 3,
       "title": "Talk 2",
-      "text": "You'd think I'm only working for Rhodes Island because I have nowhere better to be, right? Hardly. Put another way, I can't think of a better place to be than here. The pay's good, the medical treatment is cutting edge, and we've even got a cute little rabbit. How do you beat that?",
+      "text": "The reason I work for Rhodes Island? Because I've got nowhere better to be, naturally. But I've gotta be honest, I can't think of any place better than here. The pay's good, the medical treatment is cutting edge, and we've even got a cute little rabbit. It's just brilliant. What could be better?",
       "unlockCond": null
     },
     {
       "sortId": 4,
       "title": "Talk 3",
-      "text": "As one of Rhodes Island's core attackers, I have neither the firepower to blast open the battlefield with my Arts, nor the combat skills to take down a whole group of enemies by myself. But combine the two things I'm good at, and the effect is immediate. I suppose that's what a chemical reaction looks like.",
+      "text": "I'm one of Rhodes Island's frontline breachers, I don't have powerful Arts that wipe the field, and it's not like my combat techniques could down a whole army. But, if I combine the two things I'm good at, then BOOM! You get quick results. I think that's what they call a chemical reaction.",
       "unlockCond": null
     },
     {
       "sortId": 5,
       "title": "Talk after Promotion 1",
-      "text": "Amiya is one of the most talented warriors I've ever met. Her judgment is clear in any situation, and her Arts even terrify me when I see them. Doesn't it make you wonder how she got that kind of power at such a young age? Really. I wish she didn't.",
+      "text": "Amiya is one of the most talented fighters I've ever met. She keeps a clear head in any situation, and her Arts are enough to scare even me.  You know, Doctor, I can't help but wonder, how did she get so good at fighting, as young as she is? Honestly, I wish she was picking up joyful, happy experiences, not the combat kind.",
       "unlockCond": { "type": "promotion", "val": 1 }
     },
     {
       "sortId": 6,
       "title": "Talk after Promotion 2",
-      "text": "If you need my help, no need to be shy - just spit it out! Put your faith in me, and I put my faith in you. You command, I fight, simple as that! Right now, we're the best partners in Rhodes Island! Oh, but don't tell Amiya I said that just now.",
+      "text": "If you need my help, no need to be shy - just say the word! You put your trust in me, and I return the favor. You command, I fight. It's symbiotic. Aw, look at us! We're the best partners in all Rhodes Island! Oh, don't tell Amiya I said that.",
       "unlockCond": { "type": "promotion", "val": 2 }
     },
     {
       "sortId": 7,
       "title": "Talk after Trust Increase 1",
-      "text": "Before I even met you, many people told me about who you were before you lost your memories. Of course, it seems that you are no longer the same person they described, so should I treat you as two different people? The past you, and now, the current you. Haha!",
+      "text": "The crew's been buzzing about who you used to be, before your memory loss. They were talking back before I even met you. It looks to me like you aren't the same person anymore. Soooo, I guess I'm talking about two different Doctors? Past Doctor and Present Doctor, hah!",
       "unlockCond": { "type": "trust", "val": 40 }
     },
     {
       "sortId": 8,
       "title": "Talk after Trust Increase 2",
-      "text": "Dr. Kal'tsit said that one day, you will truly shoulder the responsibility that Rhodes Island has placed upon you. Dr. Kal'tsit saved my life, and I trusted her; She also told me to confirm what kind of person you are with my own eyes. I will, as long as Oripathy has not taken my life.",
+      "text": "Dr. Kal'tsit says you're going to really shoulder responsibility for Rhodes Island someday. She saved my life, and I trust her. She also asked me to decide what kind of person you are for myself. And I'm going to do that, at least until Oripathy takes my life.",
       "unlockCond": { "type": "trust", "val": 100 }
     },
     {
       "sortId": 9,
       "title": "Talk after Trust Increase 3",
-      "text": "Ah, Doctor, pass me the towel. Mhm, just finished today's training. I can't stay combat-ready if I don't get at least six hours of training in each day. All right, I've kept you waiting long enough. Where are we going this time? If that's the plan, I trust you'll cover the bill?",
+      "text": "Hey, Doctor, pass me that towel, would you? Yeah, just finished training. I need at least six hours every day to stay combat-ready. Gotta roll out whenever the order comes in, you know. Alright, I've kept you waiting long enough. So where are we going this time? If that's the plan, I guess you're picking up the tab?",
       "unlockCond": { "type": "trust", "val": 200 }
     },
     {
       "sortId": 10,
       "title": "Idle",
-      "text": "Would I cause some misunderstanding if I carried the Doctor to the bedroom? Maybe I should just leave things as they are...",
+      "text": "Would people get the wrong idea if I carried the Doctor to bed? Maybe I'm better off leaving well enough alone…",
       "unlockCond": null
     },
     {
       "sortId": 11,
       "title": "Onboard",
-      "text": "Rhodes Island Operator, Blaze, reporting in. Here, this is the authorization letter that Dr. Kal'tsit has already signed, so you can directly dispatch me. All righty, Doctor, let's show the other squads what we're capable of!",
+      "text": "Rhodes Island Operator, Blaze, reporting in. Here, the authorization letter signed by Dr. Kal'tsit. Now I'm under your direct command. Alrighty, Doctor, let's show the other squads what we can do!",
       "unlockCond": null
     },
     {
       "sortId": 12,
       "title": "Watching Battle Record",
-      "text": "I've seen many battles like this, but tougher times may be waiting for us ahead.",
+      "text": "I've seen a lot of battles like this. But tougher times might still be ahead of us.",
       "unlockCond": null
     },
     {
       "sortId": 13,
       "title": "Promotion 1",
-      "text": "Hah, don't you feel the air getting a bit hotter? No? Eh, gotta turn things up another notch then. And here I was trying to get you fired up...",
+      "text": "Hehe, can you feel the air getting hotter? No? Reeaaally? Then I'd better kick things up a notch. Aww, I was trying to get you fired up.",
       "unlockCond": { "type": "promotion", "val": 1 }
     },
     {
       "sortId": 14,
       "title": "Promotion 2",
-      "text": "Amiya, Dr. Kal'tsit, and now you as you currently are. The Operators of Rhodes Island have placed their trust in all of you, because you didn't give up on any of them. Fighting for the Infected is just, Doctor. Our fight is worth it.",
+      "text": "Us Rhodes Island Operators put all our trust in Amiya, Dr. Kal'tsit, and you, Present Doctor. Because you've never given up on any of us. Fighting for the Infected is the right thing to do. It's worth it, Doctor.",
       "unlockCond": { "type": "promotion", "val": 2 }
     },
     {
       "sortId": 17,
       "title": "Added to Squad",
-      "text": "You gonna fight? Count me in!",
+      "text": "Time for combat? Count me in!",
       "unlockCond": null
     },
     {
       "sortId": 18,
       "title": "Appointed as Squad Leader",
-      "text": "Uhh, the orders were uh, to get rid of all the enemies. See, I got this!",
+      "text": "Alright, I'm the leader, huh? I got this, I know all about wiping out hostiles!",
       "unlockCond": null
     },
     {
       "sortId": 19,
       "title": "Depart",
-      "text": "As an assault operator, I have high standards, so you'd better keep up!",
+      "text": "Us frontline breachers have high standards. Try to keep up!",
       "unlockCond": null
     },
     {
       "sortId": 20,
       "title": "Begin Operation",
-      "text": "It gets a little violent, but I like cutting steel and taking apart bunkers!",
+      "text": "It may be a little gruesome, but I love shredding steel and crushing bunkers!",
       "unlockCond": null
     },
     {
       "sortId": 21,
       "title": "Selecting Operator 1",
-      "text": "It wasn't easy learning high-temperature gas dynamics!",
+      "text": "You know, it wasn't easy learning high-temperature vapor dynamics!",
       "unlockCond": null
     },
     {
       "sortId": 22,
       "title": "Selecting Operator 2",
-      "text": "Let me show you what the other elite operators taught me about swinging a chainsaw!",
+      "text": "Let me show you the chainsaw techniques the other elite operators taught me!",
       "unlockCond": null
     },
     {
       "sortId": 23,
       "title": "Deployment 1",
-      "text": "It's not hot enough here.",
+      "text": "This place could use some heat.",
       "unlockCond": null
     },
     {
       "sortId": 24,
       "title": "Deployment 2",
-      "text": "Do you hear the roar of this chainsaw?",
+      "text": "Hear the roar of my chainsaw!",
       "unlockCond": null
     },
     {
       "sortId": 25,
       "title": "In Battle 1",
-      "text": "Don't worry if you see a little bit of fire somewhere, that's just a side effect!",
+      "text": "Don't worry if you see fire, that's just a side effect!",
       "unlockCond": null
     },
     {
@@ -23408,13 +23408,13 @@
     {
       "sortId": 27,
       "title": "In Battle 3",
-      "text": "My blood's only going to make this place hotter!",
+      "text": "My blood's only gonna make this place hotter!",
       "unlockCond": null
     },
     {
       "sortId": 28,
       "title": "In Battle 4",
-      "text": "Fresh blood permeates my weapon, and spreads through the entire battlefield!",
+      "text": "Fresh blood coats my saw, and boils the whole battlefield!",
       "unlockCond": null
     },
     {
@@ -23426,7 +23426,7 @@
     {
       "sortId": 30,
       "title": "3-star Result",
-      "text": "The rights of the Infected, will only be secured through the hands of the Infected.",
+      "text": "The rights of the Infected will only be won by the actions of the Infected!",
       "unlockCond": null
     },
     {
@@ -23438,25 +23438,25 @@
     {
       "sortId": 32,
       "title": "Operation Failure",
-      "text": "Unfortunately, looks like luck wasn't on our side.",
+      "text": "Let's just say luck wasn't on our side this time.",
       "unlockCond": null
     },
     {
       "sortId": 33,
       "title": "Assigned to Facility",
-      "text": "Did Rhodes Island get any new facilities this time?",
+      "text": "Any new facilities at Rhodes Island this time?",
       "unlockCond": null
     },
     {
       "sortId": 34,
       "title": "Tap",
-      "text": "C-calm down!",
+      "text": "Hey, knock that off!",
       "unlockCond": null
     },
     {
       "sortId": 36,
       "title": "Trust Tap",
-      "text": "It's too hot! I'm melting!",
+      "text": "Wait a second! I'm way too sweaty!",
       "unlockCond": null
     },
     {
@@ -23468,7 +23468,7 @@
     {
       "sortId": 42,
       "title": "Greeting",
-      "text": "Doctor, when are we heading out on our mission?",
+      "text": "Doctor, when are we heading out on our next mission?",
       "unlockCond": null
     }
   ],
@@ -39223,7 +39223,7 @@
     {
       "sortId": 21,
       "title": "Selecting Operator 1",
-      "text": "Situation?",
+      "text": "What's the situation?",
       "unlockCond": null
     },
     {
@@ -53013,61 +53013,61 @@
     {
       "sortId": 1,
       "title": "Appointed as Assistant",
-      "text": "I'm not the greatest at desk work, but if all you need is someone to stay by your side and help you put your tasks and schedule in order, I can give it a shot.",
+      "text": "I'm not so good at desk work, but if all you need is someone to stay by your side and help you arrange your tasks and schedule... I can give it a shot, perhaps.",
       "unlockCond": null
     },
     {
       "sortId": 2,
       "title": "Talk 1",
-      "text": "This pocket watch? My old man gave it to me before he left home. It's nothing fancy, but it keeps time. It does need to be maintained and have its face cleaned every now and then... Doctor, is there anyone at Rhodes Island who can fix watches?",
+      "text": "This pocket watch? My father gave it to me before he left home. It's nothing fancy, but it keeps time if you keep the movement and dial maintained… Uh, Doctor, is there anyone at Rhodes Island who can fix watches?",
       "unlockCond": null
     },
     {
       "sortId": 3,
       "title": "Talk 2",
-      "text": "You can leave the cooking to me, when we're out on field missions. Back when I was in the Columbian barrenlands, I was always in charge of catering. I can't make any guarantees when it comes to taste, but it won't leave you with a stomachache, at least.",
+      "text": "Out in the field, you can leave the cooking to me. That's what they had me doing back in the Columbian barrenlands. I can't promise, you know that, it's gonna taste very good… But at least it won't give you a stomachache.",
       "unlockCond": null
     },
     {
       "sortId": 4,
       "title": "Talk 3",
-      "text": "Back when I was with the Pioneer Team, we got into it with the company over how they supplied us. We ended up escaping into the barrenlands. That's when I lost my eye. It's not a disgrace, but it's not an honor, either. It's just the kind of misfortune that us regular Columbian folks often have to suffer, only a bit more conspicuous than usual.",
+      "text": "Back when I was with the Pioneer Team, the company left us undersupplied, and we did not take that sitting down. We ended up escaping into the barrelands. That's when I got this scar on my eye. It's not a disgrace, but it's not a badge of honor either. It's just the kind of bad luck that us regular Columbians deal with all the time. Mine's just a little more obvious than others.",
       "unlockCond": null
     },
     {
       "sortId": 5,
       "title": "Talk after Promotion 1",
-      "text": "Planning your time and planning your life couldn't be more different. When you're eking out a living, you've got no choice but to use every last second. All your free time is spent watching the clock. On the other hand, to plan out your life, you need enough time to think and feel. Those aren't contradictory. It's just the second one's more of a luxury to most people.",
+      "text": "Planning your time and planning your life couldn't be more different. When you're eking out a living, you've got no choice but to use every last second. Even when you space out, you have to keep an eye on the clock. On the other hand, to plan out your life, you need enough time to think and feel. Those aren't contradictory. It's just the second one's more of a luxury to most people.",
       "unlockCond": { "type": "promotion", "val": 1 }
     },
     {
       "sortId": 6,
       "title": "Talk after Promotion 2",
-      "text": "Is my sword heavy? 'course it is. But I need a heavy one to protect my friends and defend our overdue freedom. The truer the weight I carry is, the mightier I can wield it... Of course, when I'm hurt, it also comes in handy as a walking stick.",
+      "text": "Is my sword heavy? You bet it is. But I need a heavy one to protect my friends and defend our overdue freedom. The truer the weight I carry is, the mightier I can wield it... And when I'm hurt, it also comes in handy as a walking stick.",
       "unlockCond": { "type": "promotion", "val": 2 }
     },
     {
       "sortId": 7,
       "title": "Talk after Trust Increase 1",
-      "text": "When my mother died, I didn't even get to mourn her. I had a huge pile of medical debt waiting for me to pay off. Why did I join the Pioneer Team, and why did I become a merc? Because I had no other choice. Of course, I came to Rhodes Island after giving it serious thought.",
+      "text": "When my mother died, I didn't even get to mourn her. I had a huge pile of medical debt waiting for me to pay off. Why did I join the Pioneer Team, and why did I become a merc? It's not like I had other options. But I came to Rhodes Island after giving it serious thought.",
       "unlockCond": { "type": "trust", "val": 40 }
     },
     {
       "sortId": 8,
       "title": "Talk after Trust Increase 2",
-      "text": "A free mercenary only takes a mission she thinks is worth it. There was this one night when I was affixing some beast teeth to my sword by the fire while my friends slept, my watch ticking away. Time is always on my mind, but that was the first time I really felt its passing.",
+      "text": "A free mercenary only takes a mission she thinks is worth the time. There was this one night when I was sitting by the fire, affixing some beast teeth to my sword. My friends were sleeping, and the only sound in the air was my watch ticking away. Time is always on my mind, but that was the first time I really felt its passing.",
       "unlockCond": { "type": "trust", "val": 100 }
     },
     {
       "sortId": 9,
       "title": "Talk after Trust Increase 3",
-      "text": "Disbandment is inevitable. Without a clear goal and strict discipline, a mercenary can't survive the wilderness... Maybe only an organization like Rhodes Island can really protect what's beautiful out there. I'm thankful that I could come here.",
+      "text": "The mercenary crew I joined was doomed to disband, sooner or later. Without a clear goal and strict discipline, you can't survive in the wilderness… Maybe only an organization like Rhodes Island can really protect what's beautiful out there. I'm thankful that I could come here.",
       "unlockCond": { "type": "trust", "val": 200 }
     },
     {
       "sortId": 10,
       "title": "Idle",
-      "text": "Doctor, if you don't need anything from me, I'll idle here a little... Feel free to talk to me anytime you need me.",
+      "text": "Doctor, if you don't need anything from me, I'll just zone out here for a bit... Feel free to talk to me anytime you need me.",
       "unlockCond": null
     },
     {
@@ -53127,7 +53127,7 @@
     {
       "sortId": 22,
       "title": "Selecting Operator 2",
-      "text": "You need me to put away my weapon for the time being? Then my sword...",
+      "text": "Sheathe my weapon for the time being? Then my sword…",
       "unlockCond": null
     },
     {
@@ -53139,25 +53139,25 @@
     {
       "sortId": 24,
       "title": "Deployment 2",
-      "text": "A bit slow, but hardly a big problem.",
+      "text": "A bit late, not a big problem.",
       "unlockCond": null
     },
     {
       "sortId": 25,
       "title": "In Battle 1",
-      "text": "Timing your strikes is more important than brute strength.",
+      "text": "Time your strike. It's more important than brute strength.",
       "unlockCond": null
     },
     {
       "sortId": 26,
       "title": "In Battle 2",
-      "text": "Keep your distance. You could get hurt.",
+      "text": "Keep your distance. I only want to strike the enemy.",
       "unlockCond": null
     },
     {
       "sortId": 27,
       "title": "In Battle 3",
-      "text": "When you stare at my eyepatch, it reveals a lot.",
+      "text": "You're staring at my eyepatch, it reveals a lot.",
       "unlockCond": null
     },
     {
@@ -53169,7 +53169,7 @@
     {
       "sortId": 29,
       "title": "4-star Result",
-      "text": "Victory is assured when every phase of the mission proceeds with watchlike precision.",
+      "text": "When every phase of the mission proceeds with watchlike precision, victory is assured.",
       "unlockCond": null
     },
     {
@@ -53187,7 +53187,7 @@
     {
       "sortId": 32,
       "title": "Operation Failure",
-      "text": "Sorry, Doctor, we had a few problems with the plan because my watch is broken. Go on ahead and leave the rest to me.",
+      "text": "Sorry, Doctor, we had a few problems with the plan because my watch is broken. Go, and leave the rest to me.",
       "unlockCond": null
     },
     {
@@ -53205,7 +53205,7 @@
     {
       "sortId": 36,
       "title": "Trust Tap",
-      "text": "Let's space out together, Doctor. We can chill for as long as we need... It's all in the past.",
+      "text": "Let's space out together, Doctor. We can chill for as long as we need... No need to watch the clock like we used to.",
       "unlockCond": null
     },
     {
@@ -53225,31 +53225,31 @@
     {
       "sortId": 1,
       "title": "Appointed as Assistant",
-      "text": "Do you want these files here? Oh, one of the Liberi girls taught me how to use a printer! Look, I even learned how to print on both sides! Majt javla? (What's this?) This needs to be single-sided? Oh, er, I'll print it again!",
+      "text": "Doctor! Do you want these files here? A Liberi lady just taught me how to use a printer! Look, I even learned how to print on both sides! This needs to be single-sided? Uh-oh, sorry! I'll print it again!",
       "unlockCond": null
     },
     {
       "sortId": 2,
       "title": "Talk 1",
-      "text": "Ieddne (Mother) has gotten a lot better. If not for the medical equipment we got from the explorers, she might have... even tsoavttsom (divination) showed a dark future. But that was the reason I decided to go out into the world. If I could bring equipment like that back sijddaj... (to the village...)",
+      "text": "My mother has gotten a lot better. That time, even divination showed a dark future. If not for the medical equipment we got from the explorers, she might have left us... Since then, I decided to go out into the world. I hope to bring more equipment like that back to the village. ",
       "unlockCond": null
     },
     {
       "sortId": 3,
       "title": "Talk 2",
-      "text": "I'm really grateful to Magallan. We've only met a few times during search and rescue operations, but she put me in touch with Rhodes Island after hearing my situation. She's an incredible woman. There aren't many in our sijdan (tribe) who have set foot on the jiegŋadievddamin (ice fields). It's a place that's feared and revered.",
+      "text": "I'm really grateful to Magallan. We've only met a few times during search and rescue operations, but she put me in touch with Rhodes Island after hearing my situation. And she's an incredible lady. Not many people dare to explore the ice fields like her. Even people in our tribe seldom set foot there. It's a place that's feared and revered.",
       "unlockCond": null
     },
     {
       "sortId": 4,
       "title": "Talk 3",
-      "text": "I'm part of my sijdda's (tribe's) rescue team, helping people who accidentally wander into the sæmssaj (bog), or get lost in the guollduj (snowstorms). That's how I met a lot of explorers from Columbia. Huh? How did you know they liked my tail?",
+      "text": "I'm part of my tribe's rescue team, helping people who accidentally wander into the bog, or get lost in the snowstorms. That's how I met a lot of explorers from Columbia. Woah, Doctor, how did you know they always compliment my tail?",
       "unlockCond": null
     },
     {
       "sortId": 5,
       "title": "Talk after Promotion 1",
-      "text": "I never thought I would leave the sijdda (tribe) to come here. I didn't use to be interested in this stuff, but that shiny medical equipment made a strong impression. They worked a miracle, and proved our tsoavttsom (divination) wrong.",
+      "text": "I never thought I would leave the tribe and come here. I was never interested in things from the outside world. But that shiny medical equipment blew me away. They went against our divination. That's a miracle to me.",
       "unlockCond": { "type": "promotion", "val": 1 }
     },
     {
@@ -53261,25 +53261,25 @@
     {
       "sortId": 7,
       "title": "Talk after Trust Increase 1",
-      "text": "Can I do divination like Gitano? I suppose I could tsoavttsot your future, but I'm not great at it. If you want me to tell your fortune for the day, let's see... the stars will fall from the sky, and eggplant must goes on top of rice.",
+      "text": "Can I see the future like Gitano? I suppose I could divine your future, but I'm not great at it. If you really want me to tell your fortune for the day, let's see... Okay, it says... the stars will fall from the sky, and eggplant must go on top of rice.",
       "unlockCond": { "type": "trust", "val": 40 }
     },
     {
       "sortId": 8,
       "title": "Talk after Trust Increase 2",
-      "text": "Doctor, Accounting says my reimbursement claim has been delayed. What does 'reimbursement claim' mean? There's still so much I don't understand about paperwork...",
+      "text": "Doctor, Accounting says my 'reimbursement claim' has been delayed. What does 'reimbursement claim' mean? Sorry, but there's still so much I don't understand about paperwork…",
       "unlockCond": { "type": "trust", "val": 100 }
     },
     {
       "sortId": 9,
       "title": "Talk after Trust Increase 3",
-      "text": "I'm back from my field mission! We delivered some equipment to my sijdda (tribe) and taught them how to use it. Turns out muohtá's (aunt's) leg pains were caused by bone spurs. Now that we know how to treat it, she won't have to rely on my oarbbenbiele's (cousin's) Arts to relieve the pain.",
+      "text": "Doctor! I'm back from my field mission! We delivered some equipment to my tribe and taught them how to use it. Turns out aunt's leg pains were caused by bone spurs. Now that we know how to treat it, she won't have to rely on my cousin's Arts to relieve the pain.",
       "unlockCond": { "type": "trust", "val": 200 }
     },
     {
       "sortId": 10,
       "title": "Idle",
-      "text": "Telefåvnnå skuollá! Majt dal Dåktår javlaj hæhttuv dajna dahkat... (The phone is ringing! What did the Doctor say I should do in this situation...) Hello? Er, this is the Doctor's office...",
+      "text": "Oh, the phone is ringing! What did the Doctor say I should do in this situation… Okay... He-hello? Um, nice to hear you. This is the Doctor's office.",
       "unlockCond": null
     },
     {
@@ -53297,13 +53297,13 @@
     {
       "sortId": 13,
       "title": "Promotion 1",
-      "text": "Is this what you call a 'contract'? The language is very difficult. Do I have to sign it? This won't get me into any trouble, will it? I can trust you, right? Right?",
+      "text": "Doctor, is this what you call a 'contract'? It's very difficult to understand. Do I have to sign it? You say if I don't sign it, I'll be forced to work day and night by a cruel boss? But Doctor, you are not cruel… What? What do you mean don't be so sure?",
       "unlockCond": { "type": "promotion", "val": 1 }
     },
     {
       "sortId": 14,
       "title": "Promotion 2",
-      "text": "This won't be like last time! You've helped me so much. Ieddne's (Mother's) getting better, and my sijdda (tribe) is learning to use Rhodes Island medical equipment. I hope I can do even more for them.",
+      "text": "I won't make a fool of myself like before, Doctor! You've helped me so much. My mother's getting better, and my tribe is learning to use Rhodes Island medical equipment. I hope I can do even more for them in the future.",
       "unlockCond": { "type": "promotion", "val": 2 }
     },
     {
@@ -53315,7 +53315,7 @@
     {
       "sortId": 18,
       "title": "Appointed as Squad Leader",
-      "text": "Everybody, pay attention and don't run off on your own.",
+      "text": "Everyone, follow my orders and don't run off on your own.",
       "unlockCond": null
     },
     {
@@ -53327,7 +53327,7 @@
     {
       "sortId": 20,
       "title": "Begin Operation",
-      "text": "A rescuer has to be in top form at all times.",
+      "text": "Make sure you're well-prepared. That's the foundation of a successful rescue.",
       "unlockCond": null
     },
     {
@@ -53351,7 +53351,7 @@
     {
       "sortId": 24,
       "title": "Deployment 2",
-      "text": "Save your strength and wait for rescue.",
+      "text": "Please save your strength, we will get you out!",
       "unlockCond": null
     },
     {
@@ -53363,56 +53363,56 @@
     {
       "sortId": 26,
       "title": "In Battle 2",
-      "text": "Rescue location identified.",
+      "text": "Rescue location confirmed.",
       "unlockCond": null
     },
     {
       "sortId": 27,
       "title": "In Battle 3",
-      "text": "Working out the rescue plan.",
+      "text": "Formulating a rescue plan.",
       "unlockCond": null
     },
     {
       "sortId": 28,
       "title": "In Battle 4",
-      "text": "Don't worry. Rescue operation successful!",
+      "text": "Don't worry. You're going to be fine!",
       "unlockCond": null
     },
     {
       "sortId": 29,
       "title": "4-star Result",
-      "text": "I was nervous, but experience really comes in handy!",
+      "text": "I was nervous, but my experience really came in handy!",
       "unlockCond": null
     },
     {
       "sortId": 30,
       "title": "3-star Result",
-      "text": "A well-planned and well-executed rescue operation!",
+      "text": "A well-planned and well-executed rescue operation, our target has been brought to safety.",
       "unlockCond": null
     },
     {
       "sortId": 31,
       "title": "Sub 3-star Result",
-      "text": "The objective was injured... don't worry, I'll stop the pain!",
+      "text": "The victim was injured… Don't worry, I'll ease the pain for you.",
       "unlockCond": null
     },
     {
       "sortId": 32,
       "title": "Operation Failure",
-      "text": "Need support over here!",
+      "text": "Over here! We need backup!",
       "unlockCond": null
     },
     {
       "sortId": 33,
       "title": "Assigned to Facility",
-      "text": "Oh, so this is where I'm supposed to use that 'access card.'",
+      "text": "Oh, so this is where I'm supposed to use this 'access card.'",
       "unlockCond": null
     },
-    { "sortId": 34, "title": "Tap", "text": "Whoa!", "unlockCond": null },
+    { "sortId": 34, "title": "Tap", "text": "Oh!", "unlockCond": null },
     {
       "sortId": 36,
       "title": "Trust Tap",
-      "text": "Are you sure you want me to tsoavttsot (divine) your future Doctor?",
+      "text": "Doctor, you don't really want me to divine your future, do you?",
       "unlockCond": null
     },
     {
@@ -53424,7 +53424,7 @@
     {
       "sortId": 42,
       "title": "Greeting",
-      "text": "Boo! Did that scare you? What? No? I used to spook lots of people in the muohttagin (snow).",
+      "text": "Boo! Did that scare you? Not at all? Aw, I used to spook lots of people in the snow.",
       "unlockCond": null
     }
   ],
@@ -58657,6 +58657,642 @@
       "sortId": 42,
       "title": "Greeting",
       "text": "Hello, Doctor.",
+      "unlockCond": null
+    }
+  ],
+  "char_4015_spuria": [
+    {
+      "sortId": 1,
+      "title": "Appointed as Assistant",
+      "text": "No problem. Just leave the documents here, and I'll filter out anything that isn't worth you reading... Can't do it that way? We have to take each one seriously? Fine, fine, whatever you say.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 2,
+      "title": "Talk 1",
+      "text": "I guarantee that field op will be cleared without a hitch, so— I can't dump it on another operator? Come on, It was a long trip for me to come here, and I'm better off spending my time in the workshop while I'm on the ship. Work with me here, will you？",
+      "unlockCond": null
+    },
+    {
+      "sortId": 3,
+      "title": "Talk 2",
+      "text": "How's my stay? So far so good. Here I can focus on reviewing my designs without headphones on my head. No need to block everything out with music. Feels kinda refreshing. Still, I haven't modded any of the equipment in the dorm myself, so it does feel kinda like we're missing some features here. For example, something that automatically orders cactus tarts takeout at preset times.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 4,
+      "title": "Talk 3",
+      "text": "Do me a favor and tell me when Lemuen shows up, Doctor. I help maintain her sister's gun every now and then, so my guess is she wants to have a few words with me. Why don't I just go see her? Uhmm... The way I put it, one can't be so proactive with everybody. Sometimes, you need to keep a certain distance. You know what I mean?",
+      "unlockCond": null
+    },
+    {
+      "sortId": 5,
+      "title": "Talk after Promotion 1",
+      "text": "Laterano has tons of magazines covering the combat attire of other countries. Their designs seem to have drawn inspiration from a variety of sources, all of which I'd like to try out. Oh, just so you know, I'm more of an order-by-phone kind of girl. I don't go shopping unless I'm invited by some <i>very</i>  specific people. So, you gonna ask me out?",
+      "unlockCond": { "type": "promotion", "val": 1 }
+    },
+    {
+      "sortId": 6,
+      "title": "Talk after Promotion 2",
+      "text": "I'm more willing to go on field ops than before? That's because I'm after inspiration for firearms upgrades. When I stand in war-torn ruins, where there's none of the ear-rending ruckus of Laterano, I get this weird sense of fear. I have to find a way to use my technology to combat that somehow.",
+      "unlockCond": { "type": "promotion", "val": 2 }
+    },
+    {
+      "sortId": 7,
+      "title": "Talk after Trust Increase 1",
+      "text": "If the Lateran Curia ever asks for me, make an excuse and turn them down, will you? I don't wanna go back to listen to my boss nag about faith and standing. She thinks she can talk me into recognizing my mistakes, but I don't ever think that much when I do stuff.",
+      "unlockCond": { "type": "trust", "val": 40 }
+    },
+    {
+      "sortId": 8,
+      "title": "Talk after Trust Increase 2",
+      "text": "I study firearm assistive technologies, but I don't fundamentally understand what a gun means to a Sankta... Hm? Oh, nothing. Just a friend of mine who told me she's starting to use a gun again. Anyway, I'll be going on a trip soon. Be sure to approve my disembarkation when the time comes, Doctor.",
+      "unlockCond": { "type": "trust", "val": 100 }
+    },
+    {
+      "sortId": 9,
+      "title": "Talk after Trust Increase 3",
+      "text": "You look like you're in a bad mood, so I grabbed you a snack from— Hey, what's that surprised look for? Yes, you're no Sankta and I can't feel your emotion, but that doesn't mean I can't care about you. Alright, eat up now. I wanna see if this is from the tainted batch.",
+      "unlockCond": { "type": "trust", "val": 200 }
+    },
+    {
+      "sortId": 10,
+      "title": "Idle",
+      "text": "You asleep...? Hehe... Well, well, seems like a good chance to release a drone in the hallway and stream someone's sleep-talking... No response? Looks like you're actually asleep.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 11,
+      "title": "Onboard",
+      "text": "Spuria, liaison from the Sixth Tribunal of the Lateran Curia, here for cultural exchange. Oh, right. To prevent any safety inspections, my luggage has a self-destruct mechanism. Yep, the stuff inside isn't necessarily all safe.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 12,
+      "title": "Watching Battle Record",
+      "text": "You want to watch combat records together? You aren't gonna complain that I'm not serious enough when I watch the videos, right?",
+      "unlockCond": null
+    },
+    {
+      "sortId": 13,
+      "title": "Promotion 1",
+      "text": "If you're giving me more permissions, I won't have to check with you the next time I want to do something, right?",
+      "unlockCond": { "type": "promotion", "val": 1 }
+    },
+    {
+      "sortId": 14,
+      "title": "Promotion 2",
+      "text": "We Sankta know how to shoot just by the instincts we were born with. Then, after seven years of schooling, we've mastered advanced shooting techniques and learned the basics of maintenance and retrofitting. After that, we may spend our <i>entire</i> lifetimes without ever realizing... guns hurt people.",
+      "unlockCond": { "type": "promotion", "val": 2 }
+    },
+    {
+      "sortId": 17,
+      "title": "Added to Squad",
+      "text": "Yep, no problem. I've got the objectives all memorized.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 18,
+      "title": "Appointed as Squad Leader",
+      "text": "Relax, just leave it to me. What kind of havoc can I wreak?",
+      "unlockCond": null
+    },
+    {
+      "sortId": 19,
+      "title": "Depart",
+      "text": "Aww, I prefer combat strategies without so many twists and turns.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 20,
+      "title": "Begin Operation",
+      "text": "Perfect opportunity to observe the battlefield.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 21,
+      "title": "Selecting Operator 1",
+      "text": "Comms online and stable.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 22,
+      "title": "Selecting Operator 2",
+      "text": "Go ahead. Tell me your plan.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 23,
+      "title": "Deployment 1",
+      "text": "Hello, on-site service.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 24,
+      "title": "Deployment 2",
+      "text": "It's about time we switched to a frontal assault, no?",
+      "unlockCond": null
+    },
+    {
+      "sortId": 25,
+      "title": "In Battle 1",
+      "text": "Come on, don't be such a drag.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 26,
+      "title": "In Battle 2",
+      "text": "Just a smaaaall test.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 27,
+      "title": "In Battle 3",
+      "text": "Take a guess. Am I holding my gun to pray?",
+      "unlockCond": null
+    },
+    {
+      "sortId": 28,
+      "title": "In Battle 4",
+      "text": "Uh-oh, you got it wrong.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 29,
+      "title": "4-star Result",
+      "text": "What a surprise. It's been a while since I had so many casings at my feet. You really know how to put on a show.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 30,
+      "title": "3-star Result",
+      "text": "Just as promised, the mission's a success. What was I doing? Whoa, whoa, whoa, that's hurting. Nobody likes a Doctor who pries too much, yes?",
+      "unlockCond": null
+    },
+    {
+      "sortId": 31,
+      "title": "Sub 3-star Result",
+      "text": "No worries, it's not a big deal. Just act like you're all remorseful, and nobody will press it too hard. But I still saw every mistake you made with my own eyes, better keep that in mind.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 32,
+      "title": "Operation Failure",
+      "text": "Uh, you're not gonna fix the part of the perimeter that got blown up? That wouldn't fly in Laterano.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 33,
+      "title": "Assigned to Facility",
+      "text": "Woo, I love this icy, modern feel.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 34,
+      "title": "Tap",
+      "text": "Careful. My gun might go off.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 36,
+      "title": "Trust Tap",
+      "text": "How much do you know about Sankta guns? There's no way you'd ever be able to fire one, but I don't mind explaining things to you.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 37,
+      "title": "Title",
+      "text": "Arknights.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 42,
+      "title": "Greeting",
+      "text": "Hey, Doctor, you're finally here. While you were gone, <i>absolutely</i> nothing happened.",
+      "unlockCond": null
+    }
+  ],
+  "char_1032_excu2": [
+    {
+      "sortId": 1,
+      "title": "Appointed as Assistant",
+      "text": "Yes, I have received the notification that fragmentation mines are forbidden in the corridors. But rest assured, Doctor, the high voltage fencing installed on your door violates no ordinances.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 2,
+      "title": "Talk 1",
+      "text": "Indeed, I was the one who introduced recent Lateran Operators to Rhodes Island. If you have no objections, I will continue to introduce functionaries with special circumstances to you. I hope to study how Sankta live outside Lateran, and how it compares to their life within.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 3,
+      "title": "Talk 2",
+      "text": "This mission may call for a piano performance? Do not worry. I have memorized the complete scores of over a hundred classical pieces, and I can play every note in accurate order. Any properly trained executor should be capable of this. That does not count as playing the piano? I do not understand.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 4,
+      "title": "Talk 3",
+      "text": "The title 'Saint' can neither enhance my abilities nor reveal any precise mission to me. Though it has added difficulties to my work, I cannot fathom why I was chosen. Its objective and demands are something I must seek myself.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 5,
+      "title": "Talk after Promotion 1",
+      "text": "Doctor, this is my medical examination report, please confirm. Currently, no horns have grown on my head, and my halo has seen no changes in shape or form. Indeed, my violation of the law has not had a physical effect on me, but it's nothing worthy of celebration. Abnormalities have been on the rise. This is an omen of disaster.",
+      "unlockCond": { "type": "promotion", "val": 1 }
+    },
+    {
+      "sortId": 6,
+      "title": "Talk after Promotion 2",
+      "text": "Doctor, during my recent missions, my limbs have been acting before I complete my thought processes. This phenomenon can impede successful completion of my missions. I am troubled. Could you tell me whether it's a kind of disease? Will my condition worsen? Is there (a) medicine that can heal it?",
+      "unlockCond": { "type": "promotion", "val": 2 }
+    },
+    {
+      "sortId": 7,
+      "title": "Talk after Trust Increase 1",
+      "text": "Most confuse Arturia's Arts as tampering with cognition and mental faculty, but I know the fact is just the oppoiste. Arturia is interested only in the truest emotions, and cares not for where these emotions lead. The influence she can command is far worse than anyone can possibly imagine.",
+      "unlockCond": { "type": "trust", "val": 40 }
+    },
+    {
+      "sortId": 8,
+      "title": "Talk after Trust Increase 2",
+      "text": "What are you doing, Doctor? Bodily contact is no replacement for spoken language. I cannot decipher your thoughts through your limbs. You think that I need comfort? If that is your judgement, then I have no reason to refuse. Infact, I am merely thinking back to my recent mission. What leaves a man no other choice(,) but death?",
+      "unlockCond": { "type": "trust", "val": 100 }
+    },
+    {
+      "sortId": 9,
+      "title": "Talk after Trust Increase 3",
+      "text": "As you can see, this is a burnt flower. I have, to the best of my abilities, maintained its condition in order to bring it to you. It is not a gift, becuase it does not meet the criteria for one. It's a question in my mind. I am still pondering the things behind this flower.",
+      "unlockCond": { "type": "trust", "val": 200 }
+    },
+    {
+      "sortId": 10,
+      "title": "Idle",
+      "text": "You lack sleep, Doctor. You need more rest.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 11,
+      "title": "Onboard",
+      "text": "You seem surprised, Doctor. Please rest assured that the change in my equipment won't affect my ability to complete my missions. If you find yourself ill at ease because of my attire, I can change into my previous garments before I enter Rhodes Island. No need? Understood.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 12,
+      "title": "Watching Battle Record",
+      "text": "I have attempted a few combat techniques, and they have yielded excellent results.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 13,
+      "title": "Promotion 1",
+      "text": "You put together an all new profile. Is this a false identity for my next mission? If the need arises, I know where to prepare identification that can pass checks. No need? This, too, is a normal promotion?",
+      "unlockCond": { "type": "promotion", "val": 1 }
+    },
+    {
+      "sortId": 14,
+      "title": "Promotion 2",
+      "text": "I am trying to understand the law. Is Laterano's foundation truly these words alone? Is that applicable to lands other than Laterano? I must admit I have indeed been affected by it, to a certain degree. I will attempt to find the answer posthaste.",
+      "unlockCond": { "type": "promotion", "val": 2 }
+    },
+    {
+      "sortId": 17,
+      "title": "Added to Squad",
+      "text": "The law itself has no power. It calls for enforcers.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 18,
+      "title": "Appointed as Squad Leader",
+      "text": "I require those who can act on their own judgment.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 19,
+      "title": "Depart",
+      "text": "Move out.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 20,
+      "title": "Begin Operation",
+      "text": "Commencing operation. Please confirm the mission objective.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 21,
+      "title": "Selecting Operator 1",
+      "text": "Understood.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 22,
+      "title": "Selecting Operator 2",
+      "text": "Your request is reasonable.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 23,
+      "title": "Deployment 1",
+      "text": "Prayers are unnecessary.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 24,
+      "title": "Deployment 2",
+      "text": "I shall ensure the integrity of the law.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 25,
+      "title": "In Battle 1",
+      "text": "Target confirmed.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 26,
+      "title": "In Battle 2",
+      "text": "Destruction is the most naive behavior.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 27,
+      "title": "In Battle 3",
+      "text": "Annihilation is the most common result.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 28,
+      "title": "In Battle 4",
+      "text": "Violated taboos hold no power.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 29,
+      "title": "4-star Result",
+      "text": "No casualties, no commotions. All good.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 30,
+      "title": "3-star Result",
+      "text": "Mission complete.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 31,
+      "title": "Sub 3-star Result",
+      "text": "The result is acceptable.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 32,
+      "title": "Operation Failure",
+      "text": "We need to reformulate our battle plans.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 33,
+      "title": "Assigned to Facility",
+      "text": "Maintaining a dedicated room is a show of respect? I see.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 34,
+      "title": "Tap",
+      "text": "I have heard there are certain hobbies that are not easily understood by others. Perhaps this is one such hobby?",
+      "unlockCond": null
+    },
+    {
+      "sortId": 36,
+      "title": "Trust Tap",
+      "text": "Speak the word if you need anything, Doctor.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 37,
+      "title": "Title",
+      "text": "Arknights.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 42,
+      "title": "Greeting",
+      "text": "You have changed greatly, Doctor.",
+      "unlockCond": null
+    }
+  ],
+  "char_498_inside": [
+    {
+      "sortId": 1,
+      "title": "Appointed as Assistant",
+      "text": "You need my help with your mountain of work? Haha, I'm not sure if I should be <i>intervening</i> in Rhodes Island's internal affairs though...? It's no problem? Uh, really?",
+      "unlockCond": null
+    },
+    {
+      "sortId": 2,
+      "title": "Talk 1",
+      "text": "Our laws are incapable of perfectly solving every dispute. There are many situations where even the saints can't help. I must admit, I have a deep respect for people like the bishop from that monastery, considering the problems he faced. Too bad I don't have such lofty faith.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 3,
+      "title": "Talk 2",
+      "text": "Was that Arene earlier? Now when did that punk learn some manners...? You taught him? Wow, now that's impressive! I guess even a devious boy like him is still just a boy. Easy enough to trick him onto the right track... Huh...? You didn't trick him?",
+      "unlockCond": null
+    },
+    {
+      "sortId": 4,
+      "title": "Talk 3",
+      "text": "Yo, Doctor! Ambriel and the others are doing a dessert potluck, and I'm bringing donuts. Mind helping me taste test? Okay, so what do you think—Whoa whoa, slow down on the water! It's too sweet and greasy? Strange, I thought the sugar level was just right...",
+      "unlockCond": null
+    },
+    {
+      "sortId": 5,
+      "title": "Talk after Promotion 1",
+      "text": "Don't get me wrong, Doctor, yes, I was elected as 'a representative of the Notarial Hall', but that's just because everyone's curious about what magical place could  Federico endorse, and they needed someone out to take a look for them. In other words, they picked me to come take a look-see here. I've got no say on any matters relating to the Notarial Hall, so don't ask me about that sort of thing, okay?",
+      "unlockCond": { "type": "promotion", "val": 1 }
+    },
+    {
+      "sortId": 6,
+      "title": "Talk after Promotion 2",
+      "text": "I'm lucky I was born a Lateran. No, Doctor, our good fortune does not lie in our halos, but in our material abundance and strong state. You have an ideal Rhodes Island of your own? It's not easy, chasing your dreams, but... good luck I guess?",
+      "unlockCond": { "type": "promotion", "val": 2 }
+    },
+    {
+      "sortId": 7,
+      "title": "Talk after Trust Increase 1",
+      "text": "Take note of your posture, keep your crossbow aimed straight ahead, turn your body slightly... Yes, just like that, and then pull the trigger! Wow, bullseye! Very nice! Oh no, no need to thank me, I just helped correct your posture, that's all. You're very talented, Doctor.",
+      "unlockCond": { "type": "trust", "val": 40 }
+    },
+    {
+      "sortId": 8,
+      "title": "Talk after Trust Increase 2",
+      "text": "Come sit over here, Doctor. I have something to discuss with you. There's a bunch of Sarkaz I know, and they're pretty good in a fight, so if Rhodes Island ever needs a few helping hands... Haha, yes, I'm not eager to make trouble for myself, but... Well, I might be going too soft, but why not consider it?",
+      "unlockCond": { "type": "trust", "val": 100 }
+    },
+    {
+      "sortId": 9,
+      "title": "Talk after Trust Increase 3",
+      "text": "I thought you might have found this business annoying, so I dealt with it in your place, and here's the mission report. The scene was something of an eyesore, so I didn't attach any photos. I executed every last name in your notes, no exceptions.   What's with the look, Doctor? Do you feel unwell?",
+      "unlockCond": { "type": "trust", "val": 200 }
+    },
+    {
+      "sortId": 10,
+      "title": "Idle",
+      "text": "Oh, Doctor, you're awake… What? Please don't tell Dr. Kal'tsit and Amiya you were napping at work? Ahaha, what napping?",
+      "unlockCond": null
+    },
+    {
+      "sortId": 11,
+      "title": "Onboard",
+      "text": "Liaison from the Lateran Notarial Hall, Insider. Here's the paperwork for our collaboration. May I ask which office I should be heading to next? I'm making my first impression here at Rhodes Island, so I want to do this perfectly.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 12,
+      "title": "Watching Battle Record",
+      "text": "Let's see... Ezell is still so merciful in battle, huh... Sheesh, Federico is the exact opposite!",
+      "unlockCond": null
+    },
+    {
+      "sortId": 13,
+      "title": "Promotion 1",
+      "text": "Promotion? Thank you for your affirmation, Doctor. However, does this mean I'm going to have to handle even more difficult work in the future?",
+      "unlockCond": { "type": "promotion", "val": 1 }
+    },
+    {
+      "sortId": 14,
+      "title": "Promotion 2",
+      "text": "Many thanks. I will report that Rhodes Island intends to deepen the level of cooperation with the Notarial Hall... Wait, this is a personal commendation for me? Haha, what an honor.",
+      "unlockCond": { "type": "promotion", "val": 2 }
+    },
+    {
+      "sortId": 17,
+      "title": "Added to Squad",
+      "text": "Got it. You've determined that use of force is required in the current situation, and I'll trust you on that.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 18,
+      "title": "Appointed as Squad Leader",
+      "text": "I'm in charge? Alright then, I would like everyone to act freely as they wish. And everyone is responsible for their own actions.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 19,
+      "title": "Depart",
+      "text": "Firearm, check.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 20,
+      "title": "Begin Operation",
+      "text": "I wish everyone could just calm down, before I raise my gun to settle things.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 21,
+      "title": "Selecting Operator 1",
+      "text": "Alright, mission accepted.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 22,
+      "title": "Selecting Operator 2",
+      "text": "Bullets may be fast, but they aren't always so quick to solve disputes.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 23,
+      "title": "Deployment 1",
+      "text": "Chill, everyone, I'm just here for a few questions.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 24,
+      "title": "Deployment 2",
+      "text": "If you insist on being so stubborn, then... prepare for execution.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 25,
+      "title": "In Battle 1",
+      "text": "I'm actually better at wrestling than shooting. Makes the cleanup easier.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 26,
+      "title": "In Battle 2",
+      "text": "I'll give you some time to cry out in pain while I adjust my weapon.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 27,
+      "title": "In Battle 3",
+      "text": "I was really hoping it wouldn't turn out like this.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 28,
+      "title": "In Battle 4",
+      "text": "In our current situation... A complete sweep would be the most efficient solution.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 29,
+      "title": "4-star Result",
+      "text": "I knew I was getting into trouble coming here, but thankfully I've got you, Doctor. I wouldn't have figured out how to resolve such a complicated conflict by myself.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 30,
+      "title": "3-star Result",
+      "text": "Alright, time to pack up my gun. Mission complete, Doctor. We achieved victory just as planned, so there shouldn't be any post mortem work required, right?",
+      "unlockCond": null
+    },
+    {
+      "sortId": 31,
+      "title": "Sub 3-star Result",
+      "text": "What, did some of them escape? Ah, I had one eye closed while aiming my shots, so maybe they happened to be out of my sight.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 32,
+      "title": "Operation Failure",
+      "text": "It's clear we need to overhaul our plans.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 33,
+      "title": "Assigned to Facility",
+      "text": "You have such good accommodation here? This place is top-notch in all the foreign posting I've had.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 34,
+      "title": "Tap",
+      "text": "Haha, Doctor. You're not scaring me that easily.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 36,
+      "title": "Trust Tap",
+      "text": "It's nice to occasionally get some rest in places like this corridor. After all, most of Laterano's benches are found only outdoors.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 37,
+      "title": "Title",
+      "text": "Arknights.",
+      "unlockCond": null
+    },
+    {
+      "sortId": 42,
+      "title": "Greeting",
+      "text": "You can take a break first, Doctor.",
       "unlockCond": null
     }
   ],

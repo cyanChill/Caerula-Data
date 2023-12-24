@@ -870,6 +870,16 @@
       "trustUnlock": 50
     }
   ],
+  "char_279_excu": [
+    {
+      "name": "Executor",
+      "description": [
+        "He's just applied for the funding to purchase one hundred scoops of ice cream."
+      ],
+      "unlockCond": { "elite": 2, "lvl": 1 },
+      "trustUnlock": 50
+    }
+  ],
   "char_213_mostma": [
     {
       "name": "Atop the Skyscrapers",
@@ -970,6 +980,16 @@
       "trustUnlock": 50
     }
   ],
+  "char_306_leizi": [
+    {
+      "name": "One Who Controls Lightning",
+      "description": [
+        "If those who enforce the law are not bound by the law, then what is the use of establishing the law?"
+      ],
+      "unlockCond": { "elite": 2, "lvl": 1 },
+      "trustUnlock": 50
+    }
+  ],
   "char_222_bpipe": [
     {
       "name": "Dangerous Road",
@@ -983,6 +1003,16 @@
       "name": "Fatal Attraction",
       "description": [
         "This may be a rare break in Sesa's search for the truth, or it may be the most carefully laid of traps."
+      ],
+      "unlockCond": { "elite": 2, "lvl": 1 },
+      "trustUnlock": 50
+    }
+  ],
+  "char_337_utage": [
+    {
+      "name": "The Game of Chic",
+      "description": [
+        "Utage's not too happy, but she's not gonna let you know that before this is over."
       ],
       "unlockCond": { "elite": 2, "lvl": 1 },
       "trustUnlock": 50
@@ -1286,6 +1316,16 @@
       "trustUnlock": 200
     }
   ],
+  "char_214_kafka": [
+    {
+      "name": "Let's Keep That a Secret",
+      "description": [
+        "Kafka's got a whole lotta secrets, but only one woman she tells 'em to."
+      ],
+      "unlockCond": { "elite": 2, "lvl": 1 },
+      "trustUnlock": 50
+    }
+  ],
   "char_440_pinecn": [
     {
       "name": "Yours Sincerely",
@@ -1514,6 +1554,16 @@
       "trustUnlock": 50
     }
   ],
+  "char_4004_pudd": [
+    {
+      "name": "What the Snow's Like Far Away",
+      "description": [
+        "For however long it's been, Pudding's recollection of Sami has resembled a little snowglobe, perfectly frozen in time."
+      ],
+      "unlockCond": { "elite": 2, "lvl": 1 },
+      "trustUnlock": 50
+    }
+  ],
   "char_422_aurora": [
     {
       "name": "What She Saw",
@@ -1589,6 +1639,16 @@
       "name": "One Should, One Must",
       "description": [
         "No longer a shinobi, and no longer bound by devotion, but she long since pledged her loyalty to her current job."
+      ],
+      "unlockCond": { "elite": 2, "lvl": 1 },
+      "trustUnlock": 50
+    }
+  ],
+  "char_4036_forcer": [
+    {
+      "name": "Departure Plans",
+      "description": [
+        "How can a Sarkaz who knows Kazdel well enough ever want to look a Sankta in the eye?"
       ],
       "unlockCond": { "elite": 2, "lvl": 1 },
       "trustUnlock": 50
@@ -1778,6 +1838,16 @@
       "trustUnlock": 50
     }
   ],
+  "char_493_firwhl": [
+    {
+      "name": "The Lone Goer",
+      "description": [
+        "She had the easy way out and left it, tried to travel with them in the thorns, but they told her in the thorns she was no traveler of theirs."
+      ],
+      "unlockCond": { "elite": 2, "lvl": 1 },
+      "trustUnlock": 50
+    }
+  ],
   "char_2024_chyue": [
     {
       "name": "Once Upon a Time, I Wandered Afar",
@@ -1791,6 +1861,16 @@
       "name": "Beneath the Worthy Wheel",
       "description": [
         "On the page torn out of 'Morgan's Memoirs' was a wonderful pipe dream, but the future is demanding something be filled in, and she'll find an answer."
+      ],
+      "unlockCond": { "elite": 2, "lvl": 1 },
+      "trustUnlock": 50
+    }
+  ],
+  "char_498_inside": [
+    {
+      "name": "Secret Mission",
+      "description": [
+        "One egg, three tablespoons of sugar, yeast, one cup of flour, and two tablespoons of maple syrup."
       ],
       "unlockCond": { "elite": 2, "lvl": 1 },
       "trustUnlock": 50

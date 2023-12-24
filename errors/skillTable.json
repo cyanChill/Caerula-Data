@@ -1,4 +1,5 @@
 [
+  "sktok_robrta",
   "sktok_bgsnow_1",
   "sktok_bgsnow_2",
   "sktok_bgsnow_3",
@@ -13,5 +14,7 @@
   "sktok_dice3",
   "sktok_allady_2",
   "sktok_mhwrct",
-  "sktok_wdfarm"
+  "sktok_wdfarm",
+  "sktok_rdrepair",
+  "sktok_rdblock"
 ]
