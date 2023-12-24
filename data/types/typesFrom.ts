@@ -123,6 +123,7 @@ export const OperatorIds = [
   "char_511_asnipe",
   "char_365_aprl",
   "char_1021_kroos2",
+  "char_498_inside",
   "char_219_meteo",
   "char_379_sesa",
   "char_4078_bdhkgt",
@@ -186,6 +187,7 @@ export const OperatorIds = [
   "char_363_toddi",
   "char_4043_erato",
   "char_1027_greyy2",
+  "char_4015_spuria",
   "char_173_slchan",
   "char_383_snsant",
   "char_174_slbell",
@@ -281,6 +283,7 @@ export const OperatorIds = [
   "char_188_helage",
   "char_485_pallas",
   "char_1014_nearl2",
+  "char_1032_excu2",
   "char_4064_mlynar",
   "char_230_savage",
   "char_282_catap",
@@ -391,9 +394,9 @@ export const ProfessionTable = {
     "hookmaster",
     "stalker",
     "pusher",
+    "geek",
     "traper",
-    "dollkeeper",
-    "geek"
+    "dollkeeper"
   ],
   "SNIPER": [
     "fastshot",
@@ -613,6 +616,8 @@ export const SkillIds = [
   "skchr_aprl_2",
   "skchr_kroos2_1",
   "skchr_kroos2_2",
+  "skchr_inside_1",
+  "skchr_inside_2",
   "skchr_meteo_1",
   "skchr_meteo_2",
   "skchr_sesa_2",
@@ -739,6 +744,8 @@ export const SkillIds = [
   "skchr_erato_1",
   "skchr_erato_2",
   "skchr_greyy2_2",
+  "skchr_spuria_1",
+  "skchr_spuria_2",
   "skchr_slchan_1",
   "skchr_slchan_2",
   "skchr_snsant_1",
@@ -1034,6 +1041,9 @@ export const SkillIds = [
   "skchr_pallas_1",
   "skchr_pallas_2",
   "skchr_pallas_3",
+  "skchr_excu2_1",
+  "skchr_excu2_2",
+  "skchr_excu2_3",
   "skchr_mlynar_1",
   "skchr_mlynar_2",
   "skchr_mlynar_3",
@@ -1212,7 +1222,11 @@ export const SkillIds = [
   "sktok_cdheal",
   "sktok_cdheala",
   "sktok_cdhealb",
-  "sktok_gractrl"
+  "sktok_gractrl",
+  "sktok_ltstat",
+  "sktok_rockfl",
+  "sktok_rdrepair",
+  "sktok_rdblock"
 ] as const;
 
 export const SkillIconIds = [
@@ -1251,7 +1265,9 @@ export const SkillIconIds = [
   "sktok_snflwr",
   "sktok_cdaltar",
   "sktok_cddiff",
-  "sktok_cdheal"
+  "sktok_cdheal",
+  "sktok_ltstat",
+  "sktok_rockfl"
 ] as const;
 
 export const EnemyIds = [
@@ -1772,7 +1788,6 @@ export const EnemyIds = [
   "enemy_1263_durbus_2",
   "enemy_1264_durgrd",
   "enemy_1264_durgrd_2",
-  "enemy_1265_durcar",
   "enemy_1266_nhapos",
   "enemy_1267_nhpbr",
   "enemy_1267_nhpbr_2",
@@ -1861,7 +1876,6 @@ export const EnemyIds = [
   "enemy_1310_mhprpn_2",
   "enemy_1311_mhkryk",
   "enemy_1311_mhkryk_2",
-  "enemy_1312_ymillu",
   "enemy_1313_wdfmr",
   "enemy_1313_wdfmr_2",
   "enemy_1314_wdnjd",
@@ -1901,7 +1915,22 @@ export const EnemyIds = [
   "enemy_1332_cbterm_2",
   "enemy_1333_cbbgen",
   "enemy_1333_cbbgen_2",
-  "enemy_1334_ristar",
+  "enemy_1335_bldrat",
+  "enemy_1335_bldrat_2",
+  "enemy_1336_bldbat",
+  "enemy_1336_bldbat_2",
+  "enemy_1337_bhrknf",
+  "enemy_1337_bhrknf_2",
+  "enemy_1338_bhrjst",
+  "enemy_1338_bhrjst_2",
+  "enemy_1339_bhrgrd",
+  "enemy_1339_bhrgrd_2",
+  "enemy_1340_bthtbw",
+  "enemy_1340_bthtbw_2",
+  "enemy_1341_bthtms",
+  "enemy_1341_bthtms_2",
+  "enemy_1342_frtuna",
+  "enemy_3005_lpeopl",
   "enemy_2001_duckmi",
   "enemy_2002_bearmi",
   "enemy_2034_sythef",
@@ -1961,14 +1990,13 @@ export const EnemyIds = [
   "enemy_1535_wlfmster",
   "enemy_1536_ncrmcr",
   "enemy_1538_ymmons",
-  "enemy_1538_ymmons_2",
-  "enemy_1538_ymmons_3",
   "enemy_1537_mhrors",
   "enemy_1539_reid",
   "enemy_1540_wdncr",
   "enemy_1541_wdslms",
   "enemy_1542_wdslm",
   "enemy_1543_cstlrs",
+  "enemy_1544_cledub",
   "enemy_2003_rockman",
   "enemy_2004_balloon",
   "enemy_2005_axetro",
@@ -1994,9 +2022,6 @@ export const EnemyIds = [
   "enemy_2039_syskad",
   "enemy_2042_syboss",
   "enemy_2036_syshop",
-  "enemy_5008_cstrwd",
-  "enemy_5009_shtrwd",
-  "enemy_5010_catrdg",
   "enemy_6001_trsgst",
   "enemy_6002_trswlf",
   "enemy_6003_trsslm",
@@ -2025,7 +2050,6 @@ export const EnemyIds = [
   "enemy_7006_xbcrab_2",
   "enemy_7015_xbcrab2",
   "enemy_7007_xbbird",
-  "enemy_7008_wrkwrk",
   "enemy_7009_mtmoun",
   "enemy_7010_bldrgn",
   "enemy_7011_paki",
@@ -2039,26 +2063,37 @@ export const EnemyRaceTable = {
   "drone": "Drone",
   "sarkaz": "Sarkaz",
   "mutant": "Possessed",
+  "seamonster": "Sea Monster",
   "originiumartscraft": "Arts Creation",
   "animated": "Apparition",
-  "seamonster": "Sea Monster",
   "machine": "Machina",
-  "wildanimal": "Wild Beast"
+  "wildanimal": "Wild Beast",
+  "collapsal": "Collapsal"
 } as const;
 
-export const EnemyAttackType = [
-  "Melee",
-  "Ranged",
-  "Ranged  Arts",
+export const AttackPatterns = [
+  "Melee Physical",
+  "Ranged Physical",
+  "Ranged Arts",
   "None",
-  "Melee  Arts",
-  "Melee  Ranged",
-  "Melee  Ranged  Arts",
-  "Ranged Melee",
-  "Healing",
-  "Healing Ranged",
-  "Ranged Physical"
+  "Melee Arts",
+  "Ranged Physical Arts",
+  "Melee Ranged Physical",
+  "None Arts",
+  "None Physical",
+  "Melee Ranged Physical Arts",
+  "Melee Ranged Arts",
+  "Melee Physical Arts",
+  "None Healing",
+  "Ranged Healing",
+  "Ranged"
 ] as const;
+
+export const AttackPositions = ["MELEE", "RANGED", "NONE", "ALL"] as const;
+
+export const DamageTypes = ["PHYSIC", "MAGIC", "NO_DAMAGE", "HEAL"] as const;
+
+export const Movements = ["WALK", "FLY"] as const;
 
 export const BrandIds = [
   "sale",
@@ -2675,6 +2710,8 @@ export const ItemIds = [
   "p_char_154_morgan",
   "p_char_464_cement",
   "p_char_4006_melnte",
+  "p_char_498_inside",
+  "p_char_4015_spuria",
   "p_char_103_angel",
   "p_char_112_siege",
   "p_char_134_ifrit",
@@ -2750,6 +2787,7 @@ export const ItemIds = [
   "p_char_249_mlyss",
   "p_char_4027_heyak",
   "p_char_1031_slent2",
+  "p_char_1032_excu2",
   "class_p_char_123_fang",
   "class_p_char_240_wyvern",
   "class_p_char_192_falco",
@@ -2892,6 +2930,7 @@ export const ItemIds = [
   "voucher_full_robin",
   "voucher_full_lava2",
   "voucher_full_zebra",
+  "voucher_full_glady",
   "uni_set_guitar",
   "uni_set_pizza",
   "uni_set_penguin",
@@ -3053,6 +3092,7 @@ export const ItemIds = [
   "uni_set_inkArt",
   "uni_set_reception",
   "uni_set_icu",
+  "uni_set_abyssal",
   "act23side_token_spirit",
   "act1sandbox_milestone_point",
   "act14mini_token_fu",
@@ -3073,5 +3113,7 @@ export const ItemIds = [
   "act25side_token_fdrchips",
   "act25side_token_key01",
   "act25side_token_key02",
-  "act38d1_token_coin"
+  "act38d1_token_coin",
+  "act26side_token_fragmenta",
+  "act18side_token_pieces_rep_1"
 ] as const;

@@ -150,7 +150,12 @@ export function removeIrregularTags(str: string) {
   return str.replaceAll("<i>", "").replaceAll("</i>", "");
 }
 
-/**  @description Capitalize first letter of word. */
+/** @description Capitalize first letter of word. */
 export function capitalizeWord(str: string) {
   return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+/** @description Capitalize word, lower-casing all other characters. */
+export function capitalize(str: string) {
+  return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 }

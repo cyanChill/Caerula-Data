@@ -1,17 +1,14 @@
 import fs from "fs";
 import path from "path";
 
+import type { RawCharacter } from "@/types/rawCharacter";
+
 import amiyaForm from "@/json/en_US/gamedata/excel/char_patch_table.json";
 import _CharTable from "@/json/en_US/gamedata/excel/character_table.json";
-import type { RawCharacter } from "@/types/rawCharacterType";
 
 import { niceJSON } from "@/lib/utils";
 
-// FIXME: Temporary workaround due data not being updated
-const AmiyaGuard = amiyaForm.patchChars as unknown as Record<
-  string,
-  RawCharacter
->;
+const AmiyaGuard = amiyaForm.patchChars as Record<string, RawCharacter>;
 const CharTable = { ..._CharTable, ...AmiyaGuard };
 
 /**

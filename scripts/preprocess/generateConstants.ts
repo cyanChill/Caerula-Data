@@ -1,9 +1,9 @@
 import fs from "fs";
 import path from "path";
 
-import type OperatorTableSchema from "@/json/preprocessed/operator_table.json";
-import type CharacterTableSchema from "@/json/en_US/gamedata/excel/character_table.json";
+import type { RawCharacter } from "@/types/rawCharacter";
 
+import EnemyDatabase from "@/json/en_US/gamedata/levels/enemydata/enemy_database.json";
 import EnemyTable from "@/json/en_US/gamedata/excel/enemy_handbook_table.json";
 import ItemTable from "@/json/en_US/gamedata/excel/item_table.json";
 import RangeTable from "@/json/en_US/gamedata/excel/range_table.json";
@@ -11,7 +11,7 @@ import SkillTable from "@/json/en_US/gamedata/excel/skill_table.json";
 import SkinTable from "@/json/en_US/gamedata/excel/skin_table.json";
 import gameData_const from "@/json/en_US/gamedata/excel/gamedata_const.json";
 
-import { generateSlug } from "@/lib/conversion";
+import { generateAttackPattern, generateSlug } from "@/lib/conversion";
 import { niceJSON } from "@/lib/utils";
 
 /** @description Generate constants from `operator_table.json`. */
@@ -21,7 +21,7 @@ export function generateOperatorConstants() {
       path.resolve("./json/preprocessed/operator_table.json"),
       "utf8"
     )
-  ) as typeof OperatorTableSchema;
+  ) as Record<string, RawCharacter>;
 
   const OperatorIds: string[] = [];
   const NationIds = new Set<string>();
@@ -39,7 +39,7 @@ export function generateOperatorConstants() {
       if (nationId) NationIds.add(nationId);
       if (groupId) FactionIds.add(groupId);
       if (teamId) TeamIds.add(teamId);
-      tagList.forEach((tag) => RoleTags.add(tag));
+      if (tagList) tagList.forEach((tag) => RoleTags.add(tag));
 
       if (Object.hasOwn(_ProfessionTable, profession)) {
         _ProfessionTable[profession].add(subProfessionId);
@@ -65,13 +65,13 @@ export function generateOperatorConstants() {
   };
 }
 
-/** @description Generate constants from `skill_list.json`. */
+/** @description Generate constants from `skill_table.json`. */
 function generateSkillConstants() {
   const SkillIds: string[] = [];
   const SkillIconIds = new Set<string>();
 
-  Object.entries(SkillTable).forEach(([key, { iconId }]) => {
-    SkillIds.push(key);
+  Object.values(SkillTable).forEach(({ skillId, iconId }) => {
+    SkillIds.push(skillId);
     if (iconId) SkillIconIds.add(iconId);
   });
 
@@ -82,21 +82,46 @@ function generateSkillConstants() {
 function generateEnemyConstants() {
   const EnemyIds: string[] = [];
   const EnemyRaceTable: Record<string, string> = {};
-  const EnemyAttackType = new Set<string>();
+  const AttackPatterns = new Set<string>();
+  const AttackPositions = new Set<string>();
+  const DamageTypes = new Set<string>();
+  const Movements = new Set<string>();
 
-  Object.entries(EnemyTable).forEach(
-    ([key, { hideInHandbook, enemyRace, enemyTags, attackType }]) => {
-      EnemyIds.push(key);
-      // Only index the enemies that are shown
-      if (hideInHandbook) return;
+  Object.values(EnemyTable.enemyData).forEach(
+    ({ enemyId, hideInHandbook, damageType }) => {
+      if (hideInHandbook) return; // Only index the enemies that are shown
+      EnemyIds.push(enemyId);
 
-      // Not all enemies have a defined race
-      if (enemyRace) EnemyRaceTable[enemyTags[0]] = enemyRace;
-      EnemyAttackType.add(attackType);
+      damageType.forEach((dmg) => DamageTypes.add(dmg));
+
+      const enemyStats = EnemyDatabase.enemies.find(
+        (enemy) => enemy.Key === enemyId
+      );
+      if (!enemyStats) return;
+
+      const { applyWay, motion } = enemyStats.Value[0].enemyData;
+      if (motion.m_defined) Movements.add(motion.m_value);
+      if (applyWay.m_defined) {
+        AttackPositions.add(applyWay.m_value);
+
+        // Generate attack types from attack position & damage types
+        AttackPatterns.add(generateAttackPattern(applyWay.m_value, damageType));
+      }
     }
   );
 
-  return { EnemyIds, EnemyRaceTable, EnemyAttackType: [...EnemyAttackType] };
+  Object.values(EnemyTable.raceData).forEach(({ id, raceName }) => {
+    EnemyRaceTable[id] = raceName;
+  });
+
+  return {
+    EnemyIds,
+    EnemyRaceTable,
+    AttackPatterns: [...AttackPatterns],
+    AttackPositions: [...AttackPositions],
+    DamageTypes: [...DamageTypes],
+    Movements: [...Movements],
+  };
 }
 
 /**
@@ -109,7 +134,7 @@ function generateMiscConstants() {
       path.resolve("./json/preprocessed/tokens_table.json"),
       "utf8"
     )
-  ) as typeof CharacterTableSchema;
+  ) as Record<string, RawCharacter>;
 
   return {
     BrandIds: Object.keys(SkinTable.brandList),

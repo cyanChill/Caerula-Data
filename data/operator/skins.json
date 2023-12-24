@@ -3154,6 +3154,26 @@
         "description": "0011 New Arrivals/Along the Corridor. Made by Lungmen craftsmen from premium Shangshu silk. Elegant and classical patterns with cyan lining make for a dignified outfit."
       }
     ],
+    "char_498_inside": [
+      {
+        "id": "char_498_inside_1b",
+        "brandId": null,
+        "subBrand": { "id": "ILLUST_0", "name": "Default Outfit" },
+        "name": "Elite 0",
+        "alt": "Insider's \"Elite 0\" skin",
+        "artists": ["umo_yszx"],
+        "description": "An outfit commonly worn by Operators.\nWhile not as practical as a uniform, it's what they find most comfortable."
+      },
+      {
+        "id": "char_498_inside_2b",
+        "brandId": null,
+        "subBrand": { "id": "ILLUST_2", "name": "Default Outfit" },
+        "name": "Elite 2",
+        "alt": "Insider's \"Elite 2\" skin",
+        "artists": ["umo_yszx"],
+        "description": "An outfit that has been improved after the Operator's Promotion.\nCustom-made to suit each Operator's experiences and needs, these outfits are designed to provide them maximum flexibility on any battlefield. Furthermore, this is all done without compromising the comfort that they've come to expect."
+      }
+    ],
     "char_219_meteo": [
       {
         "id": "char_219_meteo_1b",
@@ -4124,6 +4144,15 @@
         "alt": "Paprika's \"Elite 2\" skin",
         "artists": ["板板"],
         "description": "An outfit that has been improved after the Operator's Promotion.\nCustom-made to suit each Operator's experiences and needs, these outfits are designed to provide them maximum flexibility on any battlefield. Furthermore, this is all done without compromising the comfort that they've come to expect."
+      },
+      {
+        "id": "char_4071_peper_whirlwind#5b",
+        "brandId": "whirlwind",
+        "subBrand": { "id": "2023#whirlwind", "name": "0011/Tempest/V" },
+        "name": "The Road to Here",
+        "alt": "Paprika's \"The Road to Here\" skin",
+        "artists": ["板板"],
+        "description": "0011 Tempest Series/The Road to Here. Loose-fitting coat that can envelop a young girl. The waterproof fabric makes it suitable for a rainy day."
       }
     ],
     "char_148_nearl": [
@@ -4454,6 +4483,15 @@
         "alt": "Shalem's \"Elite 2\" skin",
         "artists": ["Cenm0"],
         "description": "An outfit that has been improved after the Operator's Promotion.\nCustom-made to suit each Operator's experiences and needs, these outfits are designed to provide them maximum flexibility on any battlefield. Furthermore, this is all done without compromising the comfort that they've come to expect."
+      },
+      {
+        "id": "char_4025_aprot2_whirlwind#5b",
+        "brandId": "whirlwind",
+        "subBrand": { "id": "2023#whirlwind", "name": "0011/Tempest/V" },
+        "name": "The Fruition",
+        "alt": "Shalem's \"The Fruition\" skin",
+        "artists": ["Cenm0"],
+        "description": "0011 Tempest Series/The Fruition. Classic black and white, with just a touch of color. No need for complex ornamentations; any flair belongs to the performer alone."
       }
     ],
     "char_4047_pianst": [
@@ -4474,6 +4512,15 @@
         "alt": "Czerny's \"Elite 2\" skin",
         "artists": ["九日九号"],
         "description": "An outfit that has been improved after the Operator's Promotion.\nCustom-made to suit each Operator's experiences and needs, these outfits are designed to provide them maximum flexibility on any battlefield. Furthermore, this is all done without compromising the comfort that they've come to expect."
+      },
+      {
+        "id": "char_4047_pianst_wild#8b",
+        "brandId": "wild",
+        "subBrand": { "id": "2023#wild#2", "name": "Vitafield/VIII" },
+        "name": "Freeland Tuneseeker",
+        "alt": "Czerny's \"Freeland Tuneseeker\" skin",
+        "artists": ["九日九号"],
+        "description": "Vitafield [Rewilder] Series Classics/Freeland Tuneseeker. Made with special materials with function in mind, perfect for meeting your various needs and weathering even the roughest conditions."
       }
     ],
     "char_457_blitz": [
@@ -4835,6 +4882,26 @@
         "alt": "Greyy the Lightningbearer's \"Aftershow\" skin",
         "artists": ["我妻洛酱"],
         "description": "Greyy festival costume/Aftershow. Finely-crafted costumes and props made by the Operators are very popular amongst the Rhodes Island audience."
+      }
+    ],
+    "char_4015_spuria": [
+      {
+        "id": "char_4015_spuria_1b",
+        "brandId": null,
+        "subBrand": { "id": "ILLUST_0", "name": "Default Outfit" },
+        "name": "Elite 0",
+        "alt": "Spuria's \"Elite 0\" skin",
+        "artists": ["おぐち"],
+        "description": "An outfit commonly worn by Operators.\nWhile not as practical as a uniform, it's what they find most comfortable."
+      },
+      {
+        "id": "char_4015_spuria_2b",
+        "brandId": null,
+        "subBrand": { "id": "ILLUST_2", "name": "Default Outfit" },
+        "name": "Elite 2",
+        "alt": "Spuria's \"Elite 2\" skin",
+        "artists": ["おぐち"],
+        "description": "An outfit that has been improved after the Operator's Promotion.\nCustom-made to suit each Operator's experiences and needs, these outfits are designed to provide them maximum flexibility on any battlefield. Furthermore, this is all done without compromising the comfort that they've come to expect."
       }
     ],
     "char_173_slchan": [
@@ -5627,6 +5694,15 @@
         "alt": "Fartooth's \"Elite 2\" skin",
         "artists": ["NoriZC"],
         "description": "An outfit that has been improved after the Operator's Promotion.\nCustom-made to suit each Operator's experiences and needs, these outfits are designed to provide them maximum flexibility on any battlefield. Furthermore, this is all done without compromising the comfort that they've come to expect."
+      },
+      {
+        "id": "char_430_fartth_whirlwind#5b",
+        "brandId": "whirlwind",
+        "subBrand": { "id": "2023#whirlwind", "name": "0011/Tempest/V" },
+        "name": "Hear the Wind Sing",
+        "alt": "Fartooth's \"Hear the Wind Sing\" skin",
+        "artists": ["NoriZC"],
+        "description": "0011 Tempest Series/Hear the Wind Sing. New concept based on the theme of Wind, a collaborative work between multiple designers. The ever-present floating ribbons capture the shape of the wind."
       }
     ],
     "char_113_cqbw": [
@@ -5850,6 +5926,15 @@
         "alt": "Saga's \"Elite 2\" skin",
         "artists": ["多元菌"],
         "description": "An outfit that has been improved after the Operator's Promotion.\nCustom-made to suit each Operator's experiences and needs, these outfits are designed to provide them maximum flexibility on any battlefield. Furthermore, this is all done without compromising the comfort that they've come to expect."
+      },
+      {
+        "id": "char_362_saga_sale#9b",
+        "brandId": "sale",
+        "subBrand": { "id": "2023#sale#2", "name": "Test Collection/X" },
+        "name": "There They Be",
+        "alt": "Saga's \"There They Be\" skin",
+        "artists": ["多元菌"],
+        "description": "Test Collection Series/There They Be. Saga's attire when she left P'o-shan Village, with Biteys for pockets and straw sandals. What is in the scrolls cannot be removed, but after so much time spent with oneselves, what was drawn in ink is now etched in the heart."
       }
     ],
     "char_479_sleach": [
@@ -7578,6 +7663,26 @@
         "alt": "Nearl the Radiant Knight's \"Relight\" skin",
         "artists": ["竜崎いち"],
         "description": "EPOQUE Sub-Brand [Passe] Series Selects/Relight. One of the many suits of armor worn by Nearl in her debut competition season, this one a modification of a campaign knight suit."
+      }
+    ],
+    "char_1032_excu2": [
+      {
+        "id": "char_1032_excu2_1b",
+        "brandId": null,
+        "subBrand": { "id": "ILLUST_0", "name": "Default Outfit" },
+        "name": "Elite 0",
+        "alt": "Executor the Ex Foedere's \"Elite 0\" skin",
+        "artists": ["Skade"],
+        "description": "Executor's attire during canonization.\nCustom-made by the Curia and designed by the cardinals, thoroughly unique in more ways than one."
+      },
+      {
+        "id": "char_1032_excu2_2b",
+        "brandId": null,
+        "subBrand": { "id": "ILLUST_2", "name": "Default Outfit" },
+        "name": "Elite 2",
+        "alt": "Executor the Ex Foedere's \"Elite 2\" skin",
+        "artists": ["Skade"],
+        "description": "One's clothing represents one's hopes and expectations, but does not change the essence of the wearer.\nExecutor must adapt to his new role. Saint Federico will learn the weight of his attire."
       }
     ],
     "char_4064_mlynar": [

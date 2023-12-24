@@ -39,6 +39,12 @@
     "ro2.virtue": "#0098dc",
     "ro2.mutation": "#9266b2",
     "ro2.desc": "#6d6d6d",
+    "ro3.lose": "#FF6E6E",
+    "ro3.get": "#9ed9fd",
+    "ro3.redt": "#ff4532",
+    "ro3.greent": "#4ffaa5",
+    "ro3.bluet": "#0085ff",
+    "ro3.bosst": "#ffffff",
     "rc.title": "#FFFFFF",
     "rc.subtitle": "#FFC90E",
     "rc.em": "#FF7F27",
@@ -71,6 +77,7 @@
     "lv.hdbg": "#7ba61f",
     "tu.ht": "#ff8d00",
     "lv.act20side": "#F7BC44",
+    "lv.act20sre": "#F7BC44",
     "lv.mhitem": "#A57F5B",
     "lv.mhtx": "#1B1B1B",
     "lv.mhfs": "#A57F5B",
@@ -122,7 +129,7 @@
     "ba.fragile": {
       "termId": "ba.fragile",
       "termName": "Fragile",
-      "description": "Amplifies all damage taken by the corresponding amount (only the strongest effect of this type applies)",
+      "description": "Amplifies all Physical, Arts, and True damage taken by the corresponding amount (only the strongest effect of this type applies)",
       "slug": "fragile"
     },
     "ba.shield": {
@@ -286,6 +293,18 @@
       "termName": "Enfeeble",
       "description": "Reduces the target's ATK by the corresponding amount (only the strongest effect with this name applies)",
       "slug": "enfeeble"
+    },
+    "ba.dt.apoptosis2": {
+      "termId": "ba.dt.apoptosis2",
+      "termName": "Necrosis Damage - Player",
+      "description": "Explodes when at max (1000 for Normal and Elite, 2000 for Leaders), inflicting 50%Enfeeble that gradually recovers, and dealing 800 Elemental Damage per second. 15s cooldown.",
+      "slug": "necrosis_damage_-_player"
+    },
+    "ba.epbarrier": {
+      "termId": "ba.epbarrier",
+      "termName": "Protective Barrier",
+      "description": "Absorbs a certain amount of Elemental Damage.",
+      "slug": "protective_barrier"
     },
     "cc.bd_A_1": {
       "termId": "cc.bd_A_1",
@@ -592,6 +611,12 @@
       "termName": "Pinus Sylvestris Skills",
       "description": "Includes the following skills: \nPinus Sylvestris α, Pinus Sylvestris β",
       "slug": "pinus_sylvestris_skills"
+    },
+    "cc.sk.manu4": {
+      "termId": "cc.sk.manu4",
+      "termName": "Metalwork-type Skill",
+      "description": "Includes the following skills:\nMetalwork α, Metalwork β",
+      "slug": "metalwork-type_skill"
     },
     "cc.tag.op": {
       "termId": "cc.tag.op",

@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-import type OperatorTableSchema from "@/json/preprocessed/operator_table.json";
+import type { RawCharacter } from "@/types/rawCharacter";
 
 import SkinTable from "@/json/en_US/gamedata/excel/skin_table.json";
 
@@ -26,8 +26,8 @@ function generateBrandConstants() {
         capitalName: brandCapitalName,
         description,
       };
-      groupList.forEach((id) => {
-        DropMap[id] = brandId;
+      groupList.forEach(({ skinGroupId }) => {
+        DropMap[skinGroupId] = brandId;
       });
     }
   );
@@ -56,7 +56,7 @@ export function generateSkinTableConstants() {
       path.resolve("./json/preprocessed/operator_table.json"),
       "utf8"
     )
-  ) as typeof OperatorTableSchema;
+  ) as Record<string, RawCharacter>;
 
   // Mapping of operator ids w/ their name
   const operatorMap: Record<string, string> = {};

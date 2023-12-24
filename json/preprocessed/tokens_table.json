@@ -1,7 +1,7 @@
 {
   "token_10000_silent_healrb": {
     "name": "Medic Drone",
-    "description": null,
+    "description": "Cannot be attacked; restores the HP of nearby friendly units",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -11,7 +11,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "ALL",
     "tagList": null,
@@ -229,6 +228,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -236,7 +236,7 @@
   },
   "token_10001_deepcl_tentac": {
     "name": "Tentacle",
-    "description": null,
+    "description": "Blocks 1 enemy",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -246,7 +246,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -496,6 +495,7 @@
         "unlockCond": { "phase": "PHASE_1", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -506,7 +506,8 @@
             "name": null,
             "description": "+1 Token",
             "rangeId": null,
-            "blackboard": [{ "key": "max_deploy_count", "value": 1, "valueStr": null }]
+            "blackboard": [{ "key": "max_deploy_count", "value": 1, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
@@ -515,7 +516,8 @@
             "name": null,
             "description": "+2 Tokens",
             "rangeId": null,
-            "blackboard": [{ "key": "max_deploy_count", "value": 2, "valueStr": null }]
+            "blackboard": [{ "key": "max_deploy_count", "value": 2, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -524,7 +526,8 @@
             "name": null,
             "description": "+3 Tokens",
             "rangeId": null,
-            "blackboard": [{ "key": "max_deploy_count", "value": 3, "valueStr": null }]
+            "blackboard": [{ "key": "max_deploy_count", "value": 3, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -542,7 +545,7 @@
   },
   "token_10002_kalts_mon3tr": {
     "name": "Mon3tr",
-    "description": null,
+    "description": "Blocks 3 enemies",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -552,7 +555,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -825,33 +827,49 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
-      { "candidates": null },
+      {
+        "candidates": [
+          {
+            "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+            "requiredPotentialRank": 0,
+            "prefabKey": "#",
+            "name": "Mon3tr",
+            "description": "Can be healed by Kal'tsit; has 0 DEF when not within Kal'tsit's Attack Range",
+            "rangeId": null,
+            "blackboard": [],
+            "tokenKey": null
+          }
+        ]
+      },
       {
         "candidates": [
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "2",
-            "name": null,
-            "description": "-",
+            "name": "Non-Damaging Restructuring",
+            "description": "When defeated (excluding retreat), all enemies in the surrounding 8 tiles are Stunned for 3 seconds and receive 1200 True Damage",
             "rangeId": "x-4",
             "blackboard": [
               { "key": "stun", "value": 3, "valueStr": null },
               { "key": "value", "value": 1200, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 4,
             "prefabKey": "2",
-            "name": null,
-            "description": "-",
+            "name": "Non-Damaging Restructuring",
+            "description": "When defeated (excluding retreat), all enemies in the surrounding 8 tiles are <$ba.stun>Stunned</> for 3.5 <@ba.talpu>(+0.5)</> seconds and receive 1400 <@ba.talpu>(+200)</> True damage",
             "rangeId": "x-4",
             "blackboard": [
               { "key": "stun", "value": 3.5, "valueStr": null },
               { "key": "value", "value": 1400, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -924,7 +942,7 @@
   },
   "token_10003_cgbird_bird": {
     "name": "Mirage",
-    "description": null,
+    "description": "Cannot block enemies",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -934,7 +952,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -1207,6 +1224,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       { "candidates": null },
       {
@@ -1215,14 +1233,15 @@
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "2",
-            "name": null,
-            "description": "75 RES; 30% Physical Dodge; Attracts enemy's attack more easily; Loses 3% Max HP per second",
+            "name": "Fleeting Phantom",
+            "description": "Has 75 RES, 30% Physical Dodge, and is more likely to be targeted by enemies, but loses 3% Max HP per second",
             "rangeId": null,
             "blackboard": [
               { "key": "max_deploy_count", "value": 2, "valueStr": null },
               { "key": "prob", "value": 0.3, "valueStr": null },
               { "key": "hp_ratio", "value": 0.03, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -1240,7 +1259,7 @@
   },
   "token_10004_otter_motter": {
     "name": "Robotter",
-    "description": null,
+    "description": "Blocks 1 enemy",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -1250,7 +1269,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -1500,6 +1518,7 @@
         "unlockCond": { "phase": "PHASE_1", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -1507,37 +1526,40 @@
             "unlockCondition": { "phase": "PHASE_0", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "Reduces the ASPD of enemy attackers by 10",
+            "name": "Robotter",
+            "description": "Reduces the ASPD of enemies blocked by this unit by -10",
             "rangeId": null,
             "blackboard": [
               { "key": "attack_speed", "value": -10, "valueStr": null },
               { "key": "max_deploy_count", "value": 3, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "Reduces the ASPD of enemy attackers by 25",
+            "name": "Robotter",
+            "description": "Reduces the ASPD of enemies blocked by this unit by -25",
             "rangeId": null,
             "blackboard": [
               { "key": "attack_speed", "value": -25, "valueStr": null },
               { "key": "max_deploy_count", "value": 4, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "Reduces the ASPD of enemy attackers by 25",
+            "name": "Robotter",
+            "description": "Reduces the ASPD of enemies blocked by this unit by -25",
             "rangeId": null,
             "blackboard": [
               { "key": "attack_speed", "value": -25, "valueStr": null },
               { "key": "max_deploy_count", "value": 5, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -1555,7 +1577,7 @@
   },
   "token_10005_mgllan_drone1": {
     "name": "Soaring Dragon F",
-    "description": null,
+    "description": "Cannot block enemies",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -1565,7 +1587,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "ALL",
     "tagList": null,
@@ -1838,6 +1859,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -1851,7 +1873,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 3, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
@@ -1863,7 +1886,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 4, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -1875,7 +1899,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 5, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       },
@@ -1885,37 +1910,41 @@
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "2",
-            "name": null,
+            "name": "Optical Refraction Accessories",
             "description": "<$ba.invisible>Invisible</> for 12 seconds after deployment",
             "rangeId": null,
-            "blackboard": [{ "key": "hidden_duration", "value": 12, "valueStr": null }]
+            "blackboard": [{ "key": "hidden_duration", "value": 12, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
             "requiredPotentialRank": 4,
             "prefabKey": "2",
-            "name": null,
-            "description": "<$ba.invisible>Invisible</> for 14 seconds after deployment",
+            "name": "Optical Refraction Accessories",
+            "description": "<$ba.invisible>Invisible</> for 14 <@ba.talpu>(+2)</> seconds after deployment",
             "rangeId": null,
-            "blackboard": [{ "key": "hidden_duration", "value": 14, "valueStr": null }]
+            "blackboard": [{ "key": "hidden_duration", "value": 14, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "2",
-            "name": null,
+            "name": "Optical Refraction Accessories",
             "description": "<$ba.invisible>Invisible</> for 20 seconds after deployment",
             "rangeId": null,
-            "blackboard": [{ "key": "hidden_duration", "value": 20, "valueStr": null }]
+            "blackboard": [{ "key": "hidden_duration", "value": 20, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 4,
             "prefabKey": "2",
-            "name": null,
-            "description": "<$ba.invisible>Invisible</> for 22 seconds after deployment",
+            "name": "Optical Refraction Accessories",
+            "description": "<$ba.invisible>Invisible</> for 22 <@ba.talpu>(+2)</> seconds after deployment",
             "rangeId": null,
-            "blackboard": [{ "key": "hidden_duration", "value": 22, "valueStr": null }]
+            "blackboard": [{ "key": "hidden_duration", "value": 22, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       },
@@ -1928,7 +1957,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -1937,7 +1967,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -1955,7 +1986,7 @@
   },
   "token_10005_mgllan_drone2": {
     "name": "Soaring Dragon L",
-    "description": null,
+    "description": "Cannot block enemies; attacks deal <@ba.kw>Arts damage</>",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -1965,7 +1996,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -2238,6 +2268,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -2251,7 +2282,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 3, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
@@ -2263,7 +2295,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 4, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -2275,7 +2308,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 5, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       },
@@ -2285,37 +2319,41 @@
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "2",
-            "name": null,
+            "name": "Optical Refraction Accessories",
             "description": "<$ba.invisible>Invisible</> for 12 seconds after deployment",
             "rangeId": null,
-            "blackboard": [{ "key": "hidden_duration", "value": 12, "valueStr": null }]
+            "blackboard": [{ "key": "hidden_duration", "value": 12, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
             "requiredPotentialRank": 4,
             "prefabKey": "2",
-            "name": null,
-            "description": "<$ba.invisible>Invisible</> for 14 seconds after deployment",
+            "name": "Optical Refraction Accessories",
+            "description": "<$ba.invisible>Invisible</> for 14 <@ba.talpu>(+2)</> seconds after deployment",
             "rangeId": null,
-            "blackboard": [{ "key": "hidden_duration", "value": 14, "valueStr": null }]
+            "blackboard": [{ "key": "hidden_duration", "value": 14, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "2",
-            "name": null,
+            "name": "Optical Refraction Accessories",
             "description": "<$ba.invisible>Invisible</> for 20 seconds after deployment",
             "rangeId": null,
-            "blackboard": [{ "key": "hidden_duration", "value": 20, "valueStr": null }]
+            "blackboard": [{ "key": "hidden_duration", "value": 20, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 4,
             "prefabKey": "2",
-            "name": null,
-            "description": "<$ba.invisible>Invisible</> for 22 seconds after deployment",
+            "name": "Optical Refraction Accessories",
+            "description": "<$ba.invisible>Invisible</> for 22 <@ba.talpu>(+2)</> seconds after deployment",
             "rangeId": null,
-            "blackboard": [{ "key": "hidden_duration", "value": 22, "valueStr": null }]
+            "blackboard": [{ "key": "hidden_duration", "value": 22, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       },
@@ -2328,7 +2366,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -2337,7 +2376,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -2355,7 +2395,7 @@
   },
   "token_10005_mgllan_drone3": {
     "name": "Soaring Dragon A",
-    "description": null,
+    "description": "Deals <@ba.kw>AOE Physical damage</>",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -2365,7 +2405,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "RANGED",
     "tagList": null,
@@ -2638,6 +2677,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -2651,7 +2691,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 3, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
@@ -2663,7 +2704,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 4, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -2675,7 +2717,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 5, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       },
@@ -2685,37 +2728,41 @@
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "2",
-            "name": null,
+            "name": "Optical Refraction Accessories",
             "description": "<$ba.invisible>Invisible</> for 12 seconds after deployment",
             "rangeId": null,
-            "blackboard": [{ "key": "hidden_duration", "value": 12, "valueStr": null }]
+            "blackboard": [{ "key": "hidden_duration", "value": 12, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
             "requiredPotentialRank": 4,
             "prefabKey": "2",
-            "name": null,
-            "description": "<$ba.invisible>Invisible</> for 14 seconds after deployment",
+            "name": "Optical Refraction Accessories",
+            "description": "<$ba.invisible>Invisible</> for 14 <@ba.talpu>(+2)</> seconds after deployment",
             "rangeId": null,
-            "blackboard": [{ "key": "hidden_duration", "value": 14, "valueStr": null }]
+            "blackboard": [{ "key": "hidden_duration", "value": 14, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "2",
-            "name": null,
+            "name": "Optical Refraction Accessories",
             "description": "<$ba.invisible>Invisible</> for 20 seconds after deployment",
             "rangeId": null,
-            "blackboard": [{ "key": "hidden_duration", "value": 20, "valueStr": null }]
+            "blackboard": [{ "key": "hidden_duration", "value": 20, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 4,
             "prefabKey": "2",
-            "name": null,
-            "description": "<$ba.invisible>Invisible</> for 22 seconds after deployment",
+            "name": "Optical Refraction Accessories",
+            "description": "<$ba.invisible>Invisible</> for 22 <@ba.talpu>(+2)</> seconds after deployment",
             "rangeId": null,
-            "blackboard": [{ "key": "hidden_duration", "value": 22, "valueStr": null }]
+            "blackboard": [{ "key": "hidden_duration", "value": 22, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       },
@@ -2728,7 +2775,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -2737,7 +2785,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -2755,7 +2804,7 @@
   },
   "token_10006_vodfox_doll": {
     "name": "Cursed Doll",
-    "description": null,
+    "description": "Cannot be attacked",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -2765,7 +2814,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "ALL",
     "tagList": null,
@@ -3015,6 +3063,7 @@
         "unlockCond": { "phase": "PHASE_1", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -3029,7 +3078,7 @@
   },
   "token_10007_phatom_twin": {
     "name": "Phantom in the Mirror",
-    "description": null,
+    "description": "Blocks 1 enemy",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -3039,7 +3088,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -3312,6 +3360,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -3322,7 +3371,8 @@
             "name": null,
             "description": "Can summon a clone with the same abilities as Phantom, but has its own redeployment time",
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -3331,7 +3381,8 @@
             "name": null,
             "description": "Can summon a clone with the same abilities as Phantom, but has its own redeployment time",
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       },
@@ -3341,10 +3392,11 @@
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "2",
-            "name": null,
-            "description": "Redeployment time of clone is reduced by 10 seconds",
+            "name": "Phantom Mastery",
+            "description": "Redeployment Time -10 sec",
             "rangeId": null,
-            "blackboard": [{ "key": "respawn_time", "value": -10, "valueStr": null }]
+            "blackboard": [{ "key": "respawn_time", "value": -10, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -3427,7 +3479,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "ALL",
     "tagList": null,
@@ -3700,6 +3751,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -3710,7 +3762,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "duration", "value": 120, "valueStr": null }]
+            "blackboard": [{ "key": "duration", "value": 120, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -3728,7 +3781,7 @@
   },
   "token_10009_weedy_cannon": {
     "name": "Industrial Water Cannon",
-    "description": null,
+    "description": "Cannot be attacked",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -3738,7 +3791,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "ALL",
     "tagList": null,
@@ -4011,6 +4063,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -4018,19 +4071,21 @@
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Industrial Water Cannon",
+            "description": "Attacks push the target back slightly; lasts 15 seconds after deployment",
             "rangeId": null,
-            "blackboard": [{ "key": "duration", "value": 15, "valueStr": null }]
+            "blackboard": [{ "key": "duration", "value": 15, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Industrial Water Cannon",
+            "description": "Attacks push the target back slightly; lasts 20 seconds after deployment",
             "rangeId": null,
-            "blackboard": [{ "key": "duration", "value": 20, "valueStr": null }]
+            "blackboard": [{ "key": "duration", "value": 20, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       },
@@ -4040,14 +4095,15 @@
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "2",
-            "name": null,
-            "description": "-",
+            "name": "Upgraded Water Cannon",
+            "description": "Normal attacks and skills have +1 shift level; restores 1 SP per 3 seconds to Weedy if located within 4 tiles of her",
             "rangeId": "x-5",
             "blackboard": [
               { "key": "base_force_level", "value": 1, "valueStr": null },
               { "key": "interval", "value": 3, "valueStr": null },
               { "key": "sp", "value": 1, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -4120,7 +4176,7 @@
   },
   "token_10010_folivo_car": {
     "name": "Mobile Buggy Cam",
-    "description": null,
+    "description": "Blocks 1 enemy",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -4130,7 +4186,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -4380,6 +4435,7 @@
         "unlockCond": { "phase": "PHASE_1", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -4394,7 +4450,8 @@
               { "key": "max_deploy_count", "value": 2, "valueStr": null },
               { "key": "max_deck_stack_cnt", "value": 3, "valueStr": null },
               { "key": "move_speed", "value": 1, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
@@ -4407,7 +4464,8 @@
               { "key": "max_deploy_count", "value": 3, "valueStr": null },
               { "key": "max_deck_stack_cnt", "value": 4, "valueStr": null },
               { "key": "move_speed", "value": 1, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -4420,7 +4478,8 @@
               { "key": "max_deploy_count", "value": 4, "valueStr": null },
               { "key": "max_deck_stack_cnt", "value": 5, "valueStr": null },
               { "key": "move_speed", "value": 1, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -4493,7 +4552,7 @@
   },
   "token_10011_beewax_oblisk": {
     "name": "Sand Obelisk",
-    "description": null,
+    "description": "Blocks 3 enemies",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -4503,7 +4562,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -4753,6 +4811,7 @@
         "unlockCond": { "phase": "PHASE_1", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -4763,7 +4822,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "duration", "value": 20, "valueStr": null }]
+            "blackboard": [{ "key": "duration", "value": 20, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -4836,7 +4896,7 @@
   },
   "token_10012_rosmon_shield": {
     "name": "Rosmontis's Tactical Equipment",
-    "description": "Decreases the DEF of blocked units",
+    "description": "Blocks 2 enemies, and reduces the DEF of blocked units",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -4846,7 +4906,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -5119,6 +5178,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -5132,7 +5192,8 @@
             "blackboard": [
               { "key": "duration", "value": 25, "valueStr": null },
               { "key": "def", "value": -160, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -5205,7 +5266,7 @@
   },
   "token_10013_robin_mine": {
     "name": "'Clip'",
-    "description": null,
+    "description": "Cannot be attacked; cannot be deployed on tiles where enemies are <@ba.kw>already present</>",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -5215,7 +5276,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -5465,6 +5525,7 @@
         "unlockCond": { "phase": "PHASE_1", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -5479,7 +5540,7 @@
   },
   "token_10014_bstalk_crab": {
     "name": "Metal Crab Guard Team",
-    "description": null,
+    "description": "Blocks 1 enemy; can only be deployed within the summoner's Attack Range",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -5489,7 +5550,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -5707,6 +5767,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -5714,37 +5775,40 @@
             "unlockCondition": { "phase": "PHASE_0", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Professional Breeder",
+            "description": "Automatically respawns 20 seconds after being defeated",
             "rangeId": null,
             "blackboard": [
               { "key": "block_cnt", "value": 1, "valueStr": null },
               { "key": "interval", "value": 20, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Professional Breeder",
+            "description": "Automatically respawns 17 seconds after being defeated",
             "rangeId": null,
             "blackboard": [
               { "key": "block_cnt", "value": 1, "valueStr": null },
               { "key": "interval", "value": 17, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Professional Breeder",
+            "description": "Automatically respawns 15 seconds after being defeated",
             "rangeId": null,
             "blackboard": [
               { "key": "block_cnt", "value": 1, "valueStr": null },
               { "key": "interval", "value": 15, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -5820,7 +5884,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -6093,6 +6156,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -6107,7 +6171,8 @@
               { "key": "duration", "value": 25, "valueStr": null },
               { "key": "atk", "value": 0.02, "valueStr": null },
               { "key": "max_stack_cnt", "value": 15, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -6120,7 +6185,8 @@
               { "key": "duration", "value": 25, "valueStr": null },
               { "key": "atk", "value": 0.02, "valueStr": null },
               { "key": "max_stack_cnt", "value": 18, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -6166,7 +6232,7 @@
   },
   "token_10016_rfrost_mine": {
     "name": "Welcome Mat",
-    "description": null,
+    "description": "Cannot be attacked; cannot be deployed on tiles where enemies are <@ba.kw>already present</>",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -6176,7 +6242,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -6426,6 +6491,7 @@
         "unlockCond": { "phase": "PHASE_1", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -6440,7 +6506,7 @@
   },
   "token_10017_skadi2_dedant": {
     "name": "Skadi's Seaborn",
-    "description": "Attack Range is regarded as an extension of Skadi the Corrupting Heart's Attack Range",
+    "description": "Cannot be attacked",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -6450,7 +6516,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "ALL",
     "tagList": null,
@@ -6475,7 +6540,7 @@
               "valueStr": null
             }
           ],
-          "overrideDescripton": "Attack Range is regarded as an extension of Skadi the Corrupting Heart's Attack Range",
+          "overrideDescripton": "Cannot be attacked",
           "prefabKey": "-1",
           "rangeId": null
         }
@@ -6740,6 +6805,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -6747,19 +6813,21 @@
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Ancient Kin",
+            "description": "Lasts 15 seconds after deployment",
             "rangeId": "x-4",
-            "blackboard": [{ "key": "duration", "value": 15, "valueStr": null }]
+            "blackboard": [{ "key": "duration", "value": 15, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Ancient Kin",
+            "description": "Lasts 25 seconds after deployment",
             "rangeId": "x-4",
-            "blackboard": [{ "key": "duration", "value": 25, "valueStr": null }]
+            "blackboard": [{ "key": "duration", "value": 25, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       },
@@ -6783,7 +6851,8 @@
                 "value": 0.15,
                 "valueStr": null
               }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -6803,7 +6872,8 @@
                 "value": 0.18,
                 "valueStr": null
               }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -6876,7 +6946,7 @@
   },
   "token_10018_robrta_mach": {
     "name": "Full Auto Modeler",
-    "description": "After deployment, provides defensive support for the melee allied unit ahead (lasts for several seconds)",
+    "description": "Cannot be attacked",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -6886,7 +6956,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "ALL",
     "tagList": null,
@@ -6905,7 +6974,7 @@
           "unlockCondition": { "phase": "PHASE_0", "level": 1 },
           "requiredPotentialRank": 0,
           "blackboard": [],
-          "overrideDescripton": "After deployment, provides defensive support for the melee allied unit ahead (lasts for 15 seconds)",
+          "overrideDescripton": "Cannot be attacked",
           "prefabKey": null,
           "rangeId": null
         },
@@ -6913,7 +6982,7 @@
           "unlockCondition": { "phase": "PHASE_1", "level": 1 },
           "requiredPotentialRank": 0,
           "blackboard": [],
-          "overrideDescripton": "After deployment, provides defensive support for the melee allied unit ahead (lasts for 25 seconds)",
+          "overrideDescripton": "Cannot be attacked",
           "prefabKey": null,
           "rangeId": null
         },
@@ -6921,7 +6990,7 @@
           "unlockCondition": { "phase": "PHASE_2", "level": 1 },
           "requiredPotentialRank": 0,
           "blackboard": [],
-          "overrideDescripton": "After deployment, provides defensive support for the melee allied unit ahead (lasts for 25 seconds)",
+          "overrideDescripton": "Cannot be attacked",
           "prefabKey": null,
           "rangeId": null
         }
@@ -7131,6 +7200,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -7138,73 +7208,79 @@
             "unlockCondition": { "phase": "PHASE_0", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Modeler Debugging",
+            "description": "Grants +10% DEF and 1 <$ba.shield>Shield</> to a unit on a melee tile (lasts 15 seconds, DEF increase does not stack)",
             "rangeId": null,
             "blackboard": [
               { "key": "def", "value": 0.1, "valueStr": null },
               { "key": "duration", "value": 15, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_0", "level": 1 },
             "requiredPotentialRank": 4,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Modeler Debugging",
+            "description": "Grants +13% DEF <@ba.talpu>(+3%)</> and 1 <$ba.shield>Shield</> to a unit on a melee tile (lasts 15 seconds, DEF increase does not stack)",
             "rangeId": null,
             "blackboard": [
               { "key": "def", "value": 0.13, "valueStr": null },
               { "key": "duration", "value": 15, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Modeler Debugging",
+            "description": "Grants +20% DEF and 1 <$ba.shield>Shield</> to a unit on a melee tile (lasts 25 seconds, DEF increase does not stack)",
             "rangeId": null,
             "blackboard": [
               { "key": "def", "value": 0.2, "valueStr": null },
               { "key": "duration", "value": 25, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
             "requiredPotentialRank": 4,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Modeler Debugging",
+            "description": "Grants +23% DEF <@ba.talpu>(+3%)</> and 1 <$ba.shield>Shield</> to a unit on a melee tile (lasts 25 seconds, DEF increase does not stack)",
             "rangeId": null,
             "blackboard": [
               { "key": "def", "value": 0.23, "valueStr": null },
               { "key": "duration", "value": 25, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1+",
-            "name": null,
-            "description": "-",
+            "name": "Modeler Debugging",
+            "description": "Grants +30% DEF and 2 <$ba.shield>Shields</> to a unit on a melee tile (lasts 25 seconds, DEF increase does not stack)",
             "rangeId": null,
             "blackboard": [
               { "key": "def", "value": 0.3, "valueStr": null },
               { "key": "duration", "value": 25, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 4,
             "prefabKey": "1+",
-            "name": null,
-            "description": "-",
+            "name": "Modeler Debugging",
+            "description": "Grants +33% DEF <@ba.talpu>(+3%)</> and 2 <$ba.shield>Shields</> to a unit on a melee tile (lasts 25 seconds, DEF increase does not stack)",
             "rangeId": null,
             "blackboard": [
               { "key": "def", "value": 0.33, "valueStr": null },
               { "key": "duration", "value": 25, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -7225,7 +7301,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -7498,6 +7573,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -7508,7 +7584,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -7591,7 +7668,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -7864,6 +7940,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -7877,7 +7954,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 3, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
@@ -7889,7 +7967,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 4, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -7901,7 +7980,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 5, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -7919,7 +7999,7 @@
   },
   "token_10020_ling_soul2": {
     "name": "'Peripateticism'",
-    "description": "Deals Arts damage",
+    "description": "Deals <@ba.kw>Arts damage</>",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -7929,7 +8009,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "RANGED",
     "tagList": null,
@@ -8202,6 +8281,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -8215,7 +8295,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 3, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
@@ -8227,7 +8308,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 4, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -8239,7 +8321,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 5, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       },
@@ -8252,7 +8335,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -8270,7 +8354,7 @@
   },
   "token_10020_ling_soul3": {
     "name": "'Thunderer'",
-    "description": "Attacks all blocked enemies",
+    "description": "Attacks <@ba.kw>all blocked enemies</>",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -8280,7 +8364,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -8553,6 +8636,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -8566,7 +8650,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 3, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
@@ -8578,7 +8663,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 4, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -8590,7 +8676,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 5, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       },
@@ -8603,7 +8690,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -8621,7 +8709,7 @@
   },
   "token_10020_ling_soul3a": {
     "name": "'Thunderer'",
-    "description": "Attacks all blocked enemies",
+    "description": "Attacks <@ba.kw>all blocked enemies</>",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -8631,7 +8719,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": "Advanced",
     "position": "MELEE",
     "tagList": null,
@@ -8904,6 +8991,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -8917,7 +9005,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 3, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
@@ -8929,7 +9018,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 4, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -8941,7 +9031,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 5, "valueStr": null },
               { "key": "max_deploy_count", "value": 2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       },
@@ -8954,7 +9045,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -8972,7 +9064,7 @@
   },
   "token_10021_blkngt_hypnos": {
     "name": "Slumberfoot",
-    "description": null,
+    "description": "Blocks 1 enemy; can only be deployed within the summoner's Attack Range",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -8982,7 +9074,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -9200,6 +9291,7 @@
         "unlockCond": { "phase": "PHASE_1", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -9207,37 +9299,40 @@
             "unlockCondition": { "phase": "PHASE_0", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Nightwalker",
+            "description": "Automatically respawns 20 seconds after being defeated",
             "rangeId": null,
             "blackboard": [
               { "key": "block_cnt", "value": 1, "valueStr": null },
               { "key": "interval", "value": 20, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Nightwalker",
+            "description": "Automatically respawns 17 seconds after being defeated",
             "rangeId": null,
             "blackboard": [
               { "key": "block_cnt", "value": 1, "valueStr": null },
               { "key": "interval", "value": 17, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Nightwalker",
+            "description": "Automatically respawns 15 seconds after being defeated",
             "rangeId": null,
             "blackboard": [
               { "key": "block_cnt", "value": 1, "valueStr": null },
               { "key": "interval", "value": 15, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -9303,7 +9398,7 @@
   },
   "token_10022_kazema_shadow": {
     "name": "Kaminingyo",
-    "description": null,
+    "description": "Cannot block enemies",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -9313,7 +9408,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -9563,6 +9657,7 @@
         "unlockCond": { "phase": "PHASE_1", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -9573,7 +9668,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "damage_scale", "value": 1.5, "valueStr": null }]
+            "blackboard": [{ "key": "damage_scale", "value": 1.5, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_0", "level": 1 },
@@ -9582,7 +9678,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "damage_scale", "value": 1.55, "valueStr": null }]
+            "blackboard": [{ "key": "damage_scale", "value": 1.55, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
@@ -9591,7 +9688,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "damage_scale", "value": 2.25, "valueStr": null }]
+            "blackboard": [{ "key": "damage_scale", "value": 2.25, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
@@ -9600,7 +9698,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "damage_scale", "value": 2.3, "valueStr": null }]
+            "blackboard": [{ "key": "damage_scale", "value": 2.3, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -9609,7 +9708,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "damage_scale", "value": 2.7, "valueStr": null }]
+            "blackboard": [{ "key": "damage_scale", "value": 2.7, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -9618,7 +9718,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "damage_scale", "value": 2.75, "valueStr": null }]
+            "blackboard": [{ "key": "damage_scale", "value": 2.75, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -9691,7 +9792,7 @@
   },
   "token_10023_windft_wrench": {
     "name": "Reliable Battery",
-    "description": "After deployment, provides offensive support for an allied Caster or Supporter in front (lasts several seconds)",
+    "description": "Cannot be attacked",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -9701,7 +9802,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "ALL",
     "tagList": null,
@@ -9720,7 +9820,7 @@
           "unlockCondition": { "phase": "PHASE_0", "level": 1 },
           "requiredPotentialRank": 0,
           "blackboard": [],
-          "overrideDescripton": "After deployment, provides offensive support for an allied Caster or Supporter (lasts 20 seconds)",
+          "overrideDescripton": "Cannot be attacked",
           "prefabKey": null,
           "rangeId": null
         },
@@ -9728,7 +9828,7 @@
           "unlockCondition": { "phase": "PHASE_1", "level": 1 },
           "requiredPotentialRank": 0,
           "blackboard": [],
-          "overrideDescripton": "After deployment, provides offensive support for an allied Caster or Supporter (lasts 30 seconds)",
+          "overrideDescripton": "Cannot be attacked",
           "prefabKey": null,
           "rangeId": null
         },
@@ -9736,7 +9836,7 @@
           "unlockCondition": { "phase": "PHASE_2", "level": 1 },
           "requiredPotentialRank": 0,
           "blackboard": [],
-          "overrideDescripton": "After deployment, provides offensive support for an allied Caster or Supporter (lasts 30 seconds)",
+          "overrideDescripton": "Cannot be attacked",
           "prefabKey": null,
           "rangeId": null
         }
@@ -9978,6 +10078,7 @@
         "unlockCond": { "phase": "PHASE_1", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -9985,79 +10086,85 @@
             "unlockCondition": { "phase": "PHASE_0", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Forward Together",
+            "description": "Can only be equipped to Caster and Supporter Operators; equipped units gain +5% ATK (lasts 20 seconds)",
             "rangeId": null,
             "blackboard": [
               { "key": "cnt", "value": 2, "valueStr": null },
               { "key": "atk", "value": 0.05, "valueStr": null },
               { "key": "duration", "value": 20, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_0", "level": 1 },
             "requiredPotentialRank": 4,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Forward Together",
+            "description": "Can only be equipped to Caster and Supporter Operators; equipped units gain +7% <@ba.talpu>(+2%)</> ATK (lasts 20 seconds)",
             "rangeId": null,
             "blackboard": [
               { "key": "cnt", "value": 2, "valueStr": null },
               { "key": "atk", "value": 0.07, "valueStr": null },
               { "key": "duration", "value": 20, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Forward Together",
+            "description": "Can only be equipped to Caster and Supporter Operators; equipped units gain +10% ATK (lasts 30 seconds)",
             "rangeId": null,
             "blackboard": [
               { "key": "cnt", "value": 3, "valueStr": null },
               { "key": "atk", "value": 0.1, "valueStr": null },
               { "key": "duration", "value": 30, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
             "requiredPotentialRank": 4,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Forward Together",
+            "description": "Can only be equipped to Caster and Supporter Operators; equipped units gain +12% <@ba.talpu>(+2%)</> ATK (lasts 30 seconds)",
             "rangeId": null,
             "blackboard": [
               { "key": "cnt", "value": 3, "valueStr": null },
               { "key": "atk", "value": 0.12, "valueStr": null },
               { "key": "duration", "value": 30, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Forward Together",
+            "description": "Can only be equipped to Caster and Supporter Operators; equipped units gain +15% ATK (lasts 30 seconds)",
             "rangeId": null,
             "blackboard": [
               { "key": "cnt", "value": 3, "valueStr": null },
               { "key": "atk", "value": 0.15, "valueStr": null },
               { "key": "duration", "value": 30, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 4,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Forward Together",
+            "description": "Can only be equipped to Caster and Supporter Operators; equipped units gain +17% <@ba.talpu>(+2%)</> ATK (lasts 30 seconds)",
             "rangeId": null,
             "blackboard": [
               { "key": "cnt", "value": 3, "valueStr": null },
               { "key": "atk", "value": 0.17, "valueStr": null },
               { "key": "duration", "value": 30, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -10085,7 +10192,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "ALL",
     "tagList": null,
@@ -10358,6 +10464,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -10368,7 +10475,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "duration", "value": 30, "valueStr": null }]
+            "blackboard": [{ "key": "duration", "value": 30, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -10386,7 +10494,7 @@
   },
   "token_10025_doroth_recttp": {
     "name": "Resonator",
-    "description": null,
+    "description": "Cannot be attacked; cannot be deployed on tiles where enemies are <@ba.kw>already present</>",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -10396,7 +10504,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -10669,6 +10776,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -10683,7 +10791,7 @@
   },
   "token_10026_bgsnow_subbow": {
     "name": "'Typewriter'",
-    "description": null,
+    "description": "Cannot be attacked",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -10693,7 +10801,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "RANGED",
     "tagList": null,
@@ -10966,6 +11073,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -10976,7 +11084,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "interval", "value": 15, "valueStr": null }]
+            "blackboard": [{ "key": "interval", "value": 15, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
@@ -10985,7 +11094,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "interval", "value": 20, "valueStr": null }]
+            "blackboard": [{ "key": "interval", "value": 20, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -10994,7 +11104,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "interval", "value": 25, "valueStr": null }]
+            "blackboard": [{ "key": "interval", "value": 25, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       },
@@ -11019,7 +11130,8 @@
                 "value": -0.23,
                 "valueStr": null
               }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -11040,7 +11152,8 @@
                 "value": -0.25,
                 "valueStr": null
               }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -11113,7 +11226,7 @@
   },
   "token_10027_ironmn_pile1": {
     "name": "Stainless™ Multifunctional Platform",
-    "description": null,
+    "description": "Cannot be attacked",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -11123,7 +11236,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "ALL",
     "tagList": null,
@@ -11396,6 +11508,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -11406,7 +11519,8 @@
             "name": "Fire Support",
             "description": "Give an allied Operator within range +12% ATK, unlimited duration",
             "rangeId": null,
-            "blackboard": [{ "key": "atk", "value": 0.12, "valueStr": null }]
+            "blackboard": [{ "key": "atk", "value": 0.12, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       },
@@ -11422,7 +11536,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 2, "valueStr": null },
               { "key": "max_deploy_count", "value": 0, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
@@ -11434,7 +11549,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 2, "valueStr": null },
               { "key": "max_deploy_count", "value": 1, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -11446,7 +11562,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 3, "valueStr": null },
               { "key": "max_deploy_count", "value": 1, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -11464,7 +11581,7 @@
   },
   "token_10027_ironmn_pile2": {
     "name": "Stainless™ Multifunctional Platform",
-    "description": null,
+    "description": "Cannot be attacked",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -11474,7 +11591,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "ALL",
     "tagList": null,
@@ -11747,6 +11863,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -11757,7 +11874,8 @@
             "name": "Battle Resupply",
             "description": "Give an allied Operator within range 1 SP every 3.5s but cause them to lose 0.4% HP/sec, unlimited duration",
             "rangeId": null,
-            "blackboard": [{ "key": "default.interval", "value": 3.5, "valueStr": null }]
+            "blackboard": [{ "key": "default.interval", "value": 3.5, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       },
@@ -11773,7 +11891,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 2, "valueStr": null },
               { "key": "max_deploy_count", "value": 0, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
@@ -11785,7 +11904,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 2, "valueStr": null },
               { "key": "max_deploy_count", "value": 1, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -11797,7 +11917,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 3, "valueStr": null },
               { "key": "max_deploy_count", "value": 1, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       },
@@ -11810,7 +11931,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": [{ "key": "hp_ratio", "value": 0.004, "valueStr": null }]
+            "blackboard": [{ "key": "hp_ratio", "value": 0.004, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -11828,7 +11950,7 @@
   },
   "token_10027_ironmn_pile3": {
     "name": "Prototype of Feist's Metal Crab",
-    "description": null,
+    "description": "Can be attacked by Operators but does not take damage; recovers HP when attacked by Artificer Operators",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -11838,7 +11960,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -11857,7 +11978,7 @@
           "unlockCondition": { "phase": "PHASE_0", "level": 1 },
           "requiredPotentialRank": 0,
           "blackboard": [{ "key": "hp_ratio", "value": 0.01, "valueStr": null }],
-          "overrideDescripton": "Can be attacked by Operators but does not take damage. Recovers 1% HP when attacked by Artificers.",
+          "overrideDescripton": "Can be attacked by Operators but does not take damage; recovers HP when attacked by Artificer Operators",
           "prefabKey": null,
           "rangeId": null
         }
@@ -12122,6 +12243,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -12132,7 +12254,8 @@
             "name": "Power of Unity",
             "description": "Cause an allied Operator in the tile behind to take 20% less Physical damage, unlimited duration",
             "rangeId": null,
-            "blackboard": [{ "key": "damage_resistance", "value": 0.2, "valueStr": null }]
+            "blackboard": [{ "key": "damage_resistance", "value": 0.2, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       },
@@ -12148,7 +12271,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 2, "valueStr": null },
               { "key": "max_deploy_count", "value": 0, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
@@ -12160,7 +12284,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 2, "valueStr": null },
               { "key": "max_deploy_count", "value": 1, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -12172,7 +12297,8 @@
             "blackboard": [
               { "key": "max_deck_stack_cnt", "value": 3, "valueStr": null },
               { "key": "max_deploy_count", "value": 1, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -12190,7 +12316,7 @@
   },
   "token_10028_vigil_wolf": {
     "name": "Wolfpack",
-    "description": null,
+    "description": "Can only be deployed within the summoner's Attack Range",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -12200,7 +12326,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -12219,7 +12344,7 @@
           "unlockCondition": { "phase": "PHASE_0", "level": 1 },
           "requiredPotentialRank": 0,
           "blackboard": [],
-          "overrideDescripton": "For each 'Wolf Shadow' present, the Wolfpack gains +1 Block, and each attack inflicts an additional instance of damage; When more than 1 'Wolf Shadow' is present, upon taking lethal damage 1 'Wolf Shadow' will be lost to fully restore HP.",
+          "overrideDescripton": "Can only be deployed within the summoner's Attack Range",
           "prefabKey": null,
           "rangeId": null
         }
@@ -12452,6 +12577,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -12459,8 +12585,8 @@
             "unlockCondition": { "phase": "PHASE_0", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Leader of the Wolfpack",
+            "description": "Gains 1 'Wolf Shadow' every 30s (up to a maximum of 3). For each 'Wolf Shadow' present, the Wolfpack gains +1 Block, and each attack inflicts an additional instance of damage; when more than 1 'Wolf Shadow' is present, upon taking lethal damage 1 'Wolf Shadow' will be lost to fully restore HP.",
             "rangeId": null,
             "blackboard": [
               { "key": "block_cnt", "value": 1, "valueStr": null },
@@ -12480,14 +12606,15 @@
                 "value": 1,
                 "valueStr": null
               }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Leader of the Wolfpack",
+            "description": "Gains 1 'Wolf Shadow' every 27s (up to a maximum of 3). For each 'Wolf Shadow' present, the Wolfpack gains +1 Block, and each attack inflicts an additional instance of damage; when more than 1 'Wolf Shadow' is present, upon taking lethal damage 1 'Wolf Shadow' will be lost to fully restore HP.",
             "rangeId": null,
             "blackboard": [
               { "key": "block_cnt", "value": 1, "valueStr": null },
@@ -12507,14 +12634,15 @@
                 "value": 1,
                 "valueStr": null
               }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "1",
-            "name": null,
-            "description": "-",
+            "name": "Leader of the Wolfpack",
+            "description": "Gains 1 'Wolf Shadow' every 25s (up to a maximum of 3). For each 'Wolf Shadow' present, the Wolfpack gains +1 Block, and each attack inflicts an additional instance of damage; when more than 1 'Wolf Shadow' is present, upon taking lethal damage 1 'Wolf Shadow' will be lost to fully restore HP.",
             "rangeId": null,
             "blackboard": [
               { "key": "block_cnt", "value": 1, "valueStr": null },
@@ -12534,7 +12662,8 @@
                 "value": 1,
                 "valueStr": null
               }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       },
@@ -12544,27 +12673,29 @@
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 0,
             "prefabKey": "2",
-            "name": null,
-            "description": "-",
+            "name": "Wolven Nature",
+            "description": "Ignores 175 DEF when attacking a blocked target",
             "rangeId": null,
             "blackboard": [
               { "key": "block_cnt", "value": 1, "valueStr": null },
               { "key": "interval", "value": 25, "valueStr": null },
               { "key": "def_penetrate_fixed", "value": 175, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
             "requiredPotentialRank": 4,
             "prefabKey": "2",
-            "name": null,
-            "description": "-",
+            "name": "Wolven Nature",
+            "description": "Ignores 200 <@ba.talpu>(+25)</> DEF when attacking a blocked target",
             "rangeId": null,
             "blackboard": [
               { "key": "block_cnt", "value": 1, "valueStr": null },
               { "key": "interval", "value": 25, "valueStr": null },
               { "key": "def_penetrate_fixed", "value": 200, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -12630,7 +12761,7 @@
   },
   "token_10029_slent2_protrb": {
     "name": "Night Banisher",
-    "description": null,
+    "description": "Cannot be attacked",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -12640,7 +12771,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "ALL",
     "tagList": null,
@@ -12913,6 +13043,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -12932,7 +13063,8 @@
               { "key": "resistance_scale", "value": 0.0125, "valueStr": null },
               { "key": "hp_ratio", "value": 0.01, "valueStr": null },
               { "key": "min_hp_ratio", "value": 0.3, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -12950,7 +13082,8 @@
               { "key": "resistance_scale", "value": 0.02, "valueStr": null },
               { "key": "hp_ratio", "value": 0.01, "valueStr": null },
               { "key": "min_hp_ratio", "value": 0.3, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -12968,7 +13101,7 @@
   },
   "token_10030_mlyss_wtrman": {
     "name": "Flowing Shape",
-    "description": "Deals Arts Damage by default, can be deployed on both low and high ground within Muelsyse's attack range",
+    "description": "The initial attack deals <@ba.kw>Arts damage</>; can only be deployed within the summoner's Attack Range",
     "canUseGeneralPotentialItem": true,
     "canUseActivityPotentialItem": false,
     "potentialItemId": null,
@@ -12978,7 +13111,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "ALL",
     "tagList": null,
@@ -13203,6 +13335,7 @@
         "unlockCond": { "phase": "PHASE_2", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -13217,7 +13350,8 @@
               { "key": "interval", "value": 30, "valueStr": null },
               { "key": "block_cnt", "value": 1, "valueStr": null },
               { "key": "scale", "value": 0.5, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_1", "level": 1 },
@@ -13230,7 +13364,8 @@
               { "key": "interval", "value": 28, "valueStr": null },
               { "key": "block_cnt", "value": 1, "valueStr": null },
               { "key": "scale", "value": 0.7, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_2", "level": 1 },
@@ -13243,7 +13378,8 @@
               { "key": "interval", "value": 25, "valueStr": null },
               { "key": "block_cnt", "value": 1, "valueStr": null },
               { "key": "scale", "value": 0.9, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       },
@@ -13267,7 +13403,8 @@
                 "valueStr": null
               },
               { "key": "interval", "value": 25, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -13343,7 +13480,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -13430,6 +13566,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": [

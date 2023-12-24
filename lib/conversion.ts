@@ -7,45 +7,65 @@ import type { ItemCount } from "@/data/types/AKItem";
 import type { DefineValObj, Immunities } from "@/scripts/types";
 
 import { ISOperators, LimitedOperators, SleepImmune } from "@/lib/constants";
+import { capitalize } from "./utils";
 
 /** @description Gets rarity from string. */
-export function getRarity(str: `TIER_${1 | 2 | 3 | 4 | 5 | 6}`) {
+export function getRarity(str: string) {
   if (str === "TIER_1") return 1;
   else if (str === "TIER_2") return 2;
   else if (str === "TIER_3") return 3;
   else if (str === "TIER_4") return 4;
   else if (str === "TIER_5") return 5;
   else if (str === "TIER_6") return 6;
-  throw new Error("Invalid rarity value.");
+  throw new Error(`Invalid rarity value: ${str}.`);
 }
 
 /** @description Gets phase number from string. */
-export function getPhase(str: `PHASE_${0 | 1 | 2}`) {
+export function getPhase(str: string) {
   if (str === "PHASE_0") return 0;
   else if (str === "PHASE_1") return 1;
   else if (str === "PHASE_2") return 2;
-  throw new Error("Invalid phase value.");
+  throw new Error(`Invalid phase value: ${str}.`);
 }
 
 /** @description Gets how the skill is activated. */
-export function getSkillActiveType(str: "AUTO" | "MANUAL" | "PASSIVE") {
+export function getSkillActiveType(str: string) {
   if (str === "PASSIVE") return "Passive";
   else if (str === "MANUAL") return "Manual";
   else if (str === "AUTO") return "Auto";
-  throw new Error("Invalid skill type value.");
+  throw new Error(`Invalid skill activation type value: ${str}.`);
 }
 
 /** @description Gets how the skill sp is generated. */
-export function getSkillSpRecovery(str: SkillSpRecoveryType) {
+export function getSkillSpRecovery(str: string | number) {
   if (str === "INCREASE_WITH_TIME") return "Auto";
   else if (str === "INCREASE_WHEN_ATTACK") return "Offensive";
   else if (str === "INCREASE_WHEN_TAKEN_DAMAGE") return "Defensive";
   else if (str === 8) return "Passive";
-  throw new Error("Invalid SP type value.");
+  throw new Error(`Invalid SP recovery type value: ${str}.`);
 }
-type SkillSpRecoveryType =
-  | `INCREASE_${"WITH_TIME" | `WHEN_${"ATTACK" | "TAKEN_DAMAGE"}`}`
-  | 8;
+
+/** @description Get the attack pattern from an attack position & damage types. */
+export function generateAttackPattern(atkPos: string, dmgTypes: string[]) {
+  if (!_attackPositions.includes(atkPos))
+    throw new Error(`Invalid position: ${atkPos}.`);
+  dmgTypes.forEach((dmg) => {
+    if (!_damageTypes.includes(dmg))
+      throw new Error(`Invalid damage type: ${dmg}.`);
+  });
+
+  const dmgTypeSet = new Set(dmgTypes);
+  const resStart = atkPos === "ALL" ? "Melee Ranged" : capitalize(atkPos);
+  const resEnd: string[] = [];
+
+  if (dmgTypeSet.has("PHYSIC")) resEnd.push("Physical");
+  if (dmgTypeSet.has("MAGIC")) resEnd.push("Arts");
+  if (dmgTypeSet.has("HEAL")) resEnd.push("Healing");
+
+  return resEnd.length === 0 ? resStart : `${resStart} ${resEnd.join(" ")}`;
+}
+const _attackPositions = ["MELEE", "RANGED", "ALL", "NONE"];
+const _damageTypes = ["PHYSIC", "MAGIC", "NO_DAMAGE", "HEAL"];
 
 /** @description Returns whether an operator is limited or is from Integrated Strategies. */
 export function getOpSpecial(id: OperatorId) {

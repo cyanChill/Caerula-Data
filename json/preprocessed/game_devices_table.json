@@ -11,7 +11,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -98,6 +97,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -115,7 +115,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -202,6 +201,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -219,7 +219,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -306,6 +305,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -323,7 +323,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -410,6 +409,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -427,7 +427,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -514,6 +513,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -531,7 +531,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -618,6 +617,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -635,7 +635,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -722,6 +721,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -732,7 +732,8 @@
             "name": null,
             "description": "When destroyed, deduct 1 Life Point.",
             "rangeId": null,
-            "blackboard": [{ "key": "value", "value": -1, "valueStr": null }]
+            "blackboard": [{ "key": "value", "value": -1, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -753,7 +754,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -832,6 +832,7 @@
       }
     ],
     "skills": [],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -845,7 +846,8 @@
             "blackboard": [
               { "key": "interval", "value": 4, "valueStr": null },
               { "key": "sp", "value": 3, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -866,7 +868,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -953,6 +954,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -970,7 +972,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -1057,6 +1058,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -1074,7 +1076,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -1161,6 +1162,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -1171,7 +1173,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "interval", "value": 25, "valueStr": null }]
+            "blackboard": [{ "key": "interval", "value": 25, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -1192,7 +1195,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -1279,6 +1281,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -1296,7 +1299,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -1383,6 +1385,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -1393,7 +1396,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       },
@@ -1406,7 +1410,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       },
@@ -1419,7 +1424,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       },
@@ -1432,7 +1438,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       },
@@ -1445,7 +1452,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -1466,7 +1474,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -1553,6 +1560,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -1570,7 +1578,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -1649,6 +1656,7 @@
       }
     ],
     "skills": [],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -1659,7 +1667,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "duration", "value": 9, "valueStr": null }]
+            "blackboard": [{ "key": "duration", "value": 9, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -1680,7 +1689,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -1767,6 +1775,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -1784,7 +1793,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -1871,6 +1879,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -1888,7 +1897,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -1975,6 +1983,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -1992,7 +2001,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -2079,6 +2087,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -2096,7 +2105,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -2183,6 +2191,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -2200,7 +2209,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -2287,6 +2295,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -2304,7 +2313,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -2391,6 +2399,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -2408,7 +2417,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -2495,6 +2503,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -2512,7 +2521,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -2599,6 +2607,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -2616,7 +2625,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -2703,6 +2711,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -2720,7 +2729,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -2814,6 +2822,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -2827,7 +2836,8 @@
             "blackboard": [
               { "key": "def", "value": 0.5, "valueStr": null },
               { "key": "taunt_level", "value": 1, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -2848,7 +2858,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -2942,6 +2951,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -2955,7 +2965,8 @@
             "blackboard": [
               { "key": "def", "value": 0.5, "valueStr": null },
               { "key": "taunt_level", "value": 1, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -2976,7 +2987,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -3070,6 +3080,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -3083,7 +3094,8 @@
             "blackboard": [
               { "key": "def", "value": 0.5, "valueStr": null },
               { "key": "taunt_level", "value": 1, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -3104,7 +3116,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -3191,6 +3202,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -3204,7 +3216,8 @@
             "blackboard": [
               { "key": "def", "value": 0.5, "valueStr": null },
               { "key": "taunt_level", "value": 1, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -3225,7 +3238,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -3312,6 +3324,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -3322,7 +3335,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -3343,7 +3357,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -3430,6 +3443,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -3440,7 +3454,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -3461,7 +3476,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -3548,6 +3562,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -3565,7 +3580,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -3652,6 +3666,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -3669,7 +3684,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -3756,6 +3770,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -3773,7 +3788,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -3860,6 +3874,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -3870,7 +3885,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -3891,7 +3907,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -3978,6 +3993,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -3988,7 +4004,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "ep_recovery_per_sec", "value": 25, "valueStr": null }]
+            "blackboard": [{ "key": "ep_recovery_per_sec", "value": 25, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       },
@@ -4001,7 +4018,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "ep_recovery_per_sec", "value": 75, "valueStr": null }]
+            "blackboard": [{ "key": "ep_recovery_per_sec", "value": 75, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -4022,7 +4040,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -4109,6 +4126,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -4122,7 +4140,8 @@
             "blackboard": [
               { "key": "grow_duration", "value": 12, "valueStr": null },
               { "key": "duration", "value": 35, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -4143,7 +4162,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -4237,6 +4255,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -4254,7 +4273,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -4341,6 +4359,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -4358,7 +4377,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -4459,6 +4477,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -4476,7 +4495,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -4563,6 +4581,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -4579,7 +4598,8 @@
                 "value": 2,
                 "valueStr": null
               }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -4600,7 +4620,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -4687,6 +4706,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -4704,7 +4724,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -4791,6 +4810,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -4801,7 +4821,8 @@
             "name": null,
             "description": "Immediately explodes after deployment, dealing damage to enemies in the tile ahead and pushing them away slightly. Can instantly knock down a <Tattered Pillar>",
             "rangeId": null,
-            "blackboard": [{ "key": "force", "value": 1, "valueStr": null }]
+            "blackboard": [{ "key": "force", "value": 1, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -4822,7 +4843,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -4909,6 +4929,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -4926,7 +4947,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -5013,6 +5033,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -5023,7 +5044,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -5044,7 +5066,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -5131,6 +5152,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -5148,7 +5170,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -5235,6 +5256,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -5252,7 +5274,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -5339,6 +5360,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -5356,7 +5378,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -5443,6 +5464,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -5460,7 +5482,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -5547,6 +5568,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -5564,7 +5586,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -5651,6 +5672,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -5661,7 +5683,8 @@
             "name": null,
             "description": "Reduces the ATK of nearby allies",
             "rangeId": "x-4",
-            "blackboard": [{ "key": "atk", "value": 0.7, "valueStr": null }]
+            "blackboard": [{ "key": "atk", "value": 0.7, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -5682,7 +5705,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -5769,6 +5791,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -5786,7 +5809,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -5865,6 +5887,7 @@
       }
     ],
     "skills": [],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -5875,7 +5898,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "hp_ratio", "value": 0.05, "valueStr": null }]
+            "blackboard": [{ "key": "hp_ratio", "value": 0.05, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -5896,7 +5920,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -5990,6 +6013,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -6016,7 +6040,8 @@
               { "key": "duration", "value": 20, "valueStr": null },
               { "key": "stun", "value": 5, "valueStr": null },
               { "key": "blast_damage", "value": 1000, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -6037,7 +6062,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -6124,6 +6148,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -6137,7 +6162,8 @@
             "blackboard": [
               { "key": "sp_ratio", "value": 0.5, "valueStr": null },
               { "key": "interval", "value": 1, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       },
@@ -6153,7 +6179,8 @@
             "blackboard": [
               { "key": "sp_ratio", "value": 0.9, "valueStr": null },
               { "key": "interval", "value": 1, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -6177,7 +6204,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -6264,6 +6290,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -6274,7 +6301,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       },
@@ -6287,7 +6315,8 @@
             "name": null,
             "description": null,
             "rangeId": "1-1",
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       },
@@ -6303,7 +6332,8 @@
             "blackboard": [
               { "key": "atk", "value": 0, "valueStr": null },
               { "key": "attack_speed", "value": 50, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -6324,7 +6354,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -6425,6 +6454,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -6435,7 +6465,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": [{ "key": "base_force_level", "value": 2, "valueStr": null }]
+            "blackboard": [{ "key": "base_force_level", "value": 2, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -6456,7 +6487,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -6543,6 +6573,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -6553,7 +6584,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       },
@@ -6566,7 +6598,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -6587,7 +6620,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -6666,6 +6698,7 @@
       }
     ],
     "skills": [],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -6676,7 +6709,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -6697,7 +6731,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -6776,6 +6809,7 @@
       }
     ],
     "skills": [],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -6786,7 +6820,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -6807,7 +6842,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -6894,6 +6928,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -6904,7 +6939,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -6925,7 +6961,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -7012,6 +7047,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -7029,7 +7065,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -7116,6 +7151,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -7133,7 +7169,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -7220,6 +7255,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -7237,7 +7273,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -7324,6 +7359,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -7341,7 +7377,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -7428,6 +7463,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -7444,7 +7480,8 @@
               { "key": "can_select_num", "value": 1, "valueStr": null },
               { "key": "sell_card_gold", "value": 15, "valueStr": null },
               { "key": "life_duration", "value": 25, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       },
@@ -7457,7 +7494,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -7478,7 +7516,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -7565,6 +7602,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -7578,7 +7616,8 @@
             "blackboard": [
               { "key": "damage", "value": 500, "valueStr": null },
               { "key": "stun", "value": 5, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -7599,7 +7638,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -7686,6 +7724,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -7703,7 +7742,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -7790,6 +7828,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -7800,7 +7839,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "range_radius", "value": 1, "valueStr": null }]
+            "blackboard": [{ "key": "range_radius", "value": 1, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -7821,7 +7861,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -7908,6 +7947,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -7918,7 +7958,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "range_radius", "value": 1, "valueStr": null }]
+            "blackboard": [{ "key": "range_radius", "value": 1, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -7939,7 +7980,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -8026,6 +8066,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -8036,7 +8077,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "range_radius", "value": 1, "valueStr": null }]
+            "blackboard": [{ "key": "range_radius", "value": 1, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -8057,7 +8099,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -8144,6 +8185,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -8154,7 +8196,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "range_radius", "value": 1, "valueStr": null }]
+            "blackboard": [{ "key": "range_radius", "value": 1, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -8175,7 +8218,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -8269,6 +8311,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -8286,7 +8329,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -8373,6 +8415,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -8390,7 +8433,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -8477,6 +8519,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -8494,7 +8537,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -8588,6 +8630,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -8605,7 +8648,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -8692,6 +8734,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -8709,7 +8752,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -8796,6 +8838,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -8813,7 +8856,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -8900,6 +8942,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -8910,7 +8953,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": [{ "key": "atk_scale", "value": 0.4, "valueStr": null }]
+            "blackboard": [{ "key": "atk_scale", "value": 0.4, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -8931,7 +8975,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -9018,6 +9061,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -9028,7 +9072,8 @@
             "name": null,
             "description": "-",
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -9049,7 +9094,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -9136,6 +9180,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -9153,7 +9198,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -9240,6 +9284,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -9257,7 +9302,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -9355,6 +9399,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -9365,7 +9410,8 @@
             "name": null,
             "description": "All enemies have ASPD <@ba.vup>-20</>, Movement Speed <@ba.vup>-50%</>",
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       },
@@ -9378,7 +9424,8 @@
             "name": null,
             "description": "All enemies have ASPD <@ba.vup>-30</>, Movement Speed <@ba.vup>-70%</>",
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -9399,7 +9446,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -9497,6 +9543,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -9507,7 +9554,8 @@
             "name": null,
             "description": "All enemies have ASPD <@ba.vup>-20</>, Movement Speed <@ba.vup>-50%</>",
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       },
@@ -9520,7 +9568,8 @@
             "name": null,
             "description": "All enemies have ASPD <@ba.vup>-30</>, Movement Speed <@ba.vup>-70%</>",
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       },
@@ -9533,7 +9582,8 @@
             "name": null,
             "description": "All enemies have ASPD <@ba.vup>-40</>, Movement Speed <@ba.vup>-80%</>; current redeployment times <@ba.vup>halved</>",
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -9554,7 +9604,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -9652,6 +9701,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -9662,7 +9712,8 @@
             "name": null,
             "description": "All enemies have ASPD <@ba.vup>-20</>, Movement Speed <@ba.vup>-50%</>",
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       },
@@ -9675,7 +9726,8 @@
             "name": null,
             "description": "All enemies have ASPD <@ba.vup>-30</>, Movement Speed <@ba.vup>-70%</>",
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       },
@@ -9688,7 +9740,8 @@
             "name": null,
             "description": "All enemies have ASPD <@ba.vup>-40</>, Movement Speed <@ba.vup>-80%</>; current redeployment times <@ba.vup>halved</>",
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       },
@@ -9701,7 +9754,8 @@
             "name": null,
             "description": "All enemies have ASPD <@ba.vup>-40</>, Movement Speed <@ba.vup>-80%</>; current redeployment times <@ba.vup>removed</>",
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -9722,7 +9776,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -9809,6 +9862,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -9822,7 +9876,8 @@
             "blackboard": [
               { "key": "atk", "value": 0.2, "valueStr": null },
               { "key": "def", "value": 0.2, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -9843,7 +9898,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -9930,6 +9984,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -9940,7 +9995,8 @@
             "name": null,
             "description": "Causes all your units to take <@ba.vup>15</> True Damage per second (stacks)",
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -9961,7 +10017,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -10048,6 +10103,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -10058,7 +10114,8 @@
             "name": null,
             "description": "'Fruit of Gluttony' summons allies to help itself (allies become stronger each time they are summoned)",
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -10079,7 +10136,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -10177,6 +10233,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -10187,7 +10244,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -10208,7 +10266,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -10302,6 +10359,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -10312,7 +10370,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -10333,7 +10392,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -10420,6 +10478,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -10430,7 +10489,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -10454,7 +10514,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -10541,6 +10600,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -10558,7 +10618,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -10637,6 +10696,7 @@
       }
     ],
     "skills": [],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -10650,7 +10710,8 @@
             "blackboard": [
               { "key": "move_speed", "value": 1.15, "valueStr": null },
               { "key": "attack_speed", "value": 25, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -10671,7 +10732,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -10750,6 +10810,7 @@
       }
     ],
     "skills": [],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -10767,7 +10828,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -10846,6 +10906,7 @@
       }
     ],
     "skills": [],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -10867,7 +10928,8 @@
                 "value": 0.7,
                 "valueStr": null
               }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       },
@@ -10880,7 +10942,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -10901,7 +10964,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -10988,6 +11050,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -11005,7 +11068,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -11092,6 +11154,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -11109,7 +11172,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -11196,6 +11258,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -11206,7 +11269,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": [{ "key": "interval", "value": 2, "valueStr": null }]
+            "blackboard": [{ "key": "interval", "value": 2, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -11227,7 +11291,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -11314,6 +11377,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -11324,7 +11388,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -11345,7 +11410,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -11432,6 +11496,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -11442,7 +11507,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -11463,7 +11529,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -11550,6 +11615,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -11567,7 +11633,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -11654,6 +11719,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -11667,7 +11733,8 @@
             "blackboard": [
               { "key": "cnt", "value": 3, "valueStr": null },
               { "key": "default_add", "value": 0, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -11688,7 +11755,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -11775,6 +11841,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -11788,7 +11855,8 @@
             "blackboard": [
               { "key": "cnt", "value": 5, "valueStr": null },
               { "key": "default_add", "value": 1, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -11809,7 +11877,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -11896,6 +11963,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -11909,7 +11977,8 @@
             "blackboard": [
               { "key": "cnt", "value": 3, "valueStr": null },
               { "key": "default_add", "value": 0, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -11930,7 +11999,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -12028,6 +12096,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -12045,7 +12114,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -12143,6 +12211,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -12160,7 +12229,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -12258,6 +12326,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -12268,7 +12337,8 @@
             "name": null,
             "description": "Draw a card when an Operator calls for assistance (triggers up to 3 times per battle).",
             "rangeId": null,
-            "blackboard": [{ "key": "trig_cnt", "value": 3, "valueStr": null }]
+            "blackboard": [{ "key": "trig_cnt", "value": 3, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -12289,7 +12359,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -12376,6 +12445,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -12393,7 +12463,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -12480,6 +12549,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -12490,7 +12560,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": [{ "key": "value", "value": -3, "valueStr": null }]
+            "blackboard": [{ "key": "value", "value": -3, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -12511,7 +12582,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -12598,6 +12668,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -12615,7 +12686,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "MELEE",
     "tagList": null,
@@ -12702,6 +12772,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -12717,7 +12788,8 @@
               { "key": "attack_speed", "value": 50, "valueStr": null },
               { "key": "up_duration", "value": 5, "valueStr": null },
               { "key": "sp", "value": 1, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -12738,7 +12810,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -12825,6 +12896,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -12840,7 +12912,8 @@
               { "key": "attack_speed", "value": 50, "valueStr": null },
               { "key": "up_duration", "value": 5, "valueStr": null },
               { "key": "sp", "value": 1, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -12861,7 +12934,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -12948,6 +13020,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -12965,7 +13038,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -13052,6 +13124,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -13062,7 +13135,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": [{ "key": "value", "value": 2, "valueStr": null }]
+            "blackboard": [{ "key": "value", "value": 2, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -13083,7 +13157,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -13181,6 +13254,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -13191,7 +13265,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": [{ "key": "stun", "value": 8, "valueStr": null }]
+            "blackboard": [{ "key": "stun", "value": 8, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -13212,7 +13287,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -13299,6 +13373,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -13316,7 +13391,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -13457,6 +13531,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -13467,7 +13542,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -13491,7 +13567,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -13605,6 +13680,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -13615,7 +13691,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       },
@@ -13628,7 +13705,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": [{ "key": "unlock", "value": 0, "valueStr": null }]
+            "blackboard": [{ "key": "unlock", "value": 0, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_0", "level": 2 },
@@ -13637,7 +13715,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": [{ "key": "unlock", "value": 1, "valueStr": null }]
+            "blackboard": [{ "key": "unlock", "value": 1, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -13658,7 +13737,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -13799,6 +13877,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -13809,7 +13888,8 @@
             "name": null,
             "description": null,
             "rangeId": "x-1",
-            "blackboard": [{ "key": "unlock", "value": 0, "valueStr": null }]
+            "blackboard": [{ "key": "unlock", "value": 0, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_0", "level": 2 },
@@ -13818,7 +13898,8 @@
             "name": null,
             "description": null,
             "rangeId": "x-2",
-            "blackboard": [{ "key": "unlock", "value": 1, "valueStr": null }]
+            "blackboard": [{ "key": "unlock", "value": 1, "valueStr": null }],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_0", "level": 3 },
@@ -13827,7 +13908,8 @@
             "name": null,
             "description": null,
             "rangeId": "x-3",
-            "blackboard": [{ "key": "unlock", "value": 1, "valueStr": null }]
+            "blackboard": [{ "key": "unlock", "value": 1, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       },
@@ -13840,7 +13922,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -13864,7 +13947,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -13951,6 +14033,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -13968,7 +14051,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -14055,6 +14137,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -14065,7 +14148,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -14086,7 +14170,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -14173,6 +14256,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -14183,7 +14267,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -14204,7 +14289,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -14291,6 +14375,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -14301,7 +14386,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -14322,7 +14408,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -14409,6 +14494,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -14426,7 +14512,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -14513,6 +14598,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -14530,7 +14616,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -14617,6 +14702,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -14633,7 +14719,8 @@
                 "value": 0,
                 "valueStr": "Destroyed <Bush> and gained extra materials!"
               }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -14654,7 +14741,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -14741,6 +14827,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -14757,7 +14844,8 @@
                 "value": 0,
                 "valueStr": "Destroyed <Buried Metal Chest> and gained extra treasure!"
               }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -14778,7 +14866,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -14865,6 +14952,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -14881,7 +14969,8 @@
                 "value": 0,
                 "valueStr": "Destroyed <Thorned Treasure Chest> and gained lots of extra treasure!"
               }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -14902,7 +14991,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -15016,6 +15104,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -15026,7 +15115,8 @@
             "name": null,
             "description": null,
             "rangeId": "4-6",
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_0", "level": 2 },
@@ -15035,7 +15125,8 @@
             "name": null,
             "description": null,
             "rangeId": "4-7",
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       },
@@ -15048,7 +15139,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -15069,7 +15161,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -15183,6 +15274,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -15193,7 +15285,8 @@
             "name": null,
             "description": null,
             "rangeId": "3-2",
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           },
           {
             "unlockCondition": { "phase": "PHASE_0", "level": 2 },
@@ -15202,7 +15295,8 @@
             "name": null,
             "description": null,
             "rangeId": "4-1",
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       },
@@ -15215,7 +15309,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -15236,7 +15331,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -15350,6 +15444,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -15360,7 +15455,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -15381,7 +15477,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -15468,6 +15563,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -15485,7 +15581,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -15599,6 +15694,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -15609,7 +15705,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -15630,7 +15727,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -15744,6 +15840,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -15754,7 +15851,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -15775,7 +15873,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -15889,6 +15986,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -15899,7 +15997,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -15920,7 +16019,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -16007,6 +16105,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -16023,7 +16122,8 @@
                 "value": 0,
                 "valueStr": "<Escape Route> activated!"
               }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -16044,7 +16144,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -16185,6 +16284,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -16195,7 +16295,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": []
+            "blackboard": [],
+            "tokenKey": null
           }
         ]
       }
@@ -16219,7 +16320,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -16306,6 +16406,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -16323,7 +16424,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -16410,6 +16510,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -16427,7 +16528,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -16514,6 +16614,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -16531,7 +16632,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -16618,6 +16718,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -16635,7 +16736,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -16722,6 +16822,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -16739,7 +16840,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -16826,6 +16926,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -16843,7 +16944,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -16930,6 +17030,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -16947,7 +17048,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -17034,6 +17134,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -17051,7 +17152,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -17138,6 +17238,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -17155,7 +17256,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -17242,6 +17342,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -17259,7 +17360,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -17346,6 +17446,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -17363,7 +17464,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -17471,6 +17571,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -17488,7 +17589,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -17589,6 +17689,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -17606,7 +17707,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -17693,6 +17793,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -17710,7 +17811,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -17797,6 +17897,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -17816,7 +17917,483 @@
               },
               { "key": "interval", "value": 5, "valueStr": null },
               { "key": "attack@duration", "value": 10, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
+          }
+        ]
+      }
+    ],
+    "potentialRanks": [],
+    "favorKeyFrames": null,
+    "allSkillLvlup": []
+  },
+  "trap_117_ltstat": {
+    "name": "Holy Statue",
+    "description": "Calms the emotions of the Monastery Inhabitants, slowing the Panic increase for residents in range. When destroyed, causes the Panic of residents in range to increase faster",
+    "canUseGeneralPotentialItem": true,
+    "canUseActivityPotentialItem": false,
+    "potentialItemId": null,
+    "activityPotentialItemId": null,
+    "classicPotentialItemId": null,
+    "nationId": null,
+    "groupId": null,
+    "teamId": null,
+    "displayNumber": null,
+    "appellation": " ",
+    "position": "NONE",
+    "tagList": null,
+    "itemUsage": null,
+    "itemDesc": null,
+    "itemObtainApproach": null,
+    "isNotObtainable": false,
+    "isSpChar": false,
+    "maxPotentialLevel": 0,
+    "rarity": "TIER_1",
+    "profession": "TRAP",
+    "subProfessionId": "notchar2",
+    "trait": null,
+    "phases": [
+      {
+        "characterPrefabKey": "trap_117_ltstat",
+        "rangeId": "x-4",
+        "maxLevel": 30,
+        "attributesKeyFrames": [
+          {
+            "level": 1,
+            "data": {
+              "maxHp": 5000,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 0,
+              "blockCnt": 3,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 5,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false
+            }
+          },
+          {
+            "level": 30,
+            "data": {
+              "maxHp": 5000,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 0,
+              "blockCnt": 3,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 5,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false
+            }
+          }
+        ],
+        "evolveCost": null
+      }
+    ],
+    "skills": [
+      {
+        "skillId": "sktok_ltstat",
+        "overridePrefabKey": null,
+        "overrideTokenKey": null,
+        "levelUpCostCond": [],
+        "unlockCond": { "phase": "PHASE_0", "level": 1 }
+      }
+    ],
+    "displayTokenDict": null,
+    "talents": [
+      {
+        "candidates": [
+          {
+            "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": null,
+            "description": null,
+            "rangeId": "x-4",
+            "blackboard": [{ "key": "sp_recovery_per_sec", "value": -1, "valueStr": null }],
+            "tokenKey": null
+          }
+        ]
+      },
+      {
+        "candidates": [
+          {
+            "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+            "requiredPotentialRank": 0,
+            "prefabKey": "2",
+            "name": null,
+            "description": null,
+            "rangeId": "x-4",
+            "blackboard": [{ "key": "sp_recovery_per_sec", "value": 1, "valueStr": null }],
+            "tokenKey": null
+          }
+        ]
+      }
+    ],
+    "potentialRanks": [],
+    "favorKeyFrames": null,
+    "allSkillLvlup": []
+  },
+  "trap_118_rockfl": {
+    "name": "Crumbling Masonry",
+    "description": null,
+    "canUseGeneralPotentialItem": true,
+    "canUseActivityPotentialItem": false,
+    "potentialItemId": null,
+    "activityPotentialItemId": null,
+    "classicPotentialItemId": null,
+    "nationId": null,
+    "groupId": null,
+    "teamId": null,
+    "displayNumber": null,
+    "appellation": " ",
+    "position": "NONE",
+    "tagList": null,
+    "itemUsage": null,
+    "itemDesc": null,
+    "itemObtainApproach": null,
+    "isNotObtainable": false,
+    "isSpChar": false,
+    "maxPotentialLevel": 0,
+    "rarity": "TIER_1",
+    "profession": "TRAP",
+    "subProfessionId": "notchar2",
+    "trait": null,
+    "phases": [
+      {
+        "characterPrefabKey": "trap_118_rockfl",
+        "rangeId": null,
+        "maxLevel": 30,
+        "attributesKeyFrames": [
+          {
+            "level": 1,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 0,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 5,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false
+            }
+          },
+          {
+            "level": 30,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 0,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 5,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false
+            }
+          }
+        ],
+        "evolveCost": null
+      }
+    ],
+    "skills": [
+      {
+        "skillId": "sktok_rockfl",
+        "overridePrefabKey": null,
+        "overrideTokenKey": null,
+        "levelUpCostCond": [],
+        "unlockCond": { "phase": "PHASE_0", "level": 1 }
+      }
+    ],
+    "displayTokenDict": null,
+    "talents": [
+      {
+        "candidates": [
+          {
+            "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [{ "key": "talent@isbosslevel", "value": 0, "valueStr": null }],
+            "tokenKey": null
+          }
+        ]
+      }
+    ],
+    "potentialRanks": [],
+    "favorKeyFrames": null,
+    "allSkillLvlup": []
+  },
+  "trap_119_rdrepair": {
+    "name": "Spare Timber",
+    "description": "Can be deployed on broken <Makeshift Walkways>",
+    "canUseGeneralPotentialItem": true,
+    "canUseActivityPotentialItem": false,
+    "potentialItemId": null,
+    "activityPotentialItemId": null,
+    "classicPotentialItemId": null,
+    "nationId": null,
+    "groupId": null,
+    "teamId": null,
+    "displayNumber": null,
+    "appellation": " ",
+    "position": "NONE",
+    "tagList": null,
+    "itemUsage": null,
+    "itemDesc": null,
+    "itemObtainApproach": null,
+    "isNotObtainable": false,
+    "isSpChar": false,
+    "maxPotentialLevel": 0,
+    "rarity": "TIER_1",
+    "profession": "TRAP",
+    "subProfessionId": "notchar2",
+    "trait": null,
+    "phases": [
+      {
+        "characterPrefabKey": "trap_119_rdrepair",
+        "rangeId": null,
+        "maxLevel": 30,
+        "attributesKeyFrames": [
+          {
+            "level": 1,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 10,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 5,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false
+            }
+          },
+          {
+            "level": 30,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 10,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 5,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false
+            }
+          }
+        ],
+        "evolveCost": null
+      }
+    ],
+    "skills": [
+      {
+        "skillId": "sktok_rdrepair",
+        "overridePrefabKey": null,
+        "overrideTokenKey": null,
+        "levelUpCostCond": [],
+        "unlockCond": { "phase": "PHASE_0", "level": 1 }
+      }
+    ],
+    "displayTokenDict": null,
+    "talents": null,
+    "potentialRanks": [],
+    "favorKeyFrames": null,
+    "allSkillLvlup": []
+  },
+  "trap_120_rdblock": {
+    "name": "Shabby Fence",
+    "description": "Can temporarily block Monastery Inhabitants; will not change the enemy's route",
+    "canUseGeneralPotentialItem": true,
+    "canUseActivityPotentialItem": false,
+    "potentialItemId": null,
+    "activityPotentialItemId": null,
+    "classicPotentialItemId": null,
+    "nationId": null,
+    "groupId": null,
+    "teamId": null,
+    "displayNumber": null,
+    "appellation": " ",
+    "position": "NONE",
+    "tagList": null,
+    "itemUsage": null,
+    "itemDesc": null,
+    "itemObtainApproach": null,
+    "isNotObtainable": false,
+    "isSpChar": false,
+    "maxPotentialLevel": 0,
+    "rarity": "TIER_1",
+    "profession": "TRAP",
+    "subProfessionId": "notchar2",
+    "trait": null,
+    "phases": [
+      {
+        "characterPrefabKey": "trap_120_rdblock",
+        "rangeId": "0-1",
+        "maxLevel": 30,
+        "attributesKeyFrames": [
+          {
+            "level": 1,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 5,
+              "blockCnt": 5,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 5,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false
+            }
+          },
+          {
+            "level": 30,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 5,
+              "blockCnt": 5,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 5,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false
+            }
+          }
+        ],
+        "evolveCost": null
+      }
+    ],
+    "skills": [
+      {
+        "skillId": "sktok_rdblock",
+        "overridePrefabKey": null,
+        "overrideTokenKey": null,
+        "levelUpCostCond": [],
+        "unlockCond": { "phase": "PHASE_0", "level": 1 }
+      }
+    ],
+    "displayTokenDict": null,
+    "talents": [
+      {
+        "candidates": [
+          {
+            "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [{ "key": "duration", "value": 20, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -17837,7 +18414,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -17924,6 +18500,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -17937,7 +18514,8 @@
             "blackboard": [
               { "key": "max_cost", "value": 5, "valueStr": null },
               { "key": "cost", "value": 5, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -17958,7 +18536,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -18045,6 +18622,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -18062,7 +18640,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -18149,6 +18726,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -18164,7 +18742,8 @@
               { "key": "finish_gold", "value": 5, "valueStr": null },
               { "key": "taunt_level", "value": -1, "valueStr": null },
               { "key": "interval", "value": 10, "valueStr": null }
-            ]
+            ],
+            "tokenKey": null
           }
         ]
       }
@@ -18185,7 +18764,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -18272,6 +18850,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": [
       {
         "candidates": [
@@ -18282,7 +18861,8 @@
             "name": null,
             "description": null,
             "rangeId": null,
-            "blackboard": [{ "key": "invis_duration", "value": 20, "valueStr": null }]
+            "blackboard": [{ "key": "invis_duration", "value": 20, "valueStr": null }],
+            "tokenKey": null
           }
         ]
       }
@@ -18303,7 +18883,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -18390,6 +18969,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -18407,7 +18987,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -18494,6 +19073,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -18511,7 +19091,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -18598,6 +19177,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -18615,7 +19195,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -18702,6 +19281,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -18719,7 +19299,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -18806,6 +19385,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -18823,7 +19403,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -18910,6 +19489,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -18927,7 +19507,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -19014,6 +19593,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -19031,7 +19611,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -19118,6 +19697,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -19135,7 +19715,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -19222,6 +19801,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -19239,7 +19819,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -19326,6 +19905,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
@@ -19343,7 +19923,6 @@
     "groupId": null,
     "teamId": null,
     "displayNumber": null,
-    "tokenKey": null,
     "appellation": " ",
     "position": "NONE",
     "tagList": null,
@@ -19430,6 +20009,7 @@
         "unlockCond": { "phase": "PHASE_0", "level": 1 }
       }
     ],
+    "displayTokenDict": null,
     "talents": null,
     "potentialRanks": [],
     "favorKeyFrames": null,
