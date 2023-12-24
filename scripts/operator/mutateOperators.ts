@@ -2,17 +2,15 @@ import fs from "fs";
 import path from "path";
 
 import type {
+  OpSkill,
   OpTalent,
   Operator,
-  OperatorId,
   RawStatAtLevel,
-  StatAtLevel,
 } from "@/data/types/AKOperator";
 import type { SkillId } from "@/data/types/AKSkill";
 import type { Token, TokenId } from "@/data/types/AKToken";
 import enOperatorList from "@/json/preprocessed/operator_table.json";
 import enTokenList from "@/json/preprocessed/tokens_table.json";
-import AmiyaGuardData from "@/json/preprocessed/amiya_guard_polyfill.json";
 
 import { TokenMappings, TrapperSpec } from "@/lib/constants";
 import {
@@ -25,18 +23,14 @@ import {
 import { injectTooltipsColors, niceJSON, replaceUnicode } from "@/lib/utils";
 
 /** @description Generate a different name for special cases. */
-function getDisplayName(
-  id: OperatorId | TokenId,
-  name: string,
-  appellation: string
-) {
+function getDisplayName(id: string, name: string, appellation: string) {
   if (id === "char_1001_amiya2") return "Amiya (Guard)";
   else if (appellation !== " ") return `${name} (${appellation})`;
   return name;
 }
 
 /** @description Keep only the stat properties that I want from the raw data. */
-function keepNecessaryStats(rawStat: RawStatAtLevel): StatAtLevel {
+function keepNecessaryStats(rawStat: RawStatAtLevel) {
   return {
     level: rawStat.level,
     data: {
@@ -54,62 +48,52 @@ function keepNecessaryStats(rawStat: RawStatAtLevel): StatAtLevel {
 
 /** @description Create a table of objects representing operators. */
 function createOperatorsJSON() {
-  const operators = {} as Record<OperatorId, Operator>;
+  const operators: Record<string, Operator> = {};
   const errors: string[] = [];
 
-  Object.values(enOperatorList).forEach((currOp) => {
-    const opId = currOp.phases[0].characterPrefabKey;
-
-    /* Use polyfill for `Amiya (Guard)` since data hasn't updated. */
-    if (opId === "char_1001_amiya2") {
-      operators[opId] = AmiyaGuardData;
-      return;
-    }
-
+  Object.entries(enOperatorList).forEach(([id, currOp]) => {
     try {
       const newOperator = {
-        id: opId,
+        id,
         name: currOp.name,
-        displayName: getDisplayName(opId, currOp.name, currOp.appellation),
+        displayName: getDisplayName(id, currOp.name, currOp.appellation),
         rarity: getRarity(currOp.rarity),
         potentials: currOp.potentialRanks.map((pot) => pot.description),
         profession: currOp.profession,
         branch: currOp.subProfessionId,
         range: currOp.phases.map((phase) => phase.rangeId),
         tokensUsed: null,
-        elite: [],
+        elite: currOp.phases.map(
+          ({ maxLevel, evolveCost, attributesKeyFrames }) => ({
+            maxLevel: maxLevel,
+            stats: attributesKeyFrames.map((attr) => keepNecessaryStats(attr)),
+            evolveCost: evolveCost ? getMaterialCost(evolveCost) : null,
+          })
+        ),
         skills: [],
         talents: [],
-        trustBonus: keepNecessaryStats(currOp.favorKeyFrames[1]),
-        skillLevel: [],
+        trustBonus: keepNecessaryStats(currOp.favorKeyFrames![1]),
+        skillLevel: currOp.allSkillLvlup.map((cost, idx) => ({
+          level: (idx + 2) as 2 | 3 | 4 | 5 | 6 | 7,
+          cost: cost.lvlUpCost ? getMaterialCost(cost.lvlUpCost) : [],
+        })),
         nationId: currOp.nationId,
         factionId: currOp.groupId,
         teamId: currOp.teamId,
         position: currOp.position,
         tags: currOp.tagList,
-        type: getOpSpecial(opId),
-        slug: generateSlug(opId, currOp.name),
+        type: getOpSpecial(id),
+        slug: generateSlug(id, currOp.name),
       } as Operator;
 
-      // Add Elite Costs
-      newOperator.elite = currOp.phases.map(
-        ({ maxLevel, evolveCost, attributesKeyFrames }) => ({
-          maxLevel: maxLevel,
-          stats: attributesKeyFrames.map((attr) => keepNecessaryStats(attr)),
-          evolveCost: evolveCost ? getMaterialCost(evolveCost) : null,
-        })
+      // Add Skills & Tokens used
+      const tmEntry = { id, branch: newOperator.branch }; // Token Map Entry
+      const usedTokens = new Set(
+        currOp.displayTokenDict ? Object.keys(currOp.displayTokenDict) : []
       );
 
-      // Add Skills & Tokens used
-      const usedTokens = currOp.tokenKey ? [currOp.tokenKey] : []; // Start w/ default token
-      const tmEntry = { id: opId, branch: newOperator.branch }; // Token Map Entry
-      if (currOp.tokenKey) TokenMappings[currOp.tokenKey] = tmEntry;
-
       newOperator.skills = currOp.skills.map((skill) => {
-        if (skill.overrideTokenKey) {
-          usedTokens.push(skill.overrideTokenKey);
-          TokenMappings[skill.overrideTokenKey] = tmEntry;
-        }
+        if (skill.overrideTokenKey) usedTokens.add(skill.overrideTokenKey);
 
         return {
           skillId: skill.skillId,
@@ -122,11 +106,15 @@ function createOperatorsJSON() {
             })
           ),
         };
-      });
+      }) as OpSkill[];
 
       // Special case w/ Ling ("Advanced" version of 3rd token)
-      if (opId === "char_2023_ling") usedTokens.push("token_10020_ling_soul3a");
-      if (usedTokens.length > 0) newOperator.tokensUsed = usedTokens;
+      if (id === "char_2023_ling") usedTokens.add("token_10020_ling_soul3a");
+      if (usedTokens.size > 0) {
+        newOperator.tokensUsed = [...usedTokens] as TokenId[];
+        // Create mappings from tokens to their operators
+        usedTokens.forEach((tokKey) => (TokenMappings[tokKey] = tmEntry));
+      }
 
       // Add Talents ("talents" potentially `null` w/ IS Reserve Ops)
       newOperator.talents = currOp.talents
@@ -135,10 +123,10 @@ function createOperatorsJSON() {
               ({
                 name: candidates[0].name,
                 variants: candidates.map((tal) => {
-                  let talentDesc = replaceUnicode(tal.description);
+                  let talentDesc = replaceUnicode(tal.description!);
 
                   /* Fix broken talent descriptions */
-                  if (["char_290_vigna"].includes(opId)) {
+                  if (["char_290_vigna"].includes(id)) {
                     talentDesc = talentDesc.replace(")", ")</>");
                   }
 
@@ -157,16 +145,9 @@ function createOperatorsJSON() {
           )
         : [];
 
-      // Add Skill Levels Upgrade Cost
-      newOperator.skillLevel = currOp.allSkillLvlup.map((cost, idx) => ({
-        level: (idx + 2) as 2 | 3 | 4 | 5 | 6 | 7,
-        // "levelUpCost" potentially `null` w/ IS Reserve Ops
-        cost: cost.lvlUpCost ? getMaterialCost(cost.lvlUpCost) : [],
-      }));
-
-      operators[opId] = newOperator;
+      operators[id] = newOperator;
     } catch {
-      errors.push(opId);
+      errors.push(id);
     }
   });
 
@@ -273,8 +254,8 @@ function createTokenJSON() {
  * and tokens to their ids.
  */
 function generateSlugTable() {
-  const opSlugs = {} as Record<string, OperatorId>;
-  const tokSlugs = {} as Record<string, TokenId>;
+  const opSlugs: Record<string, string> = {};
+  const tokSlugs: Record<string, string> = {};
 
   Object.values(enOperatorList).forEach((currOp) => {
     const opId = currOp.phases[0].characterPrefabKey;

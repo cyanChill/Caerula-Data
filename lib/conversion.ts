@@ -1,13 +1,10 @@
 import deburr from "lodash.deburr";
 
-import type { OperatorId } from "@/data/types/AKOperator";
-import type { EnemyId, StatusEffectType } from "@/data/types/AKEnemy";
-import { EnemyAttackTable } from "@/data/types/AKEnemy";
-import type { ItemCount } from "@/data/types/AKItem";
-import type { DefineValObj, Immunities } from "@/scripts/types";
+import type { MaterialCount, OptionalField } from "@/types/JSONField";
+
+import type { StatusEffectType } from "@/data/types/AKEnemy";
 
 import { ISOperators, LimitedOperators, SleepImmune } from "@/lib/constants";
-import { capitalize } from "./utils";
 
 /** @description Gets rarity from string. */
 export function getRarity(str: string) {
@@ -45,30 +42,8 @@ export function getSkillSpRecovery(str: string | number) {
   throw new Error(`Invalid SP recovery type value: ${str}.`);
 }
 
-/** @description Get the attack pattern from an attack position & damage types. */
-export function generateAttackPattern(atkPos: string, dmgTypes: string[]) {
-  if (!_attackPositions.includes(atkPos))
-    throw new Error(`Invalid position: ${atkPos}.`);
-  dmgTypes.forEach((dmg) => {
-    if (!_damageTypes.includes(dmg))
-      throw new Error(`Invalid damage type: ${dmg}.`);
-  });
-
-  const dmgTypeSet = new Set(dmgTypes);
-  const resStart = atkPos === "ALL" ? "Melee Ranged" : capitalize(atkPos);
-  const resEnd: string[] = [];
-
-  if (dmgTypeSet.has("PHYSIC")) resEnd.push("Physical");
-  if (dmgTypeSet.has("MAGIC")) resEnd.push("Arts");
-  if (dmgTypeSet.has("HEAL")) resEnd.push("Healing");
-
-  return resEnd.length === 0 ? resStart : `${resStart} ${resEnd.join(" ")}`;
-}
-const _attackPositions = ["MELEE", "RANGED", "ALL", "NONE"];
-const _damageTypes = ["PHYSIC", "MAGIC", "NO_DAMAGE", "HEAL"];
-
 /** @description Returns whether an operator is limited or is from Integrated Strategies. */
-export function getOpSpecial(id: OperatorId) {
+export function getOpSpecial(id: string) {
   if (LimitedOperators.has(id)) return "limited";
   else if (ISOperators.has(id)) return "is";
   return null;
@@ -79,7 +54,7 @@ export function getOpSpecial(id: OperatorId) {
  *  into account of special cases.
  */
 export function getImmunities(
-  key: EnemyId,
+  key: string,
   effects: Immunities
 ): StatusEffectType[] {
   const { stunImmune, silenceImmune, sleepImmune } = effects;
@@ -87,7 +62,7 @@ export function getImmunities(
   const immunities = new Set<StatusEffectType>();
 
   const cbIfImmune = (
-    stat: DefineValObj<boolean>,
+    stat: OptionalField<boolean>,
     effect: StatusEffectType
   ) => {
     if (stat.m_defined && stat.m_value) immunities.add(effect);
@@ -107,17 +82,16 @@ export function getImmunities(
 
   return [...immunities];
 }
-
-/** @description Returns the attack pattern from string (will coerce the correct type). */
-export function getAttackPattern(str: string) {
-  const key = str as keyof typeof EnemyAttackTable;
-  if (!EnemyAttackTable[key])
-    throw new Error(`Pattern for key "${key}" doesn't exist.`);
-  return EnemyAttackTable[key];
-}
+type Immunities = {
+  stunImmune: OptionalField<boolean>;
+  silenceImmune: OptionalField<boolean>;
+  sleepImmune: OptionalField<boolean>;
+  frozenImmune: OptionalField<boolean>;
+  levitateImmune: OptionalField<boolean>;
+};
 
 /** @description Remove the "type" property in the raw object. */
-export function getMaterialCost(arr: ItemCount[]) {
+export function getMaterialCost(arr: MaterialCount[]) {
   return arr.map((obj) => ({ id: obj.id, count: obj.count }));
 }
 

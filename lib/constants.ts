@@ -1,7 +1,3 @@
-import type { Profession, SubClass } from "@/data/types/AKClass";
-import type { OperatorId } from "@/data/types/AKOperator";
-import type { TokenId } from "@/data/types/AKToken";
-
 /** @description Operators considered to be limited. */
 export const LimitedOperators = new Set([
   "char_2014_nian",
@@ -60,12 +56,13 @@ export const ImmuneToAll = new Set(["enemy_1523_mandra"]);
  * @description Object containing relations between tokens & operators that can
  *  be read when we're processing our token data.
  */
-export const TokenMappings = {
-  token_10020_ling_soul3a: { id: "char_2023_ling", branch: "summoner" },
-} as Record<TokenId, { id: OperatorId; branch: SubClass<Profession> } | null>;
+export const TokenMappings: Record<
+  string,
+  { id: string; branch: string } | null
+> = {};
 
 /** @description Special cases where operator has traps. */
-export const TrapperSpec = new Set<OperatorId>([
+export const TrapperSpec = new Set<string>([
   "char_113_cqbw",
   "char_4046_ebnhlz",
 ]);

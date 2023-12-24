@@ -11,7 +11,8 @@ import SkillTable from "@/json/en_US/gamedata/excel/skill_table.json";
 import SkinTable from "@/json/en_US/gamedata/excel/skin_table.json";
 import gameData_const from "@/json/en_US/gamedata/excel/gamedata_const.json";
 
-import { generateAttackPattern, generateSlug } from "@/lib/conversion";
+import getAttackPattern from "@/data/utils/getAttackPattern";
+import { generateSlug } from "@/lib/conversion";
 import { niceJSON } from "@/lib/utils";
 
 /** @description Generate constants from `operator_table.json`. */
@@ -105,7 +106,7 @@ function generateEnemyConstants() {
         AttackPositions.add(applyWay.m_value);
 
         // Generate attack types from attack position & damage types
-        AttackPatterns.add(generateAttackPattern(applyWay.m_value, damageType));
+        AttackPatterns.add(getAttackPattern(applyWay.m_value, damageType));
       }
     }
   );

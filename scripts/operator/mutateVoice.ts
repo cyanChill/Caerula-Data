@@ -2,7 +2,6 @@ import fs from "fs";
 import path from "path";
 import DOMPurify from "isomorphic-dompurify";
 
-import type { OperatorId } from "@/data/types/AKOperator";
 import type { VoiceActor, VoiceLine } from "@/data/types/AKVoice";
 import enCharWords from "@/json/en_US/gamedata/excel/charword_table.json";
 const enVoiceLines = enCharWords.charWords;
@@ -14,7 +13,7 @@ import { niceJSON, replaceUnicode } from "@/lib/utils";
 // FIXME: Some operators (24-OP Skins) have unique voice lines that need to be
 // distinguished
 function createVoiceLineJSON() {
-  const opVoiceLines = {} as Record<OperatorId, VoiceLine[]>;
+  const opVoiceLines: Record<string, VoiceLine[]> = {};
 
   // Group the voice lines by operator
   Object.values(enVoiceLines).map((vLine) => {
@@ -40,8 +39,7 @@ function createVoiceLineJSON() {
   });
 
   // Make sure voice lines are in order for each operator
-  for (const [_key, value] of Object.entries(opVoiceLines)) {
-    const key = _key as OperatorId;
+  Object.entries(opVoiceLines).forEach(([key, value]) => {
     const sortedVLs = value.sort((a, b) => a.sortId - b.sortId);
     // Remove duplicate entries (sometimes from having a special language such as Italian)
     const seenSortIds = new Set();
@@ -50,7 +48,7 @@ function createVoiceLineJSON() {
       seenSortIds.add(vl.sortId);
       return !isDup;
     });
-  }
+  });
 
   fs.writeFileSync(
     path.resolve("./data/operator/profile/voiceLines.json"),
@@ -66,9 +64,9 @@ function createVoiceLineJSON() {
 
 /** @description Creates a table of the voice actors for an operator's base skin. */
 function createVoiceActorsJSON() {
-  const opVoiceActors = {} as Record<OperatorId, VoiceActor[]>;
+  const opVoiceActors: Record<string, VoiceActor[]> = {};
   // Group the voice lines by operator
-  for (const [key, value] of Object.entries(voiceActors)) {
+  Object.entries(voiceActors).forEach(([key, value]) => {
     // Only return the voice actors for the base skin
     if (key === value.charId || key === "char_1001_amiya2") {
       opVoiceActors[key] = Object.values(value.dict)
@@ -78,7 +76,7 @@ function createVoiceActorsJSON() {
         }))
         .sort((a, b) => a.langId.localeCompare(b.langId));
     }
-  }
+  });
 
   fs.writeFileSync(
     path.resolve("./data/operator/profile/voiceActors.json"),

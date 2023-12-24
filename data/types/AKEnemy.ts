@@ -1,4 +1,4 @@
-import type { EnemyIds, EnemyRaceTable } from "./typesFrom";
+import type { AttackPatterns, EnemyIds, EnemyRaceTable } from "./typesFrom";
 
 export type EnemyId = (typeof EnemyIds)[number];
 export type EnemyRace = (typeof EnemyRaceTable)[keyof typeof EnemyRaceTable];
@@ -8,21 +8,7 @@ export const EnemyTiers = ["NORMAL", "ELITE", "BOSS"] as const;
 export type EnemyType = (typeof EnemyTiers)[number];
 
 /** @description The classifications on how enemies attacks. */
-export const EnemyAttackTable = {
-  Melee: "Melee",
-  Ranged: "Ranged",
-  "Ranged  Arts": "Ranged Arts",
-  None: "None",
-  "Melee  Arts": "Melee Arts",
-  "Melee  Ranged": "Melee/Ranged",
-  "Melee  Ranged  Arts": "Melee/Ranged Arts",
-  "Ranged Melee": "Ranged/Melee",
-  Healing: "Healing",
-  "Healing Ranged": "Healing/Ranged",
-  "Ranged Physical": "Ranged Physical",
-} as const;
-export type EnemyAttackPattern =
-  (typeof EnemyAttackTable)[keyof typeof EnemyAttackTable];
+export type EnemyAttackPattern = (typeof AttackPatterns)[number];
 
 /** @description The effects enemies can be immune to. */
 export const StatusEffect = [
@@ -45,6 +31,12 @@ export type EnemyStat = {
   atkRange: number; // rangeRadius
 };
 
+/** @description Structure of how we display an enemy ability. */
+export type EnemyAbility = {
+  text: string;
+  textFormat: "SILENCE" | "NORMAL" | "TITLE";
+};
+
 /** @description Object representing an Arknights enemy. */
 export interface Enemy {
   sort: number;
@@ -56,7 +48,7 @@ export interface Enemy {
   race: EnemyRace | null;
   type: EnemyType;
   attackType: EnemyAttackPattern;
-  ability: string | null;
+  abilityList: EnemyAbility[];
   isInvalidKilled: boolean; // Doesn't count to number of enemies defeated.
   immunities: StatusEffectType[];
   lifePointReduction: number; // lifePointReduce

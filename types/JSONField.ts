@@ -6,6 +6,8 @@ export type BlackboardArr = {
   valueStr: string | null;
 }[];
 
+export type MaterialCount = { id: string; count: number; type: "MATERIAL" };
+
 export type OptionalField<T> =
   | { m_defined: true; m_value: T }
   | { m_defined: false; m_value: unknown };

@@ -1,8 +1,8 @@
 import fs from "fs";
 import path from "path";
 
-import { Skill, SkillId } from "@/data/types/AKSkill";
-import enOperatorSkills from "@/json/en_US/gamedata/excel/skill_table.json";
+import type { Skill } from "@/data/types/AKSkill";
+import SkillTable from "@/json/en_US/gamedata/excel/skill_table.json";
 
 import { getSkillActiveType, getSkillSpRecovery } from "@/lib/conversion";
 import {
@@ -13,78 +13,69 @@ import {
 
 /** @description Create a table for all skills in Arknights. */
 export function createSkillsJSON() {
-  const skills = {} as Record<SkillId, Skill>;
+  const skills: Record<string, Skill> = {};
   const errors: string[] = [];
 
-  Object.keys(enOperatorSkills).forEach((id) => {
-    const skillId = id as SkillId;
-
+  Object.values(SkillTable).forEach(({ skillId: id, iconId, levels }) => {
     try {
-      const value = enOperatorSkills[skillId];
-      const lvl1Skill = value.levels[0];
-
-      // Skip indexing if skill has no description.
-      if (!lvl1Skill.description) throw new Error("Not an operator skill.");
+      // Getting constant information about skill.
+      const baseSkillVal = levels[0];
+      // Don't index a skill with no description.
+      if (!baseSkillVal.description)
+        throw new Error("Skill doesn't meet indexing requirement.");
 
       const newSkill = {
-        id: skillId,
-        iconId: value.iconId ? value.iconId : skillId,
-        name: lvl1Skill.name,
+        id,
+        iconId: iconId ?? id,
+        name: baseSkillVal.name,
         description: [],
-        rangeId: lvl1Skill.rangeId,
-        activationType: getSkillActiveType(lvl1Skill.skillType),
-        spRecovery: getSkillSpRecovery(lvl1Skill.spData.spType),
+        rangeId: baseSkillVal.rangeId,
+        activationType: getSkillActiveType(baseSkillVal.skillType),
+        spRecovery: getSkillSpRecovery(baseSkillVal.spData.spType),
         spCost: [],
         initSp: [],
         duration: [],
       } as Skill;
 
-      // Populate the variable values
-      value.levels.forEach((lvlData) => {
-        newSkill.spCost.push(lvlData.spData.spCost);
-        newSkill.initSp.push(lvlData.spData.initSp);
-        newSkill.duration.push(lvlData.duration);
+      // Populate the values that change when we level up a skill.
+      levels.forEach(({ spData, duration, blackboard, description }) => {
+        newSkill.spCost.push(spData.spCost);
+        newSkill.initSp.push(spData.initSp);
+        newSkill.duration.push(duration);
 
-        // Some skill uses the skill duration as a variable (and not include
-        // it in the `blackboard` property)
-        const injctVals = lvlData.blackboard;
-        if (!lvlData.blackboard.find((obj) => obj.key === "duration")) {
-          injctVals.push({
-            key: "duration",
-            value: lvlData.duration,
-            valueStr: null,
-          });
+        // Some skill uses the skill duration as a variable (and does not
+        // include it in the `blackboard` property).
+        const injctVals = blackboard;
+        if (!blackboard.find(({ key }) => key === "duration")) {
+          injctVals.push({ key: "duration", value: duration, valueStr: null });
         }
-        let strWVal = injectTemplateVals(lvlData.description, injctVals);
+        // Description should be populated due to earlier check.
+        let strWVal = injectTemplateVals(description!, injctVals);
 
-        /* Fix broken ability descriptions */
-        if (skillId === "skchr_tiger_2") {
+        // Fix broken ability descriptions.
+        if (id === "skchr_tiger_2") {
           strWVal = strWVal.replace("Arts damage;", "Arts damage</>;");
         }
 
-        const completedStr = injectTooltipsColors(strWVal);
-        if (!completedStr) {
-          throw new Error(`Failed to inject value into ${skillId}.`);
-        }
-        newSkill.description.push(completedStr);
+        const skillDescription = injectTooltipsColors(strWVal);
+        if (!skillDescription)
+          throw new Error(`Failed to populate skill description of: ${id}.`);
+        newSkill.description.push(skillDescription);
       });
 
-      skills[skillId] = newSkill;
+      skills[id] = newSkill;
     } catch {
-      errors.push(skillId);
+      errors.push(id);
     }
   });
 
   fs.writeFileSync(
-    path.resolve("./data/gameplay/skills.json"),
+    path.resolve("./data/gameplay/skillTable.json"),
     niceJSON(skills)
   );
-  fs.writeFileSync(
-    path.resolve("./errors/operator_skills.json"),
-    niceJSON(errors)
-  );
+  fs.writeFileSync(path.resolve("./errors/skillTable.json"), niceJSON(errors));
 
-  console.log("[📜 Skills 📜]");
+  console.log("[📜 Skill Table 📜]");
   console.log(`  - Created ${Object.keys(skills).length} entries.`);
   console.log(`  - Encountered ${errors.length} errors.`);
 }

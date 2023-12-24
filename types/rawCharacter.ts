@@ -1,4 +1,4 @@
-import type { AttackPosition, BlackboardArr } from "./JSONField";
+import type { AttackPosition, BlackboardArr, MaterialCount } from "./JSONField";
 
 type ObtainMethod =
   | "Recruitment & Headhunting"
@@ -31,8 +31,6 @@ type CandidateBase = {
 };
 
 type UnlockCondition = { phase: `PHASE_${0 | 1 | 2}`; level: number };
-
-type MaterialCount = { id: string; count: number; type: "MATERIAL" };
 
 interface Stat {
   level: number;
