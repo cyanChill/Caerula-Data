@@ -3,7 +3,7 @@ import path from "path";
 
 import latestStore from "@/data/latestStore.json";
 import { OperatorIds as ExistingOperatorIds } from "@/data/types/typesFrom";
-import ExistingSkins from "@/data/operator/skins.json";
+import ExistingSkins from "@/data/operator/skinTable.json";
 
 import { generateOperatorConstants } from "./generateConstants";
 import { generateSkinTableConstants } from "./generateSkinTable";

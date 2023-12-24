@@ -1,4 +1,4 @@
-import { RawCharWords, RawVoiceLangDict } from "@/types/rawVoice";
+import type { RawCharWords, RawVoiceLangDict } from "@/types/rawVoice";
 
 declare const charword_table: {
   charWords: Record<string, RawCharWords>;
