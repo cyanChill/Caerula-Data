@@ -2,7 +2,7 @@ import deburr from "lodash.deburr";
 
 import type { MaterialCount, OptionalField } from "@/types/JSONField";
 
-import type { StatusEffectType } from "@/data/types/AKEnemy";
+import type { StatusEffect } from "@/data/types/AKEnemy";
 
 import { ISOperators, LimitedOperators, SleepImmune } from "@/lib/constants";
 
@@ -56,15 +56,12 @@ export function getOpSpecial(id: string) {
 export function getImmunities(
   key: string,
   effects: Immunities
-): StatusEffectType[] {
+): StatusEffect[] {
   const { stunImmune, silenceImmune, sleepImmune } = effects;
   const { frozenImmune, levitateImmune } = effects;
-  const immunities = new Set<StatusEffectType>();
+  const immunities = new Set<StatusEffect>();
 
-  const cbIfImmune = (
-    stat: OptionalField<boolean>,
-    effect: StatusEffectType
-  ) => {
+  const cbIfImmune = (stat: OptionalField<boolean>, effect: StatusEffect) => {
     if (stat.m_defined && stat.m_value) immunities.add(effect);
   };
 

@@ -1,6 +1,7 @@
 import type { TokenIds } from "./typesFrom";
+import type { AttackPosition } from "./shared";
 
-import type { Elite, Position, OperatorId } from "./AKOperator";
+import type { Elite, OperatorId } from "./AKOperator";
 import type { RangeId } from "./AKRange";
 import type { SkillId } from "./AKSkill";
 
@@ -20,7 +21,7 @@ export interface Token {
   name: string;
   displayName: string;
   description: string;
-  position: Position;
+  position: AttackPosition;
   range: RangeId;
   stats: Omit<Elite, "evolveCost">[];
   skillIds: (SkillId | null)[];

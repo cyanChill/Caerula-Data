@@ -1,12 +1,9 @@
 import fs from "fs";
 import path from "path";
 
-import type {
-  OpSkill,
-  OpTalent,
-  Operator,
-  RawStatAtLevel,
-} from "@/data/types/AKOperator";
+import type { RawCharacterStat } from "@/types/rawCharacter";
+
+import type { OpSkill, OpTalent, Operator } from "@/data/types/AKOperator";
 import type { SkillId } from "@/data/types/AKSkill";
 import type { Token, TokenId } from "@/data/types/AKToken";
 import enOperatorList from "@/json/preprocessed/operator_table.json";
@@ -30,19 +27,16 @@ function getDisplayName(id: string, name: string, appellation: string) {
 }
 
 /** @description Keep only the stat properties that I want from the raw data. */
-function keepNecessaryStats(rawStat: RawStatAtLevel) {
+function keepNecessaryStats(stat: RawCharacterStat) {
   return {
-    level: rawStat.level,
-    data: {
-      hp: rawStat.data.maxHp,
-      atk: rawStat.data.atk,
-      def: rawStat.data.def,
-      res: rawStat.data.magicResistance,
-      cost: rawStat.data.cost,
-      blockCnt: rawStat.data.blockCnt,
-      atkInterval: rawStat.data.baseAttackTime,
-      respawnTime: rawStat.data.respawnTime,
-    },
+    hp: stat.data.maxHp,
+    atk: stat.data.atk,
+    def: stat.data.def,
+    res: stat.data.magicResistance,
+    cost: stat.data.cost,
+    blockCnt: stat.data.blockCnt,
+    atkInterval: stat.data.baseAttackTime,
+    respawnTime: stat.data.respawnTime,
   };
 }
 

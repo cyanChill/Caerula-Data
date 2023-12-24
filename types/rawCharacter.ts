@@ -32,7 +32,7 @@ type CandidateBase = {
 
 type UnlockCondition = { phase: `PHASE_${0 | 1 | 2}`; level: number };
 
-interface Stat {
+export interface RawCharacterStat {
   level: number;
   data: {
     maxHp: number;
@@ -92,7 +92,7 @@ export interface RawCharacter {
   displayTokenDict: Record<string, boolean> | null;
   talents: Talent[] | null;
   potentialRanks: Potential[];
-  favorKeyFrames: Stat[] | null;
+  favorKeyFrames: RawCharacterStat[] | null;
   allSkillLvlup: {
     unlockCond: UnlockCondition;
     lvlUpCost: MaterialCount[] | null;
@@ -107,7 +107,7 @@ interface Phase {
   characterPrefabKey: string;
   rangeId: string | null;
   maxLevel: number;
-  attributesKeyFrames: Stat[];
+  attributesKeyFrames: RawCharacterStat[];
   evolveCost: MaterialCount[] | null;
 }
 

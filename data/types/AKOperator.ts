@@ -1,4 +1,5 @@
 import type { OperatorIds } from "./typesFrom";
+import type { AttackPosition, Rarity, StatTable } from "./shared";
 
 import type { NationId, FactionId, TeamId } from "./AKAffiliation";
 import type { Profession, SubClass } from "./AKClass";
@@ -9,43 +10,20 @@ import type { TokenId } from "./AKToken";
 
 export type OperatorId = (typeof OperatorIds)[number];
 
-/** @description Describes where an operator can be placed on the map. */
-export type Position = "MELEE" | "RANGED" | "ALL";
-
 /** @description Conversions of the raw data. */
 export type EliteLvl = 0 | 1 | 2;
-export type Rarity = 1 | 2 | 3 | 4 | 5 | 6;
 
 /** @description An operator's stats at a specific level. */
-type AttrFields = {
-  hp: number;
-  atk: number;
-  def: number;
-  res: number;
+type OperatorStat = StatTable & {
   cost: number;
   blockCnt: number;
-  atkInterval: number; // baseAttackTime
   respawnTime: number;
-};
-
-export type StatAtLevel = {
-  level: number;
-  data: AttrFields;
-};
-
-export type RawStatAtLevel = {
-  level: number;
-  data: Omit<AttrFields, "hp" | "res" | "atkInterval"> & {
-    maxHp: number;
-    magicResistance: number;
-    baseAttackTime: number;
-  };
 };
 
 /** @description Specification of operation at promotion rank. */
 export type Elite = {
   maxLevel: number;
-  stats: StatAtLevel[]; // Note: Really just "[StatAtLevel, StatAtLevel]"
+  stats: OperatorStat[]; // Note: Really just "[StatAtLevel, StatAtLevel]"
   evolveCost: ItemCount[] | null;
 };
 
@@ -94,12 +72,12 @@ export interface Operator {
   elite: Elite[];
   skills: OpSkill[];
   talents: OpTalent[];
-  trustBonus: StatAtLevel;
+  trustBonus: OperatorStat; // Max trust is achieved at 100% (Trust is from 0-200%)
   skillLevel: SkillCost[];
   nationId: NationId | null;
   factionId: FactionId | null;
   teamId: TeamId | null;
-  position: Position;
+  position: AttackPosition;
   tags: string[];
   type: "limited" | "is" | null;
   slug: string;
