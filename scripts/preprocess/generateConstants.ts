@@ -87,13 +87,15 @@ function generateEnemyConstants() {
   const AttackPositions = new Set<string>();
   const DamageTypes = new Set<string>();
   const Movements = new Set<string>();
+  const ClassTiers = new Set<string>();
 
   Object.values(EnemyTable.enemyData).forEach(
-    ({ enemyId, hideInHandbook, damageType }) => {
+    ({ enemyId, hideInHandbook, damageType, enemyLevel }) => {
       if (hideInHandbook) return; // Only index the enemies that are shown
       EnemyIds.push(enemyId);
 
       damageType.forEach((dmg) => DamageTypes.add(dmg));
+      ClassTiers.add(enemyLevel);
 
       const enemyStats = EnemyDatabase.enemies.find(
         (enemy) => enemy.Key === enemyId
@@ -122,6 +124,7 @@ function generateEnemyConstants() {
     AttackPositions: [...AttackPositions],
     DamageTypes: [...DamageTypes],
     Movements: [...Movements],
+    ClassTiers: [...ClassTiers],
   };
 }
 

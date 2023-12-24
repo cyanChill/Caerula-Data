@@ -2095,6 +2095,8 @@ export const DamageTypes = ["PHYSIC", "MAGIC", "NO_DAMAGE", "HEAL"] as const;
 
 export const Movements = ["WALK", "FLY"] as const;
 
+export const ClassTiers = ["NORMAL", "ELITE", "BOSS"] as const;
+
 export const BrandIds = [
   "sale",
   "epoque",

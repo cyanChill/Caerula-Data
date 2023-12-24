@@ -1,14 +1,14 @@
-import type { AttackPatterns, EnemyIds, EnemyRaceTable } from "./typesFrom";
+import type {
+  AttackPatterns,
+  ClassTiers,
+  EnemyIds,
+  EnemyRaceTable,
+} from "./typesFrom";
 
 export type EnemyId = (typeof EnemyIds)[number];
 export type EnemyRace = (typeof EnemyRaceTable)[keyof typeof EnemyRaceTable];
-
-/** @description The tiers of enemies in Arknights. */
-export const EnemyTiers = ["NORMAL", "ELITE", "BOSS"] as const;
-export type EnemyType = (typeof EnemyTiers)[number];
-
-/** @description The classifications on how enemies attacks. */
-export type EnemyAttackPattern = (typeof AttackPatterns)[number];
+export type EnemyTier = (typeof ClassTiers)[number];
+export type AttackPattern = (typeof AttackPatterns)[number];
 
 /** @description The effects enemies can be immune to. */
 export const StatusEffect = [
@@ -26,6 +26,10 @@ export type EnemyStat = {
   atk: number;
   def: number;
   res: number; // magicResistance
+  // FIXME: Not completely sure if the mapping for the elemental resistances
+  // are correct
+  erst: number; // epDamageResistance (Reduce Elemental Damage Taken By Percent)
+  irst: number; // epResistance (Reduce Elemental Impairement Build-up By Percent)
   mvSpd: number; // moveSpeed
   atkInterval: number; // baseAttackTime
   atkRange: number; // rangeRadius
@@ -46,11 +50,13 @@ export interface Enemy {
   name: string;
   description: string;
   race: EnemyRace | null;
-  type: EnemyType;
-  attackType: EnemyAttackPattern;
+  type: EnemyTier;
+  attackPattern: AttackPattern;
   abilityList: EnemyAbility[];
   isInvalidKilled: boolean; // Doesn't count to number of enemies defeated.
   immunities: StatusEffectType[];
   lifePointReduction: number; // lifePointReduce
   weight: number; // massLevel
+  isFlying: boolean;
+  relatedEnemies: EnemyId[];
 }

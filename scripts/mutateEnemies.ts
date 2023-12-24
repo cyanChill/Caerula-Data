@@ -49,6 +49,8 @@ export function createEnemiesJSON() {
           atk: baseStatVal.attributes.atk.m_value,
           def: baseStatVal.attributes.def.m_value,
           res: baseStatVal.attributes.magicResistance.m_value,
+          erst: baseStatVal.attributes.epDamageResistance.m_value,
+          irst: baseStatVal.attributes.epResistance.m_value,
           mvSpd: baseStatVal.attributes.moveSpeed.m_value,
           atkInterval: baseStatVal.attributes.baseAttackTime.m_value,
           atkRange: baseStatVal.rangeRadius.m_value, // Constant
@@ -64,6 +66,8 @@ export function createEnemiesJSON() {
           ...getNewStat(attributes.atk, "atk"),
           ...getNewStat(attributes.def, "def"),
           ...getNewStat(attributes.magicResistance, "res"),
+          ...getNewStat(attributes.epDamageResistance, "erst"),
+          ...getNewStat(attributes.epResistance, "irst"),
           ...getNewStat(attributes.moveSpeed, "mvSpd"),
           ...getNewStat(attributes.baseAttackTime, "atkInterval"),
         } as EnemyStat);
@@ -92,12 +96,14 @@ export function createEnemiesJSON() {
         description: replaceUnicode(currEnemy.description),
         race: enemyRace,
         type: currEnemy.enemyLevel,
-        attackType: enemyAtkPat,
+        attackPattern: enemyAtkPat,
         abilityList: FormatAbilities(currEnemy.abilityList),
         isInvalidKilled: currEnemy.isInvalidKilled,
         immunities: getImmunities(id, baseStatVal.attributes),
         lifePointReduction: baseStatVal.lifePointReduce.m_value,
         weight: baseStatVal.attributes.massLevel.m_value,
+        isFlying: baseStatVal.motion.m_value === "FLY",
+        relatedEnemies: currEnemy.linkEnemies,
       } as Enemy);
       stats[id] = statVariants;
     } catch {
