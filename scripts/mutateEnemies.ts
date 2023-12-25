@@ -1,30 +1,19 @@
 import fs from "fs";
 import path from "path";
 
-import type { OptionalField } from "@/types/JSONField";
-
+import type { RawEnemyAttributes } from "@/types/rawEnemy";
 import type { Enemy, EnemyStat } from "@/data/types/AKEnemy";
+
+import { Debuffs } from "@/data/types/AKEnemy";
+import { EnemyRaceTable } from "@/data/types/typesFrom";
 import EnemyDatabase from "@/json/en_US/gamedata/levels/enemydata/enemy_database.json";
 import EnemyTable from "@/json/en_US/gamedata/excel/enemy_handbook_table.json";
-import { EnemyRaceTable } from "@/data/types/typesFrom";
 
 import getAttackPattern from "@/data/utils/getAttackPattern";
-import { generateSlug, getImmunities } from "@/lib/conversion";
-import { injectTooltipsColors, niceJSON, replaceUnicode } from "@/lib/utils";
-
-/** @description Applies styles to abilities if available.  */
-function FormatAbilities(abilites: { text: string; textFormat: string }[]) {
-  return abilites.map(({ text, textFormat }) => ({
-    text: injectTooltipsColors(text),
-    textFormat,
-  }));
-}
-
-/** @description Return a stat value with a new key name. */
-function getNewStat(attrObj: OptionalField<number>, key: string) {
-  if (attrObj.m_defined) return { [key]: attrObj.m_value };
-  return {};
-}
+import { niceJSON } from "@/lib/format";
+import { generateSlug, optFieldAsObj } from "@/utils/conversion";
+import { addTooltipAndColor, cleanString } from "@/utils/textFormat";
+import { toLowercase } from "@/utils/typedStrings";
 
 /** @description Creates a JSON file with an array of Enemy-type objects. */
 export function createEnemiesJSON() {
@@ -62,42 +51,41 @@ export function createEnemiesJSON() {
       Value.slice(1).forEach(({ enemyData: { attributes } }) => {
         statVariants.push({
           ...statVariants[0],
-          ...getNewStat(attributes.maxHp, "hp"),
-          ...getNewStat(attributes.atk, "atk"),
-          ...getNewStat(attributes.def, "def"),
-          ...getNewStat(attributes.magicResistance, "res"),
-          ...getNewStat(attributes.epDamageResistance, "erst"),
-          ...getNewStat(attributes.epResistance, "irst"),
-          ...getNewStat(attributes.moveSpeed, "mvSpd"),
-          ...getNewStat(attributes.baseAttackTime, "atkInterval"),
+          ...optFieldAsObj(attributes.maxHp, "hp"),
+          ...optFieldAsObj(attributes.atk, "atk"),
+          ...optFieldAsObj(attributes.def, "def"),
+          ...optFieldAsObj(attributes.magicResistance, "res"),
+          ...optFieldAsObj(attributes.epDamageResistance, "erst"),
+          ...optFieldAsObj(attributes.epResistance, "irst"),
+          ...optFieldAsObj(attributes.moveSpeed, "mvSpd"),
+          ...optFieldAsObj(attributes.baseAttackTime, "atkInterval"),
         } as EnemyStat);
       });
 
-      // Assert certain fields in the base stat is defined.
       if (!baseStatVal.applyWay.m_defined)
-        throw new Error("Enemy is missing fields.");
-
-      const enemyRace = baseStatVal.enemyTags.m_defined
-        ? EnemyRaceTable[
-            baseStatVal.enemyTags.m_value[0] as keyof typeof EnemyRaceTable
-          ]
-        : null;
-      const enemyAtkPat = getAttackPattern(
-        baseStatVal.applyWay.m_value,
-        currEnemy.damageType
-      );
+        throw new Error("Enemy doesn't specify an attack position.");
 
       enemies.push({
         sort: currEnemy.sortId,
         id,
         slug: generateSlug(id, currEnemy.name),
         code: currEnemy.enemyIndex,
-        name: replaceUnicode(currEnemy.name),
-        description: replaceUnicode(currEnemy.description),
-        race: enemyRace,
+        name: cleanString(currEnemy.name),
+        description: cleanString(currEnemy.description),
+        race: baseStatVal.enemyTags.m_defined
+          ? EnemyRaceTable[
+              baseStatVal.enemyTags.m_value[0] as keyof typeof EnemyRaceTable
+            ]
+          : null,
         type: currEnemy.enemyLevel,
-        attackPattern: enemyAtkPat,
-        abilityList: FormatAbilities(currEnemy.abilityList),
+        attackPattern: getAttackPattern(
+          baseStatVal.applyWay.m_value,
+          currEnemy.damageType
+        ),
+        abilityList: currEnemy.abilityList.map(({ text, textFormat }) => ({
+          text: addTooltipAndColor(text),
+          textFormat,
+        })),
         isInvalidKilled: currEnemy.isInvalidKilled,
         immunities: getImmunities(id, baseStatVal.attributes),
         lifePointReduction: baseStatVal.lifePointReduce.m_value,
@@ -105,6 +93,7 @@ export function createEnemiesJSON() {
         isFlying: baseStatVal.motion.m_value === "FLY",
         relatedEnemies: currEnemy.linkEnemies,
       } as Enemy);
+
       stats[id] = statVariants;
     } catch {
       errors.push(id);
@@ -124,4 +113,40 @@ export function createEnemiesJSON() {
   console.log("[💀 Enemy Table 💀]");
   console.log(`  - Created ${enemies.length} entries.`);
   console.log(`  - Encountered ${errors.length} errors.`);
+}
+
+/** @description Enemies immune to sleep which aren't noted. */
+const SleepImmune = new Set([
+  "enemy_1115_embald",
+  "enemy_3002_ftrtal",
+  "enemy_1506_patrt",
+  "enemy_1505_frstar",
+  "enemy_1508_faust",
+  "enemy_1509_mousek",
+  "enemy_1510_frstar2",
+  "enemy_1511_mdrock",
+  "enemy_2006_flsnip",
+  "enemy_2007_flwitch",
+  "enemy_7012_wilder",
+]);
+
+/**
+ * @description Returns the list of debuffs enemy is immune to, taking
+ *  into account of special cases.
+ */
+function getImmunities(key: string, effects: RawEnemyAttributes) {
+  const immunities = new Set<string>();
+
+  Debuffs.forEach((debuff) => {
+    const debuffStatus = effects[`${toLowercase(debuff)}Immune`];
+    if (debuffStatus.m_defined && debuffStatus.m_value) immunities.add(debuff);
+  });
+
+  // Special Cases
+  if (SleepImmune.has(key)) immunities.add("Sleep");
+  if (key === "enemy_1523_mandra") {
+    return ["Stun", "Silence", "Sleep", "Frozen", "Levitate"];
+  }
+
+  return [...immunities];
 }

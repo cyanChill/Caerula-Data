@@ -14,7 +14,7 @@ export interface RawEnemyStat {
     name: OptionalField<string>;
     description: OptionalField<string>;
     prefabKey: OptionalField<string>;
-    attributes: Attributes;
+    attributes: RawEnemyAttributes;
     applyWay: OptionalField<AttackPosition>;
     motion: OptionalField<Motion>;
     enemyTags: OptionalField<string[]>;
@@ -30,7 +30,7 @@ export interface RawEnemyStat {
   };
 }
 
-interface Attributes {
+export interface RawEnemyAttributes {
   maxHp: OptionalField<number>;
   atk: OptionalField<number>;
   def: OptionalField<number>;

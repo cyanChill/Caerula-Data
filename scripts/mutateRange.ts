@@ -4,7 +4,7 @@ import path from "path";
 import type { RangeArea } from "@/data/types/AKRange";
 import RangeTable from "@/json/en_US/gamedata/excel/range_table.json";
 
-import { niceJSON } from "@/lib/utils";
+import { niceJSON } from "@/lib/format";
 
 /** @description Create a table containing a visual representation of range. */
 export function createRangeTableJSON() {

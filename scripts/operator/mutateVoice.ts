@@ -3,11 +3,10 @@ import path from "path";
 import DOMPurify from "isomorphic-dompurify";
 
 import type { VoiceActor, VoiceLine } from "@/data/types/AKVoice";
-import enCharWords from "@/json/en_US/gamedata/excel/charword_table.json";
-const enVoiceLines = enCharWords.charWords;
-const voiceActors = enCharWords.voiceLangDict;
+import CharwordTable from "@/json/en_US/gamedata/excel/charword_table.json";
 
-import { niceJSON, replaceUnicode } from "@/lib/utils";
+import { niceJSON } from "@/lib/format";
+import { replaceUnicode } from "@/utils/textFormat";
 
 /** @description Create a table of operator voice lines. */
 // FIXME: Some operators (24-OP Skins) have unique voice lines that need to be
@@ -16,13 +15,14 @@ function createVoiceLineJSON() {
   const opVoiceLines: Record<string, VoiceLine[]> = {};
 
   // Group the voice lines by operator
-  Object.values(enVoiceLines).map((vLine) => {
+  Object.values(CharwordTable.charWords).map((vLine) => {
     const newVLine = {
       sortId: vLine.voiceIndex,
       title: replaceUnicode(vLine.voiceTitle),
       text: DOMPurify.sanitize(replaceUnicode(vLine.voiceText)),
       unlockCond: null,
     } as VoiceLine;
+
     if (["AWAKE", "FAVOR"].includes(vLine.unlockType)) {
       newVLine.unlockCond = {
         type: vLine.unlockType === "AWAKE" ? "promotion" : "trust",
@@ -66,7 +66,7 @@ function createVoiceLineJSON() {
 function createVoiceActorsJSON() {
   const opVoiceActors: Record<string, VoiceActor[]> = {};
   // Group the voice lines by operator
-  Object.entries(voiceActors).forEach(([key, value]) => {
+  Object.entries(CharwordTable.voiceLangDict).forEach(([key, value]) => {
     // Only return the voice actors for the base skin
     if (key === value.charId || key === "char_1001_amiya2") {
       opVoiceActors[key] = Object.values(value.dict)

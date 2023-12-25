@@ -12,14 +12,14 @@ export type EnemyTier = (typeof ClassTiers)[number];
 export type AttackPattern = (typeof AttackPatterns)[number];
 
 /** @description The debuffs enemies can be immune to. */
-export const StatusEffects = [
+export const Debuffs = [
   "Stun",
   "Silence",
   "Sleep",
-  "Freeze",
+  "Frozen",
   "Levitate",
 ] as const;
-export type StatusEffect = (typeof StatusEffects)[number];
+export type StatusEffect = (typeof Debuffs)[number];
 
 /** @description Describes the stats of an enemy. */
 export type EnemyStat = StatTable & {

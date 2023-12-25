@@ -9,15 +9,16 @@ import type {
 } from "@/data/types/AKOPFiles";
 import OpFiles from "@/json/en_US/gamedata/excel/handbook_info_table.json";
 
-import { niceJSON, replaceUnicode, removeIrregularTags } from "@/lib/utils";
+import { niceJSON } from "@/lib/format";
+import { cleanString } from "@/utils/textFormat";
 
 /** @description Creates a table of operator records and their files. */
 function createOperatorFilesJSON() {
   const opPersonalFiles: Record<string, OpPersonalFile[]> = {};
   const opRecords: Record<string, OpRecord[]> = {};
 
-  Object.values(OpFiles.handbookDict).map(
-    ({ charID: id, storyTextAudio, handbookAvgList }) => {
+  Object.entries(OpFiles.handbookDict).map(
+    ([id, { storyTextAudio, handbookAvgList }]) => {
       // Get Operator personal files for each operator
       opPersonalFiles[id] = storyTextAudio.map(({ stories, storyTitle }) => {
         const { unLockType, storyText, unLockParam: unlockVal } = stories[0];
@@ -32,7 +33,7 @@ function createOperatorFilesJSON() {
           unlockCond = { type: "special", val: unlockVal } as const;
         }
 
-        let saferText = replaceUnicode(storyText);
+        let saferText = cleanString(storyText, { unicode: true });
         // Escape characters before santize for only Ifrit's "Basic Info" section
         if (id === "char_134_ifrit" && storyTitle === "Basic Info") {
           saferText = saferText.replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -51,9 +52,7 @@ function createOperatorFilesJSON() {
           ({ storySetName, avgList, unlockParam }) => ({
             name: storySetName,
             // We'll apply the italics styles in our rendered JSX code.
-            description: avgList.map((val) =>
-              removeIrregularTags(val.storyIntro)
-            ),
+            description: avgList.map((val) => cleanString(val.storyIntro)),
             unlockCond: {
               elite: +unlockParam[0].unlockParam1,
               lvl: +`${unlockParam[0].unlockParam2}`,
@@ -88,8 +87,8 @@ function createOperatorFilesJSON() {
 function createOperatorParadoxJSON() {
   const opParadoxSims: Record<string, OpParadox> = {};
 
-  Object.values(OpFiles.handbookStageData).map(
-    ({ name, charId: id, description, unlockParam }) => {
+  Object.entries(OpFiles.handbookStageData).map(
+    ([id, { name, description, unlockParam }]) => {
       opParadoxSims[id] = {
         name,
         text: DOMPurify.sanitize(description),

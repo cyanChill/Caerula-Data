@@ -13,7 +13,7 @@ import gameData_const from "@/json/en_US/gamedata/excel/gamedata_const.json";
 
 import getAttackPattern from "@/data/utils/getAttackPattern";
 import { niceJSON } from "@/lib/format";
-import { generateSlug } from "@/utils/format";
+import { generateSlug } from "@/utils/conversion";
 
 /** @description Generate constants from `operator_table.json`. */
 export function generateOperatorConstants() {

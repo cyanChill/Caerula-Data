@@ -7,7 +7,7 @@ import type { Brand, Skin } from "@/data/types/AKSkin";
 import SkinTable from "@/json/en_US/gamedata/excel/skin_table.json";
 
 import { niceJSON } from "@/lib/format";
-import { cleanString } from "@/utils/format";
+import { cleanString } from "@/utils/textFormat";
 
 /**
  * @description Generate objects representing a brand along with noting
