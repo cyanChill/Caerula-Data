@@ -9,12 +9,12 @@ export interface Brand {
   description: string;
 }
 
-export interface OperatorSkin {
+export interface Skin {
   id: string;
+  brandId: BrandId | null;
+  subBrand: { id: string; name: string };
   name: string;
   alt: string;
-  brandId: BrandId;
-  subBrand: { id: string; name: string };
   artists: string[] | null;
   description: string | null;
 }

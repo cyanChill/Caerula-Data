@@ -12,8 +12,8 @@ import SkinTable from "@/json/en_US/gamedata/excel/skin_table.json";
 import gameData_const from "@/json/en_US/gamedata/excel/gamedata_const.json";
 
 import getAttackPattern from "@/data/utils/getAttackPattern";
-import { generateSlug } from "@/lib/conversion";
-import { niceJSON } from "@/lib/utils";
+import { niceJSON } from "@/lib/format";
+import { generateSlug } from "@/utils/format";
 
 /** @description Generate constants from `operator_table.json`. */
 export function generateOperatorConstants() {
@@ -33,10 +33,10 @@ export function generateOperatorConstants() {
 
   Object.entries(OperatorTable).forEach(
     ([
-      key,
+      id,
       { nationId, groupId, teamId, tagList, profession, subProfessionId },
     ]) => {
-      OperatorIds.push(key);
+      OperatorIds.push(id);
       if (nationId) NationIds.add(nationId);
       if (groupId) FactionIds.add(groupId);
       if (teamId) TeamIds.add(teamId);
@@ -82,37 +82,34 @@ function generateSkillConstants() {
 /** @description Generate constants from `enemy_handbook_table.json` */
 function generateEnemyConstants() {
   const EnemyIds: string[] = [];
-  const EnemyRaceTable: Record<string, string> = {};
   const AttackPatterns = new Set<string>();
   const AttackPositions = new Set<string>();
+  const ClassTiers = new Set<string>();
   const DamageTypes = new Set<string>();
   const Movements = new Set<string>();
-  const ClassTiers = new Set<string>();
 
-  Object.values(EnemyTable.enemyData).forEach(
-    ({ enemyId, hideInHandbook, damageType, enemyLevel }) => {
+  Object.entries(EnemyTable.enemyData).forEach(
+    ([id, { hideInHandbook, damageType, enemyLevel }]) => {
       if (hideInHandbook) return; // Only index the enemies that are shown
-      EnemyIds.push(enemyId);
-
-      damageType.forEach((dmg) => DamageTypes.add(dmg));
       ClassTiers.add(enemyLevel);
+      damageType.forEach((dmg) => DamageTypes.add(dmg));
 
-      const enemyStats = EnemyDatabase.enemies.find(
-        (enemy) => enemy.Key === enemyId
-      );
-      if (!enemyStats) return;
+      /* Retrieve values only in the stats table. */
+      const enemyStats = EnemyDatabase.enemies.find(({ Key }) => Key === id);
+      if (!enemyStats) return; // Don't save id of enemy without any stats
+      EnemyIds.push(id); // Save id after knowing enemy has stats
 
       const { applyWay, motion } = enemyStats.Value[0].enemyData;
       if (motion.m_defined) Movements.add(motion.m_value);
       if (applyWay.m_defined) {
         AttackPositions.add(applyWay.m_value);
-
-        // Generate attack types from attack position & damage types
+        /* Generate attack types from attack position & damage types */
         AttackPatterns.add(getAttackPattern(applyWay.m_value, damageType));
       }
     }
   );
 
+  const EnemyRaceTable: Record<string, string> = {};
   Object.values(EnemyTable.raceData).forEach(({ id, raceName }) => {
     EnemyRaceTable[id] = raceName;
   });
@@ -148,22 +145,27 @@ function generateMiscConstants() {
   };
 }
 
+/**
+ * @description Contains the term w/ its definition that is used for
+ *  template injections.
+ */
+type TermDescription = {
+  termId: string;
+  termName: string;
+  description: string;
+  slug: string;
+};
+
 /** @description Extract the values used for template injections. */
 export function generateGameDataConstants() {
-  const { richTextStyles, termDescriptionDict } = gameData_const;
-
   const mutatedTextStyles: Record<string, string | null> = {};
-
-  Object.entries(richTextStyles).forEach(([key, value]) => {
+  Object.entries(gameData_const.richTextStyles).forEach(([key, value]) => {
     if (!value.startsWith("<color")) mutatedTextStyles[key] = null;
     else mutatedTextStyles[key] = value.slice(7, 14); // Extract hex value
   });
 
-  const mutatedTermDescription: Record<
-    string,
-    { termId: string; termName: string; description: string; slug: string }
-  > = {};
-  Object.entries(termDescriptionDict).forEach(([key, value]) => {
+  const mutatedTermDescription: Record<string, TermDescription> = {};
+  Object.entries(gameData_const.termDescriptionDict).forEach(([key, value]) => {
     mutatedTermDescription[key] = {
       ...value,
       // Ignore nested tooltips

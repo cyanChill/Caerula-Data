@@ -8,7 +8,7 @@ import ExistingSkins from "@/data/operator/skinTable.json";
 import { generateOperatorConstants } from "./generateConstants";
 import { generateSkinTableConstants } from "./generateSkinTable";
 
-import { niceJSON } from "@/lib/utils";
+import { niceJSON } from "@/lib/format";
 
 /** @description Tracks any new values to be added to `latestStore.json` */
 export function getNewValues() {
@@ -36,7 +36,7 @@ export function getNewValues() {
 
   Object.keys(differences).forEach((_key) => {
     const key = _key as keyof typeof differences;
-    // @ts-expect-error: Will get the expected outcome
+    // @ts-expect-error: `differences[key]` will return values that match the type
     if (differences[key].length > 0) newValues[key] = differences[key];
   });
 

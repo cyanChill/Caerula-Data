@@ -2,106 +2,86 @@ import fs from "fs";
 import path from "path";
 
 import type { RawCharacter } from "@/types/rawCharacter";
+import type { Brand, Skin } from "@/data/types/AKSkin";
 
 import SkinTable from "@/json/en_US/gamedata/excel/skin_table.json";
 
-import { niceJSON, replaceUnicode } from "@/lib/utils";
+import { niceJSON } from "@/lib/format";
+import { cleanString } from "@/utils/format";
 
 /**
  * @description Generate objects representing a brand along with noting
  *  the relation between a release of skin drop to a brand.
  */
 function generateBrandConstants() {
-  const Brands: Record<
-    string,
-    { id: string; name: string; capitalName: string; description: string }
-  > = {};
+  const Brands: Record<string, Brand> = {};
   const DropMap: Record<string, string> = {};
 
-  Object.values(SkinTable.brandList).forEach(
-    ({ brandId, groupList, brandName, brandCapitalName, description }) => {
-      Brands[brandId] = {
-        id: brandId,
+  Object.entries(SkinTable.brandList).forEach(
+    ([id, { groupList, brandName, brandCapitalName, description }]) => {
+      Brands[id] = {
+        id,
         name: brandName,
         capitalName: brandCapitalName,
         description,
-      };
-      groupList.forEach(({ skinGroupId }) => {
-        DropMap[skinGroupId] = brandId;
-      });
+      } as Brand;
+      groupList.forEach(({ skinGroupId }) => (DropMap[skinGroupId] = id));
     }
   );
 
   return { Brands, DropMap };
 }
 
-type SkinEntry = {
-  id: string;
-  brandId: string | null;
-  subBrand: { id: string | null; name: string | null };
-  releaseAt: number;
-  name: string;
-  alt: string;
-  artists: string[] | null;
-  description: string | null;
-};
+/** @description Extended version of `Skin` type, with release time. */
+type SkinEntry = Skin & { releaseAt: number };
 
 /**
  * @description Creates a table containing a table of brands along with
  *  a table mapping an operator to the skins they own.
  */
 export function generateSkinTableConstants() {
-  const rawOpList = JSON.parse(
+  const OperatorTable = JSON.parse(
     fs.readFileSync(
       path.resolve("./json/preprocessed/operator_table.json"),
       "utf8"
     )
   ) as Record<string, RawCharacter>;
 
-  // Mapping of operator ids w/ their name
+  // Mapping of operator ids to their name
   const operatorMap: Record<string, string> = {};
-  Object.values(rawOpList).map((op) => {
-    const opId = op.phases[0].characterPrefabKey;
-    operatorMap[opId] = opId === "char_1001_amiya2" ? "Amiya (Guard)" : op.name;
+  Object.entries(OperatorTable).map(([id, { name }]) => {
+    operatorMap[id] = id === "char_1001_amiya2" ? "Amiya (Guard)" : name;
   });
 
   /* Create the brand table */
   const { Brands: brandMap, DropMap: subBrandMap } = generateBrandConstants();
 
   /* Create the skin table */
-  const skinMap: Record<string, SkinEntry[]> = {}; // Contains values for operators, tokens, traps, etc.
+  const skinMap: Record<string, SkinEntry[]> = {};
   Object.values(SkinTable.charSkins).map(
     ({ tmplId, charId, displaySkin, portraitId }) => {
+      const { skinGroupId, skinGroupName } = displaySkin;
       const uId = tmplId ?? charId; // `tmplId` is only populated for Amiya skins
       const skinName =
         displaySkin.skinName ??
-        (displaySkin.skinGroupId
-          ? `Elite ${displaySkin.skinGroupId.at(-1)}` // `ILLUST_${0 | 1 | 2}`
-          : "");
+        (skinGroupId ? `Elite ${skinGroupId.at(-1)}` : ""); // `ILLUST_${0 | 1 | 2}`
       const skinAltText =
         skinName !== "" ? `${operatorMap[uId]}'s "${skinName}" skin` : "";
 
-      const skinBrandId = displaySkin.skinGroupId
-        ? subBrandMap[displaySkin.skinGroupId] ?? null
-        : null;
-
       const newSkin = {
         id: `${portraitId}b`,
-        brandId: skinBrandId,
-        subBrand: {
-          id: displaySkin.skinGroupId,
-          name: displaySkin.skinGroupName,
-        },
+        brandId: subBrandMap[skinGroupId ?? ""] ?? null,
+        subBrand: { id: skinGroupId, name: skinGroupName },
         releaseAt: displaySkin.getTime,
         name: skinName,
         alt: skinAltText,
         artists: displaySkin.drawerList,
         description: displaySkin.content
-          ? replaceUnicode(displaySkin.content)
-              ?.replace("<color name=#ffffff>", "")
+          ? cleanString(displaySkin.content)
+              .replace("<color name=#ffffff>", "")
               .replace("</color>", "")
           : null,
-      };
+      } as SkinEntry;
 
       if (Object.hasOwn(skinMap, uId)) skinMap[uId].push(newSkin);
       else skinMap[uId] = [newSkin];
@@ -124,10 +104,7 @@ export function generateSkinTableConstants() {
         }
         return a.releaseAt - b.releaseAt || nameCompare;
       })
-      .map(({ id, brandId, subBrand, releaseAt: _, ...rest }) => {
-        // Save everything except for "releaseAt"
-        return { id, brandId, subBrand, ...rest };
-      });
+      .map(({ releaseAt: _, ...rest }) => rest); // Save everything except for "releaseAt"
   });
 
   return { brandTable: brandMap, skinTable: operatorSkinMap };
