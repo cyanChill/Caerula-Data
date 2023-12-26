@@ -139,6 +139,9 @@ function generateMiscConstants() {
 
   return {
     BrandIds: Object.keys(SkinTable.brandList),
+    SkinIds: Object.values(SkinTable.charSkins)
+      .map(({ portraitId }) => portraitId)
+      .filter((id) => id !== null),
     RangeIds: Object.keys(RangeTable),
     TokenIds: Object.keys(TokenTable),
     ItemIds: Object.keys(ItemTable.items),

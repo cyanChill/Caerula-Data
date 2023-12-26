@@ -3,7 +3,6 @@ import path from "path";
 
 import latestStore from "@/data/latestStore.json";
 import { OperatorIds as ExistingOperatorIds } from "@/data/types/typesFrom";
-import ExistingSkins from "@/data/operator/skinTable.json";
 
 import { generateOperatorConstants } from "./generateConstants";
 import { generateSkinTableConstants } from "./generateSkinTable";
@@ -14,23 +13,16 @@ import { niceJSON } from "@/lib/format";
 export function getNewValues() {
   const { OperatorIds: latestOpIdList } = generateOperatorConstants();
 
-  /* Get existing skin ids. */
-  const newSkinIds = new Set<string>();
-  Object.values(generateSkinTableConstants().skinTable).forEach((skinArr) => {
-    skinArr.forEach((skin) => {
-      if (skin.brandId !== null) newSkinIds.add(skin.id);
-    });
-  });
-  const existingSkinIds = new Set<string>();
-  Object.values(ExistingSkins.skinTable).forEach((skinArr) => {
-    skinArr.forEach((skin) => {
-      if (skin.brandId !== null) existingSkinIds.add(skin.id);
-    });
+  /* Get a list of skins which released in ±7 days (604800 seconds). */
+  const newSkinIds: string[] = [];
+  const now = new Date().getTime() / 1000; // From `ms` to `s`
+  Object.values(generateSkinTableConstants().skinTable).forEach((skin) => {
+    if (Math.abs(skin.releasedAt - now) <= 604800) newSkinIds.push(skin.id);
   });
 
   const differences = {
     "latest-operator-ids": getDifference(ExistingOperatorIds, latestOpIdList),
-    "latest-skin-ids": getDifference([...existingSkinIds], [...newSkinIds]),
+    "latest-skin-ids": newSkinIds,
   };
   const newValues = { ...latestStore };
 

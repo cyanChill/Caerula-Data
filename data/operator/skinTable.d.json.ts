@@ -1,9 +1,10 @@
 import type { OperatorId } from "@/data/types/AKOperator";
-import type { BrandId, Brand, Skin } from "@/data/types/AKSkin";
+import type { Brand, BrandId, Skin, SkinId } from "@/data/types/AKSkin";
 
 declare const skinTable: {
   brandTable: Record<BrandId, Brand>;
-  skinTable: Record<OperatorId, Skin[]>;
+  skinTable: Record<SkinId, Skin>;
+  opSkinMap: Record<OperatorId, SkinId[]>;
 };
 
 export default skinTable;
