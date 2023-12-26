@@ -17,7 +17,7 @@ function createOperatorFilesJSON() {
   const opPersonalFiles: Record<string, OpPersonalFile[]> = {};
   const opRecords: Record<string, OpRecord[]> = {};
 
-  Object.entries(OpFiles.handbookDict).map(
+  Object.entries(OpFiles.handbookDict).forEach(
     ([id, { storyTextAudio, handbookAvgList }]) => {
       // Get Operator personal files for each operator
       opPersonalFiles[id] = storyTextAudio.map(({ stories, storyTitle }) => {
@@ -87,7 +87,7 @@ function createOperatorFilesJSON() {
 function createOperatorParadoxJSON() {
   const opParadoxSims: Record<string, OpParadox> = {};
 
-  Object.entries(OpFiles.handbookStageData).map(
+  Object.entries(OpFiles.handbookStageData).forEach(
     ([id, { name, description, unlockParam }]) => {
       opParadoxSims[id] = {
         name,

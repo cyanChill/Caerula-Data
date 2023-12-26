@@ -15,7 +15,7 @@ function createVoiceLineJSON() {
   const opVoiceLines: Record<string, VoiceLine[]> = {};
 
   // Group the voice lines by operator
-  Object.values(CharwordTable.charWords).map((vLine) => {
+  Object.values(CharwordTable.charWords).forEach((vLine) => {
     const newVLine = {
       sortId: vLine.voiceIndex,
       title: replaceUnicode(vLine.voiceTitle),

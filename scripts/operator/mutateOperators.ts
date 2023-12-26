@@ -97,7 +97,7 @@ function createOperatorsJSON() {
       /* Get the tokens associated with an operator. */
       const usedTokens = new Set(Object.keys(currOp.displayTokenDict ?? {}));
       // Get tokens that are automatically deployed.
-      currOp.skills.map(({ overrideTokenKey }) => {
+      currOp.skills.forEach(({ overrideTokenKey }) => {
         if (overrideTokenKey) usedTokens.add(overrideTokenKey);
       });
       // Special case w/ Ling ("Advanced" version of 3rd token)
