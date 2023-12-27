@@ -105,7 +105,7 @@ interface Trait {
 
 interface Phase {
   characterPrefabKey: string;
-  rangeId: string | null;
+  rangeId: string | null; // Only devices have this as `null`
   maxLevel: number;
   attributesKeyFrames: RawCharacterStat[];
   evolveCost: MaterialCount[] | null;
@@ -124,11 +124,13 @@ interface Skill {
 }
 
 interface Talent {
-  candidates: (CandidateBase & {
-    name: string | null;
-    description: string | null;
-    tokenKey: string | null;
-  })[];
+  candidates:
+    | (CandidateBase & {
+        name: string | null;
+        description: string | null; // Only some devices have this as `null`
+        tokenKey: string | null;
+      })[]
+    | null; // Only `null` for `token_10003_cgbird_bird`
 }
 
 interface Potential {

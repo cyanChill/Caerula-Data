@@ -1,5 +1,5 @@
 import type { BrandIds, SkinIds } from "./typesFrom";
-import type { OperatorId } from "./AKOperator";
+import type { OperatorId } from "./AKCharacter";
 
 export type BrandId = (typeof BrandIds)[number];
 export type SkinId = (typeof SkinIds)[number];

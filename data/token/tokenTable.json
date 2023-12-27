@@ -2,11 +2,12 @@
   "token_10000_silent_healrb": {
     "id": "token_10000_silent_healrb",
     "iconId": "token_10000_silent_healrb",
+    "slug": "medic_drone",
     "name": "Medic Drone",
     "displayName": "Medic Drone",
-    "description": "Cannot be attacked; restores the HP of nearby friendly units",
+    "rarity": 5,
     "position": "ALL",
-    "range": "x-4",
+    "range": ["x-4", "x-4", "x-4"],
     "stats": [
       {
         "maxLevel": 50,
@@ -31,7 +32,8 @@
             "atkInterval": 0.5,
             "respawnTime": 5
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 70,
@@ -56,7 +58,8 @@
             "atkInterval": 0.5,
             "respawnTime": 5
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -81,22 +84,25 @@
             "atkInterval": 0.5,
             "respawnTime": 5
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
-    "skillIds": [null, "skcom_withdraw"],
+    "talents": {},
+    "trait": "Cannot be attacked; restores the HP of nearby friendly units",
+    "skillIds": ["skcom_withdraw", "skcom_withdraw"],
     "type": "summon",
-    "usedBy": "char_108_silent",
-    "slug": "medic_drone"
+    "usedBy": "char_108_silent"
   },
   "token_10001_deepcl_tentac": {
     "id": "token_10001_deepcl_tentac",
     "iconId": "token_10001_deepcl_tentac",
+    "slug": "tentacle",
     "name": "Tentacle",
     "displayName": "Tentacle",
-    "description": "Blocks 1 enemy",
+    "rarity": 4,
     "position": "MELEE",
-    "range": "0-1",
+    "range": ["0-1", "0-1", "0-1"],
     "stats": [
       {
         "maxLevel": 45,
@@ -121,7 +127,8 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 60,
@@ -146,7 +153,8 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 70,
@@ -171,22 +179,25 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {},
+    "trait": "Blocks 1 enemy",
     "skillIds": [null, null],
     "type": "summon",
-    "usedBy": "char_110_deepcl",
-    "slug": "tentacle"
+    "usedBy": "char_110_deepcl"
   },
   "token_10002_kalts_mon3tr": {
     "id": "token_10002_kalts_mon3tr",
     "iconId": "token_10002_kalts_mon3tr",
+    "slug": "mon3tr",
     "name": "Mon3tr",
     "displayName": "Mon3tr",
-    "description": "Blocks 3 enemies",
+    "rarity": 6,
     "position": "MELEE",
-    "range": "1-1",
+    "range": ["1-1", "1-1", "1-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -211,7 +222,8 @@
             "atkInterval": 2,
             "respawnTime": 35
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -236,7 +248,8 @@
             "atkInterval": 2,
             "respawnTime": 30
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -261,22 +274,48 @@
             "atkInterval": 2,
             "respawnTime": 25
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {
+      "0": [
+        {
+          "name": "Mon3tr",
+          "description": "Can be healed by Kal'tsit; has 0 DEF when not within Kal'tsit's Attack Range",
+          "potential": 1,
+          "unlockCond": { "elite": 0, "level": 1 }
+        }
+      ],
+      "1": [
+        {
+          "name": "Non-Damaging Restructuring",
+          "description": "When defeated (excluding retreat), all enemies in the surrounding 8 tiles are Stunned for 3 seconds and receive 1200 True Damage",
+          "potential": 1,
+          "unlockCond": { "elite": 2, "level": 1 }
+        },
+        {
+          "name": "Non-Damaging Restructuring",
+          "description": "When defeated (excluding retreat), all enemies in the surrounding 8 tiles are <a style=\"border-bottom:1px dotted currentcolor;cursor:help;\" title=\"Unable to move, block, attack, or use skills\" href=\"/terminology#stun\">Stunned</a> for 3.5 <span style=\"color:#0098DC;\">(+0.5)</span> seconds and receive 1400 <span style=\"color:#0098DC;\">(+200)</span> True damage",
+          "potential": 5,
+          "unlockCond": { "elite": 2, "level": 1 }
+        }
+      ]
+    },
+    "trait": "Blocks 3 enemies",
     "skillIds": [null, null, null],
     "type": "summon",
-    "usedBy": "char_003_kalts",
-    "slug": "mon3tr"
+    "usedBy": "char_003_kalts"
   },
   "token_10003_cgbird_bird": {
     "id": "token_10003_cgbird_bird",
     "iconId": "token_10003_cgbird_bird",
+    "slug": "mirage",
     "name": "Mirage",
     "displayName": "Mirage",
-    "description": "Cannot block enemies",
+    "rarity": 6,
     "position": "MELEE",
-    "range": "0-1",
+    "range": ["0-1", "0-1", "0-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -301,7 +340,8 @@
             "atkInterval": 1,
             "respawnTime": 20
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -326,7 +366,8 @@
             "atkInterval": 1,
             "respawnTime": 20
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -351,22 +392,34 @@
             "atkInterval": 1,
             "respawnTime": 20
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {
+      "0": [
+        {
+          "name": "Fleeting Phantom",
+          "description": "Has 75 RES, 30% Physical Dodge, and is more likely to be targeted by enemies, but loses 3% Max HP per second",
+          "potential": 1,
+          "unlockCond": { "elite": 2, "level": 1 }
+        }
+      ]
+    },
+    "trait": "Cannot block enemies",
     "skillIds": [null, null, null],
     "type": "summon",
-    "usedBy": "char_179_cgbird",
-    "slug": "mirage"
+    "usedBy": "char_179_cgbird"
   },
   "token_10004_otter_motter": {
     "id": "token_10004_otter_motter",
     "iconId": "token_10004_otter_motter",
+    "slug": "robotter",
     "name": "Robotter",
     "displayName": "Robotter",
-    "description": "Blocks 1 enemy",
+    "rarity": 5,
     "position": "MELEE",
-    "range": "0-1",
+    "range": ["0-1", "0-1", "0-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -391,7 +444,8 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 70,
@@ -416,7 +470,8 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -441,22 +496,46 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {
+      "0": [
+        {
+          "name": "Robotter",
+          "description": "Reduces the ASPD of enemies blocked by this unit by -10",
+          "potential": 1,
+          "unlockCond": { "elite": 0, "level": 1 }
+        },
+        {
+          "name": "Robotter",
+          "description": "Reduces the ASPD of enemies blocked by this unit by -25",
+          "potential": 1,
+          "unlockCond": { "elite": 1, "level": 1 }
+        },
+        {
+          "name": "Robotter",
+          "description": "Reduces the ASPD of enemies blocked by this unit by -25",
+          "potential": 1,
+          "unlockCond": { "elite": 2, "level": 1 }
+        }
+      ]
+    },
+    "trait": "Blocks 1 enemy",
     "skillIds": ["sktok_motter_1", "sktok_motter_2"],
     "type": "summon",
-    "usedBy": "char_242_otter",
-    "slug": "robotter"
+    "usedBy": "char_242_otter"
   },
   "token_10005_mgllan_drone1": {
     "id": "token_10005_mgllan_drone1",
     "iconId": "token_10005_mgllan_drone1",
+    "slug": "soaring_dragon_f",
     "name": "Soaring Dragon F",
     "displayName": "Soaring Dragon F",
-    "description": "Cannot block enemies",
+    "rarity": 6,
     "position": "ALL",
-    "range": "x-4",
+    "range": ["x-4", "x-4", "x-4"],
     "stats": [
       {
         "maxLevel": 50,
@@ -481,7 +560,8 @@
             "atkInterval": 1,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -506,7 +586,8 @@
             "atkInterval": 1,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -531,22 +612,52 @@
             "atkInterval": 1,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
-    "skillIds": ["sktok_mgllan_drone1", null, null],
+    "talents": {
+      "0": [
+        {
+          "name": "Optical Refraction Accessories",
+          "description": "<a style=\"border-bottom:1px dotted currentcolor;cursor:help;\" title=\"Prevents being targeted by enemy attacks if the unit is not blocking\" href=\"/terminology#invisible\">Invisible</a> for 12 seconds after deployment",
+          "potential": 1,
+          "unlockCond": { "elite": 1, "level": 1 }
+        },
+        {
+          "name": "Optical Refraction Accessories",
+          "description": "<a style=\"border-bottom:1px dotted currentcolor;cursor:help;\" title=\"Prevents being targeted by enemy attacks if the unit is not blocking\" href=\"/terminology#invisible\">Invisible</a> for 14 <span style=\"color:#0098DC;\">(+2)</span> seconds after deployment",
+          "potential": 5,
+          "unlockCond": { "elite": 1, "level": 1 }
+        },
+        {
+          "name": "Optical Refraction Accessories",
+          "description": "<a style=\"border-bottom:1px dotted currentcolor;cursor:help;\" title=\"Prevents being targeted by enemy attacks if the unit is not blocking\" href=\"/terminology#invisible\">Invisible</a> for 20 seconds after deployment",
+          "potential": 1,
+          "unlockCond": { "elite": 2, "level": 1 }
+        },
+        {
+          "name": "Optical Refraction Accessories",
+          "description": "<a style=\"border-bottom:1px dotted currentcolor;cursor:help;\" title=\"Prevents being targeted by enemy attacks if the unit is not blocking\" href=\"/terminology#invisible\">Invisible</a> for 22 <span style=\"color:#0098DC;\">(+2)</span> seconds after deployment",
+          "potential": 5,
+          "unlockCond": { "elite": 2, "level": 1 }
+        }
+      ]
+    },
+    "trait": "Cannot block enemies",
+    "skillIds": ["sktok_mgllan_drone1", "sktok_mgllan_drone1", "sktok_mgllan_drone1"],
     "type": "summon",
-    "usedBy": "char_248_mgllan",
-    "slug": "soaring_dragon_f"
+    "usedBy": "char_248_mgllan"
   },
   "token_10005_mgllan_drone2": {
     "id": "token_10005_mgllan_drone2",
     "iconId": "token_10005_mgllan_drone2",
+    "slug": "soaring_dragon_l",
     "name": "Soaring Dragon L",
     "displayName": "Soaring Dragon L",
-    "description": "Cannot block enemies; attacks deal <span style=\"color:#00B0FF;\">Arts damage</span>",
+    "rarity": 6,
     "position": "MELEE",
-    "range": "0-1",
+    "range": ["0-1", "0-1", "0-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -571,7 +682,8 @@
             "atkInterval": 1,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -596,7 +708,8 @@
             "atkInterval": 1,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -621,22 +734,52 @@
             "atkInterval": 1,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
-    "skillIds": [null, "sktok_mgllan_drone2", null],
+    "talents": {
+      "0": [
+        {
+          "name": "Optical Refraction Accessories",
+          "description": "<a style=\"border-bottom:1px dotted currentcolor;cursor:help;\" title=\"Prevents being targeted by enemy attacks if the unit is not blocking\" href=\"/terminology#invisible\">Invisible</a> for 12 seconds after deployment",
+          "potential": 1,
+          "unlockCond": { "elite": 1, "level": 1 }
+        },
+        {
+          "name": "Optical Refraction Accessories",
+          "description": "<a style=\"border-bottom:1px dotted currentcolor;cursor:help;\" title=\"Prevents being targeted by enemy attacks if the unit is not blocking\" href=\"/terminology#invisible\">Invisible</a> for 14 <span style=\"color:#0098DC;\">(+2)</span> seconds after deployment",
+          "potential": 5,
+          "unlockCond": { "elite": 1, "level": 1 }
+        },
+        {
+          "name": "Optical Refraction Accessories",
+          "description": "<a style=\"border-bottom:1px dotted currentcolor;cursor:help;\" title=\"Prevents being targeted by enemy attacks if the unit is not blocking\" href=\"/terminology#invisible\">Invisible</a> for 20 seconds after deployment",
+          "potential": 1,
+          "unlockCond": { "elite": 2, "level": 1 }
+        },
+        {
+          "name": "Optical Refraction Accessories",
+          "description": "<a style=\"border-bottom:1px dotted currentcolor;cursor:help;\" title=\"Prevents being targeted by enemy attacks if the unit is not blocking\" href=\"/terminology#invisible\">Invisible</a> for 22 <span style=\"color:#0098DC;\">(+2)</span> seconds after deployment",
+          "potential": 5,
+          "unlockCond": { "elite": 2, "level": 1 }
+        }
+      ]
+    },
+    "trait": "Cannot block enemies; attacks deal <span style=\"color:#00B0FF;\">Arts damage</span>",
+    "skillIds": ["sktok_mgllan_drone2", "sktok_mgllan_drone2", "sktok_mgllan_drone2"],
     "type": "summon",
-    "usedBy": "char_248_mgllan",
-    "slug": "soaring_dragon_l"
+    "usedBy": "char_248_mgllan"
   },
   "token_10005_mgllan_drone3": {
     "id": "token_10005_mgllan_drone3",
     "iconId": "token_10005_mgllan_drone3",
+    "slug": "soaring_dragon_a",
     "name": "Soaring Dragon A",
     "displayName": "Soaring Dragon A",
-    "description": "Deals <span style=\"color:#00B0FF;\">AOE Physical damage</span>",
+    "rarity": 6,
     "position": "RANGED",
-    "range": "3-6",
+    "range": ["3-6", "3-6", "3-6"],
     "stats": [
       {
         "maxLevel": 50,
@@ -661,7 +804,8 @@
             "atkInterval": 2.3,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -686,7 +830,8 @@
             "atkInterval": 2.3,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -711,22 +856,52 @@
             "atkInterval": 2.3,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
-    "skillIds": [null, null, "sktok_mgllan_drone3"],
+    "talents": {
+      "0": [
+        {
+          "name": "Optical Refraction Accessories",
+          "description": "<a style=\"border-bottom:1px dotted currentcolor;cursor:help;\" title=\"Prevents being targeted by enemy attacks if the unit is not blocking\" href=\"/terminology#invisible\">Invisible</a> for 12 seconds after deployment",
+          "potential": 1,
+          "unlockCond": { "elite": 1, "level": 1 }
+        },
+        {
+          "name": "Optical Refraction Accessories",
+          "description": "<a style=\"border-bottom:1px dotted currentcolor;cursor:help;\" title=\"Prevents being targeted by enemy attacks if the unit is not blocking\" href=\"/terminology#invisible\">Invisible</a> for 14 <span style=\"color:#0098DC;\">(+2)</span> seconds after deployment",
+          "potential": 5,
+          "unlockCond": { "elite": 1, "level": 1 }
+        },
+        {
+          "name": "Optical Refraction Accessories",
+          "description": "<a style=\"border-bottom:1px dotted currentcolor;cursor:help;\" title=\"Prevents being targeted by enemy attacks if the unit is not blocking\" href=\"/terminology#invisible\">Invisible</a> for 20 seconds after deployment",
+          "potential": 1,
+          "unlockCond": { "elite": 2, "level": 1 }
+        },
+        {
+          "name": "Optical Refraction Accessories",
+          "description": "<a style=\"border-bottom:1px dotted currentcolor;cursor:help;\" title=\"Prevents being targeted by enemy attacks if the unit is not blocking\" href=\"/terminology#invisible\">Invisible</a> for 22 <span style=\"color:#0098DC;\">(+2)</span> seconds after deployment",
+          "potential": 5,
+          "unlockCond": { "elite": 2, "level": 1 }
+        }
+      ]
+    },
+    "trait": "Deals <span style=\"color:#00B0FF;\">AOE Physical damage</span>",
+    "skillIds": ["sktok_mgllan_drone3", "sktok_mgllan_drone3", "sktok_mgllan_drone3"],
     "type": "summon",
-    "usedBy": "char_248_mgllan",
-    "slug": "soaring_dragon_a"
+    "usedBy": "char_248_mgllan"
   },
   "token_10006_vodfox_doll": {
     "id": "token_10006_vodfox_doll",
     "iconId": "token_10006_vodfox_doll",
+    "slug": "cursed_doll",
     "name": "Cursed Doll",
     "displayName": "Cursed Doll",
-    "description": "Cannot be attacked",
+    "rarity": 5,
     "position": "ALL",
-    "range": "x-4",
+    "range": ["x-4", "x-4", "x-4"],
     "stats": [
       {
         "maxLevel": 50,
@@ -751,7 +926,8 @@
             "atkInterval": 1,
             "respawnTime": 5
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 70,
@@ -776,7 +952,8 @@
             "atkInterval": 1,
             "respawnTime": 5
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -801,22 +978,25 @@
             "atkInterval": 1,
             "respawnTime": 5
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {},
+    "trait": "Cannot be attacked",
     "skillIds": [null, "sktok_vodfox_token"],
     "type": "summon",
-    "usedBy": "char_254_vodfox",
-    "slug": "cursed_doll"
+    "usedBy": "char_254_vodfox"
   },
   "token_10007_phatom_twin": {
     "id": "token_10007_phatom_twin",
     "iconId": "token_10007_phatom_twin",
+    "slug": "phantom_in_the_mirror",
     "name": "Phantom in the Mirror",
     "displayName": "Phantom in the Mirror",
-    "description": "Blocks 1 enemy",
+    "rarity": 6,
     "position": "MELEE",
-    "range": "1-1",
+    "range": ["1-1", "1-1", "1-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -841,7 +1021,8 @@
             "atkInterval": 0.93,
             "respawnTime": 45
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -866,7 +1047,8 @@
             "atkInterval": 0.93,
             "respawnTime": 45
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -891,22 +1073,34 @@
             "atkInterval": 0.93,
             "respawnTime": 45
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {
+      "0": [
+        {
+          "name": "Phantom Mastery",
+          "description": "Redeployment Time -10 sec",
+          "potential": 1,
+          "unlockCond": { "elite": 2, "level": 1 }
+        }
+      ]
+    },
+    "trait": "Blocks 1 enemy",
     "skillIds": ["sktok_phatom_1", "sktok_phatom_2", "sktok_phatom_3"],
     "type": "summon",
-    "usedBy": "char_250_phatom",
-    "slug": "phantom_in_the_mirror"
+    "usedBy": "char_250_phatom"
   },
   "token_10008_cqbw_box": {
     "id": "token_10008_cqbw_box",
     "iconId": "token_10008_cqbw_box",
+    "slug": "front_toward_enemy",
     "name": "Front Toward Enemy",
     "displayName": "Front Toward Enemy",
-    "description": null,
+    "rarity": 6,
     "position": "ALL",
-    "range": "0-1",
+    "range": ["0-1", "0-1", "0-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -931,7 +1125,8 @@
             "atkInterval": 1,
             "respawnTime": 0
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -956,7 +1151,8 @@
             "atkInterval": 1,
             "respawnTime": 0
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -981,22 +1177,25 @@
             "atkInterval": 1,
             "respawnTime": 0
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {},
+    "trait": null,
     "skillIds": [null, "sktok_cqbw_token", null],
     "type": "trap",
-    "usedBy": "char_113_cqbw",
-    "slug": "front_toward_enemy"
+    "usedBy": "char_113_cqbw"
   },
   "token_10009_weedy_cannon": {
     "id": "token_10009_weedy_cannon",
     "iconId": "token_10009_weedy_cannon",
+    "slug": "industrial_water_cannon",
     "name": "Industrial Water Cannon",
     "displayName": "Industrial Water Cannon",
-    "description": "Cannot be attacked",
+    "rarity": 6,
     "position": "ALL",
-    "range": "3-2",
+    "range": ["3-2", "3-2", "3-2"],
     "stats": [
       {
         "maxLevel": 50,
@@ -1021,7 +1220,8 @@
             "atkInterval": 2.4,
             "respawnTime": 35
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -1046,7 +1246,8 @@
             "atkInterval": 2.4,
             "respawnTime": 35
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -1071,22 +1272,48 @@
             "atkInterval": 2.4,
             "respawnTime": 35
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {
+      "0": [
+        {
+          "name": "Industrial Water Cannon",
+          "description": "Attacks push the target back slightly; lasts 15 seconds after deployment",
+          "potential": 1,
+          "unlockCond": { "elite": 1, "level": 1 }
+        },
+        {
+          "name": "Industrial Water Cannon",
+          "description": "Attacks push the target back slightly; lasts 20 seconds after deployment",
+          "potential": 1,
+          "unlockCond": { "elite": 2, "level": 1 }
+        }
+      ],
+      "1": [
+        {
+          "name": "Upgraded Water Cannon",
+          "description": "Normal attacks and skills have +1 shift level; restores 1 SP per 3 seconds to Weedy if located within 4 tiles of her",
+          "potential": 1,
+          "unlockCond": { "elite": 2, "level": 1 }
+        }
+      ]
+    },
+    "trait": "Cannot be attacked",
     "skillIds": [null, null, "sktok_weedy_token"],
     "type": "summon",
-    "usedBy": "char_400_weedy",
-    "slug": "industrial_water_cannon"
+    "usedBy": "char_400_weedy"
   },
   "token_10010_folivo_car": {
     "id": "token_10010_folivo_car",
     "iconId": "token_10010_folivo_car",
+    "slug": "mobile_buggy_cam",
     "name": "Mobile Buggy Cam",
     "displayName": "Mobile Buggy Cam",
-    "description": "Blocks 1 enemy",
+    "rarity": 5,
     "position": "MELEE",
-    "range": "1-1",
+    "range": ["1-1", "1-1", "1-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -1111,7 +1338,8 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 70,
@@ -1136,7 +1364,8 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -1161,22 +1390,25 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {},
+    "trait": "Blocks 1 enemy",
     "skillIds": [null, "sktok_folivo_2"],
     "type": "summon",
-    "usedBy": "char_336_folivo",
-    "slug": "mobile_buggy_cam"
+    "usedBy": "char_336_folivo"
   },
   "token_10011_beewax_oblisk": {
     "id": "token_10011_beewax_oblisk",
     "iconId": "token_10011_beewax_oblisk",
+    "slug": "sand_obelisk",
     "name": "Sand Obelisk",
     "displayName": "Sand Obelisk",
-    "description": "Blocks 3 enemies",
+    "rarity": 5,
     "position": "MELEE",
-    "range": "0-1",
+    "range": ["0-1", "0-1", "0-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -1201,7 +1433,8 @@
             "atkInterval": 1,
             "respawnTime": 0
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 70,
@@ -1226,7 +1459,8 @@
             "atkInterval": 1,
             "respawnTime": 0
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -1251,22 +1485,25 @@
             "atkInterval": 1,
             "respawnTime": 0
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {},
+    "trait": "Blocks 3 enemies",
     "skillIds": [null, "sktok_beewax"],
     "type": "summon",
-    "usedBy": "char_344_beewax",
-    "slug": "sand_obelisk"
+    "usedBy": "char_344_beewax"
   },
   "token_10012_rosmon_shield": {
     "id": "token_10012_rosmon_shield",
     "iconId": "token_10012_rosmon_shield",
+    "slug": "rosmontis's_tactical_equipment",
     "name": "Rosmontis's Tactical Equipment",
     "displayName": "Rosmontis's Tactical Equipment",
-    "description": "Blocks 2 enemies, and reduces the DEF of blocked units",
+    "rarity": 6,
     "position": "MELEE",
-    "range": "0-1",
+    "range": ["0-1", "0-1", "0-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -1291,7 +1528,8 @@
             "atkInterval": 1,
             "respawnTime": 0
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -1316,7 +1554,8 @@
             "atkInterval": 1,
             "respawnTime": 0
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -1341,22 +1580,25 @@
             "atkInterval": 1,
             "respawnTime": 0
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {},
+    "trait": "Blocks 2 enemies, and reduces the DEF of blocked units",
     "skillIds": [null, null, "sktok_rosmon"],
     "type": "summon",
-    "usedBy": "char_391_rosmon",
-    "slug": "rosmontis's_tactical_equipment"
+    "usedBy": "char_391_rosmon"
   },
   "token_10013_robin_mine": {
     "id": "token_10013_robin_mine",
     "iconId": "token_10013_robin_mine",
+    "slug": "clip",
     "name": "'Clip'",
     "displayName": "'Clip'",
-    "description": "Cannot be attacked; cannot be deployed on tiles where enemies are <span style=\"color:#00B0FF;\">already present</span>",
+    "rarity": 5,
     "position": "MELEE",
-    "range": "0-1",
+    "range": ["0-1", "0-1", "0-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -1381,7 +1623,8 @@
             "atkInterval": 1,
             "respawnTime": 5
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 70,
@@ -1406,7 +1649,8 @@
             "atkInterval": 1,
             "respawnTime": 5
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -1431,22 +1675,25 @@
             "atkInterval": 1,
             "respawnTime": 5
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {},
+    "trait": "Cannot be attacked; cannot be deployed on tiles where enemies are <span style=\"color:#00B0FF;\">already present</span>",
     "skillIds": ["sktok_robin_1", "sktok_robin_2"],
     "type": "trap",
-    "usedBy": "char_451_robin",
-    "slug": "clip"
+    "usedBy": "char_451_robin"
   },
   "token_10014_bstalk_crab": {
     "id": "token_10014_bstalk_crab",
     "iconId": "token_10014_bstalk_crab",
+    "slug": "metal_crab_guard_team",
     "name": "Metal Crab Guard Team",
     "displayName": "Metal Crab Guard Team",
-    "description": "Blocks 1 enemy; can only be deployed within the summoner's Attack Range",
+    "rarity": 4,
     "position": "MELEE",
-    "range": "0-1",
+    "range": ["0-1", "0-1", "0-1"],
     "stats": [
       {
         "maxLevel": 45,
@@ -1471,7 +1718,8 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 60,
@@ -1496,7 +1744,8 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 70,
@@ -1521,22 +1770,46 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {
+      "0": [
+        {
+          "name": "Professional Breeder",
+          "description": "Automatically respawns 20 seconds after being defeated",
+          "potential": 1,
+          "unlockCond": { "elite": 0, "level": 1 }
+        },
+        {
+          "name": "Professional Breeder",
+          "description": "Automatically respawns 17 seconds after being defeated",
+          "potential": 1,
+          "unlockCond": { "elite": 1, "level": 1 }
+        },
+        {
+          "name": "Professional Breeder",
+          "description": "Automatically respawns 15 seconds after being defeated",
+          "potential": 1,
+          "unlockCond": { "elite": 2, "level": 1 }
+        }
+      ]
+    },
+    "trait": "Blocks 1 enemy; can only be deployed within the summoner's Attack Range",
     "skillIds": [null, null],
     "type": "reinforcement",
-    "usedBy": "char_452_bstalk",
-    "slug": "metal_crab_guard_team"
+    "usedBy": "char_452_bstalk"
   },
   "token_10015_dusk_drgn": {
     "id": "token_10015_dusk_drgn",
     "iconId": "token_10015_dusk_drgn",
+    "slug": "freeling",
     "name": "'Freeling'",
     "displayName": "'Freeling'",
-    "description": "Deals <span style=\"color:#00B0FF;\">Arts damage</span>",
+    "rarity": 6,
     "position": "MELEE",
-    "range": "x-5",
+    "range": ["x-5", "x-5", "x-5"],
     "stats": [
       {
         "maxLevel": 50,
@@ -1561,7 +1834,8 @@
             "atkInterval": 1.9,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -1586,7 +1860,8 @@
             "atkInterval": 1.9,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -1611,22 +1886,25 @@
             "atkInterval": 1.9,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {},
+    "trait": "Deals <span style=\"color:#00B0FF;\">Arts damage</span>",
     "skillIds": [null, null, null],
     "type": "summon",
-    "usedBy": "char_2015_dusk",
-    "slug": "freeling"
+    "usedBy": "char_2015_dusk"
   },
   "token_10016_rfrost_mine": {
     "id": "token_10016_rfrost_mine",
     "iconId": "token_10016_rfrost_mine",
+    "slug": "welcome_mat",
     "name": "Welcome Mat",
     "displayName": "Welcome Mat",
-    "description": "Cannot be attacked; cannot be deployed on tiles where enemies are <span style=\"color:#00B0FF;\">already present</span>",
+    "rarity": 5,
     "position": "MELEE",
-    "range": "0-1",
+    "range": ["0-1", "0-1", "0-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -1651,7 +1929,8 @@
             "atkInterval": 1,
             "respawnTime": 5
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 70,
@@ -1676,7 +1955,8 @@
             "atkInterval": 1,
             "respawnTime": 5
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -1701,22 +1981,25 @@
             "atkInterval": 1,
             "respawnTime": 5
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {},
+    "trait": "Cannot be attacked; cannot be deployed on tiles where enemies are <span style=\"color:#00B0FF;\">already present</span>",
     "skillIds": ["sktok_rfrost_1", "sktok_rfrost_2"],
     "type": "trap",
-    "usedBy": "char_458_rfrost",
-    "slug": "welcome_mat"
+    "usedBy": "char_458_rfrost"
   },
   "token_10017_skadi2_dedant": {
     "id": "token_10017_skadi2_dedant",
     "iconId": "token_10017_skadi2_dedant",
+    "slug": "skadi's_seaborn",
     "name": "Skadi's Seaborn",
     "displayName": "Skadi's Seaborn",
-    "description": "Cannot be attacked",
+    "rarity": 6,
     "position": "ALL",
-    "range": "x-4",
+    "range": ["x-4", "x-4", "x-4"],
     "stats": [
       {
         "maxLevel": 50,
@@ -1741,7 +2024,8 @@
             "atkInterval": 1,
             "respawnTime": 30
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -1766,7 +2050,8 @@
             "atkInterval": 1,
             "respawnTime": 30
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -1791,22 +2076,40 @@
             "atkInterval": 1,
             "respawnTime": 30
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {
+      "0": [
+        {
+          "name": "Ancient Kin",
+          "description": "Lasts 15 seconds after deployment",
+          "potential": 1,
+          "unlockCond": { "elite": 1, "level": 1 }
+        },
+        {
+          "name": "Ancient Kin",
+          "description": "Lasts 25 seconds after deployment",
+          "potential": 1,
+          "unlockCond": { "elite": 2, "level": 1 }
+        }
+      ]
+    },
+    "trait": "Cannot be attacked",
     "skillIds": ["sktok_skadi2_1", "sktok_skadi2_2", "sktok_skadi2_3"],
     "type": "summon",
-    "usedBy": "char_1012_skadi2",
-    "slug": "skadi's_seaborn"
+    "usedBy": "char_1012_skadi2"
   },
   "token_10018_robrta_mach": {
     "id": "token_10018_robrta_mach",
     "iconId": "token_10018_robrta_mach",
+    "slug": "full_auto_modeler",
     "name": "Full Auto Modeler",
     "displayName": "Full Auto Modeler",
-    "description": "Cannot be attacked",
+    "rarity": 4,
     "position": "ALL",
-    "range": "1-1",
+    "range": ["1-1", "1-1", "1-1"],
     "stats": [
       {
         "maxLevel": 45,
@@ -1831,7 +2134,8 @@
             "atkInterval": 1,
             "respawnTime": 15
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 60,
@@ -1856,7 +2160,8 @@
             "atkInterval": 1,
             "respawnTime": 15
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 70,
@@ -1881,22 +2186,64 @@
             "atkInterval": 1,
             "respawnTime": 15
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
-    "skillIds": ["sktok_robrta", null],
+    "talents": {
+      "0": [
+        {
+          "name": "Modeler Debugging",
+          "description": "Grants +10% DEF and 1 <a style=\"border-bottom:1px dotted currentcolor;cursor:help;\" title=\"Blocks 1 instance of damage per layer of Shield\" href=\"/terminology#shield\">Shield</a> to a unit on a melee tile (lasts 15 seconds, DEF increase does not stack)",
+          "potential": 1,
+          "unlockCond": { "elite": 0, "level": 1 }
+        },
+        {
+          "name": "Modeler Debugging",
+          "description": "Grants +13% DEF <span style=\"color:#0098DC;\">(+3%)</span> and 1 <a style=\"border-bottom:1px dotted currentcolor;cursor:help;\" title=\"Blocks 1 instance of damage per layer of Shield\" href=\"/terminology#shield\">Shield</a> to a unit on a melee tile (lasts 15 seconds, DEF increase does not stack)",
+          "potential": 5,
+          "unlockCond": { "elite": 0, "level": 1 }
+        },
+        {
+          "name": "Modeler Debugging",
+          "description": "Grants +20% DEF and 1 <a style=\"border-bottom:1px dotted currentcolor;cursor:help;\" title=\"Blocks 1 instance of damage per layer of Shield\" href=\"/terminology#shield\">Shield</a> to a unit on a melee tile (lasts 25 seconds, DEF increase does not stack)",
+          "potential": 1,
+          "unlockCond": { "elite": 1, "level": 1 }
+        },
+        {
+          "name": "Modeler Debugging",
+          "description": "Grants +23% DEF <span style=\"color:#0098DC;\">(+3%)</span> and 1 <a style=\"border-bottom:1px dotted currentcolor;cursor:help;\" title=\"Blocks 1 instance of damage per layer of Shield\" href=\"/terminology#shield\">Shield</a> to a unit on a melee tile (lasts 25 seconds, DEF increase does not stack)",
+          "potential": 5,
+          "unlockCond": { "elite": 1, "level": 1 }
+        },
+        {
+          "name": "Modeler Debugging",
+          "description": "Grants +30% DEF and 2 <a style=\"border-bottom:1px dotted currentcolor;cursor:help;\" title=\"Blocks 1 instance of damage per layer of Shield\" href=\"/terminology#shield\">Shields</a> to a unit on a melee tile (lasts 25 seconds, DEF increase does not stack)",
+          "potential": 1,
+          "unlockCond": { "elite": 2, "level": 1 }
+        },
+        {
+          "name": "Modeler Debugging",
+          "description": "Grants +33% DEF <span style=\"color:#0098DC;\">(+3%)</span> and 2 <a style=\"border-bottom:1px dotted currentcolor;cursor:help;\" title=\"Blocks 1 instance of damage per layer of Shield\" href=\"/terminology#shield\">Shields</a> to a unit on a melee tile (lasts 25 seconds, DEF increase does not stack)",
+          "potential": 5,
+          "unlockCond": { "elite": 2, "level": 1 }
+        }
+      ]
+    },
+    "trait": "Cannot be attacked",
+    "skillIds": ["sktok_robrta", "sktok_robrta"],
     "type": "support",
-    "usedBy": "char_484_robrta",
-    "slug": "full_auto_modeler"
+    "usedBy": "char_484_robrta"
   },
   "token_10019_nearl2_sword": {
     "id": "token_10019_nearl2_sword",
     "iconId": "token_10019_nearl2_sword",
+    "slug": "blazing_sun",
     "name": "'Blazing Sun'",
     "displayName": "'Blazing Sun'",
-    "description": "Blocks 2 enemies",
+    "rarity": 6,
     "position": "MELEE",
-    "range": "0-1",
+    "range": ["0-1", "0-1", "0-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -1921,7 +2268,8 @@
             "atkInterval": 1,
             "respawnTime": 0
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -1946,7 +2294,8 @@
             "atkInterval": 1,
             "respawnTime": 0
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -1971,22 +2320,25 @@
             "atkInterval": 1,
             "respawnTime": 0
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {},
+    "trait": "Blocks 2 enemies",
     "skillIds": [null, null, "sktok_nearl2_3"],
     "type": "summon",
-    "usedBy": "char_1014_nearl2",
-    "slug": "blazing_sun"
+    "usedBy": "char_1014_nearl2"
   },
   "token_10020_ling_soul1": {
     "id": "token_10020_ling_soul1",
     "iconId": "token_10020_ling_soul1",
+    "slug": "tranquility",
     "name": "'Tranquility'",
     "displayName": "'Tranquility'",
-    "description": "Blocks 1 enemy",
+    "rarity": 6,
     "position": "MELEE",
-    "range": "1-1",
+    "range": ["1-1", "1-1", "1-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -2011,7 +2363,8 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -2036,7 +2389,8 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -2061,22 +2415,25 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
-    "skillIds": ["sktok_ling_soul1", null, null],
+    "talents": {},
+    "trait": "Blocks 1 enemy",
+    "skillIds": ["sktok_ling_soul1", "sktok_ling_soul1", "sktok_ling_soul1"],
     "type": "summon",
-    "usedBy": "char_2023_ling",
-    "slug": "tranquility"
+    "usedBy": "char_2023_ling"
   },
   "token_10020_ling_soul2": {
     "id": "token_10020_ling_soul2",
     "iconId": "token_10020_ling_soul2",
+    "slug": "peripateticism",
     "name": "'Peripateticism'",
     "displayName": "'Peripateticism'",
-    "description": "Deals <span style=\"color:#00B0FF;\">Arts damage</span>",
+    "rarity": 6,
     "position": "RANGED",
-    "range": "3-1",
+    "range": ["3-1", "3-1", "3-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -2101,7 +2458,8 @@
             "atkInterval": 1.6,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -2126,7 +2484,8 @@
             "atkInterval": 1.6,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -2151,22 +2510,25 @@
             "atkInterval": 1.6,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
-    "skillIds": [null, "sktok_ling_soul2", null],
+    "talents": {},
+    "trait": "Deals <span style=\"color:#00B0FF;\">Arts damage</span>",
+    "skillIds": ["sktok_ling_soul2", "sktok_ling_soul2", "sktok_ling_soul2"],
     "type": "summon",
-    "usedBy": "char_2023_ling",
-    "slug": "peripateticism"
+    "usedBy": "char_2023_ling"
   },
   "token_10020_ling_soul3": {
     "id": "token_10020_ling_soul3",
     "iconId": "token_10020_ling_soul3",
+    "slug": "thunderer",
     "name": "'Thunderer'",
     "displayName": "'Thunderer'",
-    "description": "Attacks <span style=\"color:#00B0FF;\">all blocked enemies</span>",
+    "rarity": 6,
     "position": "MELEE",
-    "range": "1-1",
+    "range": ["1-1", "1-1", "1-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -2191,7 +2553,8 @@
             "atkInterval": 1.5,
             "respawnTime": 20
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -2216,7 +2579,8 @@
             "atkInterval": 1.5,
             "respawnTime": 20
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -2241,22 +2605,25 @@
             "atkInterval": 1.5,
             "respawnTime": 20
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
-    "skillIds": [null, null, "sktok_ling_soul3"],
+    "talents": {},
+    "trait": "Attacks <span style=\"color:#00B0FF;\">all blocked enemies</span>",
+    "skillIds": ["sktok_ling_soul3", "sktok_ling_soul3", "sktok_ling_soul3"],
     "type": "summon",
-    "usedBy": "char_2023_ling",
-    "slug": "thunderer"
+    "usedBy": "char_2023_ling"
   },
   "token_10020_ling_soul3a": {
     "id": "token_10020_ling_soul3a",
     "iconId": "token_10020_ling_soul3",
+    "slug": "thunderer_advanced",
     "name": "'Thunderer'",
     "displayName": "'Thunderer' (Advanced)",
-    "description": "Attacks <span style=\"color:#00B0FF;\">all blocked enemies</span>",
+    "rarity": 6,
     "position": "MELEE",
-    "range": "1-1",
+    "range": ["1-1", "1-1", "1-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -2281,7 +2648,8 @@
             "atkInterval": 2.3,
             "respawnTime": 20
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -2306,7 +2674,8 @@
             "atkInterval": 2.3,
             "respawnTime": 20
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -2331,22 +2700,25 @@
             "atkInterval": 2.3,
             "respawnTime": 20
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
-    "skillIds": [null, null, "sktok_ling_soul3"],
+    "talents": {},
+    "trait": "Attacks <span style=\"color:#00B0FF;\">all blocked enemies</span>",
+    "skillIds": ["sktok_ling_soul3", "sktok_ling_soul3", "sktok_ling_soul3"],
     "type": "summon",
-    "usedBy": "char_2023_ling",
-    "slug": "thunderer_advanced"
+    "usedBy": "char_2023_ling"
   },
   "token_10021_blkngt_hypnos": {
     "id": "token_10021_blkngt_hypnos",
     "iconId": "token_10021_blkngt_hypnos",
+    "slug": "slumberfoot",
     "name": "Slumberfoot",
     "displayName": "Slumberfoot",
-    "description": "Blocks 1 enemy; can only be deployed within the summoner's Attack Range",
+    "rarity": 5,
     "position": "MELEE",
-    "range": "x-5",
+    "range": ["x-5", "x-5", "x-5"],
     "stats": [
       {
         "maxLevel": 50,
@@ -2371,7 +2743,8 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 70,
@@ -2396,7 +2769,8 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -2421,22 +2795,46 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {
+      "0": [
+        {
+          "name": "Nightwalker",
+          "description": "Automatically respawns 20 seconds after being defeated",
+          "potential": 1,
+          "unlockCond": { "elite": 0, "level": 1 }
+        },
+        {
+          "name": "Nightwalker",
+          "description": "Automatically respawns 17 seconds after being defeated",
+          "potential": 1,
+          "unlockCond": { "elite": 1, "level": 1 }
+        },
+        {
+          "name": "Nightwalker",
+          "description": "Automatically respawns 15 seconds after being defeated",
+          "potential": 1,
+          "unlockCond": { "elite": 2, "level": 1 }
+        }
+      ]
+    },
+    "trait": "Blocks 1 enemy; can only be deployed within the summoner's Attack Range",
     "skillIds": ["sktok_blkngt_hypnos_s_1", "sktok_blkngt_hypnos_s_2"],
     "type": "reinforcement",
-    "usedBy": "char_476_blkngt",
-    "slug": "slumberfoot"
+    "usedBy": "char_476_blkngt"
   },
   "token_10022_kazema_shadow": {
     "id": "token_10022_kazema_shadow",
     "iconId": "token_10022_kazema_shadow",
+    "slug": "kaminingyo",
     "name": "Kaminingyo",
     "displayName": "Kaminingyo",
-    "description": "Cannot block enemies",
+    "rarity": 5,
     "position": "MELEE",
-    "range": "x-4",
+    "range": ["x-4", "x-4", "x-4"],
     "stats": [
       {
         "maxLevel": 50,
@@ -2461,7 +2859,8 @@
             "atkInterval": 1.2,
             "respawnTime": 20
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 70,
@@ -2486,7 +2885,8 @@
             "atkInterval": 1.2,
             "respawnTime": 20
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -2511,22 +2911,25 @@
             "atkInterval": 1.2,
             "respawnTime": 20
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {},
+    "trait": "Cannot block enemies",
     "skillIds": [null, null],
     "type": "summon",
-    "usedBy": "char_4016_kazema",
-    "slug": "kaminingyo"
+    "usedBy": "char_4016_kazema"
   },
   "token_10023_windft_wrench": {
     "id": "token_10023_windft_wrench",
     "iconId": "token_10023_windft_wrench",
+    "slug": "reliable_battery",
     "name": "Reliable Battery",
     "displayName": "Reliable Battery",
-    "description": "Cannot be attacked",
+    "rarity": 5,
     "position": "ALL",
-    "range": "1-1",
+    "range": ["1-1", "1-1", "1-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -2551,7 +2954,8 @@
             "atkInterval": 1,
             "respawnTime": 15
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 70,
@@ -2576,7 +2980,8 @@
             "atkInterval": 1,
             "respawnTime": 15
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -2601,22 +3006,64 @@
             "atkInterval": 1,
             "respawnTime": 15
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {
+      "0": [
+        {
+          "name": "Forward Together",
+          "description": "Can only be equipped to Caster and Supporter Operators; equipped units gain +5% ATK (lasts 20 seconds)",
+          "potential": 1,
+          "unlockCond": { "elite": 0, "level": 1 }
+        },
+        {
+          "name": "Forward Together",
+          "description": "Can only be equipped to Caster and Supporter Operators; equipped units gain +7% <span style=\"color:#0098DC;\">(+2%)</span> ATK (lasts 20 seconds)",
+          "potential": 5,
+          "unlockCond": { "elite": 0, "level": 1 }
+        },
+        {
+          "name": "Forward Together",
+          "description": "Can only be equipped to Caster and Supporter Operators; equipped units gain +10% ATK (lasts 30 seconds)",
+          "potential": 1,
+          "unlockCond": { "elite": 1, "level": 1 }
+        },
+        {
+          "name": "Forward Together",
+          "description": "Can only be equipped to Caster and Supporter Operators; equipped units gain +12% <span style=\"color:#0098DC;\">(+2%)</span> ATK (lasts 30 seconds)",
+          "potential": 5,
+          "unlockCond": { "elite": 1, "level": 1 }
+        },
+        {
+          "name": "Forward Together",
+          "description": "Can only be equipped to Caster and Supporter Operators; equipped units gain +15% ATK (lasts 30 seconds)",
+          "potential": 1,
+          "unlockCond": { "elite": 2, "level": 1 }
+        },
+        {
+          "name": "Forward Together",
+          "description": "Can only be equipped to Caster and Supporter Operators; equipped units gain +17% <span style=\"color:#0098DC;\">(+2%)</span> ATK (lasts 30 seconds)",
+          "potential": 5,
+          "unlockCond": { "elite": 2, "level": 1 }
+        }
+      ]
+    },
+    "trait": "Cannot be attacked",
     "skillIds": ["sktok_windft_wrench_1", "sktok_windft_wrench_2"],
     "type": "support",
-    "usedBy": "char_433_windft",
-    "slug": "reliable_battery"
+    "usedBy": "char_433_windft"
   },
   "token_10024_ebnhlz_rcube": {
     "id": "token_10024_ebnhlz_rcube",
     "iconId": "token_10024_ebnhlz_rcube",
+    "slug": "remnants_of_days_past",
     "name": "Remnants of Days Past",
     "displayName": "Remnants of Days Past",
-    "description": null,
+    "rarity": 6,
     "position": "ALL",
-    "range": "0-1",
+    "range": ["0-1", "0-1", "0-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -2641,7 +3088,8 @@
             "atkInterval": 1,
             "respawnTime": 0
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -2666,7 +3114,8 @@
             "atkInterval": 1,
             "respawnTime": 0
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -2691,22 +3140,25 @@
             "atkInterval": 1,
             "respawnTime": 0
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {},
+    "trait": null,
     "skillIds": [null, "sktok_ebnhlz_token", null],
     "type": "trap",
-    "usedBy": "char_4046_ebnhlz",
-    "slug": "remnants_of_days_past"
+    "usedBy": "char_4046_ebnhlz"
   },
   "token_10025_doroth_recttp": {
     "id": "token_10025_doroth_recttp",
     "iconId": "token_10025_doroth_recttp",
+    "slug": "resonator",
     "name": "Resonator",
     "displayName": "Resonator",
-    "description": "Cannot be attacked; cannot be deployed on tiles where enemies are <span style=\"color:#00B0FF;\">already present</span>",
+    "rarity": 6,
     "position": "MELEE",
-    "range": "0-1",
+    "range": ["0-1", "0-1", "0-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -2731,7 +3183,8 @@
             "atkInterval": 1,
             "respawnTime": 5
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -2756,7 +3209,8 @@
             "atkInterval": 1,
             "respawnTime": 5
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -2781,22 +3235,25 @@
             "atkInterval": 1,
             "respawnTime": 5
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {},
+    "trait": "Cannot be attacked; cannot be deployed on tiles where enemies are <span style=\"color:#00B0FF;\">already present</span>",
     "skillIds": ["sktok_doroth_1", "sktok_doroth_2", "sktok_doroth_3"],
     "type": "trap",
-    "usedBy": "char_4048_doroth",
-    "slug": "resonator"
+    "usedBy": "char_4048_doroth"
   },
   "token_10026_bgsnow_subbow": {
     "id": "token_10026_bgsnow_subbow",
     "iconId": "token_10026_bgsnow_subbow",
+    "slug": "typewriter",
     "name": "'Typewriter'",
     "displayName": "'Typewriter'",
-    "description": "Cannot be attacked",
+    "rarity": 6,
     "position": "RANGED",
-    "range": "3-2",
+    "range": ["3-2", "3-2", "3-2"],
     "stats": [
       {
         "maxLevel": 50,
@@ -2821,7 +3278,8 @@
             "atkInterval": 1.6,
             "respawnTime": 40
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -2846,7 +3304,8 @@
             "atkInterval": 1.6,
             "respawnTime": 40
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -2871,22 +3330,40 @@
             "atkInterval": 1.6,
             "respawnTime": 40
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {
+      "0": [
+        {
+          "name": "Stenographer of Weaknesses",
+          "description": "Attacks from the 'Typewriter' reduce the target's DEF by 18% for 4 seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to 23%",
+          "potential": 1,
+          "unlockCond": { "elite": 2, "level": 1 }
+        },
+        {
+          "name": "Stenographer of Weaknesses",
+          "description": "Attacks from the 'Typewriter' reduce the target's DEF by 20% <span style=\"color:#0098DC;\">(+2%)</span> for 5 <span style=\"color:#0098DC;\">(+1)</span> seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to <span style=\"color:#0098DC;\">25% (+2%)</span>",
+          "potential": 5,
+          "unlockCond": { "elite": 2, "level": 1 }
+        }
+      ]
+    },
+    "trait": "Cannot be attacked",
     "skillIds": ["sktok_bgsnow_1", "sktok_bgsnow_2", "sktok_bgsnow_3"],
     "type": "summon",
-    "usedBy": "char_4055_bgsnow",
-    "slug": "typewriter"
+    "usedBy": "char_4055_bgsnow"
   },
   "token_10027_ironmn_pile1": {
     "id": "token_10027_ironmn_pile1",
     "iconId": "token_10027_ironmn_pile1",
+    "slug": "stainless™_multifunctional_platform",
     "name": "Stainless™ Multifunctional Platform",
     "displayName": "Stainless™ Multifunctional Platform",
-    "description": "Cannot be attacked",
+    "rarity": 6,
     "position": "ALL",
-    "range": "1-1",
+    "range": ["1-1", "1-1", "1-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -2911,7 +3388,8 @@
             "atkInterval": 1,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -2936,7 +3414,8 @@
             "atkInterval": 1,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -2961,22 +3440,34 @@
             "atkInterval": 1,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
-    "skillIds": ["sktok_ironmn_pile1", null, null],
+    "talents": {
+      "0": [
+        {
+          "name": "Fire Support",
+          "description": "Give an allied Operator within range +12% ATK, unlimited duration",
+          "potential": 1,
+          "unlockCond": { "elite": 0, "level": 1 }
+        }
+      ]
+    },
+    "trait": "Cannot be attacked",
+    "skillIds": ["sktok_ironmn_pile1", "sktok_ironmn_pile1", "sktok_ironmn_pile1"],
     "type": "support",
-    "usedBy": "char_4072_ironmn",
-    "slug": "stainless™_multifunctional_platform"
+    "usedBy": "char_4072_ironmn"
   },
   "token_10027_ironmn_pile2": {
     "id": "token_10027_ironmn_pile2",
     "iconId": "token_10027_ironmn_pile2",
+    "slug": "stainless™_multifunctional_platform-s2",
     "name": "Stainless™ Multifunctional Platform",
     "displayName": "Stainless™ Multifunctional Platform",
-    "description": "Cannot be attacked",
+    "rarity": 6,
     "position": "ALL",
-    "range": "1-1",
+    "range": ["1-1", "1-1", "1-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -3001,7 +3492,8 @@
             "atkInterval": 1,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -3026,7 +3518,8 @@
             "atkInterval": 1,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -3051,22 +3544,34 @@
             "atkInterval": 1,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
-    "skillIds": [null, "sktok_ironmn_pile2", null],
+    "talents": {
+      "0": [
+        {
+          "name": "Battle Resupply",
+          "description": "Give an allied Operator within range 1 SP every 3.5s but cause them to lose 0.4% HP/sec, unlimited duration",
+          "potential": 1,
+          "unlockCond": { "elite": 0, "level": 1 }
+        }
+      ]
+    },
+    "trait": "Cannot be attacked",
+    "skillIds": ["sktok_ironmn_pile2", "sktok_ironmn_pile2", "sktok_ironmn_pile2"],
     "type": "support",
-    "usedBy": "char_4072_ironmn",
-    "slug": "stainless™_multifunctional_platform-s2"
+    "usedBy": "char_4072_ironmn"
   },
   "token_10027_ironmn_pile3": {
     "id": "token_10027_ironmn_pile3",
     "iconId": "token_10027_ironmn_pile3",
+    "slug": "prototype_of_feist's_metal_crab",
     "name": "Prototype of Feist's Metal Crab",
     "displayName": "Prototype of Feist's Metal Crab",
-    "description": "Can be attacked by Operators but does not take damage; recovers HP when attacked by Artificer Operators",
+    "rarity": 6,
     "position": "MELEE",
-    "range": "3-13",
+    "range": ["3-13", "3-13", "3-13"],
     "stats": [
       {
         "maxLevel": 50,
@@ -3091,7 +3596,8 @@
             "atkInterval": 1,
             "respawnTime": 20
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -3116,7 +3622,8 @@
             "atkInterval": 1,
             "respawnTime": 20
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -3141,22 +3648,34 @@
             "atkInterval": 1,
             "respawnTime": 20
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
-    "skillIds": [null, null, "sktok_ironmn_pile3"],
+    "talents": {
+      "0": [
+        {
+          "name": "Power of Unity",
+          "description": "Cause an allied Operator in the tile behind to take 20% less Physical damage, unlimited duration",
+          "potential": 1,
+          "unlockCond": { "elite": 0, "level": 1 }
+        }
+      ]
+    },
+    "trait": "Can be attacked by Operators but does not take damage; recovers HP when attacked by Artificer Operators",
+    "skillIds": ["sktok_ironmn_pile3", "sktok_ironmn_pile3", "sktok_ironmn_pile3"],
     "type": "support",
-    "usedBy": "char_4072_ironmn",
-    "slug": "prototype_of_feist's_metal_crab"
+    "usedBy": "char_4072_ironmn"
   },
   "token_10028_vigil_wolf": {
     "id": "token_10028_vigil_wolf",
     "iconId": "token_10028_vigil_wolf",
+    "slug": "wolfpack",
     "name": "Wolfpack",
     "displayName": "Wolfpack",
-    "description": "Can only be deployed within the summoner's Attack Range",
+    "rarity": 6,
     "position": "MELEE",
-    "range": "0-1",
+    "range": ["0-1", "0-1", "0-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -3181,7 +3700,8 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -3206,7 +3726,8 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -3231,22 +3752,60 @@
             "atkInterval": 1.25,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {
+      "0": [
+        {
+          "name": "Leader of the Wolfpack",
+          "description": "Gains 1 'Wolf Shadow' every 30s (up to a maximum of 3). For each 'Wolf Shadow' present, the Wolfpack gains +1 Block, and each attack inflicts an additional instance of damage; when more than 1 'Wolf Shadow' is present, upon taking lethal damage 1 'Wolf Shadow' will be lost to fully restore HP.",
+          "potential": 1,
+          "unlockCond": { "elite": 0, "level": 1 }
+        },
+        {
+          "name": "Leader of the Wolfpack",
+          "description": "Gains 1 'Wolf Shadow' every 27s (up to a maximum of 3). For each 'Wolf Shadow' present, the Wolfpack gains +1 Block, and each attack inflicts an additional instance of damage; when more than 1 'Wolf Shadow' is present, upon taking lethal damage 1 'Wolf Shadow' will be lost to fully restore HP.",
+          "potential": 1,
+          "unlockCond": { "elite": 1, "level": 1 }
+        },
+        {
+          "name": "Leader of the Wolfpack",
+          "description": "Gains 1 'Wolf Shadow' every 25s (up to a maximum of 3). For each 'Wolf Shadow' present, the Wolfpack gains +1 Block, and each attack inflicts an additional instance of damage; when more than 1 'Wolf Shadow' is present, upon taking lethal damage 1 'Wolf Shadow' will be lost to fully restore HP.",
+          "potential": 1,
+          "unlockCond": { "elite": 2, "level": 1 }
+        }
+      ],
+      "1": [
+        {
+          "name": "Wolven Nature",
+          "description": "Ignores 175 DEF when attacking a blocked target",
+          "potential": 1,
+          "unlockCond": { "elite": 2, "level": 1 }
+        },
+        {
+          "name": "Wolven Nature",
+          "description": "Ignores 200 <span style=\"color:#0098DC;\">(+25)</span> DEF when attacking a blocked target",
+          "potential": 5,
+          "unlockCond": { "elite": 2, "level": 1 }
+        }
+      ]
+    },
+    "trait": "Can only be deployed within the summoner's Attack Range",
     "skillIds": ["sktok_vigil_wolf_1", "sktok_vigil_wolf_2", "sktok_vigil_wolf_3"],
     "type": "reinforcement",
-    "usedBy": "char_427_vigil",
-    "slug": "wolfpack"
+    "usedBy": "char_427_vigil"
   },
   "token_10029_slent2_protrb": {
     "id": "token_10029_slent2_protrb",
     "iconId": "token_10029_slent2_protrb",
+    "slug": "night_banisher",
     "name": "Night Banisher",
     "displayName": "Night Banisher",
-    "description": "Cannot be attacked",
+    "rarity": 6,
     "position": "ALL",
-    "range": "x-4",
+    "range": ["x-4", "x-4", "x-4"],
     "stats": [
       {
         "maxLevel": 50,
@@ -3271,7 +3830,8 @@
             "atkInterval": 1,
             "respawnTime": 5
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -3296,7 +3856,8 @@
             "atkInterval": 1,
             "respawnTime": 5
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -3321,22 +3882,25 @@
             "atkInterval": 1,
             "respawnTime": 5
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {},
+    "trait": "Cannot be attacked",
     "skillIds": [null, "sktok_slent2_protrb", null],
     "type": "summon",
-    "usedBy": "char_1031_slent2",
-    "slug": "night_banisher"
+    "usedBy": "char_1031_slent2"
   },
   "token_10030_mlyss_wtrman": {
     "id": "token_10030_mlyss_wtrman",
     "iconId": "token_10030_mlyss_wtrman",
+    "slug": "flowing_shape",
     "name": "Flowing Shape",
     "displayName": "Flowing Shape",
-    "description": "The initial attack deals <span style=\"color:#00B0FF;\">Arts damage</span>; can only be deployed within the summoner's Attack Range",
+    "rarity": 6,
     "position": "ALL",
-    "range": "0-1",
+    "range": ["0-1", "0-1", "0-1"],
     "stats": [
       {
         "maxLevel": 50,
@@ -3361,7 +3925,8 @@
             "atkInterval": 1.5,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 80,
@@ -3386,7 +3951,8 @@
             "atkInterval": 1.5,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       },
       {
         "maxLevel": 90,
@@ -3411,22 +3977,25 @@
             "atkInterval": 1.5,
             "respawnTime": 10
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {},
+    "trait": "The initial attack deals <span style=\"color:#00B0FF;\">Arts damage</span>; can only be deployed within the summoner's Attack Range",
     "skillIds": ["sktok_mlyss_wtrman_1", "sktok_mlyss_wtrman_2", "sktok_mlyss_wtrman_3"],
     "type": "reinforcement",
-    "usedBy": "char_249_mlyss",
-    "slug": "flowing_shape"
+    "usedBy": "char_249_mlyss"
   },
   "trap_079_allydonq": {
     "id": "trap_079_allydonq",
     "iconId": "trap_079_allydonq",
+    "slug": "tide-hunt_knight",
     "name": "Tide-Hunt Knight",
     "displayName": "Tide-Hunt Knight",
-    "description": null,
+    "rarity": 1,
     "position": "MELEE",
-    "range": "1-1",
+    "range": ["1-1"],
     "stats": [
       {
         "maxLevel": 30,
@@ -3451,12 +4020,14 @@
             "atkInterval": 2,
             "respawnTime": 70
           }
-        ]
+        ],
+        "evolveCost": []
       }
     ],
+    "talents": {},
+    "trait": null,
     "skillIds": ["sktok_allydonq"],
     "type": "other",
-    "usedBy": null,
-    "slug": "tide-hunt_knight"
+    "usedBy": null
   }
 }

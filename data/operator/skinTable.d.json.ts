@@ -1,4 +1,4 @@
-import type { OperatorId } from "@/data/types/AKOperator";
+import type { OperatorId } from "@/data/types/AKCharacter";
 import type { Brand, BrandId, Skin, SkinId } from "@/data/types/AKSkin";
 
 declare const skinTable: {

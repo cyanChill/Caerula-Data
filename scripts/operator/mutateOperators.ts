@@ -2,11 +2,10 @@ import fs from "fs";
 import path from "path";
 
 import type { MaterialCount } from "@/types/JSONField";
-import type { RawCharacterStat } from "@/types/rawCharacter";
+import type { RawCharacter, RawCharacterStat } from "@/types/rawCharacter";
 
-import type { Operator } from "@/data/types/AKOperator";
-import type { SkillId } from "@/data/types/AKSkill";
-import type { Token, TokenId } from "@/data/types/AKToken";
+import type { Operator, Token, TokenId } from "@/data/types/AKCharacter";
+import type { CharacterBase } from "@/data/types/shared";
 import OperatorTable from "@/json/preprocessed/operator_table.json";
 import TokenTable from "@/json/preprocessed/tokens_table.json";
 
@@ -18,10 +17,8 @@ import { addTooltipAndColor, cleanString } from "@/utils/textFormat";
  * @description Object containing relations between tokens & operators that can
  *  be read when we're processing our token data.
  */
-export const TokenMappings: Record<
-  string,
-  { id: string; branch: string } | null
-> = {};
+export const TokenMap: Record<string, { id: string; branch: string } | null> =
+  {};
 
 /** @description Create a table of objects representing operators. */
 function createOperatorsJSON() {
@@ -32,66 +29,37 @@ function createOperatorsJSON() {
     try {
       const newOperator = {
         id,
-        name: currOp.name,
-        displayName: getDisplayName(id, currOp.name, currOp.appellation),
-        rarity: getRarity(currOp.rarity),
+        ...getCharacterBase(id, currOp),
         potentials: currOp.potentialRanks.map((pot) => pot.description),
         profession: currOp.profession,
         branch: currOp.subProfessionId,
-        range: currOp.phases.map((phase) => phase.rangeId),
-        tokensUsed: null,
-        elite: currOp.phases.map(
-          ({ maxLevel, evolveCost, attributesKeyFrames }) => ({
-            maxLevel,
-            stats: attributesKeyFrames.map((attr) => keepNecessaryStats(attr)),
-            evolveCost: evolveCost ? getMaterialCost(evolveCost) : null,
-          })
-        ),
         skills: currOp.skills.map(
           ({ skillId, overrideTokenKey, unlockCond, levelUpCostCond }) => ({
-            skillId,
+            id: skillId,
             tokenUsed: overrideTokenKey,
-            unlockedAt: getPhase(unlockCond.phase),
+            unlockCond: {
+              elite: getPhase(unlockCond.phase),
+              level: unlockCond.level,
+            },
             masteryCost: levelUpCostCond.map(({ lvlUpTime, levelUpCost }) => ({
               upgradeTime: lvlUpTime,
               ingredients: getMaterialCost(levelUpCost ?? []),
             })),
           })
         ),
-        talents: (currOp.talents ?? []).map(({ candidates }) => ({
-          name: candidates[0].name,
-          variants: candidates.map((tal) => {
-            let talentDesc = cleanString(tal.description!);
-
-            /* Fix broken talent descriptions */
-            if (["char_290_vigna"].includes(id)) {
-              talentDesc = talentDesc.replace(")", ")</>");
-            }
-
-            return {
-              // Incase the talent name changes (ie: Amiya's 1st talent changes name)
-              ...(candidates[0].name !== tal.name
-                ? { nameOverride: tal.name }
-                : {}),
-              elite: getPhase(tal.unlockCondition.phase),
-              level: tal.unlockCondition.level,
-              potential: tal.requiredPotentialRank + 1,
-              description: addTooltipAndColor(talentDesc),
-            };
-          }),
-        })),
-        trustBonus: keepNecessaryStats(currOp.favorKeyFrames![1]),
         skillLevel: currOp.allSkillLvlup.map((cost, idx) => ({
           level: (idx + 2) as 2 | 3 | 4 | 5 | 6 | 7,
           cost: getMaterialCost(cost.lvlUpCost ?? []),
         })),
-        nationId: currOp.nationId,
-        factionId: currOp.groupId,
-        teamId: currOp.teamId,
-        position: currOp.position,
+        trustBonus: keepNecessaryStats(currOp.favorKeyFrames![1]),
+        affiliation: {
+          nation: currOp.nationId,
+          faction: currOp.groupId,
+          team: currOp.teamId,
+        },
         tags: currOp.tagList,
         type: classifyOperator(id),
-        slug: generateSlug(id, currOp.name),
+        tokensUsed: null,
       } as Operator;
 
       /* Get the tokens associated with an operator. */
@@ -107,8 +75,7 @@ function createOperatorsJSON() {
         newOperator.tokensUsed = [...usedTokens] as TokenId[];
         // Create mappings from tokens to their operators
         usedTokens.forEach(
-          (tokKey) =>
-            (TokenMappings[tokKey] = { id, branch: newOperator.branch })
+          (tokKey) => (TokenMap[tokKey] = { id, branch: newOperator.branch })
         );
       }
 
@@ -139,48 +106,18 @@ function createTokenJSON() {
 
   Object.entries(TokenTable).forEach(([id, currTok]) => {
     try {
-      const tokenOwner = TokenMappings[id];
+      const tokenOwner = TokenMap[id];
 
       const newToken = {
         id,
         iconId:
           id === "token_10020_ling_soul3a" ? "token_10020_ling_soul3" : id,
-        name: currTok.name,
-        displayName: getDisplayName(id, currTok.name, currTok.appellation),
-        description: addTooltipAndColor(currTok.description),
-        position: currTok.position, // Includes "ALL"
-        range: currTok.phases[0].rangeId,
-        stats: currTok.phases.map(({ maxLevel, attributesKeyFrames }) => ({
-          maxLevel,
-          stats: attributesKeyFrames.map((attr) => keepNecessaryStats(attr)),
-        })),
+        ...getCharacterBase(id, currTok as RawCharacter),
+        trait: addTooltipAndColor(currTok.description),
         skillIds: currTok.skills.map((obj) => obj.skillId),
         type: "summon",
         usedBy: tokenOwner?.id,
-        slug: generateSlug(id, currTok.name),
       } as Token;
-
-      /* Clean up `skillIds` to remove duplicates. */
-      const tokSkillIds = newToken.skillIds;
-      if (tokSkillIds[0] !== null && tokSkillIds.length > 1) {
-        const skillId1 = tokSkillIds[0];
-        // If all spots in the skillId array is the same.
-        if (tokSkillIds.join("") === skillId1.repeat(tokSkillIds.length)) {
-          // Triple Repeats Case
-          if (tokSkillIds.length === 3) {
-            const newSkillIdArr = new Array<SkillId | null>(3).fill(null);
-            // Last character should be a number from 1 to 3
-            newSkillIdArr[+skillId1.slice(-1) - 1] = skillId1;
-            newToken.skillIds = newSkillIdArr;
-          } else {
-            // Double Repeat Cases
-            newToken.skillIds =
-              id === "token_10000_silent_healrb"
-                ? [null, skillId1]
-                : [skillId1, null];
-          }
-        }
-      }
 
       /** @description Special cases where operator has traps. */
       const TrapperSpec = new Set<string>([
@@ -237,13 +174,13 @@ function generateSlugTable() {
 
   fs.writeFileSync(
     path.resolve("./data/operator/slugTable.ts"),
-    `import type { OperatorId } from "@/data/types/AKOperator";\n\nexport const OpSlugTable = ${niceJSON(
+    `import type { OperatorId } from "@/data/types/AKCharacter";\n\nexport const OpSlugTable = ${niceJSON(
       opSlugs
     )} as Record<string, OperatorId>;\n`
   );
   fs.writeFileSync(
     path.resolve("./data/token/slugTable.ts"),
-    `import type { TokenId } from "@/data/types/AKToken";\n\nexport const TokSlugTable = ${niceJSON(
+    `import type { TokenId } from "@/data/types/AKCharacter";\n\nexport const TokSlugTable = ${niceJSON(
       tokSlugs
     )} as Record<string, TokenId>;\n`
   );
@@ -255,25 +192,48 @@ export function generateOperatorStatsAndSlugs() {
   generateSlugTable();
 }
 
-/** @description Generate a different name for special cases. */
-function getDisplayName(id: string, name: string, appellation: string) {
-  if (id === "char_1001_amiya2") return "Amiya (Guard)";
-  else if (appellation !== " ") return `${name} (${appellation})`;
-  return name;
-}
-
-/** @description Keep only the stat properties that I want from the raw data. */
-function keepNecessaryStats(stat: RawCharacterStat) {
+/** @description Populates a `CharacterBase` schema from a `RawCharacter`. */
+function getCharacterBase(id: string, character: RawCharacter) {
   return {
-    hp: stat.data.maxHp,
-    atk: stat.data.atk,
-    def: stat.data.def,
-    res: stat.data.magicResistance,
-    cost: stat.data.cost,
-    blockCnt: stat.data.blockCnt,
-    atkInterval: stat.data.baseAttackTime,
-    respawnTime: stat.data.respawnTime,
-  };
+    slug: generateSlug(id, character.name),
+    name: character.name,
+    displayName: getDisplayName(id, character.name, character.appellation),
+    rarity: getRarity(character.rarity),
+    position: character.position,
+    range: character.phases.map((phase) => phase.rangeId!), // Only `null` for devices
+    stats: character.phases.map(
+      ({ maxLevel, evolveCost, attributesKeyFrames }) => ({
+        maxLevel,
+        stats: attributesKeyFrames.map((attr) => keepNecessaryStats(attr)),
+        evolveCost: getMaterialCost(evolveCost ?? []),
+      })
+    ),
+    talents: {
+      ...(character.talents ?? [])
+        .map(({ candidates }) => {
+          // eslint-disable-next-line @typescript-eslint/prefer-optional-chain
+          if (!candidates || !candidates[0].name) return;
+          return candidates.map((tal) => {
+            let talDescr = cleanString(tal.description!);
+            // Fix broken talent descriptions
+            if (["char_290_vigna"].includes(id)) {
+              talDescr = talDescr.replace(")", ")</>");
+            }
+
+            return {
+              name: tal.name,
+              description: addTooltipAndColor(talDescr),
+              potential: tal.requiredPotentialRank + 1,
+              unlockCond: {
+                elite: getPhase(tal.unlockCondition.phase),
+                level: tal.unlockCondition.level,
+              },
+            };
+          });
+        })
+        .filter((talent) => !!talent),
+    },
+  } as CharacterBase;
 }
 
 /** @description Operators considered to be limited. */
@@ -321,7 +281,28 @@ export function classifyOperator(id: string) {
   return null;
 }
 
+/** @description Generate a different name for special cases. */
+function getDisplayName(id: string, name: string, appellation: string) {
+  if (id === "char_1001_amiya2") return "Amiya (Guard)";
+  else if (appellation !== " ") return `${name} (${appellation})`;
+  return name;
+}
+
 /** @description Remove the "type" property in the raw object. */
 function getMaterialCost(arr: MaterialCount[]) {
   return arr.map((obj) => ({ id: obj.id, count: obj.count }));
+}
+
+/** @description Keep only the stat properties that I want from the raw data. */
+function keepNecessaryStats(stat: RawCharacterStat) {
+  return {
+    hp: stat.data.maxHp,
+    atk: stat.data.atk,
+    def: stat.data.def,
+    res: stat.data.magicResistance,
+    cost: stat.data.cost,
+    blockCnt: stat.data.blockCnt,
+    atkInterval: stat.data.baseAttackTime,
+    respawnTime: stat.data.respawnTime,
+  };
 }
