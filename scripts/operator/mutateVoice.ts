@@ -4,94 +4,96 @@ import DOMPurify from "isomorphic-dompurify";
 
 import type { VoiceActor, VoiceLine } from "@/data/types/AKVoice";
 import CharwordTable from "@/json/en_US/gamedata/excel/charword_table.json";
+import OperatorTable from "@/json/preprocessed/operator_table.json";
 
 import { niceJSON } from "@/lib/format";
 import { replaceUnicode } from "@/utils/textFormat";
 
-/** @description Create a table of operator voice lines. */
-// FIXME: Some operators (24-OP Skins) have unique voice lines that need to be
-// distinguished
-function createVoiceLineJSON() {
-  const opVoiceLines: Record<string, VoiceLine[]> = {};
+function getVoiceLines() {
+  const skinVoiceLines: Record<string, VoiceLine[]> = {};
+  const opVoiceMap: Record<string, Set<string>> = {};
 
-  // Group the voice lines by operator
+  const operatorIds = Object.keys(OperatorTable);
+  operatorIds.forEach((id) => (opVoiceMap[id] = new Set<string>()));
+
+  /* Group voice lines by a "voice id". */
   Object.values(CharwordTable.charWords).forEach((vLine) => {
+    /* Don't add entry for duplicate Shalem entry from IS2. */
+    if (vLine.charId === "char_512_aprot") return;
+
     const newVLine = {
       sortId: vLine.voiceIndex,
       title: replaceUnicode(vLine.voiceTitle),
       text: DOMPurify.sanitize(replaceUnicode(vLine.voiceText)),
-      unlockCond: null,
+      unlockCond: ["AWAKE", "FAVOR"].includes(vLine.unlockType)
+        ? {
+            type: vLine.unlockType === "AWAKE" ? "promotion" : "trust",
+            val: vLine.unlockParam[0].valueInt,
+          }
+        : null,
     } as VoiceLine;
 
-    if (["AWAKE", "FAVOR"].includes(vLine.unlockType)) {
-      newVLine.unlockCond = {
-        type: vLine.unlockType === "AWAKE" ? "promotion" : "trust",
-        val: vLine.unlockParam[0].valueInt,
-      };
-    }
-
+    const vLineKey = vLine.wordKey;
     const opId =
       vLine.wordKey === "char_1001_amiya2" ? "char_1001_amiya2" : vLine.charId;
 
-    // Assign voice line to operator
-    if (Object.hasOwn(opVoiceLines, opId)) opVoiceLines[opId].push(newVLine);
-    else opVoiceLines[opId] = [newVLine];
+    // Group voice lines together.
+    if (Object.hasOwn(skinVoiceLines, vLineKey))
+      skinVoiceLines[vLineKey].push(newVLine);
+    else skinVoiceLines[vLineKey] = [newVLine];
+
+    // Map voice line set to operator.
+    opVoiceMap[opId].add(vLineKey);
   });
 
-  // Make sure voice lines are in order for each operator
-  Object.entries(opVoiceLines).forEach(([key, value]) => {
-    const sortedVLs = value.sort((a, b) => a.sortId - b.sortId);
-    // Remove duplicate entries (sometimes from having a special language such as Italian)
-    const seenSortIds = new Set();
-    opVoiceLines[key] = sortedVLs.filter((vl) => {
-      const isDup = seenSortIds.has(vl.sortId);
-      seenSortIds.add(vl.sortId);
-      return !isDup;
-    });
+  // Make sure voice lines are in order for each voice line set.
+  Object.entries(skinVoiceLines).forEach(([id, value]) => {
+    skinVoiceLines[id] = value.sort((a, b) => a.sortId - b.sortId);
   });
-
-  fs.writeFileSync(
-    path.resolve("./data/operator/profile/voiceLines.json"),
-    niceJSON(opVoiceLines)
-  );
 
   console.log(
-    `  - 📢 Found ${
-      Object.keys(opVoiceLines).length
-    } Operator Voice Line entries.`
+    `  - 📢 Found ${Object.keys(skinVoiceLines).length} Voice Lines entries.`
   );
+
+  return {
+    voiceLineTable: skinVoiceLines,
+    opVoiceMap: Object.fromEntries(
+      Object.entries(opVoiceMap).map(([id, val]) => [id, [...val]])
+    ),
+  };
 }
 
-/** @description Creates a table of the voice actors for an operator's base skin. */
-function createVoiceActorsJSON() {
+function getVoiceActors() {
   const opVoiceActors: Record<string, VoiceActor[]> = {};
-  // Group the voice lines by operator
-  Object.entries(CharwordTable.voiceLangDict).forEach(([key, value]) => {
-    // Only return the voice actors for the base skin
-    if (key === value.charId || key === "char_1001_amiya2") {
-      opVoiceActors[key] = Object.values(value.dict)
-        .map((val) => ({
-          langId: val.voiceLangType,
-          actor: val.cvName.map((name) => replaceUnicode(name)),
-        }))
-        .sort((a, b) => a.langId.localeCompare(b.langId));
-    }
-  });
+  /* Group voice actors by a "voice id". */
+  Object.entries(CharwordTable.voiceLangDict).forEach(([id, { dict }]) => {
+    /* Don't add entry for duplicate Shalem entry from IS2. */
+    if (id === "char_512_aprot") return;
 
-  fs.writeFileSync(
-    path.resolve("./data/operator/profile/voiceActors.json"),
-    niceJSON(opVoiceActors)
-  );
+    opVoiceActors[id] = Object.values(dict)
+      .map(({ cvName, voiceLangType }) => ({
+        langId: voiceLangType,
+        actors: cvName.map((name) => replaceUnicode(name)),
+      }))
+      .sort((a, b) => a.langId.localeCompare(b.langId));
+  });
 
   console.log(
     `  - 🧑 Found ${
       Object.keys(opVoiceActors).length
     } Operator Voice Actors entries.`
   );
+
+  return { actorTable: opVoiceActors };
 }
 
 export function generateVoiceData() {
   console.log("[🎙️ Voices 🎙️]");
-  createVoiceLineJSON();
-  createVoiceActorsJSON();
+  fs.writeFileSync(
+    path.resolve("./data/operator/profile/voiceTable.json"),
+    niceJSON({
+      ...getVoiceActors(),
+      ...getVoiceLines(),
+    })
+  );
 }

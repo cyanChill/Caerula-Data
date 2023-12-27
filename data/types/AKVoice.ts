@@ -20,5 +20,5 @@ export interface VoiceLine {
 
 export interface VoiceActor {
   langId: VoiceLangId;
-  actor: string[];
+  actors: string[];
 }
