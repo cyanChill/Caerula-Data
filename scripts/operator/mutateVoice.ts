@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import DOMPurify from "isomorphic-dompurify";
 
-import type { VoiceActor, VoiceLine } from "@/data/types/AKVoice";
+import type { CharacterVoice, DialogueLine } from "@/data/types/AKVoice";
 import CharwordTable from "@/json/en_US/gamedata/excel/charword_table.json";
 import OperatorTable from "@/json/preprocessed/operator_table.json";
 
@@ -10,7 +10,7 @@ import { niceJSON } from "@/lib/format";
 import { replaceUnicode } from "@/utils/textFormat";
 
 function getVoiceLines() {
-  const skinVoiceLines: Record<string, VoiceLine[]> = {};
+  const skinVoiceLines: Record<string, DialogueLine[]> = {};
   const opVoiceMap: Record<string, Set<string>> = {};
 
   const operatorIds = Object.keys(OperatorTable);
@@ -31,7 +31,7 @@ function getVoiceLines() {
             val: vLine.unlockParam[0].valueInt,
           }
         : null,
-    } as VoiceLine;
+    } as DialogueLine;
 
     const vLineKey = vLine.wordKey;
     const opId =
@@ -56,7 +56,7 @@ function getVoiceLines() {
   );
 
   return {
-    voiceLineTable: skinVoiceLines,
+    dialogueTable: skinVoiceLines,
     opVoiceMap: Object.fromEntries(
       Object.entries(opVoiceMap).map(([id, val]) => [id, [...val]])
     ),
@@ -64,7 +64,7 @@ function getVoiceLines() {
 }
 
 function getVoiceActors() {
-  const opVoiceActors: Record<string, VoiceActor[]> = {};
+  const opVoiceActors: Record<string, CharacterVoice[]> = {};
   /* Group voice actors by a "voice id". */
   Object.entries(CharwordTable.voiceLangDict).forEach(([id, { dict }]) => {
     /* Don't add entry for duplicate Shalem entry from IS2. */
@@ -84,7 +84,7 @@ function getVoiceActors() {
     } Operator Voice Actors entries.`
   );
 
-  return { actorTable: opVoiceActors };
+  return { cvTable: opVoiceActors };
 }
 
 export function generateVoiceData() {

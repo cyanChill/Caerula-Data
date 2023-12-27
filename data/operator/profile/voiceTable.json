@@ -1,5 +1,5 @@
 {
-  "actorTable": {
+  "cvTable": {
     "char_285_medic2": [
       { "langId": "CN_MANDARIN", "actors": ["Kiki"] },
       { "langId": "JP", "actors": ["Asami Shimoda"] },
@@ -1627,7 +1627,7 @@
       { "langId": "KR", "actors": ["Han Chae-eon"] }
     ]
   },
-  "voiceLineTable": {
+  "dialogueTable": {
     "char_102_texas": [
       {
         "sortId": 1,

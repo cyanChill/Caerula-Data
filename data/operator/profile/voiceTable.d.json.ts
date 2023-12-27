@@ -1,9 +1,9 @@
 import type { OperatorId } from "@/data/types/AKCharacter";
-import type { VoiceActor, VoiceLine } from "@/data/types/AKVoice";
+import type { CharacterVoice, DialogueLine } from "@/data/types/AKVoice";
 
 declare const voiceTable: {
-  actorTable: Record<string, VoiceActor[]>;
-  voiceLineTable: Record<string, VoiceLine[]>;
+  cvTable: Record<string, CharacterVoice[]>;
+  dialogueTable: Record<string, DialogueLine[]>;
   opVoiceMap: Record<OperatorId, string[]>;
 };
 
