@@ -86,7 +86,6 @@ export function createEnemiesJSON() {
           text: addTooltipAndColor(text),
           textFormat,
         })),
-        isInvalidKilled: currEnemy.isInvalidKilled,
         immunities: getImmunities(id, baseStatVal.attributes),
         lifePointReduction: baseStatVal.lifePointReduce.m_value,
         weight: baseStatVal.attributes.massLevel.m_value,

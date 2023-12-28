@@ -10,7 +10,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -28,7 +27,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -46,7 +44,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -69,7 +66,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -92,7 +88,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -115,7 +110,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -138,7 +132,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -156,7 +149,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -174,7 +166,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -192,7 +183,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -210,7 +200,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -228,7 +217,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -246,7 +234,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -264,7 +251,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Arts",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -282,7 +268,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Arts",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -305,7 +290,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -328,7 +312,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -351,7 +334,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -374,7 +356,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -401,7 +382,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -428,7 +408,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -446,7 +425,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -464,7 +442,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -482,7 +459,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -500,7 +476,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -518,7 +493,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -536,7 +510,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -554,7 +527,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -572,7 +544,6 @@
     "type": "BOSS",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -590,7 +561,6 @@
     "type": "BOSS",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -608,7 +578,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -631,7 +600,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -649,7 +617,6 @@
     "type": "NORMAL",
     "attackPattern": "None",
     "abilityList": [{ "text": "Cannot be blocked.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -667,7 +634,6 @@
     "type": "NORMAL",
     "attackPattern": "None",
     "abilityList": [{ "text": "Flying unit.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -685,7 +651,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Physical",
     "abilityList": [{ "text": "Flying unit.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -703,7 +668,6 @@
     "type": "ELITE",
     "attackPattern": "Ranged Physical",
     "abilityList": [{ "text": "Flying unit.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -727,7 +691,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -750,7 +713,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -773,7 +735,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -796,7 +757,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -819,7 +779,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -842,7 +801,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -860,7 +818,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -878,7 +835,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -896,7 +852,6 @@
     "type": "ELITE",
     "attackPattern": "Ranged Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -914,7 +869,6 @@
     "type": "ELITE",
     "attackPattern": "Ranged Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -937,7 +891,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -960,7 +913,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -978,7 +930,6 @@
     "type": "BOSS",
     "attackPattern": "Ranged Arts",
     "abilityList": [{ "text": "Attacks two targets simultaneously.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 5,
@@ -1001,7 +952,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -1024,7 +974,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -1042,7 +991,6 @@
     "type": "NORMAL",
     "attackPattern": "None",
     "abilityList": [{ "text": "Cannot be blocked.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1060,7 +1008,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -1078,7 +1025,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -1096,7 +1042,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -1114,7 +1059,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -1132,7 +1076,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1150,7 +1093,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1168,7 +1110,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -1186,7 +1127,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -1204,7 +1144,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Arts",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1222,7 +1161,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Arts",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1240,7 +1178,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1258,7 +1195,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1276,7 +1212,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -1294,7 +1229,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -1312,7 +1246,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -1330,7 +1263,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -1348,7 +1280,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -1366,7 +1297,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -1389,7 +1319,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1407,7 +1336,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1425,7 +1353,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Arts",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -1443,7 +1370,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Arts",
     "abilityList": [{ "text": "Attacks two targets simultaneously.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -1461,7 +1387,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1479,7 +1404,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1507,7 +1431,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1535,7 +1458,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1553,7 +1475,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Arts",
     "abilityList": [{ "text": "Flying unit.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1571,7 +1492,6 @@
     "type": "ELITE",
     "attackPattern": "Ranged Arts",
     "abilityList": [{ "text": "Flying unit.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1595,7 +1515,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1613,7 +1532,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [{ "text": "Regenerates HP over time.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1631,7 +1549,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [{ "text": "Regenerates HP over time.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1649,7 +1566,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [{ "text": "Regenerates HP over time.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -1667,7 +1583,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [{ "text": "Regenerates HP over time.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -1690,7 +1605,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -1713,7 +1627,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -1731,7 +1644,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1749,7 +1661,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1772,7 +1683,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1795,7 +1705,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1813,7 +1722,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [{ "text": "Gains increased RES when blocked", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -1836,7 +1744,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -1859,7 +1766,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -1882,7 +1788,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -1900,7 +1805,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Arts",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1918,7 +1822,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Arts",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1936,7 +1839,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1954,7 +1856,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1972,7 +1873,6 @@
     "type": "NORMAL",
     "attackPattern": "None",
     "abilityList": [{ "text": "Cannot be blocked.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -1990,7 +1890,6 @@
     "type": "NORMAL",
     "attackPattern": "None",
     "abilityList": [{ "text": "Cannot be blocked.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -2008,7 +1907,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -2026,7 +1924,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -2044,7 +1941,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -2062,7 +1958,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -2080,7 +1975,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -2098,7 +1992,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -2122,7 +2015,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -2146,7 +2038,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -2169,7 +2060,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -2192,7 +2082,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -2215,7 +2104,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -2238,7 +2126,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -2265,7 +2152,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -2292,7 +2178,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -2310,7 +2195,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [{ "text": "Regenerates HP over time.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -2328,7 +2212,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [{ "text": "Regenerates HP over time.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -2346,7 +2229,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [{ "text": "Will gradually lose HP over time", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -2364,7 +2246,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [{ "text": "Will gradually lose HP over time", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -2382,7 +2263,6 @@
     "type": "ELITE",
     "attackPattern": "Ranged Physical",
     "abilityList": [{ "text": "Will gradually lose HP over time", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -2400,7 +2280,6 @@
     "type": "ELITE",
     "attackPattern": "Ranged Physical",
     "abilityList": [{ "text": "Will gradually lose HP over time", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -2423,7 +2302,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -2446,7 +2324,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -2469,7 +2346,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -2492,7 +2368,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -2515,7 +2390,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -2538,7 +2412,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -2561,7 +2434,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -2584,7 +2456,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -2607,7 +2478,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -2630,7 +2500,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -2653,7 +2522,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -2677,7 +2545,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -2695,7 +2562,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -2713,7 +2579,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -2736,7 +2601,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -2759,7 +2623,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -2782,7 +2645,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -2805,7 +2667,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -2828,7 +2689,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -2851,7 +2711,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -2874,7 +2733,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -2897,7 +2755,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -2920,7 +2777,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -2943,7 +2799,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -2961,7 +2816,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -2979,7 +2833,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -2997,7 +2850,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [{ "text": "When Inspired, gains Movement Speed.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -3015,7 +2867,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [{ "text": "When Inspired, gains Movement Speed.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -3038,7 +2889,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -3061,7 +2911,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -3084,7 +2933,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -3107,7 +2955,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -3130,7 +2977,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -3153,7 +2999,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -3176,7 +3021,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -3199,7 +3043,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -3226,7 +3069,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -3253,7 +3095,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -3276,7 +3117,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -3299,7 +3139,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -3322,7 +3161,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -3349,7 +3187,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -3376,7 +3213,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -3403,7 +3239,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -3421,7 +3256,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Arts",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -3439,7 +3273,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Arts",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -3457,7 +3290,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -3475,7 +3307,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -3498,7 +3329,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Frozen"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -3521,7 +3351,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Frozen"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -3545,7 +3374,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -3569,7 +3397,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -3592,7 +3419,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -3616,7 +3442,6 @@
       },
       { "text": "Attacks 2 targets simultaneously", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -3643,7 +3468,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -3670,7 +3494,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -3688,7 +3511,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 5,
@@ -3706,7 +3528,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 5,
@@ -3724,7 +3545,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [{ "text": "Gains DEF when blocked.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -3742,7 +3562,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [{ "text": "Gains DEF when blocked.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -3760,7 +3579,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -3778,7 +3596,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -3801,7 +3618,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -3824,7 +3640,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -3847,7 +3662,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -3870,7 +3684,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -3893,7 +3706,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -3916,7 +3728,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -3939,7 +3750,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -3962,7 +3772,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -3980,7 +3789,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -3998,7 +3806,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -4016,7 +3823,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -4034,7 +3840,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -4057,7 +3862,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -4080,7 +3884,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -4103,7 +3906,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -4121,7 +3923,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -4139,7 +3940,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -4162,7 +3962,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -4185,7 +3984,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -4208,7 +4006,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -4232,7 +4029,6 @@
       },
       { "text": "Rebirth", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -4256,7 +4052,6 @@
       },
       { "text": "Rebirth", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -4280,7 +4075,6 @@
       },
       { "text": "Rebirth", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -4308,7 +4102,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 0,
@@ -4336,7 +4129,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 1,
@@ -4364,7 +4156,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 0,
@@ -4387,7 +4178,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -4410,7 +4200,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -4428,7 +4217,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -4446,7 +4234,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -4469,7 +4256,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -4492,7 +4278,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -4510,7 +4295,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Arts",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -4528,7 +4312,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Arts",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -4555,7 +4338,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -4582,7 +4364,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -4600,7 +4381,6 @@
     "type": "ELITE",
     "attackPattern": "Ranged Physical",
     "abilityList": [{ "text": "Flying unit.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -4618,7 +4398,6 @@
     "type": "ELITE",
     "attackPattern": "Ranged Physical",
     "abilityList": [{ "text": "Flying unit.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -4641,7 +4420,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -4664,7 +4442,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -4688,7 +4465,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -4712,7 +4488,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -4739,7 +4514,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Sleep"],
     "lifePointReduction": 0,
     "weight": 5,
@@ -4766,7 +4540,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -4797,7 +4570,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": ["Sleep"],
     "lifePointReduction": 0,
     "weight": 6,
@@ -4824,7 +4596,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -4851,7 +4622,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -4882,7 +4652,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -4913,7 +4682,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -4940,7 +4708,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -4967,7 +4734,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -4994,7 +4760,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -5021,7 +4786,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -5052,7 +4816,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -5083,7 +4846,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -5114,7 +4876,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -5145,7 +4906,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -5163,7 +4923,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -5181,7 +4940,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -5199,7 +4957,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -5217,7 +4974,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -5240,7 +4996,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -5263,7 +5018,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -5286,7 +5040,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -5309,7 +5062,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -5336,7 +5088,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -5363,7 +5114,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -5386,7 +5136,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -5409,7 +5158,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -5432,7 +5180,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -5455,7 +5202,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -5478,7 +5224,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -5501,7 +5246,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -5524,7 +5268,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -5547,7 +5290,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -5570,7 +5312,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -5593,7 +5334,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -5616,7 +5356,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -5643,7 +5382,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -5670,7 +5408,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -5688,7 +5425,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Arts",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -5706,7 +5442,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Arts",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -5733,7 +5468,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -5760,7 +5494,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -5791,7 +5524,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -5822,7 +5554,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -5845,7 +5576,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -5878,7 +5608,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -5901,7 +5630,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Physical",
     "abilityList": [{ "text": "Unable to move", "textFormat": "NORMAL" }],
-    "isInvalidKilled": true,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 1,
@@ -5919,7 +5647,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Physical",
     "abilityList": [{ "text": "Unable to move", "textFormat": "NORMAL" }],
-    "isInvalidKilled": true,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 1,
@@ -5937,7 +5664,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -5955,7 +5681,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -5978,7 +5703,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -6001,7 +5725,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -6024,7 +5747,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -6047,7 +5769,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -6074,7 +5795,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -6101,7 +5821,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -6132,7 +5851,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -6163,7 +5881,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -6192,7 +5909,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -6221,7 +5937,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -6250,7 +5965,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -6279,7 +5993,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -6297,7 +6010,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -6315,7 +6027,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -6338,7 +6049,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -6361,7 +6071,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -6379,7 +6088,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -6397,7 +6105,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -6421,7 +6128,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -6445,7 +6151,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -6472,7 +6177,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -6499,7 +6203,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -6522,7 +6225,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -6545,7 +6247,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -6568,7 +6269,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -6591,7 +6291,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -6614,7 +6313,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -6641,7 +6339,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 0,
@@ -6676,7 +6373,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 4,
@@ -6711,7 +6407,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 6,
@@ -6734,7 +6429,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -6757,7 +6451,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -6780,7 +6473,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -6803,7 +6495,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -6830,7 +6521,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -6857,7 +6547,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -6880,7 +6569,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -6903,7 +6591,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -6930,7 +6617,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -6957,7 +6643,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -6984,7 +6669,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -7011,7 +6695,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -7034,7 +6717,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -7057,7 +6739,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -7080,7 +6761,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -7107,7 +6787,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": ["Stun", "Silence", "Frozen", "Levitate"],
     "lifePointReduction": 0,
     "weight": 4,
@@ -7130,7 +6809,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -7153,7 +6831,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -7176,7 +6853,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -7199,7 +6875,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -7222,7 +6897,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -7245,7 +6919,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -7268,7 +6941,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -7291,7 +6963,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -7318,7 +6989,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -7345,7 +7015,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -7368,7 +7037,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -7391,7 +7059,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -7414,7 +7081,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -7437,7 +7103,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -7464,7 +7129,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -7491,7 +7155,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -7518,7 +7181,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -7545,7 +7207,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -7576,7 +7237,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 5,
@@ -7607,7 +7267,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 5,
@@ -7634,7 +7293,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -7661,7 +7319,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -7684,7 +7341,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -7707,7 +7363,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -7730,7 +7385,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -7753,7 +7407,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -7776,7 +7429,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -7799,7 +7451,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -7822,7 +7473,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -7845,7 +7495,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -7872,7 +7521,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -7899,7 +7547,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -7926,7 +7573,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -7953,7 +7599,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -7980,7 +7625,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -8007,7 +7651,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -8034,7 +7677,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -8061,7 +7703,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -8088,7 +7729,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -8115,7 +7755,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -8142,7 +7781,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -8165,7 +7803,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -8188,7 +7825,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -8211,7 +7847,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -8234,7 +7869,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 0,
@@ -8257,7 +7891,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -8280,7 +7913,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -8304,7 +7936,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 0,
@@ -8328,7 +7959,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 0,
@@ -8346,7 +7976,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -8364,7 +7993,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -8387,7 +8015,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -8410,7 +8037,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -8434,7 +8060,6 @@
       },
       { "text": "Loses HP when shifted", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -8458,7 +8083,6 @@
       },
       { "text": "Loses HP when shifted", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -8486,7 +8110,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 2,
@@ -8514,7 +8137,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 2,
@@ -8541,7 +8163,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 4,
@@ -8568,7 +8189,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 4,
@@ -8596,7 +8216,6 @@
       },
       { "text": "Attacks lower the target's DEF", "textFormat": "SILENCE" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 5,
@@ -8624,7 +8243,6 @@
       },
       { "text": "Attacks lower the target's DEF", "textFormat": "SILENCE" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 5,
@@ -8647,7 +8265,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -8670,7 +8287,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -8691,7 +8307,6 @@
       { "text": "Cannot be blocked.", "textFormat": "NORMAL" },
       { "text": "Must be damaged 2 times to defeat", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -8712,7 +8327,6 @@
       { "text": "Cannot be blocked.", "textFormat": "NORMAL" },
       { "text": "Must be damaged 3 times to defeat", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -8735,7 +8349,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -8758,7 +8371,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -8779,7 +8391,6 @@
       { "text": "Cannot be blocked.", "textFormat": "NORMAL" },
       { "text": "Must be damaged 3 times to defeat", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -8800,7 +8411,6 @@
       { "text": "Cannot be blocked.", "textFormat": "NORMAL" },
       { "text": "Must be damaged 4 times to defeat", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -8827,7 +8437,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -8854,7 +8463,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -8875,7 +8483,6 @@
       { "text": "Cannot be blocked.", "textFormat": "NORMAL" },
       { "text": "Must be damaged 30 times to defeat", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -8896,7 +8503,6 @@
       { "text": "Cannot be blocked.", "textFormat": "NORMAL" },
       { "text": "Must be damaged 35 times to defeat", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -8919,7 +8525,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -8942,7 +8547,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -8963,7 +8567,6 @@
       { "text": "Cannot be blocked.", "textFormat": "NORMAL" },
       { "text": "Must be damaged 3 times to defeat", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -8984,7 +8587,6 @@
       { "text": "Cannot be blocked.", "textFormat": "NORMAL" },
       { "text": "Must be damaged 4 times to defeat", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -9011,7 +8613,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -9038,7 +8639,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -9062,7 +8662,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -9086,7 +8685,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -9113,7 +8711,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -9140,7 +8737,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -9164,7 +8760,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -9188,7 +8783,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -9215,7 +8809,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -9242,7 +8835,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -9263,7 +8855,6 @@
       { "text": "Cannot be blocked.", "textFormat": "NORMAL" },
       { "text": "Must be damaged 25 times to defeat", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -9284,7 +8875,6 @@
       { "text": "Cannot be blocked.", "textFormat": "NORMAL" },
       { "text": "Must be damaged 30 times to defeat", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -9311,7 +8901,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -9338,7 +8927,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -9359,7 +8947,6 @@
       { "text": "Cannot be blocked.", "textFormat": "NORMAL" },
       { "text": "Must be damaged 35 times to defeat", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -9380,7 +8967,6 @@
       { "text": "Cannot be blocked.", "textFormat": "NORMAL" },
       { "text": "Must be damaged 45 times to defeat", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -9409,7 +8995,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 0,
@@ -9427,7 +9012,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -9445,7 +9029,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -9468,7 +9051,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -9491,7 +9073,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -9514,7 +9095,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -9537,7 +9117,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -9564,7 +9143,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -9591,7 +9169,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -9618,7 +9195,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -9645,7 +9221,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -9672,7 +9247,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 5,
@@ -9699,7 +9273,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 5,
@@ -9726,7 +9299,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -9753,7 +9325,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -9780,7 +9351,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -9807,7 +9377,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -9834,7 +9403,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 0,
@@ -9861,7 +9429,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 0,
@@ -9888,7 +9455,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 3,
@@ -9915,7 +9481,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 3,
@@ -9938,7 +9503,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -9961,7 +9525,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -9988,7 +9551,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -10015,7 +9577,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -10038,7 +9599,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 4,
@@ -10061,7 +9621,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 4,
@@ -10088,7 +9647,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 3,
@@ -10115,7 +9673,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 3,
@@ -10142,7 +9699,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 4,
@@ -10169,7 +9725,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 4,
@@ -10197,7 +9752,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -10225,7 +9779,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -10248,7 +9801,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 0,
@@ -10271,7 +9823,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 0,
@@ -10294,7 +9845,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -10317,7 +9867,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -10341,7 +9890,6 @@
       },
       { "text": "Gains increased RES", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -10365,7 +9913,6 @@
       },
       { "text": "Gains increased RES", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -10396,7 +9943,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -10423,7 +9969,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -10450,7 +9995,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -10481,7 +10025,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -10508,7 +10051,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -10535,7 +10077,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -10566,7 +10107,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -10590,7 +10130,6 @@
       },
       { "text": "Attacks 3 enemies simultaneously", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -10614,7 +10153,6 @@
       },
       { "text": "Attacks 3 enemies simultaneously", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -10645,7 +10183,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -10672,7 +10209,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -10699,7 +10235,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -10730,7 +10265,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -10761,7 +10295,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -10792,7 +10325,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -10823,7 +10355,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -10846,7 +10377,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -10869,7 +10399,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -10892,7 +10421,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -10915,7 +10443,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -10942,7 +10469,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Sleep"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -10969,7 +10495,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Sleep"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -10993,7 +10518,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -11017,7 +10541,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -11040,7 +10563,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -11063,7 +10585,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -11086,7 +10607,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -11109,7 +10629,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -11132,7 +10651,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -11155,7 +10673,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -11173,7 +10690,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [{ "text": "Can appear in the battlefield", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -11191,7 +10707,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [{ "text": "Can appear in the battlefield", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -11216,7 +10731,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -11239,7 +10753,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -11262,7 +10775,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -11285,7 +10797,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -11313,7 +10824,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -11341,7 +10851,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -11369,7 +10878,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -11397,7 +10905,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -11425,7 +10932,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -11457,7 +10963,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -11489,7 +10994,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -11512,7 +11016,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": ["Sleep"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -11530,7 +11033,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": ["Sleep"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -11553,7 +11055,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Sleep", "Levitate"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -11576,7 +11077,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Sleep", "Levitate"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -11594,7 +11094,6 @@
     "type": "ELITE",
     "attackPattern": "Ranged Physical",
     "abilityList": [{ "text": "Attacks 4 enemies simultaneously", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Sleep", "Levitate"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -11612,7 +11111,6 @@
     "type": "ELITE",
     "attackPattern": "Ranged Physical",
     "abilityList": [{ "text": "Attacks 4 enemies simultaneously", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Sleep", "Levitate"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -11636,7 +11134,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 0,
     "weight": 5,
@@ -11659,7 +11156,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -11682,7 +11178,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -11705,7 +11200,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -11728,7 +11222,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -11746,7 +11239,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Arts",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -11764,7 +11256,6 @@
     "type": "NORMAL",
     "attackPattern": "Ranged Arts",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -11787,7 +11278,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -11810,7 +11300,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -11834,7 +11323,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -11858,7 +11346,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -11885,7 +11372,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -11912,7 +11398,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -11935,7 +11420,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -11958,7 +11442,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -11985,7 +11468,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -12008,7 +11490,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -12031,7 +11512,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -12054,7 +11534,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -12077,7 +11556,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -12101,7 +11579,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -12125,7 +11602,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -12148,7 +11624,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -12171,7 +11646,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -12198,7 +11672,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -12225,7 +11698,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -12250,7 +11722,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -12275,7 +11746,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -12299,7 +11769,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -12323,7 +11792,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -12346,7 +11814,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -12369,7 +11836,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -12396,7 +11862,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -12423,7 +11888,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -12447,7 +11911,6 @@
       },
       { "text": "Knocks down anything in its way", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 0,
     "weight": 6,
@@ -12470,7 +11933,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -12493,7 +11955,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -12516,7 +11977,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -12539,7 +11999,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -12563,7 +12022,6 @@
       },
       { "text": "Increases Blood Debt when defeated", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -12587,7 +12045,6 @@
       },
       { "text": "Increases Blood Debt when defeated", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -12611,7 +12068,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -12635,7 +12091,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -12658,7 +12113,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -12681,7 +12135,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -12704,7 +12157,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -12727,7 +12179,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -12754,7 +12205,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -12781,7 +12231,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -12809,7 +12258,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -12836,7 +12284,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -12859,7 +12306,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -12882,7 +12328,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -12905,7 +12350,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -12928,7 +12372,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 0,
@@ -12951,7 +12394,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 0,
@@ -12978,7 +12420,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 1,
@@ -13005,7 +12446,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 1,
@@ -13028,7 +12468,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 2,
@@ -13051,7 +12490,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 2,
@@ -13078,7 +12516,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 2,
@@ -13105,7 +12542,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 2,
@@ -13129,7 +12565,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 5,
@@ -13153,7 +12588,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 5,
@@ -13180,7 +12614,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 4,
@@ -13207,7 +12640,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 4,
@@ -13231,7 +12663,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 5,
@@ -13255,7 +12686,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 5,
@@ -13279,7 +12709,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 5,
@@ -13297,7 +12726,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -13315,7 +12743,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -13339,7 +12766,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -13363,7 +12789,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -13386,7 +12811,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -13409,7 +12833,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -13427,7 +12850,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -13445,7 +12867,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -13472,7 +12893,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -13499,7 +12919,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -13522,7 +12941,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -13545,7 +12963,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -13568,7 +12985,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -13591,7 +13007,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -13618,7 +13033,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -13645,7 +13059,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -13668,7 +13081,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -13691,7 +13103,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -13714,7 +13125,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -13737,7 +13147,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -13760,7 +13169,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -13783,7 +13191,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -13806,7 +13213,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -13829,7 +13235,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -13852,7 +13257,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -13875,7 +13279,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -13898,7 +13301,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -13921,7 +13323,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -13948,7 +13349,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -13975,7 +13375,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -14002,7 +13401,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -14029,7 +13427,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -14052,7 +13449,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -14075,7 +13471,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -14099,7 +13494,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 1,
@@ -14123,7 +13517,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 1,
@@ -14147,7 +13540,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -14171,7 +13563,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -14195,7 +13586,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -14219,7 +13609,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -14237,7 +13626,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [{ "text": "Spy", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -14255,7 +13643,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [{ "text": "Spy", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -14278,7 +13665,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -14301,7 +13687,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -14324,7 +13709,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -14347,7 +13731,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -14371,7 +13754,6 @@
       },
       { "text": "First attack deals Splash damage", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -14395,7 +13777,6 @@
       },
       { "text": "First attack deals Splash damage", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -14418,7 +13799,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -14441,7 +13821,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -14465,7 +13844,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -14489,7 +13867,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -14512,7 +13889,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence", "Levitate"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -14535,7 +13911,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence", "Levitate"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -14559,7 +13934,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 0,
     "weight": 5,
@@ -14577,7 +13951,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -14595,7 +13968,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -14622,7 +13994,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -14649,7 +14020,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -14672,7 +14042,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -14695,7 +14064,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -14718,7 +14086,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -14741,7 +14108,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -14764,7 +14130,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -14787,7 +14152,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -14814,7 +14178,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -14841,7 +14204,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -14868,7 +14230,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -14895,7 +14256,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -14926,7 +14286,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 5,
@@ -14957,7 +14316,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 5,
@@ -14988,7 +14346,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -15019,7 +14376,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -15042,7 +14398,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -15065,7 +14420,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -15093,7 +14447,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -15121,7 +14474,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -15146,7 +14498,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -15171,7 +14522,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -15199,7 +14549,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -15227,7 +14576,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -15251,7 +14599,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 6,
@@ -15275,7 +14622,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 6,
@@ -15300,7 +14646,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -15325,7 +14670,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -15350,7 +14694,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -15375,7 +14718,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -15399,7 +14741,6 @@
       },
       { "text": "Has a chance to miss ranged attacks", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 6,
@@ -15434,7 +14775,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -15458,7 +14798,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 3,
@@ -15476,7 +14815,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Frozen", "Levitate"],
     "lifePointReduction": 0,
     "weight": 4,
@@ -15503,7 +14841,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 2,
@@ -15526,7 +14863,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 2,
@@ -15553,7 +14889,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 3,
@@ -15580,7 +14915,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 2,
     "weight": 5,
@@ -15604,7 +14938,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -15635,7 +14968,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -15658,7 +14990,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -15681,7 +15012,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -15705,7 +15035,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -15730,7 +15059,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -15757,7 +15085,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -15781,7 +15108,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -15809,7 +15135,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 0,
     "weight": 6,
@@ -15827,7 +15152,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [{ "text": "Becomes a random enemy when blocked.", "textFormat": "NORMAL" }],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 1,
     "weight": 0,
@@ -15845,7 +15169,6 @@
     "type": "ELITE",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 3,
@@ -15868,7 +15191,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -15891,7 +15213,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -15919,7 +15240,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 0,
@@ -15947,7 +15267,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 0,
@@ -15975,7 +15294,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": true,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 0,
@@ -16006,7 +15324,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 4,
@@ -16033,7 +15350,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 2,
     "weight": 5,
@@ -16056,7 +15372,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 2,
     "weight": 1,
@@ -16088,7 +15403,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 2,
     "weight": 6,
@@ -16115,7 +15429,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 2,
     "weight": 5,
@@ -16146,7 +15459,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Frozen", "Levitate", "Sleep"],
     "lifePointReduction": 2,
     "weight": 5,
@@ -16173,7 +15485,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -16204,7 +15515,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Frozen", "Sleep"],
     "lifePointReduction": 2,
     "weight": 5,
@@ -16239,7 +15549,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Frozen", "Sleep"],
     "lifePointReduction": 1,
     "weight": 5,
@@ -16270,7 +15579,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Frozen", "Levitate", "Sleep"],
     "lifePointReduction": 2,
     "weight": 6,
@@ -16316,7 +15624,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence", "Sleep"],
     "lifePointReduction": 2,
     "weight": 7,
@@ -16348,7 +15655,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence", "Sleep"],
     "lifePointReduction": 2,
     "weight": 6,
@@ -16385,7 +15691,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 2,
     "weight": 6,
@@ -16416,7 +15721,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 2,
     "weight": 6,
@@ -16444,7 +15748,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 2,
     "weight": 6,
@@ -16481,7 +15784,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 2,
     "weight": 6,
@@ -16526,7 +15828,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 2,
     "weight": 6,
@@ -16569,7 +15870,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence", "Sleep"],
     "lifePointReduction": 2,
     "weight": 6,
@@ -16611,7 +15911,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 2,
     "weight": 10,
@@ -16658,7 +15957,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 2,
     "weight": 6,
@@ -16699,7 +15997,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 2,
     "weight": 6,
@@ -16738,7 +16035,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 1,
     "weight": 10,
@@ -16783,7 +16079,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 2,
     "weight": 7,
@@ -16824,7 +16119,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 2,
     "weight": 7,
@@ -16870,7 +16164,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen"],
     "lifePointReduction": 2,
     "weight": 7,
@@ -16923,7 +16216,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen"],
     "lifePointReduction": 2,
     "weight": 6,
@@ -16977,7 +16269,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 1,
     "weight": 9,
@@ -17023,7 +16314,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 2,
     "weight": 10,
@@ -17064,7 +16354,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence", "Sleep"],
     "lifePointReduction": 2,
     "weight": 8,
@@ -17095,7 +16384,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 3,
     "weight": 5,
@@ -17143,7 +16431,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 2,
     "weight": 10,
@@ -17190,7 +16477,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 2,
     "weight": 10,
@@ -17244,7 +16530,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 2,
     "weight": 6,
@@ -17291,7 +16576,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence", "Sleep", "Levitate"],
     "lifePointReduction": 2,
     "weight": 10,
@@ -17337,7 +16621,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 3,
     "weight": 5,
@@ -17383,7 +16666,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 2,
     "weight": 7,
@@ -17432,7 +16714,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 2,
     "weight": 7,
@@ -17498,7 +16779,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 2,
     "weight": 3,
@@ -17529,7 +16809,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence", "Sleep"],
     "lifePointReduction": 2,
     "weight": 3,
@@ -17547,7 +16826,6 @@
     "type": "BOSS",
     "attackPattern": "Ranged Arts",
     "abilityList": [],
-    "isInvalidKilled": true,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 0,
@@ -17565,7 +16843,6 @@
     "type": "BOSS",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 0,
@@ -17619,7 +16896,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 2,
     "weight": 3,
@@ -17672,7 +16948,6 @@
         "textFormat": "SILENCE"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 2,
     "weight": 10,
@@ -17721,7 +16996,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 0,
     "weight": 6,
@@ -17744,7 +17018,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 2,
     "weight": 4,
@@ -17767,7 +17040,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 5,
     "weight": 3,
@@ -17790,7 +17062,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 5,
     "weight": 3,
@@ -17817,7 +17088,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence", "Sleep"],
     "lifePointReduction": 30,
     "weight": 5,
@@ -17848,7 +17118,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Frozen", "Levitate", "Sleep"],
     "lifePointReduction": 30,
     "weight": 5,
@@ -17875,7 +17144,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 30,
     "weight": 6,
@@ -17898,7 +17166,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 5,
     "weight": 4,
@@ -17925,7 +17192,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 3,
     "weight": 4,
@@ -17952,7 +17218,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 3,
     "weight": 4,
@@ -17979,7 +17244,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen"],
     "lifePointReduction": 30,
     "weight": 6,
@@ -18015,7 +17279,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 1,
     "weight": 10,
@@ -18047,7 +17310,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 30,
     "weight": 7,
@@ -18082,7 +17344,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen"],
     "lifePointReduction": 30,
     "weight": 7,
@@ -18109,7 +17370,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 5,
     "weight": 4,
@@ -18137,7 +17397,6 @@
       },
       { "text": "Has higher HP and ATK", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 5,
     "weight": 4,
@@ -18160,7 +17419,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 5,
     "weight": 3,
@@ -18187,7 +17445,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 5,
     "weight": 1,
@@ -18218,7 +17475,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 5,
     "weight": 1,
@@ -18245,7 +17501,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 5,
     "weight": 4,
@@ -18273,7 +17528,6 @@
       },
       { "text": "Has lower ASPD, but higher HP", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 5,
     "weight": 4,
@@ -18310,7 +17564,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence", "Levitate"],
     "lifePointReduction": 30,
     "weight": 6,
@@ -18344,7 +17597,6 @@
       { "text": "Charging Form", "textFormat": "TITLE" },
       { "text": "Cannot be blocked.", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 30,
     "weight": 5,
@@ -18381,7 +17633,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 30,
     "weight": 6,
@@ -18415,7 +17666,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 30,
     "weight": 6,
@@ -18442,7 +17692,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 0,
     "weight": 5,
@@ -18466,7 +17715,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -18497,7 +17745,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -18524,7 +17771,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 2,
@@ -18555,7 +17801,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence", "Sleep"],
     "lifePointReduction": 3,
     "weight": 6,
@@ -18586,7 +17831,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Frozen"],
     "lifePointReduction": 3,
     "weight": 6,
@@ -18610,7 +17854,6 @@
       },
       { "text": "Gradually loses HP", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 0,
     "weight": 6,
@@ -18637,7 +17880,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Levitate"],
     "lifePointReduction": 3,
     "weight": 6,
@@ -18655,7 +17897,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 1,
@@ -18686,7 +17927,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 3,
     "weight": 8,
@@ -18713,7 +17953,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence", "Sleep", "Levitate"],
     "lifePointReduction": 3,
     "weight": 8,
@@ -18744,7 +17983,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence", "Levitate"],
     "lifePointReduction": 3,
     "weight": 4,
@@ -18762,7 +18000,6 @@
     "type": "NORMAL",
     "attackPattern": "Melee Physical",
     "abilityList": [],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 0,
@@ -18793,7 +18030,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 2,
     "weight": 4,
@@ -18821,7 +18057,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Levitate"],
     "lifePointReduction": 2,
     "weight": 2,
@@ -18844,7 +18079,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -18867,7 +18101,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 2,
@@ -18890,7 +18123,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -18913,7 +18145,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 4,
@@ -18936,7 +18167,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -18959,7 +18189,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 1,
     "weight": 3,
@@ -18982,7 +18211,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -19005,7 +18233,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 1,
@@ -19029,7 +18256,6 @@
       },
       { "text": "Gradually restores HP over time", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 3,
@@ -19053,7 +18279,6 @@
       },
       { "text": "Gradually restores HP over time", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 3,
@@ -19076,7 +18301,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 0,
@@ -19099,7 +18323,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 0,
@@ -19122,7 +18345,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 3,
@@ -19146,7 +18368,6 @@
       },
       { "text": "Moves through different areas", "textFormat": "NORMAL" }
     ],
-    "isInvalidKilled": false,
     "immunities": [],
     "lifePointReduction": 0,
     "weight": 2,
@@ -19173,7 +18394,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 6,
@@ -19204,7 +18424,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 0,
     "weight": 6,
@@ -19227,7 +18446,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence"],
     "lifePointReduction": 1,
     "weight": 1,
@@ -19256,7 +18474,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Silence", "Sleep"],
     "lifePointReduction": 30,
     "weight": 6,
@@ -19286,7 +18503,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 30,
     "weight": 6,
@@ -19327,7 +18543,6 @@
         "textFormat": "NORMAL"
       }
     ],
-    "isInvalidKilled": false,
     "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
     "lifePointReduction": 30,
     "weight": 6,

@@ -66,19 +66,6 @@ export function generateOperatorConstants() {
   };
 }
 
-/** @description Generate constants from `skill_table.json`. */
-function generateSkillConstants() {
-  const SkillIds: string[] = [];
-  const SkillIconIds = new Set<string>();
-
-  Object.values(SkillTable).forEach(({ skillId, iconId }) => {
-    SkillIds.push(skillId);
-    if (iconId) SkillIconIds.add(iconId);
-  });
-
-  return { SkillIds, SkillIconIds: [...SkillIconIds] };
-}
-
 /** @description Generate constants from `enemy_handbook_table.json` */
 function generateEnemyConstants() {
   const EnemyIds: string[] = [];
@@ -138,12 +125,13 @@ function generateMiscConstants() {
   ) as Record<string, RawCharacter>;
 
   return {
+    TokenIds: Object.keys(TokenTable),
+    RangeIds: Object.keys(RangeTable),
+    SkillIds: Object.keys(SkillTable),
     BrandIds: Object.keys(SkinTable.brandList),
     SkinIds: Object.values(SkinTable.charSkins)
       .map(({ portraitId }) => portraitId)
       .filter((id) => id !== null),
-    RangeIds: Object.keys(RangeTable),
-    TokenIds: Object.keys(TokenTable),
     ItemIds: Object.keys(ItemTable.items),
   };
 }
@@ -191,7 +179,6 @@ export function generateGameDataConstants() {
 export function createConstantTypesFile() {
   const exportedFile = Object.entries({
     ...generateOperatorConstants(),
-    ...generateSkillConstants(),
     ...generateEnemyConstants(),
     ...generateMiscConstants(),
   })

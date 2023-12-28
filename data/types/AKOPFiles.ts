@@ -12,15 +12,15 @@ export interface OpFile {
 
 /** @description An entry of Operator Records. */
 export interface OpRecord {
-  name: string;
-  description: string[];
+  title: string;
+  text: string[];
   unlockCond: UnlockCondition;
   trustUnlock: number;
 }
 
 /** @description An entry of Operator Paradox Simulators. */
 export interface OpParadox {
-  name: string;
+  title: string;
   text: string;
   unlockCond: UnlockCondition;
 }

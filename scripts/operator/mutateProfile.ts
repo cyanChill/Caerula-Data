@@ -43,9 +43,9 @@ function getFilesAndRecords() {
         records[id] = handbookAvgList.map(
           ({ storySetName, avgList, unlockParam }) =>
             ({
-              name: storySetName,
+              title: storySetName,
               // We'll apply the italics styles in our rendered JSX code.
-              description: avgList.map((val) => cleanString(val.storyIntro)),
+              text: avgList.map((val) => cleanString(val.storyIntro)),
               unlockCond: {
                 elite: +unlockParam[0].unlockParam1,
                 level: +`${unlockParam[0].unlockParam2}`,
@@ -73,7 +73,7 @@ function getParadoxSimulations() {
   Object.entries(HandBookTable.handbookStageData).forEach(
     ([id, { name, description, unlockParam }]) => {
       paradoxes[id] = {
-        name,
+        title: name,
         text: DOMPurify.sanitize(description),
         unlockCond: {
           elite: +unlockParam[0].unlockParam1,

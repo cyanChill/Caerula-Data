@@ -2,7 +2,7 @@ import type { OperatorIds, RoleTags, TokenIds } from "./typesFrom";
 import type { CharacterBase, CharacterStat, UnlockCondition } from "./shared";
 
 import type { Affilations } from "./AKAffiliation";
-import type { Profession, SubClass } from "./AKClass";
+import type { BranchId, ProfessionId } from "./AKClass";
 import type { ItemCount } from "./AKItem";
 import type { SkillId } from "./AKSkill";
 
@@ -28,8 +28,8 @@ export type SkillCost = {
 export interface Operator extends CharacterBase {
   id: OperatorId;
   potentials: string[];
-  profession: Profession;
-  branch: SubClass<Profession>;
+  profession: ProfessionId;
+  branch: BranchId;
   skills: OpSkill[];
   skillLevel: SkillCost[];
   trustBonus: CharacterStat; // Max trust is achieved at 100% (Trust is from 0-200%)
@@ -49,7 +49,7 @@ export type TokenClassification =
 
 export interface Token extends CharacterBase {
   id: TokenId;
-  iconId: TokenId; // Will be different from `id` on `'Thunderer' (Advanced)`
+  iconId: string; // Will be different from `id` on `'Thunderer' (Advanced)`
   trait: string;
   skillIds: (SkillId | null)[];
   type: TokenClassification;

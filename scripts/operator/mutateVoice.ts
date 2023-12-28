@@ -10,7 +10,7 @@ import { niceJSON } from "@/lib/format";
 import { replaceUnicode } from "@/utils/textFormat";
 
 function getVoiceLines() {
-  const skinVoiceLines: Record<string, DialogueLine[]> = {};
+  const dialogues: Record<string, DialogueLine[]> = {};
   const opVoiceMap: Record<string, Set<string>> = {};
 
   const operatorIds = Object.keys(OperatorTable);
@@ -38,25 +38,24 @@ function getVoiceLines() {
       vLine.wordKey === "char_1001_amiya2" ? "char_1001_amiya2" : vLine.charId;
 
     // Group voice lines together.
-    if (Object.hasOwn(skinVoiceLines, vLineKey))
-      skinVoiceLines[vLineKey].push(newVLine);
-    else skinVoiceLines[vLineKey] = [newVLine];
+    if (Object.hasOwn(dialogues, vLineKey)) dialogues[vLineKey].push(newVLine);
+    else dialogues[vLineKey] = [newVLine];
 
     // Map voice line set to operator.
     opVoiceMap[opId].add(vLineKey);
   });
 
   // Make sure voice lines are in order for each voice line set.
-  Object.entries(skinVoiceLines).forEach(([id, value]) => {
-    skinVoiceLines[id] = value.sort((a, b) => a.sortId - b.sortId);
+  Object.entries(dialogues).forEach(([id, value]) => {
+    dialogues[id] = value.sort((a, b) => a.sortId - b.sortId);
   });
 
   console.log(
-    `  - 📢 Found ${Object.keys(skinVoiceLines).length} Voice Lines entries.`
+    `  - 📢 Found ${Object.keys(dialogues).length} Voice Lines entries.`
   );
 
   return {
-    dialogueTable: skinVoiceLines,
+    dialogueTable: dialogues,
     opVoiceMap: Object.fromEntries(
       Object.entries(opVoiceMap).map(([id, val]) => [id, [...val]])
     ),
@@ -64,13 +63,13 @@ function getVoiceLines() {
 }
 
 function getVoiceActors() {
-  const opVoiceActors: Record<string, CharacterVoice[]> = {};
+  const cvs: Record<string, CharacterVoice[]> = {};
   /* Group voice actors by a "voice id". */
   Object.entries(CharwordTable.voiceLangDict).forEach(([id, { dict }]) => {
     /* Don't add entry for duplicate Shalem entry from IS2. */
     if (id === "char_512_aprot") return;
 
-    opVoiceActors[id] = Object.values(dict)
+    cvs[id] = Object.values(dict)
       .map(({ cvName, voiceLangType }) => ({
         langId: voiceLangType,
         actors: cvName.map((name) => replaceUnicode(name)),
@@ -79,12 +78,10 @@ function getVoiceActors() {
   });
 
   console.log(
-    `  - 🧑 Found ${
-      Object.keys(opVoiceActors).length
-    } Operator Voice Actors entries.`
+    `  - 🧑 Found ${Object.keys(cvs).length} Operator Voice Actors entries.`
   );
 
-  return { cvTable: opVoiceActors };
+  return { cvTable: cvs };
 }
 
 export function generateVoiceData() {

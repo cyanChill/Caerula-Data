@@ -48,7 +48,6 @@ export interface Enemy {
   type: EnemyTier;
   attackPattern: AttackPattern;
   abilityList: EnemyAbility[];
-  isInvalidKilled: boolean; // Doesn't count to number of enemies defeated.
   immunities: StatusEffect[];
   lifePointReduction: number; // lifePointReduce
   weight: number; // massLevel
