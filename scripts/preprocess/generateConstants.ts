@@ -141,8 +141,8 @@ function generateMiscConstants() {
  *  template injections.
  */
 type TermDescription = {
-  termId: string;
-  termName: string;
+  id: string;
+  name: string;
   description: string;
   slug: string;
 };
@@ -158,7 +158,8 @@ export function generateGameDataConstants() {
   const mutatedTermDescription: Record<string, TermDescription> = {};
   Object.entries(gameData_const.termDescriptionDict).forEach(([key, value]) => {
     mutatedTermDescription[key] = {
-      ...value,
+      id: value.termId,
+      name: value.termName,
       // Ignore nested tooltips
       description: value.description
         .replace(/<@([^>/]*)>(.+?)<\/>/g, (_, _p1, p2: string) => p2)
