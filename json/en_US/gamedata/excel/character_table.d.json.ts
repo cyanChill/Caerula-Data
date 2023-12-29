@@ -1,4 +1,4 @@
-import type { RawCharacter } from "@/types/rawCharacterType";
+import type { RawCharacter } from "@/types/rawCharacter";
 
 declare const character_table: Record<string, RawCharacter>;
 

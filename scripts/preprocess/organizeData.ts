@@ -1,17 +1,14 @@
 import fs from "fs";
 import path from "path";
 
+import type { RawCharacter } from "@/types/rawCharacter";
+
 import amiyaForm from "@/json/en_US/gamedata/excel/char_patch_table.json";
 import _CharTable from "@/json/en_US/gamedata/excel/character_table.json";
-import type { RawCharacter } from "@/types/rawCharacterType";
 
-import { niceJSON } from "@/lib/utils";
+import { niceJSON } from "@/lib/format";
 
-// FIXME: Temporary workaround due data not being updated
-const AmiyaGuard = amiyaForm.patchChars as unknown as Record<
-  string,
-  RawCharacter
->;
+const AmiyaGuard = amiyaForm.patchChars as Record<string, RawCharacter>;
 const CharTable = { ..._CharTable, ...AmiyaGuard };
 
 /**
@@ -23,51 +20,41 @@ export function organizeCharacterTable() {
   const tokens: Record<string, RawCharacter> = {};
   const devices: Record<string, RawCharacter> = {};
 
-  Object.entries(CharTable).forEach(([key, value]) => {
+  Object.entries(CharTable).forEach(([id, value]) => {
     /* Don't add the duplicate Shalem entry from IS2 */
-    if (key === "char_512_aprot") return;
-
-    /* Character is a token */
-    if (value.profession === "TOKEN") {
-      tokens[key] = value;
-
-      // Special Case w/ Ling's 3rd Summon as it has an "Advanced Form"
-      if (key === "token_10020_ling_soul3") {
-        tokens.token_10020_ling_soul3a = {
-          ...value,
-          appellation: "Advanced",
-          phases: value.phases.map((phase) => ({
-            ...phase,
-            // Update stats for "advanced" form
-            attributesKeyFrames: phase.attributesKeyFrames.map(
-              ({ level, data }) => ({
-                level,
-                data: {
-                  ...data,
-                  maxHp: data.maxHp * 2,
-                  atk: Math.round(data.atk * 1.8),
-                  def: Math.round(data.def * 1.8),
-                  magicResistance: data.magicResistance * 2,
-                  blockCnt: 4,
-                  baseAttackTime: data.baseAttackTime + 0.8,
-                },
-              })
-            ),
-          })),
-        };
-      }
-
-      return;
-    }
-
+    if (id === "char_512_aprot") return;
     /* Character is a device */
-    if (value.profession === "TRAP") {
-      devices[key] = value;
-      return;
-    }
-
+    if (value.profession === "TRAP") return (devices[id] = value);
     /* Character is an operator */
-    operators[key] = value;
+    if (value.profession !== "TOKEN") return (operators[id] = value);
+    /* Character is a token */
+    tokens[id] = value;
+
+    // Special Case w/ Ling's 3rd Summon as it has an "Advanced Form"
+    if (id === "token_10020_ling_soul3") {
+      tokens.token_10020_ling_soul3a = {
+        ...value,
+        appellation: "Advanced",
+        phases: value.phases.map((phase) => ({
+          ...phase,
+          // Update stats for "advanced" form
+          attributesKeyFrames: phase.attributesKeyFrames.map(
+            ({ level, data }) => ({
+              level,
+              data: {
+                ...data,
+                maxHp: data.maxHp * 2,
+                atk: Math.round(data.atk * 1.8),
+                def: Math.round(data.def * 1.8),
+                magicResistance: data.magicResistance * 2,
+                blockCnt: 4,
+                baseAttackTime: data.baseAttackTime + 0.8,
+              },
+            })
+          ),
+        })),
+      };
+    }
   });
 
   fs.writeFileSync(

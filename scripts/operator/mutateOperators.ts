@@ -1,180 +1,98 @@
 import fs from "fs";
 import path from "path";
 
-import type {
-  OpTalent,
-  Operator,
-  OperatorId,
-  RawStatAtLevel,
-  StatAtLevel,
-} from "@/data/types/AKOperator";
-import type { SkillId } from "@/data/types/AKSkill";
-import type { Token, TokenId } from "@/data/types/AKToken";
-import enOperatorList from "@/json/preprocessed/operator_table.json";
-import enTokenList from "@/json/preprocessed/tokens_table.json";
-import AmiyaGuardData from "@/json/preprocessed/amiya_guard_polyfill.json";
+import type { MaterialCount } from "@/types/JSONField";
+import type { RawCharacter, RawCharacterStat } from "@/types/rawCharacter";
 
-import { TokenMappings, TrapperSpec } from "@/lib/constants";
-import {
-  generateSlug,
-  getMaterialCost,
-  getOpSpecial,
-  getPhase,
-  getRarity,
-} from "@/lib/conversion";
-import { injectTooltipsColors, niceJSON, replaceUnicode } from "@/lib/utils";
+import type { Operator, Token, TokenId } from "@/data/types/AKCharacter";
+import type { CharacterBase } from "@/data/types/shared";
+import OperatorTable from "@/json/preprocessed/operator_table.json";
+import TokenTable from "@/json/preprocessed/tokens_table.json";
 
-/** @description Generate a different name for special cases. */
-function getDisplayName(
-  id: OperatorId | TokenId,
-  name: string,
-  appellation: string
-) {
-  if (id === "char_1001_amiya2") return "Amiya (Guard)";
-  else if (appellation !== " ") return `${name} (${appellation})`;
-  return name;
-}
+import { niceJSON } from "@/lib/format";
+import { getPhase, getRarity, generateSlug } from "@/utils/conversion";
+import { addTooltipAndColor, cleanString } from "@/utils/textFormat";
 
-/** @description Keep only the stat properties that I want from the raw data. */
-function keepNecessaryStats(rawStat: RawStatAtLevel): StatAtLevel {
-  return {
-    level: rawStat.level,
-    data: {
-      hp: rawStat.data.maxHp,
-      atk: rawStat.data.atk,
-      def: rawStat.data.def,
-      res: rawStat.data.magicResistance,
-      cost: rawStat.data.cost,
-      blockCnt: rawStat.data.blockCnt,
-      atkInterval: rawStat.data.baseAttackTime,
-      respawnTime: rawStat.data.respawnTime,
-    },
-  };
-}
+/**
+ * @description Object containing relations between tokens & operators that can
+ *  be read when we're processing our token data.
+ */
+export const TokenMap: Record<string, { id: string; branch: string } | null> =
+  {};
 
 /** @description Create a table of objects representing operators. */
 function createOperatorsJSON() {
-  const operators = {} as Record<OperatorId, Operator>;
+  const operators: Record<string, Operator> = {};
   const errors: string[] = [];
 
-  Object.values(enOperatorList).forEach((currOp) => {
-    const opId = currOp.phases[0].characterPrefabKey;
-
-    /* Use polyfill for `Amiya (Guard)` since data hasn't updated. */
-    if (opId === "char_1001_amiya2") {
-      operators[opId] = AmiyaGuardData;
-      return;
-    }
-
+  Object.entries(OperatorTable).forEach(([id, currOp]) => {
     try {
       const newOperator = {
-        id: opId,
-        name: currOp.name,
-        displayName: getDisplayName(opId, currOp.name, currOp.appellation),
-        rarity: getRarity(currOp.rarity),
+        id,
+        ...getCharacterBase(id, currOp),
         potentials: currOp.potentialRanks.map((pot) => pot.description),
         profession: currOp.profession,
         branch: currOp.subProfessionId,
-        range: currOp.phases.map((phase) => phase.rangeId),
-        tokensUsed: null,
-        elite: [],
-        skills: [],
-        talents: [],
-        trustBonus: keepNecessaryStats(currOp.favorKeyFrames[1]),
-        skillLevel: [],
-        nationId: currOp.nationId,
-        factionId: currOp.groupId,
-        teamId: currOp.teamId,
-        position: currOp.position,
+        skills: currOp.skills.map(
+          ({ skillId, overrideTokenKey, unlockCond, levelUpCostCond }) => ({
+            id: skillId,
+            tokenUsed: overrideTokenKey,
+            unlockCond: {
+              elite: getPhase(unlockCond.phase),
+              level: unlockCond.level,
+            },
+            masteryCost: levelUpCostCond.map(({ lvlUpTime, levelUpCost }) => ({
+              upgradeTime: lvlUpTime,
+              ingredients: getMaterialCost(levelUpCost ?? []),
+            })),
+          })
+        ),
+        skillLevel: currOp.allSkillLvlup.map((cost, idx) => ({
+          level: (idx + 2) as 2 | 3 | 4 | 5 | 6 | 7,
+          cost: getMaterialCost(cost.lvlUpCost ?? []),
+        })),
+        trustBonus: keepNecessaryStats(currOp.favorKeyFrames![1]),
+        affiliation: {
+          nation: currOp.nationId,
+          faction: currOp.groupId,
+          team: currOp.teamId,
+        },
         tags: currOp.tagList,
-        type: getOpSpecial(opId),
-        slug: generateSlug(opId, currOp.name),
+        type: classifyOperator(id),
+        tokensUsed: null,
       } as Operator;
 
-      // Add Elite Costs
-      newOperator.elite = currOp.phases.map(
-        ({ maxLevel, evolveCost, attributesKeyFrames }) => ({
-          maxLevel: maxLevel,
-          stats: attributesKeyFrames.map((attr) => keepNecessaryStats(attr)),
-          evolveCost: evolveCost ? getMaterialCost(evolveCost) : null,
-        })
-      );
-
-      // Add Skills & Tokens used
-      const usedTokens = currOp.tokenKey ? [currOp.tokenKey] : []; // Start w/ default token
-      const tmEntry = { id: opId, branch: newOperator.branch }; // Token Map Entry
-      if (currOp.tokenKey) TokenMappings[currOp.tokenKey] = tmEntry;
-
-      newOperator.skills = currOp.skills.map((skill) => {
-        if (skill.overrideTokenKey) {
-          usedTokens.push(skill.overrideTokenKey);
-          TokenMappings[skill.overrideTokenKey] = tmEntry;
-        }
-
-        return {
-          skillId: skill.skillId,
-          tokenUsed: skill.overrideTokenKey,
-          unlockedAt: getPhase(skill.unlockCond.phase),
-          masteryCost: skill.levelUpCostCond.map(
-            ({ lvlUpTime, levelUpCost }) => ({
-              upgradeTime: lvlUpTime,
-              ingredients: levelUpCost ? getMaterialCost(levelUpCost) : [], // Potentially `null` w/ IS Reserve Ops
-            })
-          ),
-        };
+      /* Get the tokens associated with an operator. */
+      const usedTokens = new Set(Object.keys(currOp.displayTokenDict ?? {}));
+      // Get tokens that are automatically deployed.
+      currOp.skills.forEach(({ overrideTokenKey }) => {
+        if (overrideTokenKey) usedTokens.add(overrideTokenKey);
       });
-
       // Special case w/ Ling ("Advanced" version of 3rd token)
-      if (opId === "char_2023_ling") usedTokens.push("token_10020_ling_soul3a");
-      if (usedTokens.length > 0) newOperator.tokensUsed = usedTokens;
+      if (id === "char_2023_ling") usedTokens.add("token_10020_ling_soul3a");
 
-      // Add Talents ("talents" potentially `null` w/ IS Reserve Ops)
-      newOperator.talents = currOp.talents
-        ? currOp.talents.map(
-            ({ candidates }) =>
-              ({
-                name: candidates[0].name,
-                variants: candidates.map((tal) => {
-                  let talentDesc = replaceUnicode(tal.description);
+      if (usedTokens.size > 0) {
+        newOperator.tokensUsed = [...usedTokens] as TokenId[];
+        // Create mappings from tokens to their operators
+        usedTokens.forEach(
+          (tokKey) => (TokenMap[tokKey] = { id, branch: newOperator.branch })
+        );
+      }
 
-                  /* Fix broken talent descriptions */
-                  if (["char_290_vigna"].includes(opId)) {
-                    talentDesc = talentDesc.replace(")", ")</>");
-                  }
-
-                  return {
-                    // Incase the talent name changes (ie: Amiya's 1st talent changes name)
-                    ...(candidates[0].name !== tal.name
-                      ? { nameOverride: tal.name }
-                      : {}),
-                    elite: getPhase(tal.unlockCondition.phase),
-                    level: tal.unlockCondition.level,
-                    potential: tal.requiredPotentialRank + 1,
-                    description: injectTooltipsColors(talentDesc),
-                  };
-                }),
-              }) as OpTalent
-          )
-        : [];
-
-      // Add Skill Levels Upgrade Cost
-      newOperator.skillLevel = currOp.allSkillLvlup.map((cost, idx) => ({
-        level: (idx + 2) as 2 | 3 | 4 | 5 | 6 | 7,
-        // "levelUpCost" potentially `null` w/ IS Reserve Ops
-        cost: cost.lvlUpCost ? getMaterialCost(cost.lvlUpCost) : [],
-      }));
-
-      operators[opId] = newOperator;
+      operators[id] = newOperator;
     } catch {
-      errors.push(opId);
+      errors.push(id);
     }
   });
 
   fs.writeFileSync(
-    path.resolve("./data/operator/operators.json"),
+    path.resolve("./data/operator/operatorTable.json"),
     niceJSON(operators)
   );
-  fs.writeFileSync(path.resolve("./errors/operators.json"), niceJSON(errors));
+  fs.writeFileSync(
+    path.resolve("./errors/operatorTable.json"),
+    niceJSON(errors)
+  );
 
   console.log("[🧑 Opeartors 🧑]");
   console.log(`  - Created ${Object.keys(operators).length} entries.`);
@@ -183,64 +101,31 @@ function createOperatorsJSON() {
 
 /** @description Creates a table for all the tokens used by operators. */
 function createTokenJSON() {
-  const tokens = {} as Record<TokenId, Token>;
+  const tokens: Record<string, Token> = {};
   const errors: string[] = [];
 
-  Object.keys(enTokenList).forEach((id) => {
-    const tokenId = id as TokenId;
-    const currTok = enTokenList[tokenId];
-
+  Object.entries(TokenTable).forEach(([id, currTok]) => {
     try {
-      const tokenOwner = TokenMappings[tokenId];
+      const tokenOwner = TokenMap[id];
 
       const newToken = {
-        id: tokenId,
+        id,
         iconId:
-          tokenId === "token_10020_ling_soul3a"
-            ? "token_10020_ling_soul3"
-            : tokenId,
-        name: currTok.name,
-        displayName: getDisplayName(tokenId, currTok.name, currTok.appellation),
-        description: injectTooltipsColors(currTok.description),
-        position: currTok.position, // Includes "ALL"
-        range: currTok.phases[0].rangeId,
-        stats: [],
+          id === "token_10020_ling_soul3a" ? "token_10020_ling_soul3" : id,
+        ...getCharacterBase(id, currTok as RawCharacter),
+        trait: addTooltipAndColor(currTok.description),
         skillIds: currTok.skills.map((obj) => obj.skillId),
         type: "summon",
         usedBy: tokenOwner?.id,
-        slug: generateSlug(tokenId, currTok.name),
       } as Token;
 
-      // Add Elite Costs
-      newToken.stats = currTok.phases.map(
-        ({ maxLevel, attributesKeyFrames }) => ({
-          maxLevel: maxLevel,
-          stats: attributesKeyFrames.map((attr) => keepNecessaryStats(attr)),
-        })
-      );
+      /** @description Special cases where operator has traps. */
+      const TrapperSpec = new Set<string>([
+        "char_113_cqbw",
+        "char_4046_ebnhlz",
+      ]);
 
-      // Cleaning up "skillIds"
-      const tokSkillIds = newToken.skillIds;
-      if (tokSkillIds[0] !== null && tokSkillIds.length > 1) {
-        const skillId1 = tokSkillIds[0];
-        // If all spots in the skillId array is the same.
-        if (tokSkillIds.join("") === skillId1.repeat(tokSkillIds.length)) {
-          // Triple Repeats Case
-          if (tokSkillIds.length === 3) {
-            const newSkillIdArr = new Array<SkillId | null>(3).fill(null);
-            // Last character should be a number from 1 to 3
-            newSkillIdArr[+skillId1.slice(-1) - 1] = skillId1;
-            newToken.skillIds = newSkillIdArr;
-          } else {
-            // Double Repeat Cases
-            newToken.skillIds =
-              tokenId === "token_10000_silent_healrb"
-                ? [null, skillId1]
-                : [skillId1, null];
-          }
-        }
-      }
-
+      /* Specify what type of token this is. */
       if (tokenOwner?.branch === "tactician") {
         newToken.type = "reinforcement";
       } else if (tokenOwner?.branch === "craftsman") {
@@ -254,14 +139,17 @@ function createTokenJSON() {
         newToken.type = "other"; // If token isn't owned by anyone
       }
 
-      tokens[tokenId] = newToken;
+      tokens[id] = newToken;
     } catch {
-      errors.push(tokenId);
+      errors.push(id);
     }
   });
 
-  fs.writeFileSync(path.resolve("./data/token/tokens.json"), niceJSON(tokens));
-  fs.writeFileSync(path.resolve("./errors/tokens.json"), niceJSON(errors));
+  fs.writeFileSync(
+    path.resolve("./data/token/tokenTable.json"),
+    niceJSON(tokens)
+  );
+  fs.writeFileSync(path.resolve("./errors/tokenTable.json"), niceJSON(errors));
 
   console.log("[🪼 Tokens 🪼]");
   console.log(`  - Created ${Object.keys(tokens).length} entries.`);
@@ -273,29 +161,26 @@ function createTokenJSON() {
  * and tokens to their ids.
  */
 function generateSlugTable() {
-  const opSlugs = {} as Record<string, OperatorId>;
-  const tokSlugs = {} as Record<string, TokenId>;
+  const opSlugs: Record<string, string> = {};
+  const tokSlugs: Record<string, string> = {};
 
-  Object.values(enOperatorList).forEach((currOp) => {
-    const opId = currOp.phases[0].characterPrefabKey;
-    opSlugs[generateSlug(opId, currOp.name)] = opId;
+  Object.entries(OperatorTable).forEach(([id, { name }]) => {
+    opSlugs[generateSlug(id, name)] = id;
   });
 
-  Object.keys(enTokenList).forEach((id) => {
-    const tokenId = id as TokenId;
-    const value = enTokenList[tokenId];
-    tokSlugs[generateSlug(tokenId, value.name)] = tokenId;
+  Object.entries(TokenTable).forEach(([id, { name }]) => {
+    tokSlugs[generateSlug(id, name)] = id;
   });
 
   fs.writeFileSync(
     path.resolve("./data/operator/slugTable.ts"),
-    `import type { OperatorId } from "@/data/types/AKOperator";\n\nexport const OpSlugTable = ${niceJSON(
+    `import type { OperatorId } from "@/data/types/AKCharacter";\n\nexport const OpSlugTable = ${niceJSON(
       opSlugs
     )} as Record<string, OperatorId>;\n`
   );
   fs.writeFileSync(
     path.resolve("./data/token/slugTable.ts"),
-    `import type { TokenId } from "@/data/types/AKToken";\n\nexport const TokSlugTable = ${niceJSON(
+    `import type { TokenId } from "@/data/types/AKCharacter";\n\nexport const TokSlugTable = ${niceJSON(
       tokSlugs
     )} as Record<string, TokenId>;\n`
   );
@@ -305,4 +190,119 @@ export function generateOperatorStatsAndSlugs() {
   createOperatorsJSON();
   createTokenJSON();
   generateSlugTable();
+}
+
+/** @description Populates a `CharacterBase` schema from a `RawCharacter`. */
+function getCharacterBase(id: string, character: RawCharacter) {
+  return {
+    slug: generateSlug(id, character.name),
+    name: character.name,
+    displayName: getDisplayName(id, character.name, character.appellation),
+    rarity: getRarity(character.rarity),
+    position: character.position,
+    range: character.phases.map((phase) => phase.rangeId!), // Only `null` for devices
+    stats: character.phases.map(
+      ({ maxLevel, evolveCost, attributesKeyFrames }) => ({
+        maxLevel,
+        stats: attributesKeyFrames.map((attr) => keepNecessaryStats(attr)),
+        evolveCost: getMaterialCost(evolveCost ?? []),
+      })
+    ),
+    talents: {
+      ...(character.talents ?? [])
+        .map(({ candidates }) => {
+          // eslint-disable-next-line @typescript-eslint/prefer-optional-chain
+          if (!candidates || !candidates[0].name) return;
+          return candidates.map((tal) => {
+            let talDescr = cleanString(tal.description!);
+            // Fix broken talent descriptions
+            if (["char_290_vigna"].includes(id)) {
+              talDescr = talDescr.replace(")", ")</>");
+            }
+
+            return {
+              name: tal.name,
+              description: addTooltipAndColor(talDescr),
+              potential: tal.requiredPotentialRank + 1,
+              unlockCond: {
+                elite: getPhase(tal.unlockCondition.phase),
+                level: tal.unlockCondition.level,
+              },
+            };
+          });
+        })
+        .filter((talent) => !!talent),
+    },
+  } as CharacterBase;
+}
+
+/** @description Operators considered to be limited. */
+const LimitedOperators = new Set([
+  "char_2014_nian",
+  "char_113_cqbw",
+  "char_391_rosmon",
+  "char_2015_dusk",
+  "char_456_ash",
+  "char_457_blitz",
+  "char_458_rfrost",
+  "char_1012_skadi2",
+  "char_1013_chen2",
+  "char_1014_nearl2",
+  "char_2023_ling",
+  "char_1023_ghost2",
+  "char_1026_gvial2",
+  "char_1028_texas2",
+  "char_2024_chyue",
+  "char_1029_yato2",
+  "char_1030_noirc2",
+  "char_249_mlyss",
+  "char_1016_agoat2",
+  "char_245_cello",
+]);
+
+/** @description Operators exclusive to Integrated Strategies. */
+const ISOperators = new Set([
+  "char_504_rguard",
+  "char_514_rdfend",
+  "char_507_rsnipe",
+  "char_506_rmedic",
+  "char_505_rcast",
+  "char_513_apionr",
+  "char_508_aguard",
+  "char_511_asnipe",
+  "char_509_acast",
+  "char_510_amedic",
+]);
+
+/** @description Returns whether an operator is limited or is from Integrated Strategies. */
+export function classifyOperator(id: string) {
+  if (LimitedOperators.has(id)) return "limited";
+  else if (ISOperators.has(id)) return "is";
+  return null;
+}
+
+/** @description Generate a different name for special cases. */
+function getDisplayName(id: string, name: string, appellation: string) {
+  if (id === "char_1001_amiya2") return "Amiya (Guard)";
+  else if (appellation !== " ") return `${name} (${appellation})`;
+  return name;
+}
+
+/** @description Remove the "type" property in the raw object. */
+function getMaterialCost(arr: MaterialCount[]) {
+  return arr.map((obj) => ({ id: obj.id, count: obj.count }));
+}
+
+/** @description Keep only the stat properties that I want from the raw data. */
+function keepNecessaryStats(stat: RawCharacterStat) {
+  return {
+    hp: stat.data.maxHp,
+    atk: stat.data.atk,
+    def: stat.data.def,
+    res: stat.data.magicResistance,
+    cost: stat.data.cost,
+    blockCnt: stat.data.blockCnt,
+    atkInterval: stat.data.baseAttackTime,
+    respawnTime: stat.data.respawnTime,
+  };
 }

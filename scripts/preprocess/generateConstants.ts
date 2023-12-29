@@ -1,9 +1,9 @@
 import fs from "fs";
 import path from "path";
 
-import type OperatorTableSchema from "@/json/preprocessed/operator_table.json";
-import type CharacterTableSchema from "@/json/en_US/gamedata/excel/character_table.json";
+import type { RawCharacter } from "@/types/rawCharacter";
 
+import EnemyDatabase from "@/json/en_US/gamedata/levels/enemydata/enemy_database.json";
 import EnemyTable from "@/json/en_US/gamedata/excel/enemy_handbook_table.json";
 import ItemTable from "@/json/en_US/gamedata/excel/item_table.json";
 import RangeTable from "@/json/en_US/gamedata/excel/range_table.json";
@@ -11,8 +11,9 @@ import SkillTable from "@/json/en_US/gamedata/excel/skill_table.json";
 import SkinTable from "@/json/en_US/gamedata/excel/skin_table.json";
 import gameData_const from "@/json/en_US/gamedata/excel/gamedata_const.json";
 
-import { generateSlug } from "@/lib/conversion";
-import { niceJSON } from "@/lib/utils";
+import getAttackPattern from "@/data/utils/getAttackPattern";
+import { niceJSON } from "@/lib/format";
+import { generateSlug } from "@/utils/conversion";
 
 /** @description Generate constants from `operator_table.json`. */
 export function generateOperatorConstants() {
@@ -21,7 +22,7 @@ export function generateOperatorConstants() {
       path.resolve("./json/preprocessed/operator_table.json"),
       "utf8"
     )
-  ) as typeof OperatorTableSchema;
+  ) as Record<string, RawCharacter>;
 
   const OperatorIds: string[] = [];
   const NationIds = new Set<string>();
@@ -32,14 +33,14 @@ export function generateOperatorConstants() {
 
   Object.entries(OperatorTable).forEach(
     ([
-      key,
+      id,
       { nationId, groupId, teamId, tagList, profession, subProfessionId },
     ]) => {
-      OperatorIds.push(key);
+      OperatorIds.push(id);
       if (nationId) NationIds.add(nationId);
       if (groupId) FactionIds.add(groupId);
       if (teamId) TeamIds.add(teamId);
-      tagList.forEach((tag) => RoleTags.add(tag));
+      if (tagList) tagList.forEach((tag) => RoleTags.add(tag));
 
       if (Object.hasOwn(_ProfessionTable, profession)) {
         _ProfessionTable[profession].add(subProfessionId);
@@ -65,38 +66,50 @@ export function generateOperatorConstants() {
   };
 }
 
-/** @description Generate constants from `skill_list.json`. */
-function generateSkillConstants() {
-  const SkillIds: string[] = [];
-  const SkillIconIds = new Set<string>();
-
-  Object.entries(SkillTable).forEach(([key, { iconId }]) => {
-    SkillIds.push(key);
-    if (iconId) SkillIconIds.add(iconId);
-  });
-
-  return { SkillIds, SkillIconIds: [...SkillIconIds] };
-}
-
 /** @description Generate constants from `enemy_handbook_table.json` */
 function generateEnemyConstants() {
   const EnemyIds: string[] = [];
-  const EnemyRaceTable: Record<string, string> = {};
-  const EnemyAttackType = new Set<string>();
+  const AttackPatterns = new Set<string>();
+  const AttackPositions = new Set<string>();
+  const ClassTiers = new Set<string>();
+  const DamageTypes = new Set<string>();
+  const Movements = new Set<string>();
 
-  Object.entries(EnemyTable).forEach(
-    ([key, { hideInHandbook, enemyRace, enemyTags, attackType }]) => {
-      EnemyIds.push(key);
-      // Only index the enemies that are shown
-      if (hideInHandbook) return;
+  Object.entries(EnemyTable.enemyData).forEach(
+    ([id, { hideInHandbook, damageType, enemyLevel }]) => {
+      if (hideInHandbook) return; // Only index the enemies that are shown
+      ClassTiers.add(enemyLevel);
+      damageType.forEach((dmg) => DamageTypes.add(dmg));
 
-      // Not all enemies have a defined race
-      if (enemyRace) EnemyRaceTable[enemyTags[0]] = enemyRace;
-      EnemyAttackType.add(attackType);
+      /* Retrieve values only in the stats table. */
+      const enemyStats = EnemyDatabase.enemies.find(({ Key }) => Key === id);
+      if (!enemyStats) return; // Don't save id of enemy without any stats
+      EnemyIds.push(id); // Save id after knowing enemy has stats
+
+      const { applyWay, motion } = enemyStats.Value[0].enemyData;
+      if (motion.m_defined) Movements.add(motion.m_value);
+      if (applyWay.m_defined) {
+        AttackPositions.add(applyWay.m_value);
+        /* Generate attack types from attack position & damage types */
+        AttackPatterns.add(getAttackPattern(applyWay.m_value, damageType));
+      }
     }
   );
 
-  return { EnemyIds, EnemyRaceTable, EnemyAttackType: [...EnemyAttackType] };
+  const EnemyRaceTable: Record<string, string> = {};
+  Object.values(EnemyTable.raceData).forEach(({ id, raceName }) => {
+    EnemyRaceTable[id] = raceName;
+  });
+
+  return {
+    EnemyIds,
+    EnemyRaceTable,
+    AttackPatterns: [...AttackPatterns],
+    AttackPositions: [...AttackPositions],
+    DamageTypes: [...DamageTypes],
+    Movements: [...Movements],
+    ClassTiers: [...ClassTiers],
+  };
 }
 
 /**
@@ -109,34 +122,44 @@ function generateMiscConstants() {
       path.resolve("./json/preprocessed/tokens_table.json"),
       "utf8"
     )
-  ) as typeof CharacterTableSchema;
+  ) as Record<string, RawCharacter>;
 
   return {
-    BrandIds: Object.keys(SkinTable.brandList),
-    RangeIds: Object.keys(RangeTable),
     TokenIds: Object.keys(TokenTable),
+    RangeIds: Object.keys(RangeTable),
+    SkillIds: Object.keys(SkillTable),
+    BrandIds: Object.keys(SkinTable.brandList),
+    SkinIds: Object.values(SkinTable.charSkins)
+      .map(({ portraitId }) => portraitId)
+      .filter((id) => id !== null),
     ItemIds: Object.keys(ItemTable.items),
   };
 }
 
+/**
+ * @description Contains the term w/ its definition that is used for
+ *  template injections.
+ */
+type TermDescription = {
+  id: string;
+  name: string;
+  description: string;
+  slug: string;
+};
+
 /** @description Extract the values used for template injections. */
 export function generateGameDataConstants() {
-  const { richTextStyles, termDescriptionDict } = gameData_const;
-
   const mutatedTextStyles: Record<string, string | null> = {};
-
-  Object.entries(richTextStyles).forEach(([key, value]) => {
+  Object.entries(gameData_const.richTextStyles).forEach(([key, value]) => {
     if (!value.startsWith("<color")) mutatedTextStyles[key] = null;
     else mutatedTextStyles[key] = value.slice(7, 14); // Extract hex value
   });
 
-  const mutatedTermDescription: Record<
-    string,
-    { termId: string; termName: string; description: string; slug: string }
-  > = {};
-  Object.entries(termDescriptionDict).forEach(([key, value]) => {
+  const mutatedTermDescription: Record<string, TermDescription> = {};
+  Object.entries(gameData_const.termDescriptionDict).forEach(([key, value]) => {
     mutatedTermDescription[key] = {
-      ...value,
+      id: value.termId,
+      name: value.termName,
       // Ignore nested tooltips
       description: value.description
         .replace(/<@([^>/]*)>(.+?)<\/>/g, (_, _p1, p2: string) => p2)
@@ -157,7 +180,6 @@ export function generateGameDataConstants() {
 export function createConstantTypesFile() {
   const exportedFile = Object.entries({
     ...generateOperatorConstants(),
-    ...generateSkillConstants(),
     ...generateEnemyConstants(),
     ...generateMiscConstants(),
   })
