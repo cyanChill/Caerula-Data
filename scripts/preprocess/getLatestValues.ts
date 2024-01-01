@@ -13,11 +13,12 @@ import { niceJSON } from "@/lib/format";
 export function getNewValues() {
   const { OperatorIds: latestOpIdList } = generateOperatorConstants();
 
-  /* Get a list of skins which released in ±7 days (604800 seconds). */
+  /* Get a list of skins which released 9 days prior, 2 days in the future. */
   const newSkinIds: string[] = [];
   const now = new Date().getTime() / 1000; // From `ms` to `s`
   Object.values(generateSkinTableConstants().skinTable).forEach((skin) => {
-    if (Math.abs(skin.releasedAt - now) <= 604800) newSkinIds.push(skin.id);
+    if (-777600 <= skin.releasedAt - now && skin.releasedAt - now <= 172800)
+      newSkinIds.push(skin.id);
   });
 
   const differences = {
