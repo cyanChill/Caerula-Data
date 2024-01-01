@@ -1,7 +1,7 @@
 import type { OperatorIds, RoleTags, TokenIds } from "./typesFrom";
 import type { CharacterBase, CharacterStat, UnlockCondition } from "./shared";
 
-import type { Affilations } from "./AKAffiliation";
+import type { Affiliations } from "./AKAffiliation";
 import type { BranchId, Profession } from "./AKClass";
 import type { ItemCount } from "./AKItem";
 import type { SkillId } from "./AKSkill";
@@ -33,7 +33,7 @@ export interface Operator extends CharacterBase {
   skills: OpSkill[];
   skillLevel: SkillCost[];
   trustBonus: CharacterStat; // Max trust is achieved at 100% (Trust is from 0-200%)
-  affiliation: Affilations;
+  affiliation: Affiliations;
   tags: RoleTag[];
   type: "limited" | "is" | null;
   tokensUsed: TokenId[] | null;
