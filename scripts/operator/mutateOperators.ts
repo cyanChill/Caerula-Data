@@ -5,6 +5,7 @@ import type { MaterialCount } from "@/types/JSONField";
 import type { RawCharacter, RawCharacterStat } from "@/types/rawCharacter";
 
 import type { Operator, Token, TokenId } from "@/data/types/AKCharacter";
+import { type ProfessionId, ProfessionMap } from "@/data/types/AKClass";
 import type { CharacterBase } from "@/data/types/shared";
 import OperatorTable from "@/json/preprocessed/operator_table.json";
 import TokenTable from "@/json/preprocessed/tokens_table.json";
@@ -31,7 +32,7 @@ function createOperatorsJSON() {
         id,
         ...getCharacterBase(id, currOp),
         potentials: currOp.potentialRanks.map((pot) => pot.description),
-        profession: currOp.profession,
+        profession: ProfessionMap[currOp.profession as ProfessionId],
         branch: currOp.subProfessionId,
         skills: currOp.skills.map(
           ({ skillId, overrideTokenKey, unlockCond, levelUpCostCond }) => ({

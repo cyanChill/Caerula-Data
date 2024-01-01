@@ -2,7 +2,7 @@ import type { OperatorIds, RoleTags, TokenIds } from "./typesFrom";
 import type { CharacterBase, CharacterStat, UnlockCondition } from "./shared";
 
 import type { Affilations } from "./AKAffiliation";
-import type { BranchId, ProfessionId } from "./AKClass";
+import type { BranchId, Profession } from "./AKClass";
 import type { ItemCount } from "./AKItem";
 import type { SkillId } from "./AKSkill";
 
@@ -28,7 +28,7 @@ export type SkillCost = {
 export interface Operator extends CharacterBase {
   id: OperatorId;
   potentials: string[];
-  profession: ProfessionId;
+  profession: Profession;
   branch: BranchId;
   skills: OpSkill[];
   skillLevel: SkillCost[];
