@@ -2,7 +2,7 @@ import { createEnemiesJSON } from "@/scripts/mutateEnemies";
 import { createItemsJSON } from "@/scripts/mutateItems";
 import { createRangeTableJSON } from "@/scripts/mutateRange";
 import { createSkillsJSON } from "@/scripts/mutateSkills";
-import { generateOperatorDetails } from "@/scripts/operator/mutateFiles";
+import { generateOperatorDetails } from "@/scripts/operator/mutateProfile";
 import { generateOperatorStatsAndSlugs } from "@/scripts/operator/mutateOperators";
 import { generateVoiceData } from "@/scripts/operator/mutateVoice";
 
