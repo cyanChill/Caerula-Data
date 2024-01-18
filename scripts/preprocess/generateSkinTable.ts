@@ -69,7 +69,7 @@ export function generateSkinTableConstants() {
         imgAlt: `${opNameTable[usedBy]}'s "${name}" skin`,
         description: displaySkin.content
           ? cleanString(displaySkin.content)
-              .replace("<color name=#ffffff>", "")
+              .replace(/<color name=#[a-fA-F0-9]+>/, "")
               .replace("</color>", "")
           : null,
         artists: displaySkin.drawerList,
