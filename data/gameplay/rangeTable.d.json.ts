@@ -1,5 +1,5 @@
 import type { RangeId, RangeArea } from "@/data/types/AKRange";
 
-declare const rangeTable: Record<RangeId, RangeArea>;
+declare const RangeTable: Record<RangeId, RangeArea>;
 
-export default rangeTable;
+export default RangeTable;
