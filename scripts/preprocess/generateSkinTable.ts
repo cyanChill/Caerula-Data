@@ -92,7 +92,7 @@ export function generateSkinTableConstants() {
 
 export function createSkinTable() {
   fs.writeFileSync(
-    path.resolve("./data/operator/skinTable.json"),
+    path.resolve("./data/character/skinTable.json"),
     niceJSON(generateSkinTableConstants())
   );
 }
