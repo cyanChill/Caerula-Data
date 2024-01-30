@@ -9,6 +9,8 @@ import OperatorTable from "@/json/preprocessed/operator_table.json";
 import { niceJSON } from "@/lib/format";
 import { replaceUnicode } from "@/utils/textFormat";
 
+type UnsortedDialogueLine = DialogueLine & { sortId: number };
+
 function getVoiceLines() {
   const dialogues: Record<string, DialogueLine[]> = {};
   const opVoiceMap: Record<string, Set<string>> = {};
@@ -16,6 +18,7 @@ function getVoiceLines() {
   const operatorIds = Object.keys(OperatorTable);
   operatorIds.forEach((id) => (opVoiceMap[id] = new Set<string>()));
 
+  const unsortedDialogues: Record<string, UnsortedDialogueLine[]> = {};
   /* Group voice lines by a "voice id". */
   Object.values(CharwordTable.charWords).forEach((vLine) => {
     /* Don't add entry for duplicate Shalem entry from IS2. */
@@ -31,23 +34,26 @@ function getVoiceLines() {
             val: vLine.unlockParam[0].valueInt,
           }
         : null,
-    } as DialogueLine;
+    } as UnsortedDialogueLine;
 
     const vLineKey = vLine.wordKey;
     const opId =
       vLine.wordKey === "char_1001_amiya2" ? "char_1001_amiya2" : vLine.charId;
 
     // Group voice lines together.
-    if (Object.hasOwn(dialogues, vLineKey)) dialogues[vLineKey].push(newVLine);
-    else dialogues[vLineKey] = [newVLine];
+    if (Object.hasOwn(unsortedDialogues, vLineKey))
+      unsortedDialogues[vLineKey].push(newVLine);
+    else unsortedDialogues[vLineKey] = [newVLine];
 
     // Map voice line set to operator.
     opVoiceMap[opId].add(vLineKey);
   });
 
   // Make sure voice lines are in order for each voice line set.
-  Object.entries(dialogues).forEach(([id, value]) => {
-    dialogues[id] = value.sort((a, b) => a.sortId - b.sortId);
+  Object.entries(unsortedDialogues).forEach(([id, value]) => {
+    dialogues[id] = value
+      .sort((a, b) => a.sortId - b.sortId)
+      .map(({ sortId: _, ...dialogueLine }) => dialogueLine);
   });
 
   console.log(
