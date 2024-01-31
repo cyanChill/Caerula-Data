@@ -301,9 +301,9 @@ function keepNecessaryStats(stat: RawCharacterStat) {
     atk: stat.data.atk,
     def: stat.data.def,
     res: stat.data.magicResistance,
+    respawnTime: stat.data.respawnTime,
     cost: stat.data.cost,
     blockCnt: stat.data.blockCnt,
     atkInterval: stat.data.baseAttackTime,
-    respawnTime: stat.data.respawnTime,
   };
 }

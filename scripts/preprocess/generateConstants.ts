@@ -10,6 +10,7 @@ import RangeTable from "@/json/en_US/gamedata/excel/range_table.json";
 import SkillTable from "@/json/en_US/gamedata/excel/skill_table.json";
 import SkinTable from "@/json/en_US/gamedata/excel/skin_table.json";
 import gameData_const from "@/json/en_US/gamedata/excel/gamedata_const.json";
+import { IGNORE_SKINID_LIST } from "../constants";
 
 import getAttackPattern from "@/data/utils/getAttackPattern";
 import { niceJSON } from "@/lib/format";
@@ -130,8 +131,16 @@ function generateMiscConstants() {
     SkillIds: Object.keys(SkillTable),
     BrandIds: Object.keys(SkinTable.brandList),
     SkinIds: Object.values(SkinTable.charSkins)
-      .map(({ portraitId }) => portraitId)
-      .filter((id) => id !== null),
+      .map(({ skinId, portraitId, avatarId }) => {
+        if (skinId.startsWith("token")) {
+          if (avatarId.endsWith("_2")) return null;
+          return avatarId;
+        } else if (skinId.startsWith("trap_079_allydonq")) {
+          return "trap_079_allydonq";
+        } else if (skinId.startsWith("trap")) return null;
+        return portraitId;
+      })
+      .filter((id) => id !== null && !IGNORE_SKINID_LIST.includes(id)),
     ItemIds: Object.keys(ItemTable.items),
   };
 }

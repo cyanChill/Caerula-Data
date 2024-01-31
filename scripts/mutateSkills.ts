@@ -62,7 +62,7 @@ export function createSkillsJSON() {
   });
 
   fs.writeFileSync(
-    path.resolve("./data/gameplay/skillTable.json"),
+    path.resolve("./data/character/skillTable.json"),
     niceJSON(skills)
   );
   fs.writeFileSync(path.resolve("./errors/skillTable.json"), niceJSON(errors));

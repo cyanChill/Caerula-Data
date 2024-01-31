@@ -45,7 +45,7 @@ export function createRangeTableJSON() {
   });
 
   fs.writeFileSync(
-    path.resolve("./data/gameplay/rangeTable.json"),
+    path.resolve("./data/character/rangeTable.json"),
     niceJSON(ranges)
   );
 
