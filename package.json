@@ -1,6 +1,6 @@
 {
   "name": "caerula-data",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Data mutation for Yostar Arknights data.",
   "main": "index.ts",
   "scripts": {
