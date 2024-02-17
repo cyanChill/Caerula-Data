@@ -65,3 +65,25 @@ export function optFieldAsObj<T>(attrObj: OptionalField<T>, key: string) {
   if (attrObj.m_defined) return { [key]: attrObj.m_value };
   return {};
 }
+
+type Rarity = ReturnType<typeof getRarity>;
+
+/** @description Returns the LMD cost given specific parameter values. */
+export function getLMDCost(
+  rarity: Rarity,
+  type: "promo" | "module",
+  stage?: number
+) {
+  if (type === "promo") {
+    if (rarity < 3) return 0;
+    if (rarity === 3) return 10000;
+    if (stage === 1) return 10000 + 2 ** (rarity - 4) * 5000;
+    else return 60000 * (rarity - 3) * (stage! - 1);
+  } else if (type === "module") {
+    if (rarity < 4 || !stage || stage < 1) return 0;
+    const baseCost = 2 ** (rarity - 3) * 10000;
+    const additCost = 2 ** (rarity - 4) * 5000 * (stage - 1);
+    return baseCost + additCost;
+  }
+  return 0;
+}

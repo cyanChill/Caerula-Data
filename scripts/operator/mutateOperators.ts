@@ -11,7 +11,12 @@ import OperatorTable from "@/json/preprocessed/operator_table.json";
 import TokenTable from "@/json/preprocessed/tokens_table.json";
 
 import { niceJSON } from "@/lib/format";
-import { getPhase, getRarity, generateSlug } from "@/utils/conversion";
+import {
+  getPhase,
+  getRarity,
+  generateSlug,
+  getLMDCost,
+} from "@/utils/conversion";
 import { addTooltipAndColor, cleanString } from "@/utils/textFormat";
 
 /**
@@ -28,9 +33,29 @@ function createOperatorsJSON() {
 
   Object.entries(OperatorTable).forEach(([id, currOp]) => {
     try {
+      const operatorBase = getCharacterBase(id, currOp);
+      const operatorType = classifyOperator(id);
+
+      // Add LMD cost to promotion cost since it's not included by default
+      const revisedStats = operatorBase.stats.map((obj, idx) => {
+        if (idx === 0) return obj; // Base stats have no promotion cost
+        const LMDCost = {
+          id: "4001",
+          count: getLMDCost(operatorBase.rarity, "promo", idx),
+        };
+        return {
+          ...obj,
+          evolveCost: [
+            ...(operatorType !== "is" ? [LMDCost] : []),
+            ...obj.evolveCost,
+          ],
+        };
+      });
+
       const newOperator = {
         id,
-        ...getCharacterBase(id, currOp),
+        ...operatorBase,
+        stats: revisedStats,
         potentials: currOp.potentialRanks.map((pot) => pot.description),
         profession: ProfessionMap[currOp.profession as ProfessionId],
         branch: currOp.subProfessionId,
@@ -59,7 +84,7 @@ function createOperatorsJSON() {
           team: currOp.teamId,
         },
         tags: currOp.tagList,
-        type: classifyOperator(id),
+        type: operatorType,
         tokensUsed: null,
       } as Operator;
 
