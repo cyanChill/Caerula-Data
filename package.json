@@ -1,6 +1,6 @@
 {
   "name": "caerula-data",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "Data mutation for Yostar Arknights data.",
   "main": "index.ts",
   "scripts": {
@@ -13,10 +13,10 @@
     "@types/eslint": "^8.56.2",
     "@types/lodash.deburr": "^4.1.9",
     "@types/node": "^20.11.19",
-    "@typescript-eslint/eslint-plugin": "^7.0.1",
-    "@typescript-eslint/parser": "^7.0.1",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
     "eslint": "^8.56.0",
-    "isomorphic-dompurify": "^2.3.0",
+    "isomorphic-dompurify": "^2.4.0",
     "lodash.deburr": "^4.1.0",
     "neatjson": "^0.10.6",
     "prettier": "^3.2.5",
