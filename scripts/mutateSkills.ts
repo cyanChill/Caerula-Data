@@ -2,6 +2,8 @@ import fs from "fs";
 import path from "path";
 
 import type { Skill } from "@/data/types/AKSkill";
+import OperatorTable from "@/json/preprocessed/operator_table.json";
+import TokenTable from "@/json/preprocessed/tokens_table.json";
 import SkillTable from "@/json/en_US/gamedata/excel/skill_table.json";
 
 import { niceJSON } from "@/lib/format";
@@ -47,7 +49,7 @@ export function createSkillsJSON() {
             throw new Error(`Failed to populate skill description of: ${id}.`);
           return skillDescription;
         }),
-        rangeId: baseSkillVal.rangeId,
+        rangeId: getSkillRange(id, baseSkillVal.rangeId),
         activationType: getSkillActiveType(baseSkillVal.skillType),
         spRecovery: getSkillSpRecovery(baseSkillVal.spData.spType),
         spCost: levels.map(({ spData }) => spData.spCost),
@@ -87,4 +89,46 @@ function getSkillSpRecovery(str: string | number) {
   else if (str === "INCREASE_WHEN_TAKEN_DAMAGE") return "Defensive";
   else if (str === 8) return "Passive";
   throw new Error(`Invalid SP recovery type value: ${str}.`);
+}
+
+/**
+ * @description Returns the correct skill range which may be attached
+ *  to a token skill.
+ */
+function getSkillRange(skillId: string, range: string | null) {
+  /* Override for special cases */
+  if (skillId === "skchr_swire2_1") return "x-4";
+  if (skillId === "skchr_swire2_2") return "x-6";
+  if (skillId === "skchr_swire2_3") return "2-4";
+
+  // Only run the logic below if the range is `null`
+  if (range) return range;
+
+  // Find character that uses this skill
+  const operator = Object.values(OperatorTable).find(({ skills }) =>
+    skills.some((s) => s.skillId === skillId)
+  );
+  if (!operator) return range;
+  const { skills, displayTokenDict } = operator;
+  // Get the skill number for character
+  const skillIdx = skills.findIndex((s) => s.skillId === skillId);
+  // Get the token associated with current skill
+  let tokenId = skills[skillIdx].overrideTokenKey;
+  if (!tokenId) {
+    if (!displayTokenDict) return range;
+    tokenId = Object.keys(displayTokenDict)[0];
+  }
+  const token = TokenTable[tokenId as keyof typeof TokenTable];
+  // Get skills associated with the token
+  const tokenSkillId = token.skills[skillIdx].skillId;
+  if (!tokenSkillId) return range;
+  const tokenSkill = SkillTable[tokenSkillId];
+  if (!tokenSkill) return range;
+  const tokenSkillRange = tokenSkill.levels[0].rangeId;
+
+  // Change the skill range to be the token skill's range if the token
+  // skill range is defined & not equal to the range of the token
+  if (tokenSkillRange && token.phases[0].rangeId !== tokenSkillRange) {
+    return tokenSkillRange;
+  } else return range;
 }
