@@ -1,0 +1,35 @@
+import type { ProfessionTable } from "./typesFrom";
+import type { AttackPosition } from "./shared";
+import type { CharacterDamage } from "./AKCharacter";
+
+/** @description Conversion of ProfessionId to its display value. */
+export const ProfessionMap = {
+  CASTER: "Caster",
+  MEDIC: "Medic",
+  PIONEER: "Vanguard",
+  TANK: "Defender",
+  SNIPER: "Sniper",
+  SPECIAL: "Specialist",
+  SUPPORT: "Supporter",
+  WARRIOR: "Guard",
+} as const;
+
+export type ProfessionId = keyof typeof ProfessionMap;
+export type Profession = (typeof ProfessionMap)[ProfessionId];
+
+export type BranchId = (typeof ProfessionTable)[ProfessionId][number];
+
+/** @description Object going in-depth about a specific subclass. */
+export type Branch = {
+  id: BranchId;
+  name: string;
+  profession: Profession;
+  position: AttackPosition;
+  damageType: CharacterDamage;
+  trait: string;
+};
+
+/**
+ * @description Table containing more information about a specified BranchId.
+ * @see Note: Robots contain some exceptions to the branch.
+ */
