@@ -7,6 +7,7 @@ import {
 } from "./generateConstants";
 import { createSkinTable } from "./generateSkinTable";
 import { getNewValues } from "./getLatestValues";
+import { generateBranchTable } from "./generateClassValues";
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   organizeCharacterTable();
@@ -14,4 +15,5 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   createConstantTypesFile();
   generateGameDataConstants();
   createSkinTable();
+  generateBranchTable();
 }
