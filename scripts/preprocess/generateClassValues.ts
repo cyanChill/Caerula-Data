@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 
 import gameData_const from "@/json/en_US/gamedata/excel/gamedata_const.json";
-import operator_table from "@/json/preprocessed/operator_table.json";
+import character_table from "@/json/en_US/gamedata/excel/character_table.json";
 import uniequip_table from "@/json/en_US/gamedata/excel/uniequip_table.json";
 
 import { niceJSON } from "@/lib/format";
@@ -61,9 +61,17 @@ export function generateBranchTable() {
   const branchTable = new Map<string, BranchStructure>();
 
   branchIds.forEach((id) => {
-    const { description, profession, position } = Object.values(
-      operator_table
-    ).find((op) => op.subProfessionId === id && op.rarity !== "TIER_1")!;
+    // Read over `character_table.json` as `operator_table.json` may
+    // not be up-to-date as we're updating it in the sames script
+    const operator = Object.values(character_table).find(
+      (op) => op.subProfessionId === id && op.rarity !== "TIER_1"
+    )!;
+
+    if (!operator) {
+      console.log(`Failed to find operator for branch id: ${id}.`);
+      return;
+    }
+    const { description, profession, position } = operator;
 
     // Modify the trait description for some classes
     let unstylizedTrait = description!;
@@ -108,10 +116,15 @@ export function generateBranchTable() {
   });
 
   const AKClass_Base = fs.readFileSync("./file_base/AKClass_base.txt", "utf8");
+  // Removes the quotes around the property key
+  const branchTableStr = niceJSON(Object.fromEntries(branchTable)).replace(
+    /"(\w*)": /g,
+    "$1: "
+  );
 
   fs.writeFileSync(
     path.resolve("./data/types/AKClass.ts"),
     AKClass_Base +
-      `export const BranchTable = ${niceJSON(Object.fromEntries(branchTable))} as Record<BranchId, Branch>;\n`
+      `export const BranchTable = ${branchTableStr} as Record<BranchId, Branch>;\n`
   );
 }
