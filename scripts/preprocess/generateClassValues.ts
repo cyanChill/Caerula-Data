@@ -63,15 +63,9 @@ export function generateBranchTable() {
   branchIds.forEach((id) => {
     // Read over `character_table.json` as `operator_table.json` may
     // not be up-to-date as we're updating it in the sames script
-    const operator = Object.values(character_table).find(
-      (op) => op.subProfessionId === id && op.rarity !== "TIER_1"
-    )!;
-
-    if (!operator) {
-      console.log(`Failed to find operator for branch id: ${id}.`);
-      return;
-    }
-    const { description, profession, position } = operator;
+    const { description, profession, position } = Object.values(
+      character_table
+    ).find((op) => op.subProfessionId === id && op.rarity !== "TIER_1")!;
 
     // Modify the trait description for some classes
     let unstylizedTrait = description!;
