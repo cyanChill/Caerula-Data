@@ -394,6 +394,14 @@ export const BranchTable = {
     damageType: "HEAL",
     trait: "Restores the HP of 3 allies simultaneously"
   },
+  ritualist: {
+    id: "ritualist",
+    name: "Ritualist",
+    profession: "Supporter",
+    position: "RANGED",
+    damageType: "MAGICAL",
+    trait: "Attacks deal <span style=\"color:#00B0FF;\">Arts damage</span>, and can inflict <span style=\"color:#00B0FF;\">Elemental Damage</span>"
+  },
   shotprotector: {
     id: "shotprotector",
     name: "Sentinel Protector",
