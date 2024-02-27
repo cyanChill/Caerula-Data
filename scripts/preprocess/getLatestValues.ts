@@ -17,7 +17,11 @@ export function getNewValues() {
   const newSkinIds: string[] = [];
   const now = new Date().getTime() / 1000; // From `ms` to `s`
   Object.values(generateSkinTableConstants().skinTable).forEach((skin) => {
-    if (-777600 <= skin.releasedAt - now && skin.releasedAt - now <= 172800)
+    if (
+      -777600 <= skin.releasedAt - now &&
+      skin.releasedAt - now <= 172800 &&
+      skin.id.startsWith("char_")
+    )
       newSkinIds.push(skin.id);
   });
 
