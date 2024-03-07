@@ -220,13 +220,14 @@ export function generateOperatorStatsAndSlugs() {
 
 /** @description Populates a `CharacterBase` schema from a `RawCharacter`. */
 function getCharacterBase(id: string, character: RawCharacter) {
+  const ranges = character.phases.map((phase) => phase.rangeId!); // Only `null` for devices
   return {
     slug: generateSlug(id, character.name),
     name: character.name,
     displayName: getDisplayName(id, character.name, character.appellation),
     rarity: getRarity(character.rarity),
     position: character.position,
-    range: character.phases.map((phase) => phase.rangeId!), // Only `null` for devices
+    range: ranges,
     stats: character.phases.map(
       ({ maxLevel, evolveCost, attributesKeyFrames }) => ({
         maxLevel,
@@ -246,9 +247,25 @@ function getCharacterBase(id: string, character: RawCharacter) {
               talDescr = talDescr.replace(")", ")</>");
             }
 
+            let talRange = tal.rangeId;
+            // Special case w/ Tachanka where it notes his range increase
+            // but doesn't display the range change
+            if (id === "char_459_tachak") {
+              if (talDescr.includes("+1 tile")) talRange = "2-2";
+              if (talDescr.includes("+2 tile")) talRange = "3-2";
+            }
+            // Cases where we don't want to include the range with talent
+            if (
+              id === "char_130_doberm" ||
+              ranges.every((r) => r === talRange ?? "")
+            ) {
+              talRange = null;
+            }
+
             return {
               name: tal.name,
               description: addTooltipAndColor(talDescr),
+              range: talRange,
               potential: tal.requiredPotentialRank + 1,
               unlockCond: {
                 elite: getPhase(tal.unlockCondition.phase),
