@@ -10,11 +10,11 @@
     "data:mutate": "tsx ./index.ts"
   },
   "devDependencies": {
-    "@types/eslint": "^8.56.3",
+    "@types/eslint": "^8.56.5",
     "@types/lodash.deburr": "^4.1.9",
-    "@types/node": "^20.11.20",
-    "@typescript-eslint/eslint-plugin": "^7.1.0",
-    "@typescript-eslint/parser": "^7.1.0",
+    "@types/node": "^20.11.25",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
     "eslint": "^8.57.0",
     "isomorphic-dompurify": "^2.4.0",
     "lodash.deburr": "^4.1.0",
