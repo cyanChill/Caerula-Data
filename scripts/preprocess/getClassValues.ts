@@ -109,7 +109,6 @@ export function generateBranchTable() {
     });
   });
 
-  const AKClass_Base = fs.readFileSync("./file_base/AKClass_base.txt", "utf8");
   // Removes the quotes around the property key
   const branchTableStr = niceJSON(Object.fromEntries(branchTable)).replace(
     /"(\w*)": /g,
@@ -118,7 +117,7 @@ export function generateBranchTable() {
 
   fs.writeFileSync(
     path.resolve("./data/types/AKClass.ts"),
-    AKClass_Base +
+    fs.readFileSync("./file_base/AKClass_base.txt", "utf8") +
       `export const BranchTable = ${branchTableStr} as Record<BranchId, Branch>;\n`
   );
 }
