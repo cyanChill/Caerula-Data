@@ -149,6 +149,7 @@ function createTokenJSON() {
       const TrapperSpec = new Set<string>([
         "char_113_cqbw",
         "char_4046_ebnhlz",
+        "char_1033_swire2",
       ]);
 
       /* Specify what type of token this is. */
@@ -281,26 +282,30 @@ function getCharacterBase(id: string, character: RawCharacter) {
 
 /** @description Operators considered to be limited. */
 const LimitedOperators = new Set([
-  "char_2014_nian",
-  "char_113_cqbw",
-  "char_391_rosmon",
-  "char_2015_dusk",
-  "char_456_ash",
-  "char_457_blitz",
-  "char_458_rfrost",
-  "char_1012_skadi2",
-  "char_1013_chen2",
-  "char_1014_nearl2",
-  "char_2023_ling",
-  "char_1023_ghost2",
-  "char_1026_gvial2",
-  "char_1028_texas2",
-  "char_2024_chyue",
-  "char_1029_yato2",
-  "char_1030_noirc2",
-  "char_249_mlyss",
-  "char_1016_agoat2",
-  "char_245_cello",
+  "char_2014_nian", // Nian
+  "char_113_cqbw", // W
+  "char_391_rosmon", // Rosmontis
+  "char_2015_dusk", // Dusk
+  "char_456_ash", // Ash
+  "char_457_blitz", // Blitz
+  "char_458_rfrost", // Frost
+  "char_1012_skadi2", // Skadi the Corrupting Heart
+  "char_1013_chen2", // Ch'en the Holungday
+  "char_1014_nearl2", // Nearl the Radiant Light
+  "char_2023_ling", // Ling
+  "char_1023_ghost2", // Specter the Unchained
+  "char_1026_gvial2", // Gavial the Invincible
+  "char_1028_texas2", // Texas the Omertosa
+  "char_2024_chyue", // Chongyue
+  "char_1029_yato2", // Kirin R Yato
+  "char_1030_noirc2", // Rathalos S Noir
+  "char_249_mlyss", // Muelsyse
+  "char_1016_agoat2", // Eyjafjalla the Hvit Aska
+  "char_245_cello", // Virtuosa
+  "char_2025_shu", // Shu
+  "char_4125_rdoc", // Doc
+  "char_4124_iana", // Iana
+  "char_4123_ela", // Ela
 ]);
 
 /** @description Operators exclusive to Integrated Strategies. */
