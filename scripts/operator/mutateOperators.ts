@@ -149,6 +149,7 @@ function createTokenJSON() {
       const TrapperSpec = new Set<string>([
         "char_113_cqbw",
         "char_4046_ebnhlz",
+        "char_1033_swire2",
       ]);
 
       /* Specify what type of token this is. */
