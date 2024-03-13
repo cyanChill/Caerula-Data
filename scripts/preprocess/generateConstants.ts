@@ -149,40 +149,87 @@ function generateMiscConstants() {
  * @description Contains the term w/ its definition that is used for
  *  template injections.
  */
-type TermDescription = {
-  id: string;
+type TermCategory = {
   name: string;
   description: string;
-  slug: string;
+  terms: Record<string, TermDescription>;
 };
+
+type TermDescription = { name: string; description: string; slug: string };
+
+/** @description How we'll categorize the terms. */
+const termCategories = [
+  {
+    key: "gameplay_mechanics",
+    regex: /ba\.(?!dt\.).*/,
+    name: "Gameplay Mechanics",
+    description:
+      "Describes buffs & debuffs applicable to enemies or operators.",
+  },
+  {
+    key: "elemental_damages",
+    regex: /ba\.dt\..*/,
+    name: "Elemental Damages",
+    description:
+      "The different types of elemental damages done by enemies or operators.",
+  },
+  {
+    key: "base_skills",
+    regex: /cc\..*/,
+    name: "Base Skills",
+    description: "Terms mentioned in base skills.",
+  },
+];
 
 /** @description Extract the values used for template injections. */
 export function generateGameDataConstants() {
-  const mutatedTextStyles: Record<string, string | null> = {};
+  const textStyleDict: Record<string, string | null> = {};
   Object.entries(gameData_const.richTextStyles).forEach(([key, value]) => {
-    if (!value.startsWith("<color")) mutatedTextStyles[key] = null;
-    else mutatedTextStyles[key] = value.slice(7, 14); // Extract hex value
-  });
-
-  const mutatedTermDescription: Record<string, TermDescription> = {};
-  Object.entries(gameData_const.termDescriptionDict).forEach(([key, value]) => {
-    mutatedTermDescription[key] = {
-      id: value.termId,
-      name: value.termName,
-      // Ignore nested tooltips
-      description: value.description
-        .replace(/<@([^>/]*)>(.+?)<\/>/g, (_, _p1, p2: string) => p2)
-        .replace(/<\$([^>/]*)>(.+?)<\/>/g, (_, _p1, p2: string) => p2),
-      slug: generateSlug(null, value.termName),
-    };
+    if (!value.startsWith("<color")) textStyleDict[key] = null;
+    else textStyleDict[key] = value.slice(7, 14); // Extract hex value
   });
 
   fs.writeFileSync(
-    path.resolve("./data/gamedataConst.json"),
-    niceJSON({
-      richTextStyles: mutatedTextStyles,
-      termDescriptionDict: mutatedTermDescription,
-    })
+    path.resolve("./json/colorStyles.json"),
+    niceJSON(textStyleDict)
+  );
+
+  const tDDict = gameData_const.termDescriptionDict;
+
+  const termCategoryDict: Record<string, TermCategory> = {};
+  termCategories.map(({ key, regex, name, description }) => {
+    const terms: Record<string, TermDescription> = {};
+    // Get the term ids for this category
+    const foundTermIds = Object.keys(tDDict).filter((key) =>
+      regex.test(key)
+    ) as (keyof typeof tDDict)[];
+
+    foundTermIds.map((key) => {
+      const { termName, description } = tDDict[key];
+      // See if we need to change the resulting slug due to duplicate names
+      const hasUsedSlug = Object.values(terms).filter(
+        ({ name }) => name === termName
+      );
+
+      terms[key] = {
+        name: termName,
+        // Ignore nested tooltips
+        description: description
+          .replace(/<@([^>/]*)>(.+?)<\/>/g, (_, _p1, p2: string) => p2)
+          .replace(/<\$([^>/]*)>(.+?)<\/>/g, (_, _p1, p2: string) => p2),
+        slug:
+          hasUsedSlug.length > 0
+            ? generateSlug(null, termName) + (hasUsedSlug.length + 1)
+            : generateSlug(null, termName),
+      };
+    });
+
+    termCategoryDict[key] = { name, description, terms };
+  });
+
+  fs.writeFileSync(
+    path.resolve("./data/gameplay/terminology.json"),
+    niceJSON(termCategoryDict)
   );
 }
 
