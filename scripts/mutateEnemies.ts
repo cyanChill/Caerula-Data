@@ -62,8 +62,9 @@ export function createEnemiesJSON() {
         } as EnemyStat);
       });
 
-      if (!baseStatVal.applyWay.m_defined)
-        throw new Error("Enemy doesn't specify an attack position.");
+      const atkPos = baseStatVal.applyWay.m_defined
+        ? baseStatVal.applyWay.m_value
+        : "MELEE";
 
       enemies.push({
         sort: currEnemy.sortId,
@@ -78,10 +79,7 @@ export function createEnemiesJSON() {
             ]
           : null,
         type: currEnemy.enemyLevel,
-        attackPattern: getAttackPattern(
-          baseStatVal.applyWay.m_value,
-          currEnemy.damageType
-        ),
+        attackPattern: getAttackPattern(atkPos, currEnemy.damageType),
         abilityList: currEnemy.abilityList.map(({ text, textFormat }) => ({
           text: addTooltipAndColor(text),
           textFormat,
