@@ -201,15 +201,15 @@ function generateSlugTable() {
 
   fs.writeFileSync(
     path.resolve("./data/operator/slugTable.ts"),
-    `import type { OperatorId } from "@/data/types/AKCharacter";\n\nexport const OpSlugTable = ${niceJSON(
+    `import type { OperatorId } from "@/data/types/AKCharacter";\n\nexport const OpSlugTable: Record<string, OperatorId> = ${niceJSON(
       opSlugs
-    )} as Record<string, OperatorId>;\n`
+    )};\n`
   );
   fs.writeFileSync(
     path.resolve("./data/token/slugTable.ts"),
-    `import type { TokenId } from "@/data/types/AKCharacter";\n\nexport const TokSlugTable = ${niceJSON(
+    `import type { TokenId } from "@/data/types/AKCharacter";\n\nexport const TokSlugTable: Record<string, TokenId> = ${niceJSON(
       tokSlugs
-    )} as Record<string, TokenId>;\n`
+    )};\n`
   );
 }
 

@@ -118,6 +118,6 @@ export function generateBranchTable() {
   fs.writeFileSync(
     path.resolve("./data/types/AKClass.ts"),
     fs.readFileSync("./file_base/AKClass_base.txt", "utf8") +
-      `export const BranchTable = ${branchTableStr} as Record<BranchId, Branch>;\n`
+      `export const BranchTable: Record<BranchId, Branch> = ${branchTableStr};\n`
   );
 }

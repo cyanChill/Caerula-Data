@@ -1,8 +1,8 @@
 import DOMPurify from "isomorphic-dompurify";
 
 import type { BlackboardArr } from "@/types/JSONField";
-import GamedataConst from "@/data/gamedataConst.json";
-const { richTextStyles, termDescriptionDict } = GamedataConst;
+import Terminology from "@/data/gameplay/terminology.json";
+import ColorStyles from "@/json/colorStyles.json";
 
 import { decimalAsPercent } from "./conversion";
 
@@ -73,8 +73,8 @@ export function populateTemplate(str: string, values: BlackboardArr) {
   return populatedStr.replaceAll("--", "-");
 }
 
-type TextStyle = keyof typeof richTextStyles;
-type ToolTipKey = keyof typeof termDescriptionDict;
+type TextStyle = keyof typeof ColorStyles;
+type TermDescription = { name: string; description: string; slug: string };
 
 /** @description Replace tags (ie: <$></> and <@></>) with tooltip & color styling. */
 export function addTooltipAndColor(str: string | null) {
@@ -84,15 +84,24 @@ export function addTooltipAndColor(str: string | null) {
   /* Inject ability first as this is sometimes wrapped with a color. */
   returnStr = returnStr.replace(
     /<\$([^>/]*)>(.*?)<\/>/g, // ".*?" makes sure we get the shortest possible match.
-    (_: string, key: ToolTipKey, content: string) => {
-      const { slug, description } = termDescriptionDict[key];
+    (_: string, key: string, content: string) => {
+      const { slug, description } = Object.values(Terminology)
+        // Find the term nested in one of the term categories
+        .map(({ terms }: { terms: Record<string, TermDescription> }) => {
+          if (!Object.keys(terms).includes(key)) return null;
+          return terms[key];
+        })
+        // The resulting array should have 1 `TermDescription` object, with
+        // the remaining values being `null`
+        .filter((val) => !!val)[0] as unknown as TermDescription;
+
       return `<a href="/terminology#${slug}" title="${description}" style="border-bottom:1px dotted currentcolor;cursor:help;">${content}</a>`;
     }
   );
 
   /* Inject colors via spans. */
   returnStr = returnStr.replace(/<@([^>/]*)>/g, (_: string, key: TextStyle) => {
-    const colorVal = richTextStyles[key];
+    const colorVal = ColorStyles[key];
     if (!colorVal) return `<span>`; // Return plain span if we have no style for color.
     return `<span style="color:${colorVal};">`;
   });
