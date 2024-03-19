@@ -15188,6 +15188,32 @@
     "relatedEnemies": []
   },
   {
+    "sort": 682,
+    "id": "enemy_1353_esabr",
+    "slug": "paramilitary_gangster",
+    "code": "EG1",
+    "name": "Paramilitary Gangster",
+    "description": "A gangster hired to sow chaos, often picking fights. Their employer has provided them with an experimental thermal amplification device.",
+    "race": null,
+    "type": "NORMAL",
+    "attackPattern": "Melee Physical",
+    "abilityList": [
+      {
+        "text": "Energy Capacity: 10; Gains [Overload] upon reaching max Energy.",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "[Overload] Greatly increases ASPD, DEF, and RES for a period of time.",
+        "textFormat": "NORMAL"
+      }
+    ],
+    "immunities": [],
+    "lifePointReduction": 1,
+    "weight": 1,
+    "isFlying": false,
+    "relatedEnemies": []
+  },
+  {
     "sort": 683,
     "id": "enemy_1353_esabr_2",
     "slug": "paramilitary_gangster_leader",
@@ -15200,6 +15226,58 @@
     "abilityList": [
       {
         "text": "Energy Capacity: 10; Gains [Overload] upon reaching max Energy.",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "[Overload] Greatly increases ASPD, DEF, and RES for a period of time.",
+        "textFormat": "NORMAL"
+      }
+    ],
+    "immunities": [],
+    "lifePointReduction": 1,
+    "weight": 1,
+    "isFlying": false,
+    "relatedEnemies": []
+  },
+  {
+    "sort": 684,
+    "id": "enemy_1354_eghost",
+    "slug": "paramilitary_thief",
+    "code": "EG3",
+    "name": "Paramilitary Thief",
+    "description": "A gangster hired to sow chaos, more interested in stealing property than injuring others. The thermal amplification devices they are equipped with have not actually been tested for safety.",
+    "race": null,
+    "type": "NORMAL",
+    "attackPattern": "None Physical",
+    "abilityList": [
+      {
+        "text": "Can't be blocked. Energy Capacity: 10; Gains [Overload] upon reaching max Energy.",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "[Overload] Greatly increases ASPD, DEF, and RES for a period of time.",
+        "textFormat": "NORMAL"
+      }
+    ],
+    "immunities": [],
+    "lifePointReduction": 1,
+    "weight": 1,
+    "isFlying": false,
+    "relatedEnemies": []
+  },
+  {
+    "sort": 685,
+    "id": "enemy_1354_eghost_2",
+    "slug": "paramilitary_thief_leader",
+    "code": "EG4",
+    "name": "Paramilitary Thief Leader",
+    "description": "A gangster hired to sow chaos, adept at evading capture and acting quickly. The thermal amplification devices they are equipped with have not actually been tested for safety.",
+    "race": null,
+    "type": "NORMAL",
+    "attackPattern": "None Physical",
+    "abilityList": [
+      {
+        "text": "Can't be blocked. Energy Capacity: 10; Gains [Overload] upon reaching max Energy.",
         "textFormat": "NORMAL"
       },
       {
@@ -15257,6 +15335,220 @@
     "lifePointReduction": 1,
     "weight": 0,
     "isFlying": true,
+    "relatedEnemies": []
+  },
+  {
+    "sort": 688,
+    "id": "enemy_1356_egun",
+    "slug": "paramilitary_sniper",
+    "code": "EG5",
+    "name": "Paramilitary Sniper",
+    "description": "An outlaw hired to sow chaos, equipped with a thermal energy blaster with its output cranked up too high. However, as a result of this, they are able to charge the equipment of other gangsters.",
+    "race": null,
+    "type": "ELITE",
+    "attackPattern": "Ranged Physical",
+    "abilityList": [
+      {
+        "text": "Energy Capacity: 20; Gains [Overload] upon reaching max Energy.",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "Periodically stops moving and continuously provides Energy to all enemies within attack range.",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "[Overload] Greatly increases ASPD, DEF, and RES for a longer period of time.",
+        "textFormat": "NORMAL"
+      }
+    ],
+    "immunities": ["Silence"],
+    "lifePointReduction": 1,
+    "weight": 2,
+    "isFlying": false,
+    "relatedEnemies": []
+  },
+  {
+    "sort": 689,
+    "id": "enemy_1356_egun_2",
+    "slug": "paramilitary_sniper_leader",
+    "code": "EG6",
+    "name": "Paramilitary Sniper Leader",
+    "description": "An outlaw hired to sow chaos, well-accustomed to using thermal energy blasters and eager to just start blasting.",
+    "race": null,
+    "type": "ELITE",
+    "attackPattern": "Ranged Physical",
+    "abilityList": [
+      {
+        "text": "Energy Capacity: 20; Gains [Overload] upon reaching max Energy.",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "Periodically stops moving and continuously provides Energy to all enemies within attack range.",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "[Overload] Greatly increases ASPD, DEF, and RES for a longer period of time.",
+        "textFormat": "NORMAL"
+      }
+    ],
+    "immunities": ["Silence"],
+    "lifePointReduction": 1,
+    "weight": 2,
+    "isFlying": false,
+    "relatedEnemies": []
+  },
+  {
+    "sort": 690,
+    "id": "enemy_1357_erob",
+    "slug": "paramilitary_axeman",
+    "code": "EG7",
+    "name": "Paramilitary Axeman",
+    "description": "An outlaw hired to sow chaos, equipped with a thermal energy axe that consumes too much power. The energy supply isn't quite sufficient to start it up.",
+    "race": null,
+    "type": "ELITE",
+    "attackPattern": "Melee Physical",
+    "abilityList": [
+      {
+        "text": "Energy Capacity: 20; Gains [Overload] upon reaching max Energy.",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "Continuously drains 1 Energy from all nearby ground enemies.",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "[Overload] Greatly increases ASPD, DEF, and RES for a longer period of time.",
+        "textFormat": "NORMAL"
+      }
+    ],
+    "immunities": [],
+    "lifePointReduction": 1,
+    "weight": 3,
+    "isFlying": false,
+    "relatedEnemies": []
+  },
+  {
+    "sort": 691,
+    "id": "enemy_1357_erob_2",
+    "slug": "paramilitary_axeman_leader",
+    "code": "EG8",
+    "name": "Paramilitary Axeman Leader",
+    "description": "An outlaw hired to sow chaos, equipped with a thermal energy axe that consumes too much power. They will find a way to use their associates' energy supplies.",
+    "race": null,
+    "type": "ELITE",
+    "attackPattern": "Melee Physical",
+    "abilityList": [
+      {
+        "text": "Energy Capacity: 20; Gains [Overload] upon reaching max Energy.",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "Continuously drains 1 Energy from all nearby ground enemies.",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "[Overload] Greatly increases ASPD, DEF, and RES for a longer period of time.",
+        "textFormat": "NORMAL"
+      }
+    ],
+    "immunities": [],
+    "lifePointReduction": 1,
+    "weight": 3,
+    "isFlying": false,
+    "relatedEnemies": []
+  },
+  {
+    "sort": 692,
+    "id": "enemy_1358_esheld",
+    "slug": "paramilitary_defender",
+    "code": "EG9",
+    "name": "Paramilitary Defender",
+    "description": "A mercenary hired to sow chaos, equipped with a heavy protective suit that is charged in advance to preempt any energy leakage issues. Due to their relatively high education level, part of the job description is to provide handwritten thermal energy amplifier reports to their employer.",
+    "race": null,
+    "type": "ELITE",
+    "attackPattern": "Melee Physical",
+    "abilityList": [
+      {
+        "text": "Energy Capacity: 20; Gains [Overload] upon reaching max Energy.",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "Starts with an additional 15 Energy, but loses 1 Energy per 10 seconds.",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "[Overload] Greatly increases ASPD, DEF, and RES for a longer period of time.",
+        "textFormat": "NORMAL"
+      }
+    ],
+    "immunities": [],
+    "lifePointReduction": 1,
+    "weight": 4,
+    "isFlying": false,
+    "relatedEnemies": []
+  },
+  {
+    "sort": 693,
+    "id": "enemy_1358_esheld_2",
+    "slug": "paramilitary_defender_leader",
+    "code": "EG10",
+    "name": "Paramilitary Defender Leader",
+    "description": "A mercenary hired to sow chaos, equipped with a heavy protective suit that is charged in advance to preempt any energy leakage issues. In addition to causing damage, they are also responsible for compiling and submitting the team's test results.",
+    "race": null,
+    "type": "ELITE",
+    "attackPattern": "Melee Physical",
+    "abilityList": [
+      {
+        "text": "Energy Capacity: 20; Gains [Overload] upon reaching max Energy.",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "Starts with an additional 15 Energy, but loses 1 Energy per 10 seconds.",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "[Overload] Greatly increases ASPD, DEF, and RES for a longer period of time.",
+        "textFormat": "NORMAL"
+      }
+    ],
+    "immunities": [],
+    "lifePointReduction": 1,
+    "weight": 4,
+    "isFlying": false,
+    "relatedEnemies": []
+  },
+  {
+    "sort": 694,
+    "id": "enemy_1359_ekulsr",
+    "slug": "paramilitary_bombardier",
+    "code": "EG11",
+    "name": "Paramilitary Bombardier",
+    "description": "A mercenary hired to sow chaos, equipped with a compressed-air grenade launcher. In complete disregard to safety regulations, the gas cylinder is pre-heated to increase weapon efficiency.",
+    "race": null,
+    "type": "ELITE",
+    "attackPattern": "Melee Ranged Physical",
+    "abilityList": [
+      {
+        "text": "Energy Capacity: 30; Gains [Overload] upon reaching max Energy.",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "Starts with an additional 25 Energy, but loses 1 Energy per 5 seconds.",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "While not blocked, launches grenades that deal damage to the target and surrounding units.",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "[Overload] Greatly increases ASPD, DEF, and RES for a longer period of time.",
+        "textFormat": "NORMAL"
+      }
+    ],
+    "immunities": [],
+    "lifePointReduction": 1,
+    "weight": 3,
+    "isFlying": false,
     "relatedEnemies": []
   },
   {
