@@ -272,7 +272,7 @@ export const BranchTable: Record<BranchId, Branch> = {
     profession: "Sniper",
     position: "RANGED",
     damageType: "PHYSICAL",
-    trait: "Attacks consume Ammo to increase ATK to <span style=\"color:#00B0FF;\">120%</span>; While not attacking, Ammo will be slowly reloaded (max capacity 8)."
+    trait: "Attacks consume Ammo to increase ATK to <span style=\"color:#00B0FF;\">120%</span>; While not attacking, Ammo will be slowly reloaded (max capacity 4/6/8 (Elite 0/1/2))."
   },
   incantationmedic: {
     id: "incantationmedic",
