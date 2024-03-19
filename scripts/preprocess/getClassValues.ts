@@ -88,6 +88,8 @@ export function generateBranchTable() {
       );
     } else if (id === "healer") {
       unstylizedTrait = unstylizedTrait.replace("{heal_scale:0%}", "80%");
+    } else if (id === "hunter") {
+      unstylizedTrait = unstylizedTrait.replace("8", "4/6/8 (Elite 0/1/2)");
     } else if (id === "librator") {
       unstylizedTrait = unstylizedTrait
         .replace("{atk:0%}", "200%")

@@ -73,11 +73,17 @@ export function createEnemiesJSON() {
         code: currEnemy.enemyIndex,
         name: cleanString(currEnemy.name),
         description: cleanString(currEnemy.description),
-        race: baseStatVal.enemyTags.m_defined
-          ? EnemyRaceTable[
-              baseStatVal.enemyTags.m_value[0] as keyof typeof EnemyRaceTable
-            ]
-          : null,
+        /*
+          FIXME: Currently, some enemies in `enemey_database.json` note
+          `enemyTags` to be defined, but have the `m_value` which potentially
+          is an empty array be `null`
+        */
+        race:
+          baseStatVal.enemyTags.m_defined && !!baseStatVal.enemyTags.m_value
+            ? EnemyRaceTable[
+                baseStatVal.enemyTags.m_value[0] as keyof typeof EnemyRaceTable
+              ]
+            : null,
         type: currEnemy.enemyLevel,
         attackPattern: getAttackPattern(atkPos, currEnemy.damageType),
         abilityList: currEnemy.abilityList.map(({ text, textFormat }) => ({
