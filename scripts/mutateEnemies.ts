@@ -38,10 +38,10 @@ export function createEnemiesJSON() {
           atk: baseStatVal.attributes.atk.m_value,
           def: baseStatVal.attributes.def.m_value,
           res: baseStatVal.attributes.magicResistance.m_value,
-          erst: baseStatVal.attributes.epDamageResistance.m_value,
-          irst: baseStatVal.attributes.epResistance.m_value,
           mvSpd: baseStatVal.attributes.moveSpeed.m_value,
           atkInterval: baseStatVal.attributes.baseAttackTime.m_value,
+          erst: baseStatVal.attributes.epDamageResistance.m_value,
+          irst: baseStatVal.attributes.epResistance.m_value,
           atkRange: baseStatVal.rangeRadius.m_value, // Constant
         } as EnemyStat,
       ];
@@ -55,10 +55,10 @@ export function createEnemiesJSON() {
           ...optFieldAsObj(attributes.atk, "atk"),
           ...optFieldAsObj(attributes.def, "def"),
           ...optFieldAsObj(attributes.magicResistance, "res"),
-          ...optFieldAsObj(attributes.epDamageResistance, "erst"),
-          ...optFieldAsObj(attributes.epResistance, "irst"),
           ...optFieldAsObj(attributes.moveSpeed, "mvSpd"),
           ...optFieldAsObj(attributes.baseAttackTime, "atkInterval"),
+          ...optFieldAsObj(attributes.epDamageResistance, "erst"),
+          ...optFieldAsObj(attributes.epResistance, "irst"),
         } as EnemyStat);
       });
 
