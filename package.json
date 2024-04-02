@@ -10,18 +10,18 @@
     "data:mutate": "tsx ./index.ts"
   },
   "devDependencies": {
-    "@types/eslint": "^8.56.6",
+    "@types/eslint": "^8.56.7",
     "@types/lodash.deburr": "^4.1.9",
-    "@types/node": "^20.11.30",
-    "@typescript-eslint/eslint-plugin": "^7.3.1",
-    "@typescript-eslint/parser": "^7.3.1",
+    "@types/node": "^20.12.2",
+    "@typescript-eslint/eslint-plugin": "^7.5.0",
+    "@typescript-eslint/parser": "^7.5.0",
     "eslint": "^8.57.0",
-    "isomorphic-dompurify": "^2.4.0",
+    "isomorphic-dompurify": "^2.6.0",
     "lodash.deburr": "^4.1.0",
     "neatjson": "^0.10.6",
     "prettier": "^3.2.5",
     "tsx": "^4.7.1",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.3"
   },
   "keywords": [
     "arknights"
