@@ -11920,5 +11920,42 @@
       "atkInterval": 4,
       "atkRange": 2.2
     }
+  ],
+  "enemy_8001_flmlod_3": [
+    {
+      "hp": 100000,
+      "atk": 3000,
+      "def": 2000,
+      "res": 60,
+      "erst": 0,
+      "irst": 0,
+      "mvSpd": 0.4,
+      "atkInterval": 4.5,
+      "atkRange": -1
+    }
+  ],
+  "enemy_8006_flmgd": [
+    {
+      "hp": 50000,
+      "atk": 1750,
+      "def": 2000,
+      "res": 40,
+      "erst": 0,
+      "irst": 0,
+      "mvSpd": 0.5,
+      "atkInterval": 4,
+      "atkRange": -1
+    },
+    {
+      "hp": 80000,
+      "atk": 2250,
+      "def": 2000,
+      "res": 40,
+      "erst": 0,
+      "irst": 0,
+      "mvSpd": 0.5,
+      "atkInterval": 4,
+      "atkRange": -1
+    }
   ]
 }
