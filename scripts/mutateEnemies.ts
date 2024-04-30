@@ -15,6 +15,13 @@ import { generateSlug, optFieldAsObj } from "@/utils/conversion";
 import { addTooltipAndColor, cleanString } from "@/utils/textFormat";
 import { toLowercase } from "@/utils/typedStrings";
 
+/** @description List of enemies that actually deduct 0 life points on leak. */
+const lifePointOverride = new Set([
+  "enemy_4003_pbank",
+  "enemy_6006_fystone",
+  "enemy_7010_bldrgn",
+]);
+
 /** @description Creates a JSON file with an array of Enemy-type objects. */
 export function createEnemiesJSON() {
   const enemies: Enemy[] = [];
@@ -91,7 +98,14 @@ export function createEnemiesJSON() {
           textFormat,
         })),
         immunities: getImmunities(id, baseStatVal.attributes),
-        lifePointReduction: baseStatVal.lifePointReduce.m_value,
+        /*
+          Default life point reduction to `1` if the field is set to
+          "not be defined".
+        */
+        lifePointReduction:
+          baseStatVal.lifePointReduce.m_defined || lifePointOverride.has(id)
+            ? baseStatVal.lifePointReduce.m_value
+            : 1,
         weight: baseStatVal.attributes.massLevel.m_value,
         isFlying: baseStatVal.motion.m_value === "FLY",
         relatedEnemies: currEnemy.linkEnemies,
