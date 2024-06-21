@@ -1,5 +1,5 @@
-import fs from "fs";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 
 import type { RangeArea } from "@/data/types/AKRange";
 import RangeTable from "@/json/en_US/gamedata/excel/range_table.json";

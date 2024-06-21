@@ -1,5 +1,5 @@
-import fs from "fs";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 
 import type { AKItem } from "@/data/types/AKItem";
 import ItemTable from "@/json/en_US/gamedata/excel/item_table.json";

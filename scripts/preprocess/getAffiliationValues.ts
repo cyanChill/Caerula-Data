@@ -1,5 +1,5 @@
-import fs from "fs";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 
 import character_table from "@/json/en_US/gamedata/excel/character_table.json";
 import handbook_team_table from "@/json/en_US/gamedata/excel/handbook_team_table.json";
