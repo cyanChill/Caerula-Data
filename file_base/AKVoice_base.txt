@@ -1,15 +1,3 @@
-export const VoiceLangTable = {
-  CN_MANDARIN: "CN - Mandarin",
-  CN_TOPOLECT: "CN - Regional",
-  JP: "JP",
-  EN: "EN",
-  KR: "KR",
-  LINKAGE: "Collaboration",
-  ITA: "IT",
-  GER: "German",
-  RUS: "Russian"
-} as const;
-
 export type LanguageId = keyof typeof VoiceLangTable;
 export type Language = (typeof VoiceLangTable)[LanguageId];
 
