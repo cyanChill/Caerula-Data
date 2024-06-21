@@ -9,6 +9,7 @@ import { createSkinTable } from "./generateSkinTable";
 import { getNewValues } from "./getLatestValues";
 import { generateBranchTable } from "./getClassValues";
 import { generateAffiliationTables } from "./getAffiliationValues";
+import { generateLanguageTable } from "./getLanguageTable";
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   organizeCharacterTable();
@@ -18,4 +19,5 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   createSkinTable();
   generateBranchTable();
   generateAffiliationTables();
+  generateLanguageTable();
 }
