@@ -57,6 +57,7 @@ export interface RawCharacterStat {
     sleepImmune: boolean;
     frozenImmune: boolean;
     levitateImmune: boolean;
+    disarmedCombatImmune: boolean;
   };
 }
 

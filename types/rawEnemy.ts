@@ -54,6 +54,7 @@ export interface RawEnemyAttributes {
   sleepImmune: OptionalField<boolean>;
   frozenImmune: OptionalField<boolean>;
   levitateImmune: OptionalField<boolean>;
+  disarmedCombatImmune: OptionalField<boolean>;
 }
 
 interface Skill {

@@ -93,7 +93,7 @@ export function addTooltipAndColor(str: string | null) {
         })
         // The resulting array should have 1 `TermDescription` object, with
         // the remaining values being `null`
-        .filter((val) => !!val)[0] as unknown as TermDescription;
+        .filter((val) => val !== null)[0];
 
       return `<a href="/terminology#${slug}" title="${description}" style="border-bottom:1px dotted currentcolor;cursor:help;">${content}</a>`;
     }

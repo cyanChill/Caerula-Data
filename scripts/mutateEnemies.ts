@@ -1,5 +1,5 @@
-import fs from "fs";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 
 import type { RawEnemyAttributes } from "@/types/rawEnemy";
 import type { Enemy, EnemyStat } from "@/data/types/AKEnemy";
@@ -155,7 +155,9 @@ function getImmunities(key: string, effects: RawEnemyAttributes) {
   const immunities = new Set<string>();
 
   Debuffs.forEach((debuff) => {
-    const debuffStatus = effects[`${toLowercase(debuff)}Immune`];
+    const debuffKey =
+      debuff === "Frighten" ? "disarmedCombat" : toLowercase(debuff);
+    const debuffStatus = effects[`${debuffKey}Immune`];
     if (debuffStatus.m_defined && debuffStatus.m_value) immunities.add(debuff);
   });
 

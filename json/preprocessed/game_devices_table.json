@@ -54,7 +54,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -81,7 +82,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -158,7 +160,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -185,7 +188,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -262,7 +266,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -289,7 +294,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -366,7 +372,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -393,7 +400,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -470,7 +478,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -497,7 +506,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -574,7 +584,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -601,7 +612,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -678,7 +690,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -705,7 +718,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -797,7 +811,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -824,7 +839,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -911,7 +927,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -938,7 +955,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -1015,7 +1033,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -1042,7 +1061,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -1119,7 +1139,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -1146,7 +1167,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -1238,7 +1260,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -1265,7 +1288,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -1342,7 +1366,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -1369,7 +1394,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -1517,7 +1543,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -1544,7 +1571,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -1621,7 +1649,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -1648,7 +1677,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -1732,7 +1762,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -1759,7 +1790,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -1836,7 +1868,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -1863,7 +1896,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -1940,7 +1974,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -1967,7 +2002,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -2044,7 +2080,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -2071,7 +2108,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -2148,7 +2186,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -2175,7 +2214,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -2252,7 +2292,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -2279,7 +2320,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -2356,7 +2398,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -2383,7 +2426,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -2460,7 +2504,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -2487,7 +2532,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -2564,7 +2610,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -2591,7 +2638,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -2668,7 +2716,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -2695,7 +2744,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -2772,7 +2822,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -2799,7 +2850,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -2901,7 +2953,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -2928,7 +2981,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -3030,7 +3084,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -3057,7 +3112,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -3159,7 +3215,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -3186,7 +3243,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -3281,7 +3339,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -3308,7 +3367,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -3400,7 +3460,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -3427,7 +3488,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -3519,7 +3581,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -3546,7 +3609,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -3623,7 +3687,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -3650,7 +3715,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -3727,7 +3793,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -3754,7 +3821,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -3831,7 +3899,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -3858,7 +3927,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -3950,7 +4020,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -3977,7 +4048,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -4083,7 +4155,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -4110,7 +4183,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -4205,7 +4279,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -4232,7 +4307,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -4316,7 +4392,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -4343,7 +4420,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -4420,7 +4498,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -4447,7 +4526,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -4538,7 +4618,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -4565,7 +4646,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -4663,7 +4745,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -4690,7 +4773,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -4767,7 +4851,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -4794,7 +4879,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -4886,7 +4972,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -4913,7 +5000,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -4990,7 +5078,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -5017,7 +5106,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -5109,7 +5199,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -5136,7 +5227,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -5213,7 +5305,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -5240,7 +5333,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -5250,6 +5344,13 @@
     "skills": [
       {
         "skillId": "sktok_blizzard",
+        "overridePrefabKey": null,
+        "overrideTokenKey": null,
+        "levelUpCostCond": [],
+        "unlockCond": { "phase": "PHASE_0", "level": 1 }
+      },
+      {
+        "skillId": "sktok_blizzard_2",
         "overridePrefabKey": null,
         "overrideTokenKey": null,
         "levelUpCostCond": [],
@@ -5317,7 +5418,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -5344,7 +5446,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -5421,7 +5524,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -5448,7 +5552,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -5525,7 +5630,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -5552,7 +5658,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -5629,7 +5736,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -5656,7 +5764,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -5748,7 +5857,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -5775,7 +5885,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -5852,7 +5963,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -5879,7 +5991,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -5963,7 +6076,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -5990,7 +6104,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -6105,7 +6220,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -6132,7 +6248,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -6247,7 +6364,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -6274,7 +6392,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -6397,7 +6516,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -6424,7 +6544,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -6530,7 +6651,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -6557,7 +6679,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -6663,7 +6786,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -6690,7 +6814,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -6774,7 +6899,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -6801,7 +6927,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -6885,7 +7012,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -6912,7 +7040,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -7004,7 +7133,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -7031,7 +7161,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -7108,7 +7239,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -7135,7 +7267,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -7212,7 +7345,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -7239,7 +7373,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -7316,7 +7451,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -7343,7 +7479,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -7420,7 +7557,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -7447,7 +7585,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -7559,7 +7698,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -7586,7 +7726,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -7681,7 +7822,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -7708,7 +7850,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -7785,7 +7928,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -7812,7 +7956,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -7904,7 +8049,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -7931,7 +8077,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -8023,7 +8170,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -8050,7 +8198,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -8142,7 +8291,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -8169,7 +8319,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -8261,7 +8412,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -8288,7 +8440,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -8372,7 +8525,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -8399,7 +8553,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -8476,7 +8631,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -8503,7 +8659,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -8580,7 +8737,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -8607,7 +8765,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -8691,7 +8850,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -8718,7 +8878,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -8795,7 +8956,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -8822,7 +8984,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -8899,7 +9062,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -8926,7 +9090,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -9018,7 +9183,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -9045,7 +9211,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -9137,7 +9304,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -9164,7 +9332,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -9241,7 +9410,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -9268,7 +9438,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -9356,7 +9527,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -9383,7 +9555,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -9500,7 +9673,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -9527,7 +9701,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -9658,7 +9833,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -9685,7 +9861,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -9819,7 +9996,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -9846,7 +10024,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -9941,7 +10120,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -9968,7 +10148,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -10060,7 +10241,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -10087,7 +10269,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -10190,7 +10373,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -10217,7 +10401,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -10309,7 +10494,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -10336,7 +10522,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -10435,7 +10622,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -10462,7 +10650,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -10557,7 +10746,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -10584,7 +10774,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -10661,7 +10852,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -10688,7 +10880,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -10775,7 +10968,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -10802,7 +10996,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -10871,7 +11066,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -10898,7 +11094,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -11007,7 +11204,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -11034,7 +11232,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -11111,7 +11310,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -11138,7 +11338,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -11215,7 +11416,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -11242,7 +11444,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -11334,7 +11537,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -11361,7 +11565,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -11453,7 +11658,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -11480,7 +11686,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -11572,7 +11779,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -11599,7 +11807,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -11676,7 +11885,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -11703,7 +11913,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -11780,7 +11991,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -11807,7 +12019,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -11884,7 +12097,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -11911,7 +12125,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -11988,7 +12203,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -12015,7 +12231,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -12107,7 +12324,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -12134,7 +12352,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -12211,7 +12430,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -12238,7 +12458,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -12333,7 +12554,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -12360,7 +12582,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -12455,7 +12678,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -12482,7 +12706,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -12588,7 +12813,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -12615,7 +12841,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -12703,7 +12930,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -12730,7 +12958,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -12818,7 +13047,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -12845,7 +13075,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -12937,7 +13168,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -12964,7 +13196,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -13041,7 +13274,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -13068,7 +13302,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -13160,7 +13395,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -13187,7 +13423,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -13264,7 +13501,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -13291,7 +13529,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -13388,7 +13627,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -13415,7 +13655,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -13512,7 +13753,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -13539,7 +13781,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -13616,7 +13859,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -13643,7 +13887,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -13746,7 +13991,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -13773,7 +14019,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -13865,7 +14112,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -13892,7 +14140,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -13969,7 +14218,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -13996,7 +14246,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -14023,7 +14274,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -14050,7 +14302,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -14145,7 +14398,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -14172,7 +14426,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -14199,7 +14454,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -14315,7 +14571,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -14342,7 +14599,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -14369,7 +14627,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -14396,7 +14655,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -14525,7 +14785,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -14552,7 +14813,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -14629,7 +14891,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -14656,7 +14919,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -14748,7 +15012,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -14775,7 +15040,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -14867,7 +15133,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -14894,7 +15161,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -14986,7 +15254,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -15013,7 +15282,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -15090,7 +15360,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -15117,7 +15388,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -15194,7 +15466,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -15221,7 +15494,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -15319,7 +15593,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -15346,7 +15621,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -15444,7 +15720,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -15471,7 +15748,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -15569,7 +15847,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -15596,7 +15875,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -15623,7 +15903,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -15739,7 +16020,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -15766,7 +16048,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -15793,7 +16076,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -15909,7 +16193,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -15936,7 +16221,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -15963,7 +16249,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -16055,7 +16342,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -16082,7 +16370,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -16159,7 +16448,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -16186,7 +16476,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -16213,7 +16504,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -16305,7 +16597,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -16332,7 +16625,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -16359,7 +16653,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -16451,7 +16746,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -16478,7 +16774,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -16505,7 +16802,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -16597,7 +16895,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -16624,7 +16923,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -16722,7 +17022,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -16749,7 +17050,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -16776,7 +17078,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -16803,7 +17106,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -16898,7 +17202,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -16925,7 +17230,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -17002,7 +17308,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -17029,7 +17336,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -17106,7 +17414,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -17133,7 +17442,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -17210,7 +17520,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -17237,7 +17548,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -17314,7 +17626,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -17341,7 +17654,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -17418,7 +17732,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -17445,7 +17760,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -17522,7 +17838,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -17549,7 +17866,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -17626,7 +17944,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -17653,7 +17972,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -17730,7 +18050,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -17757,7 +18078,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -17834,7 +18156,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -17861,7 +18184,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -17938,7 +18262,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -17965,7 +18290,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -18056,7 +18382,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -18083,7 +18410,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -18167,7 +18495,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -18194,7 +18523,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -18285,7 +18615,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -18312,7 +18643,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -18389,7 +18721,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -18416,7 +18749,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -18528,7 +18862,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -18555,7 +18890,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -18660,7 +18996,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -18687,7 +19024,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -18793,7 +19131,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -18820,7 +19159,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -18912,7 +19252,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -18939,7 +19280,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -19016,7 +19358,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -19043,7 +19386,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -19135,7 +19479,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -19162,7 +19507,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -19257,7 +19603,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -19284,7 +19631,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -19361,7 +19709,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -19388,7 +19737,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -19485,7 +19835,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -19512,7 +19863,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -19604,7 +19956,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -19631,7 +19984,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -19708,7 +20062,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -19735,7 +20090,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -19812,7 +20168,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -19839,7 +20196,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -19916,7 +20274,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -19943,7 +20302,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -20020,7 +20380,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -20047,7 +20408,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -20124,7 +20486,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -20151,7 +20514,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -20228,7 +20592,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -20255,7 +20620,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -20332,7 +20698,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -20359,7 +20726,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -20436,7 +20804,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -20463,7 +20832,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -20540,7 +20910,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -20567,7 +20938,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -20644,7 +21016,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -20671,7 +21044,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -20759,7 +21133,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -20786,7 +21161,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -20889,7 +21265,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -20916,7 +21293,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -21019,7 +21397,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -21046,7 +21425,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -21138,7 +21518,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -21165,7 +21546,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -21257,7 +21639,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -21284,7 +21667,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -21376,7 +21760,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -21403,7 +21788,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -21495,7 +21881,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -21522,7 +21909,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -21614,7 +22002,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -21641,7 +22030,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -21733,7 +22123,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -21760,7 +22151,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -21852,7 +22244,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -21879,7 +22272,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -21956,7 +22350,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -21983,7 +22378,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -22084,7 +22480,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -22111,7 +22508,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -22203,7 +22601,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -22230,7 +22629,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -22307,7 +22707,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -22334,7 +22735,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -22411,7 +22813,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -22438,7 +22841,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -22534,7 +22938,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -22561,7 +22966,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -22653,7 +23059,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -22680,7 +23087,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -22772,7 +23180,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -22799,7 +23208,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -22891,7 +23301,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -22918,7 +23329,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -22995,7 +23407,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -23022,7 +23435,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -23153,7 +23567,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -23180,7 +23595,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -23277,7 +23693,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -23304,7 +23721,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -23430,7 +23848,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -23457,7 +23876,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -23534,7 +23954,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -23561,7 +23982,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -23653,7 +24075,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -23680,7 +24103,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -23787,7 +24211,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -23814,7 +24239,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -23906,7 +24332,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           },
           {
@@ -23933,7 +24360,8 @@
               "silenceImmune": false,
               "sleepImmune": false,
               "frozenImmune": false,
-              "levitateImmune": false
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
             }
           }
         ],
@@ -23976,6 +24404,276 @@
             "description": null,
             "rangeId": null,
             "blackboard": [{ "key": "interval", "value": 0.5, "valueStr": null }],
+            "tokenKey": null
+          }
+        ]
+      }
+    ],
+    "potentialRanks": [],
+    "favorKeyFrames": null,
+    "allSkillLvlup": []
+  },
+  "trap_137_winfire": {
+    "name": "Emergency Heater",
+    "description": "More likely to be attacked by your units; nearby Operators are immune to the Frigid environmental effect",
+    "canUseGeneralPotentialItem": true,
+    "canUseActivityPotentialItem": false,
+    "potentialItemId": null,
+    "activityPotentialItemId": null,
+    "classicPotentialItemId": null,
+    "nationId": null,
+    "groupId": null,
+    "teamId": null,
+    "displayNumber": null,
+    "appellation": " ",
+    "position": "NONE",
+    "tagList": null,
+    "itemUsage": null,
+    "itemDesc": null,
+    "itemObtainApproach": null,
+    "isNotObtainable": false,
+    "isSpChar": false,
+    "maxPotentialLevel": 0,
+    "rarity": "TIER_1",
+    "profession": "TRAP",
+    "subProfessionId": "notchar2",
+    "trait": null,
+    "phases": [
+      {
+        "characterPrefabKey": "trap_137_winfire",
+        "rangeId": null,
+        "maxLevel": 30,
+        "attributesKeyFrames": [
+          {
+            "level": 1,
+            "data": {
+              "maxHp": 40000,
+              "atk": 334,
+              "def": 0,
+              "magicResistance": 10,
+              "cost": 10,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 5,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 1,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          },
+          {
+            "level": 30,
+            "data": {
+              "maxHp": 40000,
+              "atk": 3000,
+              "def": 0,
+              "magicResistance": 10,
+              "cost": 5,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 5,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 1,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          }
+        ],
+        "evolveCost": null
+      }
+    ],
+    "skills": [
+      {
+        "skillId": "sktok_winfire",
+        "overridePrefabKey": null,
+        "overrideTokenKey": null,
+        "levelUpCostCond": [],
+        "unlockCond": { "phase": "PHASE_0", "level": 1 }
+      }
+    ],
+    "displayTokenDict": null,
+    "talents": [
+      {
+        "candidates": [
+          {
+            "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [{ "key": "value", "value": 1, "valueStr": null }],
+            "tokenKey": null
+          }
+        ]
+      }
+    ],
+    "potentialRanks": [],
+    "favorKeyFrames": null,
+    "allSkillLvlup": []
+  },
+  "trap_138_winstone": {
+    "name": "Flint",
+    "description": "Immediately ignite an Emergency Heater",
+    "canUseGeneralPotentialItem": true,
+    "canUseActivityPotentialItem": false,
+    "potentialItemId": null,
+    "activityPotentialItemId": null,
+    "classicPotentialItemId": null,
+    "nationId": null,
+    "groupId": null,
+    "teamId": null,
+    "displayNumber": null,
+    "appellation": " ",
+    "position": "NONE",
+    "tagList": null,
+    "itemUsage": null,
+    "itemDesc": null,
+    "itemObtainApproach": null,
+    "isNotObtainable": false,
+    "isSpChar": false,
+    "maxPotentialLevel": 0,
+    "rarity": "TIER_1",
+    "profession": "TRAP",
+    "subProfessionId": "notchar2",
+    "trait": null,
+    "phases": [
+      {
+        "characterPrefabKey": "trap_138_winstone",
+        "rangeId": null,
+        "maxLevel": 30,
+        "attributesKeyFrames": [
+          {
+            "level": 1,
+            "data": {
+              "maxHp": 40000,
+              "atk": 334,
+              "def": 0,
+              "magicResistance": 10,
+              "cost": 5,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 30,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": -1,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          },
+          {
+            "level": 2,
+            "data": {
+              "maxHp": 40000,
+              "atk": 3000,
+              "def": 0,
+              "magicResistance": 10,
+              "cost": 5,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 60,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          },
+          {
+            "level": 30,
+            "data": {
+              "maxHp": 40000,
+              "atk": 3000,
+              "def": 0,
+              "magicResistance": 10,
+              "cost": 5,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 60,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          }
+        ],
+        "evolveCost": null
+      }
+    ],
+    "skills": [
+      {
+        "skillId": "sktok_winstone",
+        "overridePrefabKey": null,
+        "overrideTokenKey": null,
+        "levelUpCostCond": [],
+        "unlockCond": { "phase": "PHASE_0", "level": 1 }
+      }
+    ],
+    "displayTokenDict": null,
+    "talents": [
+      {
+        "candidates": [
+          {
+            "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [{ "key": "interval", "value": 0.6, "valueStr": null }],
             "tokenKey": null
           }
         ]

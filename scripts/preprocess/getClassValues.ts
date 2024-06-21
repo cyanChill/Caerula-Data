@@ -1,5 +1,5 @@
-import fs from "fs";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 
 import gameData_const from "@/json/en_US/gamedata/excel/gamedata_const.json";
 import character_table from "@/json/en_US/gamedata/excel/character_table.json";
