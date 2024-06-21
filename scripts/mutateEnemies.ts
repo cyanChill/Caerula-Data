@@ -155,7 +155,9 @@ function getImmunities(key: string, effects: RawEnemyAttributes) {
   const immunities = new Set<string>();
 
   Debuffs.forEach((debuff) => {
-    const debuffStatus = effects[`${toLowercase(debuff)}Immune`];
+    const debuffKey =
+      debuff === "Frighten" ? "disarmedCombat" : toLowercase(debuff);
+    const debuffStatus = effects[`${debuffKey}Immune`];
     if (debuffStatus.m_defined && debuffStatus.m_value) immunities.add(debuff);
   });
 

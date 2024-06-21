@@ -18242,7 +18242,7 @@
         "textFormat": "NORMAL"
       }
     ],
-    "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
+    "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate", "Frighten"],
     "lifePointReduction": 1,
     "weight": 10,
     "isFlying": false,
@@ -19754,7 +19754,7 @@
         "textFormat": "NORMAL"
       }
     ],
-    "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
+    "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate", "Frighten"],
     "lifePointReduction": 1,
     "weight": 10,
     "isFlying": false,
@@ -20357,7 +20357,7 @@
         "textFormat": "NORMAL"
       }
     ],
-    "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate"],
+    "immunities": ["Stun", "Silence", "Sleep", "Frozen", "Levitate", "Frighten"],
     "lifePointReduction": 1,
     "weight": 10,
     "isFlying": false,
