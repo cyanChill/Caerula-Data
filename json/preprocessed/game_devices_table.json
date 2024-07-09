@@ -24682,5 +24682,1269 @@
     "potentialRanks": [],
     "favorKeyFrames": null,
     "allSkillLvlup": []
+  },
+  "trap_736_mercha": {
+    "name": "Chargeable Supervisory Speaker",
+    "description": null,
+    "canUseGeneralPotentialItem": true,
+    "canUseActivityPotentialItem": false,
+    "potentialItemId": null,
+    "activityPotentialItemId": null,
+    "classicPotentialItemId": null,
+    "nationId": null,
+    "groupId": null,
+    "teamId": null,
+    "displayNumber": null,
+    "appellation": " ",
+    "position": "NONE",
+    "tagList": null,
+    "itemUsage": null,
+    "itemDesc": null,
+    "itemObtainApproach": null,
+    "isNotObtainable": false,
+    "isSpChar": false,
+    "maxPotentialLevel": 0,
+    "rarity": "TIER_1",
+    "profession": "TRAP",
+    "subProfessionId": "notchar2",
+    "trait": {
+      "candidates": [
+        {
+          "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+          "requiredPotentialRank": 0,
+          "blackboard": [],
+          "overrideDescripton": null,
+          "prefabKey": null,
+          "rangeId": "1-1"
+        }
+      ]
+    },
+    "phases": [
+      {
+        "characterPrefabKey": "trap_736_mercha",
+        "rangeId": "1-1",
+        "maxLevel": 30,
+        "attributesKeyFrames": [
+          {
+            "level": 1,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 20,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 30,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          },
+          {
+            "level": 30,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 20,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 30,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          }
+        ],
+        "evolveCost": null
+      }
+    ],
+    "skills": [
+      {
+        "skillId": "sktok_mercha",
+        "overridePrefabKey": null,
+        "overrideTokenKey": null,
+        "levelUpCostCond": [],
+        "unlockCond": { "phase": "PHASE_0", "level": 1 }
+      }
+    ],
+    "displayTokenDict": null,
+    "talents": null,
+    "potentialRanks": [],
+    "favorKeyFrames": null,
+    "allSkillLvlup": []
+  },
+  "trap_737_merchaa": {
+    "name": "Chargeable Supervisory Speaker",
+    "description": null,
+    "canUseGeneralPotentialItem": true,
+    "canUseActivityPotentialItem": false,
+    "potentialItemId": null,
+    "activityPotentialItemId": null,
+    "classicPotentialItemId": null,
+    "nationId": null,
+    "groupId": null,
+    "teamId": null,
+    "displayNumber": null,
+    "appellation": " ",
+    "position": "NONE",
+    "tagList": null,
+    "itemUsage": null,
+    "itemDesc": null,
+    "itemObtainApproach": null,
+    "isNotObtainable": false,
+    "isSpChar": false,
+    "maxPotentialLevel": 0,
+    "rarity": "TIER_1",
+    "profession": "TRAP",
+    "subProfessionId": "notchar2",
+    "trait": {
+      "candidates": [
+        {
+          "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+          "requiredPotentialRank": 0,
+          "blackboard": [],
+          "overrideDescripton": null,
+          "prefabKey": null,
+          "rangeId": "1-1"
+        }
+      ]
+    },
+    "phases": [
+      {
+        "characterPrefabKey": "trap_737_merchaa",
+        "rangeId": "1-1",
+        "maxLevel": 30,
+        "attributesKeyFrames": [
+          {
+            "level": 1,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 20,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 30,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          },
+          {
+            "level": 30,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 20,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 30,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          }
+        ],
+        "evolveCost": null
+      }
+    ],
+    "skills": [
+      {
+        "skillId": "sktok_merchaa",
+        "overridePrefabKey": null,
+        "overrideTokenKey": null,
+        "levelUpCostCond": [],
+        "unlockCond": { "phase": "PHASE_0", "level": 1 }
+      }
+    ],
+    "displayTokenDict": null,
+    "talents": null,
+    "potentialRanks": [],
+    "favorKeyFrames": null,
+    "allSkillLvlup": []
+  },
+  "trap_738_merchab": {
+    "name": "Chargeable Supervisory Speaker",
+    "description": null,
+    "canUseGeneralPotentialItem": true,
+    "canUseActivityPotentialItem": false,
+    "potentialItemId": null,
+    "activityPotentialItemId": null,
+    "classicPotentialItemId": null,
+    "nationId": null,
+    "groupId": null,
+    "teamId": null,
+    "displayNumber": null,
+    "appellation": " ",
+    "position": "NONE",
+    "tagList": null,
+    "itemUsage": null,
+    "itemDesc": null,
+    "itemObtainApproach": null,
+    "isNotObtainable": false,
+    "isSpChar": false,
+    "maxPotentialLevel": 0,
+    "rarity": "TIER_1",
+    "profession": "TRAP",
+    "subProfessionId": "notchar2",
+    "trait": {
+      "candidates": [
+        {
+          "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+          "requiredPotentialRank": 0,
+          "blackboard": [],
+          "overrideDescripton": null,
+          "prefabKey": null,
+          "rangeId": "1-1"
+        }
+      ]
+    },
+    "phases": [
+      {
+        "characterPrefabKey": "trap_738_merchab",
+        "rangeId": "1-1",
+        "maxLevel": 30,
+        "attributesKeyFrames": [
+          {
+            "level": 1,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 20,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 30,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          },
+          {
+            "level": 30,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 20,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 30,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          }
+        ],
+        "evolveCost": null
+      }
+    ],
+    "skills": [
+      {
+        "skillId": "sktok_merchab",
+        "overridePrefabKey": null,
+        "overrideTokenKey": null,
+        "levelUpCostCond": [],
+        "unlockCond": { "phase": "PHASE_0", "level": 1 }
+      }
+    ],
+    "displayTokenDict": null,
+    "talents": null,
+    "potentialRanks": [],
+    "favorKeyFrames": null,
+    "allSkillLvlup": []
+  },
+  "trap_739_sniper": {
+    "name": "Smart Airspace Controller",
+    "description": null,
+    "canUseGeneralPotentialItem": true,
+    "canUseActivityPotentialItem": false,
+    "potentialItemId": null,
+    "activityPotentialItemId": null,
+    "classicPotentialItemId": null,
+    "nationId": null,
+    "groupId": null,
+    "teamId": null,
+    "displayNumber": null,
+    "appellation": " ",
+    "position": "NONE",
+    "tagList": null,
+    "itemUsage": null,
+    "itemDesc": null,
+    "itemObtainApproach": null,
+    "isNotObtainable": false,
+    "isSpChar": false,
+    "maxPotentialLevel": 0,
+    "rarity": "TIER_1",
+    "profession": "TRAP",
+    "subProfessionId": "notchar2",
+    "trait": {
+      "candidates": [
+        {
+          "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+          "requiredPotentialRank": 0,
+          "blackboard": [{ "key": "legion_start_in_hand", "value": 1, "valueStr": null }],
+          "overrideDescripton": "Always appears in the waiting zone at start of battle",
+          "prefabKey": null,
+          "rangeId": null
+        }
+      ]
+    },
+    "phases": [
+      {
+        "characterPrefabKey": "trap_739_sniper",
+        "rangeId": "0-1",
+        "maxLevel": 30,
+        "attributesKeyFrames": [
+          {
+            "level": 1,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 5,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 30,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          },
+          {
+            "level": 30,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 5,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 30,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          }
+        ],
+        "evolveCost": null
+      }
+    ],
+    "skills": [
+      {
+        "skillId": "sktok_sniper",
+        "overridePrefabKey": null,
+        "overrideTokenKey": null,
+        "levelUpCostCond": [],
+        "unlockCond": { "phase": "PHASE_0", "level": 1 }
+      }
+    ],
+    "displayTokenDict": null,
+    "talents": [
+      {
+        "candidates": [
+          {
+            "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+            "requiredPotentialRank": 0,
+            "prefabKey": "-1",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [{ "key": "legion_start_in_hand", "value": 1, "valueStr": null }],
+            "tokenKey": null
+          }
+        ]
+      }
+    ],
+    "potentialRanks": [],
+    "favorKeyFrames": null,
+    "allSkillLvlup": []
+  },
+  "trap_740_snipera": {
+    "name": "Smart Airspace Controller",
+    "description": null,
+    "canUseGeneralPotentialItem": true,
+    "canUseActivityPotentialItem": false,
+    "potentialItemId": null,
+    "activityPotentialItemId": null,
+    "classicPotentialItemId": null,
+    "nationId": null,
+    "groupId": null,
+    "teamId": null,
+    "displayNumber": null,
+    "appellation": " ",
+    "position": "NONE",
+    "tagList": null,
+    "itemUsage": null,
+    "itemDesc": null,
+    "itemObtainApproach": null,
+    "isNotObtainable": false,
+    "isSpChar": false,
+    "maxPotentialLevel": 0,
+    "rarity": "TIER_1",
+    "profession": "TRAP",
+    "subProfessionId": "notchar2",
+    "trait": {
+      "candidates": [
+        {
+          "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+          "requiredPotentialRank": 0,
+          "blackboard": [{ "key": "legion_start_in_hand", "value": 1, "valueStr": null }],
+          "overrideDescripton": "Always appears in the waiting zone at start of battle",
+          "prefabKey": null,
+          "rangeId": null
+        }
+      ]
+    },
+    "phases": [
+      {
+        "characterPrefabKey": "trap_740_snipera",
+        "rangeId": "0-1",
+        "maxLevel": 30,
+        "attributesKeyFrames": [
+          {
+            "level": 1,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 5,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 30,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          },
+          {
+            "level": 30,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 5,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 30,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          }
+        ],
+        "evolveCost": null
+      }
+    ],
+    "skills": [
+      {
+        "skillId": "sktok_snipera",
+        "overridePrefabKey": null,
+        "overrideTokenKey": null,
+        "levelUpCostCond": [],
+        "unlockCond": { "phase": "PHASE_0", "level": 1 }
+      }
+    ],
+    "displayTokenDict": null,
+    "talents": [
+      {
+        "candidates": [
+          {
+            "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+            "requiredPotentialRank": 0,
+            "prefabKey": "-1",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [{ "key": "legion_start_in_hand", "value": 1, "valueStr": null }],
+            "tokenKey": null
+          }
+        ]
+      }
+    ],
+    "potentialRanks": [],
+    "favorKeyFrames": null,
+    "allSkillLvlup": []
+  },
+  "trap_741_sniperb": {
+    "name": "Smart Airspace Controller",
+    "description": null,
+    "canUseGeneralPotentialItem": true,
+    "canUseActivityPotentialItem": false,
+    "potentialItemId": null,
+    "activityPotentialItemId": null,
+    "classicPotentialItemId": null,
+    "nationId": null,
+    "groupId": null,
+    "teamId": null,
+    "displayNumber": null,
+    "appellation": " ",
+    "position": "NONE",
+    "tagList": null,
+    "itemUsage": null,
+    "itemDesc": null,
+    "itemObtainApproach": null,
+    "isNotObtainable": false,
+    "isSpChar": false,
+    "maxPotentialLevel": 0,
+    "rarity": "TIER_1",
+    "profession": "TRAP",
+    "subProfessionId": "notchar2",
+    "trait": {
+      "candidates": [
+        {
+          "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+          "requiredPotentialRank": 0,
+          "blackboard": [{ "key": "legion_start_in_hand", "value": 1, "valueStr": null }],
+          "overrideDescripton": "Always appears in the waiting zone at start of battle",
+          "prefabKey": null,
+          "rangeId": null
+        }
+      ]
+    },
+    "phases": [
+      {
+        "characterPrefabKey": "trap_741_sniperb",
+        "rangeId": "0-1",
+        "maxLevel": 30,
+        "attributesKeyFrames": [
+          {
+            "level": 1,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 5,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 30,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          },
+          {
+            "level": 30,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 5,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 30,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          }
+        ],
+        "evolveCost": null
+      }
+    ],
+    "skills": [
+      {
+        "skillId": "sktok_sniperb",
+        "overridePrefabKey": null,
+        "overrideTokenKey": null,
+        "levelUpCostCond": [],
+        "unlockCond": { "phase": "PHASE_0", "level": 1 }
+      }
+    ],
+    "displayTokenDict": null,
+    "talents": [
+      {
+        "candidates": [
+          {
+            "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+            "requiredPotentialRank": 0,
+            "prefabKey": "-1",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [{ "key": "legion_start_in_hand", "value": 1, "valueStr": null }],
+            "tokenKey": null
+          }
+        ]
+      }
+    ],
+    "potentialRanks": [],
+    "favorKeyFrames": null,
+    "allSkillLvlup": []
+  },
+  "trap_742_gasbot": {
+    "name": "Quick-freezing Sprayer Platform",
+    "description": null,
+    "canUseGeneralPotentialItem": true,
+    "canUseActivityPotentialItem": false,
+    "potentialItemId": null,
+    "activityPotentialItemId": null,
+    "classicPotentialItemId": null,
+    "nationId": null,
+    "groupId": null,
+    "teamId": null,
+    "displayNumber": null,
+    "appellation": " ",
+    "position": "NONE",
+    "tagList": null,
+    "itemUsage": null,
+    "itemDesc": null,
+    "itemObtainApproach": null,
+    "isNotObtainable": false,
+    "isSpChar": false,
+    "maxPotentialLevel": 0,
+    "rarity": "TIER_1",
+    "profession": "TRAP",
+    "subProfessionId": "notchar2",
+    "trait": {
+      "candidates": [
+        {
+          "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+          "requiredPotentialRank": 0,
+          "blackboard": [{ "key": "legion_start_in_hand", "value": 1, "valueStr": null }],
+          "overrideDescripton": "More likely to be attacked; always starts in the Deployment Waiting Zone",
+          "prefabKey": null,
+          "rangeId": null
+        }
+      ]
+    },
+    "phases": [
+      {
+        "characterPrefabKey": "trap_742_gasbot",
+        "rangeId": "x-1",
+        "maxLevel": 30,
+        "attributesKeyFrames": [
+          {
+            "level": 1,
+            "data": {
+              "maxHp": 15000,
+              "atk": 0,
+              "def": 200,
+              "magicResistance": 0,
+              "cost": 5,
+              "blockCnt": 2,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 30,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 1,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          },
+          {
+            "level": 30,
+            "data": {
+              "maxHp": 15000,
+              "atk": 0,
+              "def": 200,
+              "magicResistance": 0,
+              "cost": 5,
+              "blockCnt": 2,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 30,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 1,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          }
+        ],
+        "evolveCost": null
+      }
+    ],
+    "skills": [
+      {
+        "skillId": "sktok_gasbot",
+        "overridePrefabKey": null,
+        "overrideTokenKey": null,
+        "levelUpCostCond": [],
+        "unlockCond": { "phase": "PHASE_0", "level": 1 }
+      }
+    ],
+    "displayTokenDict": null,
+    "talents": [
+      {
+        "candidates": [
+          {
+            "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [],
+            "tokenKey": null
+          }
+        ]
+      }
+    ],
+    "potentialRanks": [],
+    "favorKeyFrames": null,
+    "allSkillLvlup": []
+  },
+  "trap_743_gasbota": {
+    "name": "Quick-freezing Sprayer Platform",
+    "description": null,
+    "canUseGeneralPotentialItem": true,
+    "canUseActivityPotentialItem": false,
+    "potentialItemId": null,
+    "activityPotentialItemId": null,
+    "classicPotentialItemId": null,
+    "nationId": null,
+    "groupId": null,
+    "teamId": null,
+    "displayNumber": null,
+    "appellation": " ",
+    "position": "NONE",
+    "tagList": null,
+    "itemUsage": null,
+    "itemDesc": null,
+    "itemObtainApproach": null,
+    "isNotObtainable": false,
+    "isSpChar": false,
+    "maxPotentialLevel": 0,
+    "rarity": "TIER_1",
+    "profession": "TRAP",
+    "subProfessionId": "notchar2",
+    "trait": {
+      "candidates": [
+        {
+          "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+          "requiredPotentialRank": 0,
+          "blackboard": [{ "key": "legion_start_in_hand", "value": 1, "valueStr": null }],
+          "overrideDescripton": "More likely to be attacked; always starts in the Deployment Waiting Zone",
+          "prefabKey": null,
+          "rangeId": null
+        }
+      ]
+    },
+    "phases": [
+      {
+        "characterPrefabKey": "trap_743_gasbota",
+        "rangeId": "x-1",
+        "maxLevel": 30,
+        "attributesKeyFrames": [
+          {
+            "level": 1,
+            "data": {
+              "maxHp": 15000,
+              "atk": 0,
+              "def": 200,
+              "magicResistance": 0,
+              "cost": 5,
+              "blockCnt": 2,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 30,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 1,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          },
+          {
+            "level": 30,
+            "data": {
+              "maxHp": 15000,
+              "atk": 0,
+              "def": 200,
+              "magicResistance": 0,
+              "cost": 5,
+              "blockCnt": 2,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 30,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 1,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          }
+        ],
+        "evolveCost": null
+      }
+    ],
+    "skills": [
+      {
+        "skillId": "sktok_gasbota",
+        "overridePrefabKey": null,
+        "overrideTokenKey": null,
+        "levelUpCostCond": [],
+        "unlockCond": { "phase": "PHASE_0", "level": 1 }
+      }
+    ],
+    "displayTokenDict": null,
+    "talents": [
+      {
+        "candidates": [
+          {
+            "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [],
+            "tokenKey": null
+          }
+        ]
+      }
+    ],
+    "potentialRanks": [],
+    "favorKeyFrames": null,
+    "allSkillLvlup": []
+  },
+  "trap_744_gasbotb": {
+    "name": "Quick-freezing Sprayer Platform",
+    "description": null,
+    "canUseGeneralPotentialItem": true,
+    "canUseActivityPotentialItem": false,
+    "potentialItemId": null,
+    "activityPotentialItemId": null,
+    "classicPotentialItemId": null,
+    "nationId": null,
+    "groupId": null,
+    "teamId": null,
+    "displayNumber": null,
+    "appellation": " ",
+    "position": "NONE",
+    "tagList": null,
+    "itemUsage": null,
+    "itemDesc": null,
+    "itemObtainApproach": null,
+    "isNotObtainable": false,
+    "isSpChar": false,
+    "maxPotentialLevel": 0,
+    "rarity": "TIER_1",
+    "profession": "TRAP",
+    "subProfessionId": "notchar2",
+    "trait": {
+      "candidates": [
+        {
+          "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+          "requiredPotentialRank": 0,
+          "blackboard": [{ "key": "legion_start_in_hand", "value": 1, "valueStr": null }],
+          "overrideDescripton": "More likely to be attacked; always starts in the Deployment Waiting Zone",
+          "prefabKey": null,
+          "rangeId": null
+        }
+      ]
+    },
+    "phases": [
+      {
+        "characterPrefabKey": "trap_744_gasbotb",
+        "rangeId": "x-1",
+        "maxLevel": 30,
+        "attributesKeyFrames": [
+          {
+            "level": 1,
+            "data": {
+              "maxHp": 15000,
+              "atk": 0,
+              "def": 200,
+              "magicResistance": 0,
+              "cost": 5,
+              "blockCnt": 2,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 30,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 1,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          },
+          {
+            "level": 30,
+            "data": {
+              "maxHp": 15000,
+              "atk": 0,
+              "def": 200,
+              "magicResistance": 0,
+              "cost": 5,
+              "blockCnt": 2,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 30,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 1,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          }
+        ],
+        "evolveCost": null
+      }
+    ],
+    "skills": [
+      {
+        "skillId": "sktok_gasbotb",
+        "overridePrefabKey": null,
+        "overrideTokenKey": null,
+        "levelUpCostCond": [],
+        "unlockCond": { "phase": "PHASE_0", "level": 1 }
+      }
+    ],
+    "displayTokenDict": null,
+    "talents": [
+      {
+        "candidates": [
+          {
+            "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "Revival",
+            "description": "Recover <@ba.vup>15%</> max HP when nearby enemies are defeated while affected by Cold, Frozen, Stun, Bind, Levitate, or Slow",
+            "rangeId": "x-1",
+            "blackboard": [{ "key": "hp_ratio", "value": 0.15, "valueStr": null }],
+            "tokenKey": null
+          }
+        ]
+      }
+    ],
+    "potentialRanks": [],
+    "favorKeyFrames": null,
+    "allSkillLvlup": []
+  },
+  "trap_745_beer": {
+    "name": "'Long Live Mead!'",
+    "description": null,
+    "canUseGeneralPotentialItem": true,
+    "canUseActivityPotentialItem": false,
+    "potentialItemId": null,
+    "activityPotentialItemId": null,
+    "classicPotentialItemId": null,
+    "nationId": null,
+    "groupId": null,
+    "teamId": null,
+    "displayNumber": null,
+    "appellation": " ",
+    "position": "NONE",
+    "tagList": null,
+    "itemUsage": null,
+    "itemDesc": null,
+    "itemObtainApproach": null,
+    "isNotObtainable": false,
+    "isSpChar": false,
+    "maxPotentialLevel": 0,
+    "rarity": "TIER_1",
+    "profession": "TRAP",
+    "subProfessionId": "notchar2",
+    "trait": null,
+    "phases": [
+      {
+        "characterPrefabKey": "trap_745_beer",
+        "rangeId": "x-4",
+        "maxLevel": 30,
+        "attributesKeyFrames": [
+          {
+            "level": 1,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 5,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 5,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          },
+          {
+            "level": 30,
+            "data": {
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "magicResistance": 0,
+              "cost": 5,
+              "blockCnt": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1,
+              "respawnTime": 5,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false
+            }
+          }
+        ],
+        "evolveCost": null
+      }
+    ],
+    "skills": [
+      {
+        "skillId": "sktok_beer",
+        "overridePrefabKey": null,
+        "overrideTokenKey": null,
+        "levelUpCostCond": [],
+        "unlockCond": { "phase": "PHASE_0", "level": 1 }
+      }
+    ],
+    "displayTokenDict": null,
+    "talents": [
+      {
+        "candidates": [
+          {
+            "unlockCondition": { "phase": "PHASE_0", "level": 1 },
+            "requiredPotentialRank": 0,
+            "prefabKey": "-1",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [],
+            "tokenKey": null
+          }
+        ]
+      }
+    ],
+    "potentialRanks": [],
+    "favorKeyFrames": null,
+    "allSkillLvlup": []
   }
 }
