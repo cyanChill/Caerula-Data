@@ -27,6 +27,8 @@
   "ro.get": "#0098DC",
   "ro.lose": "#C82A36",
   "rolv.rem": "#FF4C22",
+  "lv.description": "#d8d769",
+  "lv.extrades": "#d8d769",
   "lv.item": "#FFFFFF",
   "lv.rem": "#FFFFFF",
   "lv.fs": "#FF0000",
