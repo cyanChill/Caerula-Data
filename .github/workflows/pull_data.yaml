@@ -1,7 +1,7 @@
 name: Pull & Mutate Game Data
 on:
-  schedule:
-    - cron: "5 17 * * 2" # Runs "12:05PM EST on Tuesday"
+  # schedule:
+  #   - cron: "5 17 * * 2" # Runs "12:05PM EST on Tuesday"
   workflow_dispatch:
 
 jobs:
